@@ -1,0 +1,1196 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Telerik.Sitefinity.Frontend.Comments</name>
+    </assembly>
+    <members>
+        <member name="T:Telerik.Sitefinity.Frontend.Comments.InterfaceMappings">
+            <summary>
+            This class is used to describe the bindings which will be used by the Ninject container when resolving classes
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Comments.InterfaceMappings.Load">
+            <summary>
+            Loads the module into the kernel.
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.Frontend.Comments.Mvc.Controllers.CommentsController">
+            <summary>
+            This class represents the controller of the Comments widget.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Controllers.CommentsController.Model">
+            <summary>
+            Gets the Comments widget model.
+            </summary>
+            <value>
+            The model.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Controllers.CommentsController.TemplateName">
+            <summary>
+            Gets or sets the name of the template that widget will be displayed.
+            </summary>
+            <value>
+            The name of the template
+            </value>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Comments.Mvc.Controllers.CommentsController.Index(Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsInputModel)">
+            <summary>
+            Gets comments view
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Comments.Mvc.Controllers.CommentsController.Count(Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsCountInputModel)">
+            <summary>
+            Gets the view for comments count. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Comments.Mvc.Controllers.CommentsController.GetKeysOfDependentObjects">
+            <summary>
+            Gets a collection of <see cref="!:CacheDependencyNotifiedObject"/>.
+                The <see cref="!:CacheDependencyNotifiedObject"/> represents a key for which cached items could be subscribed for
+                notification.
+                When notified, all cached objects with dependency on the provided keys will expire.
+            </summary>
+            <param name="viewModel">View model that will be used for displaying the data.</param>
+            <returns>
+            The <see cref="!:IList"/>.
+            </returns>
+        </member>
+        <member name="T:Telerik.Sitefinity.Frontend.Comments.Mvc.Controllers.ReviewsController">
+            <summary>
+            This class represents the controller of the Reviews widget.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Controllers.ReviewsController.Model">
+            <summary>
+            Gets the Comments widget model.
+            </summary>
+            <value>
+            The model.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Controllers.ReviewsController.TemplateName">
+            <summary>
+            Gets or sets the name of the template that widget will be displayed.
+            </summary>
+            <value>
+            The name of the template
+            </value>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Comments.Mvc.Controllers.ReviewsController.Index(Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsInputModel)">
+            <summary>
+            Gets comments view
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Comments.Mvc.Controllers.ReviewsController.Count(Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsCountInputModel)">
+            <summary>
+            Gets the view for comments count. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Comments.Mvc.Controllers.ReviewsController.GetKeysOfDependentObjects">
+            <summary>
+            Gets a collection of <see cref="!:CacheDependencyNotifiedObject"/>.
+                The <see cref="!:CacheDependencyNotifiedObject"/> represents a key for which cached items could be subscribed for
+                notification.
+                When notified, all cached objects with dependency on the provided keys will expire.
+            </summary>
+            <param name="viewModel">View model that will be used for displaying the data.</param>
+            <returns>
+            The <see cref="!:IList"/>.
+            </returns>
+        </member>
+        <member name="T:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsConfigModel">
+            <summary>
+            This class provides API for working with comments settings.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsConfigModel.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsConfigModel"/> class.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsConfigModel.UseSpamProtectionImage">
+            <summary>
+            Gets or sets a value indicating whether to use spam protection image.
+            </summary>
+            <value>
+            When set to <c>true</c> spam protection image is used; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsConfigModel.EnablePaging">
+            <summary>
+            Gets whether comments will be displayed on pages.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsConfigModel.CommentsPerPage">
+            <summary>
+            Gets how many comments will be displayed on a page.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsConfigModel.AreNewestOnTop">
+            <summary>
+            Gets whether the newest comments will be displayed on top. Otherwise the oldest will be on top.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsConfigModel.AlwaysUseUtc">
+            <summary>
+            Gets whether the date time valus will be passed only in UTC
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsCountInputModel">
+            <summary>
+            Represents the DTO for the Count action request of the <see cref="!:CommentsControlelr"/>
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsCountInputModel.AllowComments">
+            <summary>
+            Gets or sets the allow comments.
+            </summary>
+            <value>
+            The allow comments.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsCountInputModel.NavigateUrl">
+            <summary>
+            Gets or sets the navigate URL.
+            </summary>
+            <value>
+            The navigate URL.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsCountInputModel.ThreadKey">
+            <summary>
+            Gets or sets the thread key.
+            </summary>
+            <value>
+            The thread key.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsCountInputModel.ThreadType">
+            <summary>
+            Gets or sets the type of the thread.
+            </summary>
+            <value>
+            The type of the thread.
+            </value>
+        </member>
+        <member name="T:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsCountViewModel">
+            <summary>
+            Provides view model for the comments count functionality.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsCountViewModel.NavigateUrl">
+            <summary>
+            Gets or sets the navigate URL.
+            </summary>
+            <value>
+            The navigate URL.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsCountViewModel.ThreadKey">
+            <summary>
+            Gets or sets the thread key.
+            </summary>
+            <value>
+            The thread key.
+            </value>
+        </member>
+        <member name="T:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsInputModel">
+            <summary>
+            Represents the DTO for the Index action request of the <see cref="!:CommentsControlelr"/>
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsInputModel.AllowComments">
+            <summary>
+            Gets or sets the allow comments.
+            </summary>
+            <value>
+            The allow comments.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsInputModel.ThreadKey">
+            <summary>
+            Gets or sets the thread key.
+            </summary>
+            <value>
+            The thread key.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsInputModel.ThreadTitle">
+            <summary>
+            Gets or sets the thread title.
+            </summary>
+            <value>
+            The thread title.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsInputModel.ThreadType">
+            <summary>
+            Gets or sets the type of the thread.
+            </summary>
+            <value>
+            The type of the thread.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsInputModel.GroupKey">
+            <summary>
+            Gets or sets the group key.
+            </summary>
+            <value>
+            The group key.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsInputModel.DataSource">
+            <summary>
+            Gets or sets the data source.
+            </summary>
+            <value>
+            The data source.
+            </value>
+        </member>
+        <member name="T:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsListViewModel">
+            <summary>
+            The view model for the index action of the <see cref="!:CommentsController"/>
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsListViewModel.SerializedWidgetSettings">
+            <summary>
+            Gets or sets the serialized widget settings.
+            </summary>
+            <value>
+            The serialized widget settings.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsListViewModel.SerializedWidgetResources">
+            <summary>
+            Gets or sets the serialized widget resources.
+            </summary>
+            <value>
+            The serialized widget resources.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsListViewModel.CssClass">
+            <summary>
+            Gets or sets the CSS class.
+            </summary>
+            <value>
+            The CSS class.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsListViewModel.ThreadIsClosed">
+            <summary>
+            Gets or sets a value indicating whether [thread is closed].
+            </summary>
+            <value>
+              <c>true</c> if [thread is closed]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsListViewModel.UserAvatarImageUrl">
+            <summary>
+            Gets or sets the user avatar image URL.
+            </summary>
+            <value>
+            The user avatar image URL.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsListViewModel.LoginPageUrl">
+            <summary>
+            Gets or sets the login page URL.
+            </summary>
+            <value>
+            The login page URL.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsListViewModel.RequiresAuthentication">
+            <summary>
+            Gets or sets the requires authentication.
+            </summary>
+            <value>
+            The requires authentication.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsListViewModel.AllowSubscription">
+            <summary>
+            Gets or sets a value indicating whether [allow subscription].
+            </summary>
+            <value>
+              <c>true</c> if [allow subscription]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsListViewModel.RequiresApproval">
+            <summary>
+            Gets or sets the requires approval.
+            </summary>
+            <value>
+            The requires approval.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsListViewModel.RequiresCaptcha">
+            <summary>
+            Gets or sets the requires captcha.
+            </summary>
+            <value>
+            The requires captcha.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsListViewModel.EnablePaging">
+            <summary>
+            Gets whether comments will be displayed on pages.
+            </summary>
+            <value>
+              <c>true</c> if paging is enabled; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsListViewModel.ThreadKey">
+            <summary>
+            Gets or sets the thread key.
+            </summary>
+            <value>
+            The thread key.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsListViewModel.ThreadType">
+            <summary>
+            Gets or sets the type of the thread.
+            </summary>
+            <value>
+            The type of the thread.
+            </value>
+        </member>
+        <member name="T:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsListWidgetResources">
+            <summary>
+            Resources for the comments-list widget.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsListWidgetResources.ReadFullComment">
+            <summary>
+            Gets or sets the read full comment.
+            </summary>
+            <value>
+            The read full comment.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsListWidgetResources.CommentSingular">
+            <summary>
+            Gets or sets the comment singular.
+            </summary>
+            <value>
+            The comment singular.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsListWidgetResources.CommentsPlural">
+            <summary>
+            Gets or sets the comments plural.
+            </summary>
+            <value>
+            The comments plural.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsListWidgetResources.SubscribeLink">
+            <summary>
+            Gets or sets the subscribe link.
+            </summary>
+            <value>
+            The subscribe link.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsListWidgetResources.UnsubscribeLink">
+            <summary>
+            Gets or sets the unsubscribe link.
+            </summary>
+            <value>
+            The unsubscribe link.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsListWidgetResources.SubscribeToNewComments">
+            <summary>
+            Gets or sets the subscribe to new comments.
+            </summary>
+            <value>
+            The subscribe to new comments.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsListWidgetResources.YouAreSubscribedToNewComments">
+            <summary>
+            Gets or sets you are subscribed to new comments.
+            </summary>
+            <value>
+            You are subscribed to new comments.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsListWidgetResources.SuccessfullySubscribedToNewComments">
+            <summary>
+            Gets or sets the successfully subscribed to new comments.
+            </summary>
+            <value>
+            The successfully subscribed to new comments.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsListWidgetResources.SuccessfullyUnsubscribedFromNewComments">
+            <summary>
+            Gets or sets the successfully unsubscribed from new comments.
+            </summary>
+            <value>
+            The successfully unsubscribed from new comments.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsListWidgetResources.MessageIsRequired">
+            <summary>
+            Gets or sets the message is required.
+            </summary>
+            <value>
+            The message is required.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsListWidgetResources.NameIsRequired">
+            <summary>
+            Gets or sets the name is required.
+            </summary>
+            <value>
+            The name is required.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsListWidgetResources.InvalidEmailFormat">
+            <summary>
+            Gets or sets the invalid email format resource.
+            </summary>
+            <value>
+            The invalid email format resource.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsListWidgetResources.RatingIsRequired">
+            <summary>
+            Gets or sets the rating is required.
+            </summary>
+            <value>
+            The rating is required.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsListWidgetResources.ReadFullReview">
+            <summary>
+            Gets or sets the read full comment.
+            </summary>
+            <value>
+            The read full comment.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsListWidgetResources.ReviewSingular">
+            <summary>
+            Gets or sets the comment singular.
+            </summary>
+            <value>
+            The comment singular.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsListWidgetResources.ReviewPlural">
+            <summary>
+            Gets or sets the comments plural.
+            </summary>
+            <value>
+            The comments plural.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsListWidgetResources.SubscribeToNewReviews">
+            <summary>
+            Gets or sets the subscribe to new comments.
+            </summary>
+            <value>
+            The subscribe to new comments.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsListWidgetResources.YouAreSubscribedToNewReviews">
+            <summary>
+            Gets or sets you are subscribed to new comments.
+            </summary>
+            <value>
+            You are subscribed to new comments.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsListWidgetResources.SuccessfullySubscribedToNewReviews">
+            <summary>
+            Gets or sets the successfully subscribed to new comments.
+            </summary>
+            <value>
+            The successfully subscribed to new comments.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsListWidgetResources.ThankYouReviewSubmited">
+            <summary>
+            Gets or sets the thank you review submited.
+            </summary>
+            <value>
+            The thank you review submited.
+            </value>
+        </member>
+        <member name="T:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsListWidgetSettings">
+            <summary>
+            Settings for the comments-list widget.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsListWidgetSettings.CommentsThreadKey">
+            <summary>
+            Gets or sets the comments thread key.
+            </summary>
+            <value>
+            The comments thread key.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsListWidgetSettings.CommentsThreadType">
+            <summary>
+            Gets or sets the type of the comments thread.
+            </summary>
+            <value>
+            The type of the comments thread.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsListWidgetSettings.RootUrl">
+            <summary>
+            Gets or sets the root URL.
+            </summary>
+            <value>
+            The root URL.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsListWidgetSettings.IsUserAuthenticatedUrl">
+            <summary>
+            Gets or sets the is user authenticated URL.
+            </summary>
+            <value>
+            The is user authenticated URL.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsListWidgetSettings.CommentsPerPage">
+            <summary>
+            Gets or sets the comments per page.
+            </summary>
+            <value>
+            The comments per page.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsListWidgetSettings.CommentsTextMaxLength">
+            <summary>
+            Gets or sets the maximum length of the comments text.
+            </summary>
+            <value>
+            The maximum length of the comments text.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsListWidgetSettings.CommentsAllowSubscription">
+            <summary>
+            Gets or sets the comments allow subscription.
+            </summary>
+            <value>
+            The comments allow subscription.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsListWidgetSettings.RequiresCaptcha">
+            <summary>
+            Gets or sets the requires captcha.
+            </summary>
+            <value>
+            The requires captcha.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsListWidgetSettings.RequiresAuthentication">
+            <summary>
+            Gets or sets the requires authentication.
+            </summary>
+            <value>
+            The requires authentication.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsListWidgetSettings.RequiresApproval">
+            <summary>
+            Gets or sets the requires approval.
+            </summary>
+            <value>
+            The requires approval.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsListWidgetSettings.CommentsAutoRefresh">
+            <summary>
+            Gets or sets the comments automatic refresh.
+            </summary>
+            <value>
+            The comments automatic refresh.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsListWidgetSettings.CommentsRefreshInterval">
+            <summary>
+            Gets or sets the comments refresh interval.
+            </summary>
+            <value>
+            The comments refresh interval.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsListWidgetSettings.CommentsInitiallySortedDescending">
+            <summary>
+            Gets or sets the comments initially sorted descending.
+            </summary>
+            <value>
+            The comments initially sorted descending.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsListWidgetSettings.UserAvatarImageUrl">
+            <summary>
+            Gets or sets the user avatar image URL.
+            </summary>
+            <value>
+            The user avatar image URL.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsListWidgetSettings.UserDisplayName">
+            <summary>
+            Gets or sets the display name of the user.
+            </summary>
+            <value>
+            The display name of the user.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsListWidgetSettings.IsDesignMode">
+            <summary>
+            Gets or sets the is design mode.
+            </summary>
+            <value>
+            The is design mode.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsListWidgetSettings.CommentsThread">
+            <summary>
+            Gets or sets the comments thread.
+            </summary>
+            <value>
+            The comments thread.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsListWidgetSettings.UseReviews">
+            <summary>
+            Gets or sets a value indicating whether [use reviews].
+            </summary>
+            <value>
+              <c>true</c> if [use reviews]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsListWidgetSettings.HasUserAlreadyReviewedUrl">
+            <summary>
+            Gets or sets the has user already reviewed URL.
+            </summary>
+            <value>
+            The has user already reviewed URL.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsListWidgetSettings.CreateCommentUrl">
+            <summary>
+            Gets or sets the create comment URL.
+            </summary>
+            <value>
+            The create comment URL.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsListWidgetSettings.AlwaysUseUtc">
+            <summary>
+            Gets whether the web service will always expect date times in UTC
+            </summary>
+            <value>
+              <c>true</c> if date time need to be always in UTC; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="T:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsModel">
+            <summary>
+            Provides API for working with <see cref="T:Telerik.Sitefinity.Services.Comments.IComment"/> items.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsModel.ThreadKey">
+            <inheritDoc/>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsModel.ThreadType">
+            <inheritDoc/>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsModel.ThreadTitle">
+            <inheritDoc/>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsModel.GroupKey">
+            <inheritDoc/>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsModel.DataSource">
+            <inheritDoc/>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsModel.CommentTextMaxLength">
+            <inheritDoc/>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsModel.ThreadIsClosed">
+            <inheritDoc/>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsModel.CssClass">
+            <inheritDoc/>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsModel.CommentsAutoRefresh">
+            <inheritDoc/>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsModel.CommentsRefreshInterval">
+            <inheritDoc/>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsModel.LoginPageUrl">
+            <inheritDoc/>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsModel.UserAvatarImageUrl">
+            <inheritDoc/>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsModel.UserDisplayName">
+            <inheritDoc/>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsModel.AllowComments">
+            <inheritDoc/>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsModel.Thread">
+            <inheritDoc/>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsModel.ThreadConfig">
+            <inheritDoc/>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsModel.CommentsConfig">
+            <inheritDoc/>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsModel.GetCommentsListViewModel(Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsInputModel,System.Boolean)">
+            <inheritDoc/>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsModel.GetCommentsCountViewModel(Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsCountInputModel)">
+            <inheritDoc/>
+        </member>
+        <member name="T:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.ICommentsModel">
+            <summary>
+            Defines API for working with <see cref="T:Telerik.Sitefinity.Services.Comments.IComment"/> items.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.ICommentsModel.ThreadType">
+            <summary>
+            Gets or sets the type of the thread.
+            </summary>
+            <value>
+            The type of the thread.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.ICommentsModel.ThreadKey">
+            <summary>
+            Gets or sets the thread key.
+            </summary>
+            <value>
+            The thread key.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.ICommentsModel.GroupKey">
+            <summary>
+            Gets or sets the group key.
+            </summary>
+            <value>
+            The group key.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.ICommentsModel.ThreadTitle">
+            <summary>
+            Gets or sets the thread title.
+            </summary>
+            <value>
+            The thread title.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.ICommentsModel.DataSource">
+            <summary>
+            Gets or sets the data source.
+            </summary>
+            <value>
+            The data source.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.ICommentsModel.ThreadIsClosed">
+            <summary>
+            Gets or sets a value indicating whether thread is closed.
+            </summary>
+            <value>
+              <c>true</c> if thread is closed; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.ICommentsModel.CommentTextMaxLength">
+            <summary>
+            Gets or sets the maximum length of the comment text to be displayed when loaded.
+            </summary>
+            <remarks> The rest of comment text will be displayed after clicking "Read full comment" link. 
+            </remarks>
+            <value>
+            The maximum length of the comment text to be dispalyed when comment is loaded.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.ICommentsModel.CommentsAutoRefresh">
+            <summary>
+            Gets or sets a value indicating whether [comments automatic refresh].
+            </summary>
+            <value>
+            <c>true</c> if [comments automatic refresh]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.ICommentsModel.CommentsRefreshInterval">
+            <summary>
+            Gets or sets the comments refresh interval.
+            </summary>
+            <value>
+            The comments refresh interval.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.ICommentsModel.CssClass">
+            <summary>
+            Gets or sets the CSS class.
+            </summary>
+            <value>
+            The CSS class.
+            </value>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.ICommentsModel.GetCommentsListViewModel(Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsInputModel,System.Boolean)">
+            <summary>
+            Gets the view model.
+            </summary>
+            <param name="commentsInputModel">The comments input model.</param>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.ICommentsModel.GetCommentsCountViewModel(Telerik.Sitefinity.Frontend.Comments.Mvc.Models.CommentsCountInputModel)" -->
+        <member name="T:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.ThreadsConfigModel">
+            <summary>
+            This class provides API for working with comments configuration per thread.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.ThreadsConfigModel.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.ThreadsConfigModel"/> class.
+            </summary>
+            <param name="threadType">Type of the thread.</param>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.ThreadsConfigModel.AllowComments">
+            <summary>
+            Gets or sets a value indicating if content item supports comments.
+            </summary>
+            <value>
+            	<c>true</c> if content item supports comments; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.ThreadsConfigModel.RequiresAuthentication">
+            <summary>
+            Gets or sets whether threads on the commentable type require authentication by default.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.ThreadsConfigModel.RequiresApproval">
+            <summary>
+            Gets or sets whether threads on the commentable type require approval by default.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.ThreadsConfigModel.AllowSubscription">
+            <summary>
+            Gets whether comments will allow subscription for email notifications.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.ThreadsConfigModel.EnableRatings">
+            <summary>
+            Gets or sets a value indicating whether to restrict ratings to one from user by thread.
+            </summary>
+            <value>
+            When set to <c>true</c> the comments are restricted to one from user by thread; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Comments.Mvc.Models.ThreadsConfigModel.GetThreadConfigByType(System.String)">
+            <summary>
+            Gets the thread configuration by its type. Falls back to default settings if there are no settings for the type.
+            </summary>
+            <param name="threadKey">The thread key.</param>
+        </member>
+        <member name="T:Telerik.Sitefinity.Frontend.Comments.Mvc.StringResources.CommentsWidgetResources">
+            <summary>
+            Localizable strings for the Comments widget
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Comments.Mvc.StringResources.CommentsWidgetResources.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Frontend.Comments.Mvc.StringResources.CommentsWidgetResources"/> class. 
+            Initializes new instance of <see cref="T:Telerik.Sitefinity.Frontend.Comments.Mvc.StringResources.CommentsWidgetResources"/> class with the default <see cref="T:Telerik.Sitefinity.Localization.Data.ResourceDataProvider"/>.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Comments.Mvc.StringResources.CommentsWidgetResources.#ctor(Telerik.Sitefinity.Localization.Data.ResourceDataProvider)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Frontend.Comments.Mvc.StringResources.CommentsWidgetResources"/> class.
+            </summary>
+            <param name="dataProvider">The data provider.</param>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.StringResources.CommentsWidgetResources.CommentsResourcesTitle">
+            <summary>
+            Gets Comments widget resources title.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.StringResources.CommentsWidgetResources.CommentsResourcesDescription">
+            <summary>
+            Gets Comments widget resources description.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.StringResources.CommentsWidgetResources.ReadFullComment">
+            <summary>
+            Gets phrase : Read full comment
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.StringResources.CommentsWidgetResources.Comment">
+            <summary>
+            Gets word : comment
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.StringResources.CommentsWidgetResources.CommentsPlural">
+            <summary>
+            Gets word : comments
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.StringResources.CommentsWidgetResources.LeaveComment">
+            <summary>
+            Gets phrase : Leave a comment
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.StringResources.CommentsWidgetResources.NewestOnTop">
+            <summary>
+            Gets phrase : Newest on top
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.StringResources.CommentsWidgetResources.OldestOnTop">
+            <summary>
+            Gets phrase : Oldest on top
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.StringResources.CommentsWidgetResources.LoadMoreComments">
+            <summary>
+            Gets phrase : Load more comments
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.StringResources.CommentsWidgetResources.Submit">
+            <summary>
+            Gets word : Submit
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.StringResources.CommentsWidgetResources.YourName">
+            <summary>
+            Gets phrase : Your name
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.StringResources.CommentsWidgetResources.EmailOptional">
+            <summary>
+            Gets phrase : Email (optional)
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.StringResources.CommentsWidgetResources.SubscribeLink">
+            <summary>
+            Gets phrase : Subscribe
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.StringResources.CommentsWidgetResources.UnsubscribeLink">
+            <summary>
+            Gets phrase : Unsubscribe
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.StringResources.CommentsWidgetResources.SubscribeToNewComments">
+            <summary>
+            Gets phrase : Subscribe to new comments
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.StringResources.CommentsWidgetResources.YouAreSubscribedToNewComments">
+            <summary>
+            Gets phrase : You are subscribed to new comments
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.StringResources.CommentsWidgetResources.SuccessfullySubscribedToNewComments">
+            <summary>
+            Gets phrase : You are successfully subscribed to new comments
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.StringResources.CommentsWidgetResources.SuccessfullyUnsubscribedFromNewComments">
+            <summary>
+            Gets phrase : You are successfully unsubscribed
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.StringResources.CommentsWidgetResources.CommentsThreadIsClosedMessage">
+            <summary>
+            Gets phrase : Comments are not allowed anymore
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.StringResources.CommentsWidgetResources.NewCode">
+            <summary>
+            Gets phrase : New code
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.StringResources.CommentsWidgetResources.TypeCodeAbove">
+            <summary>
+            Gets phrase : Please type the code above
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.StringResources.CommentsWidgetResources.Login">
+            <summary>
+            Gets phrase : Login
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.StringResources.CommentsWidgetResources.NameIsRequired">
+            <summary>
+            Gets phrase : Author name is required!
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.StringResources.CommentsWidgetResources.InvalidEmailFormat">
+            <summary>
+            Gets phrase : Invalid email format!
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.StringResources.CommentsWidgetResources.ToBeAbleToComment">
+            <summary>
+            Gets phrase :  to be able to comment
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.StringResources.CommentsWidgetResources.MessageIsRequired">
+            <summary>
+            Gets phrase : Message is required!
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.StringResources.CommentsWidgetResources.CommentPendingApproval">
+            <summary>
+            Gets phrase : Thank you for the comment! Your comment must be approved first
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.StringResources.CommentsWidgetResources.OrderBy">
+            <summary>
+            Gets phrase: Order by:
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.StringResources.CommentsWidgetResources.CommentBy">
+            <summary>
+            Gets phrase: Order by:
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.StringResources.CommentsWidgetResources.From">
+            <summary>
+            Gets label: from
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.StringResources.CommentsWidgetResources.Rating">
+            <summary>
+            Gets phrase : Rating
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.StringResources.CommentsWidgetResources.RatingIsRequired">
+            <summary>
+            Gets phrase : Rating is required!
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.StringResources.CommentsWidgetResources.WriteReview">
+            <summary>
+            Gets phrase : Write a review
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.StringResources.CommentsWidgetResources.ReviewsThreadIsClosedMessage">
+            <summary>
+            Gets phrase : Reviews are not allowed anymore
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.StringResources.CommentsWidgetResources.LoadMoreReviews">
+            <summary>
+            Gets phrase : Load more reviews
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.StringResources.CommentsWidgetResources.ReviewPendingApproval">
+            <summary>
+            Gets phrase : Thank you for the review! Your review must be approved first
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.StringResources.CommentsWidgetResources.Review">
+            <summary>
+            Gets word : review
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.StringResources.CommentsWidgetResources.ReviewsWidgetTitle">
+            <summary>
+            The review widget title
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.StringResources.CommentsWidgetResources.ReviewsWidgetDescription">
+            <summary>
+            The review widget description
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.StringResources.CommentsWidgetResources.ReviewsPlural">
+            <summary>
+            Gets word : review
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.StringResources.CommentsWidgetResources.ReadFullReview">
+            <summary>
+            Gets phrase : Read full review
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.StringResources.CommentsWidgetResources.SubscribeToNewReviews">
+            <summary>
+            Gets phrase : Subscribe to new reviews
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.StringResources.CommentsWidgetResources.YouAreSubscribedToNewReviews">
+            <summary>
+            Gets phrase : You are subscribed to new reviews
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.StringResources.CommentsWidgetResources.SuccessfullySubscribedToNewReviews">
+            <summary>
+            Gets phrase : You are successfully subscribed to new reviews
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.StringResources.CommentsWidgetResources.ToBeAbleToReview">
+            <summary>
+            Gets phrase :  to be able to write a review
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.StringResources.CommentsWidgetResources.ThankYouReviewSubmited">
+            <summary>
+            Gets phrase : Thank you! Your review has been submitted successfully
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.StringResources.CommentsWidgetResources.UserAlreadySubmitedReview">
+            <summary>
+            Gets phrase : You've already submitted a review for this item
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.StringResources.CommentsWidgetResources.AverageRating">
+            <summary>
+            Gets phrase : Average rating:
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.StringResources.CommentsWidgetResources.Of">
+            <summary>
+            Gets word : Of
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.StringResources.CommentsWidgetResources.MoreOptions">
+            <summary>
+            Gets phrase : More options
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.StringResources.CommentsWidgetResources.CssClasses">
+            <summary>
+            Gets phrase : CSS classes
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.StringResources.CommentsWidgetResources.Template">
+            <summary>
+            Gets phrase: Template
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.StringResources.CommentsWidgetResources.CommentsTitle">
+            <summary>
+            Control name: CommentsWidget
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Comments.Mvc.StringResources.CommentsWidgetResources.CommentsDescription">
+            <summary>
+            Control description: A widget that shows the comments in the particular thread.
+            </summary>
+        </member>
+    </members>
+</doc>

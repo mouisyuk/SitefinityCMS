@@ -1,0 +1,2370 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Telerik.Sitefinity.Packaging</name>
+    </assembly>
+    <members>
+        <member name="T:Telerik.Sitefinity.Packaging.Content.ContentImportExportManager">
+            <summary>
+            Provides functionality for export/import of items.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Content.ContentImportExportManager.#ctor(Telerik.Sitefinity.Packaging.Serialization.IReader)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Packaging.Content.ContentImportExportManager"/> class.
+            </summary>
+            <param name="reader">The reader.</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Content.ContentImportExportManager.#ctor(Telerik.Sitefinity.Packaging.Serialization.IWriter)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Packaging.Content.ContentImportExportManager"/> class.
+            </summary>
+            <param name="writer">The writer.</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Content.ContentImportExportManager.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Packaging.Content.ContentImportExportManager"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Content.ContentImportExportManager.#ctor(Telerik.Sitefinity.Packaging.Serialization.IWriter,Telerik.Sitefinity.Packaging.Serialization.IReader)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Packaging.Content.ContentImportExportManager"/> class.
+            </summary>
+            <param name="writer">The writer.</param>
+            <param name="reader">The reader.</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Content.ContentImportExportManager.Export(Telerik.Sitefinity.Packaging.Content.ExportParams,Telerik.Sitefinity.Packaging.Content.IContentTransfer)">
+            <summary>
+            Exports items from the specified type name.
+            </summary>
+            <param name="exportParameters">The export parameters.</param>
+            <param name="contentTransfer">The content transfer</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Content.ContentImportExportManager.Import(Telerik.Sitefinity.Packaging.Content.ImportParams,Telerik.Sitefinity.Packaging.Content.IContentTransfer)">
+            <summary>
+            Imports items from the specified type name.
+            </summary>
+            <param name="importParameters">The import parameters.</param>
+            <param name="contentTransfer">The content transfer</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Content.ContentImportExportManager.ResolveContentTransfer(System.String,System.Collections.Generic.IList{Telerik.Sitefinity.Packaging.Content.IContentTransfer})">
+            <summary>
+            Resolves the content transfer.
+            </summary>
+            <param name="typeName">The name of the type.</param>
+            <param name="contentTransfers">Collection of all content transfers</param>
+            <returns>The transfer wrapper.</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Content.ContentImportExportManager.BuildExportSettings(System.String,System.String)">
+            <summary>
+            Builds the export settings.
+            </summary>
+            <param name="typeName">The type name.</param>
+            <param name="providerName">The provider name</param>
+            <returns>Export settings</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Content.ContentImportExportManager.BuildImportSettings(System.String,System.String)">
+            <summary>
+            Builds the import settings.
+            </summary>
+            <param name="typeName">The type name.</param>
+            <param name="providerName">The provider name</param>
+            <returns>Import settings</returns>
+        </member>
+        <member name="T:Telerik.Sitefinity.Packaging.Events.IPackagingProgressEvent">
+            <summary>
+            Represents an interface for packaging progress events.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Events.IPackagingProgressEvent.Progress">
+            <summary>
+            Gets or sets the progress of the event
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Events.IPackagingProgressEvent.Message">
+            <summary>
+            Gets or sets the message
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.Packaging.Events.PackagingProgressEvent">
+            <summary>
+            Represents a class for packaging progress events arguments.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Events.PackagingProgressEvent.Progress">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Events.PackagingProgressEvent.Message">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Sitefinity.Packaging.Exceptions.InvalidArchiveDataException">
+            <summary>
+            Thrown only when there are no structure or content to import from archive
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Exceptions.InvalidArchiveDataException.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Packaging.Exceptions.InvalidArchiveDataException"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Exceptions.InvalidArchiveDataException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Packaging.Exceptions.InvalidArchiveDataException"/> class.
+            </summary>
+            <param name="message">Exception message.</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Exceptions.InvalidArchiveDataException.#ctor(System.String,System.Exception,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Packaging.Exceptions.InvalidArchiveDataException"/> class.
+            </summary>
+            <param name="message">Exception message.</param>
+            <param name="innerException">Inner exception.</param>
+            <param name="archiveName">Archive name.</param>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Exceptions.InvalidArchiveDataException.ArchiveName">
+            <summary>
+            Gets the name of the archive for which the exception is thrown.
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.Packaging.Exceptions.ModuleNotExportedException">
+            <summary>
+            Thrown only when module export failed
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Exceptions.ModuleNotExportedException.#ctor(System.String,System.Exception,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Packaging.Exceptions.ModuleNotExportedException"/> class.
+            </summary>
+            <param name="message">Exception message.</param>
+            <param name="innerException">Inner exception.</param>
+            <param name="moduleName">Module name.</param>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Exceptions.ModuleNotExportedException.ModuleName">
+            <summary>
+            Gets the name of the module for which the exception is thrown.
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.Packaging.Exceptions.ModuleNotImportedException">
+            <summary>
+            Thrown only when module import failed
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Exceptions.ModuleNotImportedException.#ctor(System.String,System.Exception,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Packaging.Exceptions.ModuleNotImportedException"/> class.
+            </summary>
+            <param name="message">Exception message.</param>
+            <param name="innerException">Inner exception.</param>
+            <param name="moduleName">Module name.</param>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Exceptions.ModuleNotImportedException.ModuleName">
+            <summary>
+            Gets the name of the module for which the exception is thrown.
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.Packaging.Exceptions.PackagingBaseException">
+            <summary>
+            Base exception wrapper for the packaging module
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Exceptions.PackagingBaseException.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Packaging.Exceptions.PackagingBaseException"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Exceptions.PackagingBaseException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Packaging.Exceptions.PackagingBaseException"/> class.
+            </summary>
+            <param name="message">Exception message.</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Exceptions.PackagingBaseException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Packaging.Exceptions.PackagingBaseException"/> class.
+            </summary>
+            <param name="message">Exception message.</param>
+            <param name="innerException">Inner exception</param>
+        </member>
+        <member name="T:Telerik.Sitefinity.Packaging.Exceptions.TypeNotExportedException">
+            <summary>
+            Thrown only when type export failed
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Exceptions.TypeNotExportedException.#ctor(System.String,System.Exception,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Packaging.Exceptions.TypeNotExportedException"/> class.
+            </summary>
+            <param name="message">Exception message.</param>
+            <param name="innerException">Inner exception.</param>
+            <param name="typeName">Type name.</param>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Exceptions.TypeNotExportedException.TypeName">
+            <summary>
+            Gets the name of the type for which the exception is thrown.
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.Packaging.Exceptions.TypeNotImportedException">
+            <summary>
+            Thrown only when type import failed
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Exceptions.TypeNotImportedException.#ctor(System.String,System.Exception,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Packaging.Exceptions.TypeNotImportedException"/> class.
+            </summary>
+            <param name="message">Exception message.</param>
+            <param name="innerException">Inner exception.</param>
+            <param name="typeName">Type name.</param>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Exceptions.TypeNotImportedException.TypeName">
+            <summary>
+            Gets the name of the type for which the exception is thrown.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.NuGetPackage.NuGetManager.CreateNuspec(System.String,System.String,System.String,System.String,System.String[])">
+            <summary>
+            Creates the nuspec.
+            </summary>
+            <param name="packageName">Name of the package.</param>
+            <param name="version">The version.</param>
+            <param name="authors">The authors.</param>
+            <param name="owners">The owners.</param>
+            <param name="includedFolders">The included folders.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.NuGetPackage.NuGetManager.CreateAndSavePowershellScripts(System.String[])">
+            <summary>
+            Creates the and save powershell scripts.
+            </summary>
+            <param name="includedFolders">The included folders.</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.NuGetPackage.NuGetManager.CreateAndSaveAdditionalFiles(System.String[])">
+            <summary>
+            Creates the and save additional files.
+            </summary>
+            <param name="includedFolders">The included folders.</param>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.NuGetPackage.NuGetPackConfig.AddFrameworkReferences">
+            <summary>
+            Optional, if set to true adds framework references from NuGet project to NuGet package
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.NuGetPackage.NuGetPackConfig.DoIncludeSources">
+            <summary>
+            Optional, if set to false does not include sources
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.NuGetPackage.NuGetPackConfig.IconUrl">
+            <summary>
+            Optional, if set to non-empty value, sets NuGet package icon, otherwise uses default
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.NuGetPackage.NuGetPackConfig.ProjectUrl">
+            <summary>
+            Optional, if not set (or if empty), value is taken from NuGet project's AssemblyInfo (from AssemblyTrademark)
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.NuGetPackage.NuGetPackConfig.LicenseUrl">
+            <summary>
+            Optional, if not set (or if empty), value is taken from NuGet project's AssemblyInfo (from AssemblyTrademark)
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.NuGetPackage.NuGetPackConfig.Authors">
+            <summary>
+            Optional, if not set (or if empty), value is taken from NuGet project's AssemblyInfo (from AssemblyCompany)
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.NuGetPackage.NuGetPackConfig.Owners">
+            <summary>
+            Optional, if not set (or if empty), value is taken from NuGet project's AssemblyInfo (from AssemblyCompany)
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.NuGetPackage.NuGetPackConfig.Copyright">
+            <summary>
+            Optional, if not set (or if empty), value is taken from NuGet project's AssemblyInfo (from AssemblyCopyright)
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.NuGetPackage.NuGetPackConfig.Description">
+            <summary>
+            Optional, if not set (or if empty), value is taken from NuGet project's AssemblyInfo (from AssemblyDescription)
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.NuGetPackage.NuGetPackConfig.Summary">
+            <summary>
+            Optional, if not set (or if empty), value is taken from NuGet project's AssemblyInfo (from AssemblyDescription)
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.NuGetPackage.NuGetPackConfig.Keywords">
+            <summary>
+            Optional, if not set (or if empty), value is taken from NuGet project's AssemblyInfo (from AssemblyTitle)
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.NuGetPackage.NuGetPackConfig.DoSeparateSymbols">
+            <summary>
+            Optional, if set to true, creates a regular NuGet package file and the corresponding symbols package.
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.Packaging.Package.Addon.AddonPackageTransfer">
+            <summary>
+            Methods to Export and Import packages in Sitefinity
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Package.Addon.AddonPackageTransfer.MultisiteTransfers">
+            <summary>
+            Gets the multisite transfers.
+            </summary>
+            <value>
+            The multisite transfers.
+            </value>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.Addon.AddonPackageTransfer.UpdateAddonsFromInstalledNugetPackages">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.Addon.AddonPackageTransfer.LoadAddonEntries(Telerik.Sitefinity.Packaging.Model.Addon)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.Addon.AddonPackageTransfer.Export(Telerik.Sitefinity.Packaging.Package.Addon.IAddonExportConfiguration)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.Addon.AddonPackageTransfer.Import(Telerik.Sitefinity.Packaging.Package.Addon.IAddonImportConfiguration)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.Addon.AddonPackageTransfer.ImportContent(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.Addon.AddonPackageTransfer.DeleteContent(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.Addon.AddonPackageTransfer.Activate(System.String,System.Boolean)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.Addon.AddonPackageTransfer.Deactivate(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Sitefinity.Packaging.Package.Addon.AddonRegistryItem">
+            <summary>
+            Represents installed add-ons registry information
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Package.Addon.AddonRegistryItem.AddonName">
+            <summary>
+            Gets or sets the name of the addon.
+            </summary>
+            <value>The name of the addon.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Package.Addon.AddonRegistryItem.Key">
+            <summary>
+            Gets or sets the key.
+            </summary>
+            <value>The key.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Package.Addon.AddonRegistryItem.IsDeleted">
+            <summary>
+            Gets or sets a value indicating whether the add-on is deleted
+            </summary>
+            <value>The is deleted state.</value>
+        </member>
+        <member name="T:Telerik.Sitefinity.Packaging.Package.Addon.AddonsRegistryManager">
+            <summary>
+            Manages the file system add-on registry.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.Addon.AddonsRegistryManager.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Packaging.Package.Addon.AddonsRegistryManager" /> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.Addon.AddonsRegistryManager.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Packaging.Package.Addon.AddonsRegistryManager" /> class.
+            </summary>
+            <param name="registryFilePath">The registry file path.</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.Addon.AddonsRegistryManager.UpdateAddonsRegistry(System.Collections.Generic.IEnumerable{System.String})">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.Addon.AddonsRegistryManager.GetAddonKey(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.Addon.AddonsRegistryManager.GetDeletedAddons(System.Collections.Generic.IEnumerable{Telerik.Sitefinity.Packaging.Model.Addon})">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Package.Addon.AddonsRegistryManager.AddonsRegistry">
+            <summary>
+            Gets the addons registry.
+            </summary>
+            <value>The addons registry.</value>
+        </member>
+        <member name="T:Telerik.Sitefinity.Packaging.Package.Addon.IAddonPackageTransfer">
+            <summary>
+            Interface that provides methods to Export and Import packages in Sitefinity
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.Addon.IAddonPackageTransfer.ImportContent(System.String)">
+            <summary>
+            Imports the content by specified add on name.
+            </summary>
+            <param name="addonName">Name of the add on.</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.Addon.IAddonPackageTransfer.DeleteContent(System.String)">
+            <summary>
+            Deletes the content by specified add on name.
+            </summary>
+            <param name="addonName">Name of the add on.</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.Addon.IAddonPackageTransfer.Activate(System.String,System.Boolean)">
+            <summary>
+            Activates the specified add on name.
+            </summary>
+            <param name="addonName">Name of the add on.</param>
+            <param name="importContent">if set to <c>true</c> [import content].</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.Addon.IAddonPackageTransfer.Deactivate(System.String)">
+            <summary>
+            Deactivates the specified add on name.
+            </summary>
+            <param name="addonName">Name of the add on.</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.Addon.IAddonPackageTransfer.UpdateAddonsFromInstalledNugetPackages">
+            <summary>
+            Creates or updates the list of Add-ons based on the installed NuGet packages.
+            </summary>
+            <returns>The collection of Addon items that were updated or created.</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.Addon.IAddonPackageTransfer.LoadAddonEntries(Telerik.Sitefinity.Packaging.Model.Addon)">
+            <summary>
+            Populates addon entries information and generates addon info object
+            </summary>
+            <param name="addon">The addon</param>
+            <returns>AddOn info object</returns>
+        </member>
+        <member name="T:Telerik.Sitefinity.Packaging.Package.Addon.IAddonsRegistryManager">
+            <summary>
+            Manages the file system add-on registry.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.Addon.IAddonsRegistryManager.UpdateAddonsRegistry(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Updates the addons registry using the provided list of add-on names. 
+            All missing add-ons will be marked as deleted. All new add-ons will be added to the registry.
+            </summary>
+            <param name="addonNames">The list of addon names.</param>
+            <returns>True if the update was successful; False otherwise</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.Addon.IAddonsRegistryManager.GetAddonKey(System.String)">
+            <summary>
+            Gets the add-on key.
+            </summary>
+            <param name="addonName">Name of the add-on.</param>
+            <returns>The key for the current add-on</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.Addon.IAddonsRegistryManager.GetDeletedAddons(System.Collections.Generic.IEnumerable{Telerik.Sitefinity.Packaging.Model.Addon})">
+            <summary>
+            Gets the deleted add-ons from the given list of add-ons based on the registry.
+            </summary>
+            <param name="addonsList">The add-ons list.</param>
+            <returns>The add-ons from the list that have been deleted</returns>
+        </member>
+        <member name="T:Telerik.Sitefinity.Packaging.Package.Archive.ArchivePackageTransfer">
+            <summary>
+            Methods to Export and Import packages in Sitefinity
+            </summary>
+        </member>
+        <member name="E:Telerik.Sitefinity.Packaging.Package.Archive.ArchivePackageTransfer.ModuleImporting">
+            <inheritdoc />
+        </member>
+        <member name="E:Telerik.Sitefinity.Packaging.Package.Archive.ArchivePackageTransfer.ModuleImported">
+            <inheritdoc />
+        </member>
+        <member name="E:Telerik.Sitefinity.Packaging.Package.Archive.ArchivePackageTransfer.ContentImporting">
+            <inheritdoc />
+        </member>
+        <member name="E:Telerik.Sitefinity.Packaging.Package.Archive.ArchivePackageTransfer.ContentImported">
+            <inheritdoc />
+        </member>
+        <member name="E:Telerik.Sitefinity.Packaging.Package.Archive.ArchivePackageTransfer.Archiving">
+            <inheritdoc />
+        </member>
+        <member name="E:Telerik.Sitefinity.Packaging.Package.Archive.ArchivePackageTransfer.Archived">
+            <inheritdoc />
+        </member>
+        <member name="E:Telerik.Sitefinity.Packaging.Package.Archive.ArchivePackageTransfer.Extracting">
+            <inheritdoc />
+        </member>
+        <member name="E:Telerik.Sitefinity.Packaging.Package.Archive.ArchivePackageTransfer.Extracted">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Package.Archive.ArchivePackageTransfer.PackagingArchiveManager">
+            <summary>
+            Gets an instance of <see cref="T:Telerik.Sitefinity.Packaging.Package.Archive.IPackagingArchiveManager"/> packaging archive manager.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Package.Archive.ArchivePackageTransfer.ItemLinks">
+            <summary>
+            Gets or sets a collection that represents imported structures and content items as item links.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.Archive.ArchivePackageTransfer.Export(Telerik.Sitefinity.Packaging.Package.Archive.IArchiveExportConfiguration)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.Archive.ArchivePackageTransfer.Import(Telerik.Sitefinity.Packaging.Package.Archive.IArchiveImportConfiguration)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.Archive.ArchivePackageTransfer.Upload(System.String,System.IO.Stream)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.Archive.ArchivePackageTransfer.CreateStructureTransferFromContainerRegistration(Telerik.Microsoft.Practices.Unity.RegisterEventArgs)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.Archive.ArchivePackageTransfer.ImportFromDirectory(System.IO.DirectoryInfo,Telerik.Sitefinity.Packaging.Package.IImportConfiguration)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.Archive.ArchivePackageTransfer.TryImportStructureInternal(Telerik.Sitefinity.Packaging.Structure.IStructureTransfer,System.IO.DirectoryInfo,System.String,System.Collections.Generic.List{System.String},Telerik.Sitefinity.SyncLock.LockRegion{Telerik.Sitefinity.Packaging.PackagingManager}@)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.Archive.ArchivePackageTransfer.ContentScan(System.IO.DirectoryInfo,Telerik.Sitefinity.Packaging.Package.IImportConfiguration,Telerik.Sitefinity.Packaging.Package.ScanOperation)">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Sitefinity.Packaging.Package.Archive.IArchivePackageTransfer">
+            <summary>
+            Interface that provides methods to Export and Import packages in Sitefinity
+            </summary>
+        </member>
+        <member name="E:Telerik.Sitefinity.Packaging.Package.Archive.IArchivePackageTransfer.ModuleImporting">
+            <summary>
+            <see cref="T:Telerik.Sitefinity.Packaging.Events.IPackagingProgressEvent"/> will be raised before importing the module
+            </summary>
+        </member>
+        <member name="E:Telerik.Sitefinity.Packaging.Package.Archive.IArchivePackageTransfer.ModuleImported">
+            <summary>
+            <see cref="T:Telerik.Sitefinity.Packaging.Events.IPackagingProgressEvent"/> will be raised after importing the module
+            </summary>
+        </member>
+        <member name="E:Telerik.Sitefinity.Packaging.Package.Archive.IArchivePackageTransfer.ContentImporting">
+            <summary>
+            <see cref="T:Telerik.Sitefinity.Packaging.Events.IPackagingProgressEvent"/> will be raised before importing the content
+            </summary>
+        </member>
+        <member name="E:Telerik.Sitefinity.Packaging.Package.Archive.IArchivePackageTransfer.ContentImported">
+            <summary>
+            <see cref="T:Telerik.Sitefinity.Packaging.Events.IPackagingProgressEvent"/> will be raised after importing the content
+            </summary>
+        </member>
+        <member name="E:Telerik.Sitefinity.Packaging.Package.Archive.IArchivePackageTransfer.Archiving">
+            <summary>
+            <see cref="T:Telerik.Sitefinity.Packaging.Events.IPackagingProgressEvent"/> will be raised before archiving the exported structure and content
+            </summary>
+        </member>
+        <member name="E:Telerik.Sitefinity.Packaging.Package.Archive.IArchivePackageTransfer.Archived">
+            <summary>
+            <see cref="T:Telerik.Sitefinity.Packaging.Events.IPackagingProgressEvent"/> will be raised after archiving the exported structure and content
+            </summary>
+        </member>
+        <member name="E:Telerik.Sitefinity.Packaging.Package.Archive.IArchivePackageTransfer.Extracting">
+            <summary>
+            <see cref="T:Telerik.Sitefinity.Packaging.Events.IPackagingProgressEvent"/> will be raised before extracting the archive
+            </summary>
+        </member>
+        <member name="E:Telerik.Sitefinity.Packaging.Package.Archive.IArchivePackageTransfer.Extracted">
+            <summary>
+            <see cref="T:Telerik.Sitefinity.Packaging.Events.IPackagingProgressEvent"/> will be raised after extracted the archive
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.Archive.IArchivePackageTransfer.Upload(System.String,System.IO.Stream)">
+            <summary>
+            Uploads the archive for import.
+            </summary>
+            <param name="archiveName">Name of the archive.</param>
+            <param name="inputStream">The input stream.</param>
+        </member>
+        <member name="T:Telerik.Sitefinity.Packaging.Package.Archive.IPackagingArchiveManager">
+            <summary>
+            Interface that provides utility methods to archive packaging in Sitefinity.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.Archive.IPackagingArchiveManager.CreateArchiveFromDirectory(System.String,System.Boolean)">
+            <summary>
+            Creates archive by given directory path.
+            </summary>
+            <param name="directoryPath">The directory path.</param>
+            <param name="deleteDirectory">A value indicating whether the directory should be deleted.</param>
+            <returns>The archive file full path.</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.Archive.IPackagingArchiveManager.ExtractToDirectory(System.String)">
+            <summary>
+            Extracts archive by given name (with or without extension) to current archive directory.
+            </summary>
+            <param name="archiveName">The archive name.</param>
+            <returns>The extracted directory path.</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.Archive.IPackagingArchiveManager.IsZipFile(System.String)">
+            <summary>
+            Method indicating whether the file is zip or not.
+            </summary>
+            <param name="filePath">The file path.</param>
+            <returns>A value indicating whether the file is zip or not.</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.Archive.IPackagingArchiveManager.GetArchiveFullPath(System.String)">
+            <summary>
+            Gets full path by given archive name.
+            </summary>
+            <param name="archiveName">The archive name.</param>
+            <returns>The full path of the archive.</returns>
+        </member>
+        <member name="T:Telerik.Sitefinity.Packaging.Package.PackagingArchiveManager">
+            <summary>
+            Class that provides utility methods to archive packaging in Sitefinity.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.PackagingArchiveManager.CreateArchiveFromDirectory(System.String,System.Boolean)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.PackagingArchiveManager.ExtractToDirectory(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.PackagingArchiveManager.IsZipFile(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.PackagingArchiveManager.GetArchiveFullPath(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.ContentDeleteJob.#ctor(Telerik.Sitefinity.Packaging.Content.IContentTransfer)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Packaging.Package.ContentDeleteJob"/> class.
+            </summary>
+            <param name="contentTransfer">The content transfer.</param>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Package.ContentDeleteJob.ContentTransfer">
+            <summary>
+            Gets or sets the content transfer.
+            </summary>
+            <value>
+            The content transfer.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Package.ContentDeleteJob.Dependencies">
+            <inheritdoc/>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Package.ContentDeleteJob.Keys">
+            <inheritdoc/>
+        </member>
+        <member name="T:Telerik.Sitefinity.Packaging.Package.ContentImportJob">
+            <summary>
+            Class containing content import operation objects
+            </summary>
+            <seealso cref="T:Telerik.Sitefinity.Packaging.Package.IHasDependencies" />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.ContentImportJob.#ctor(Telerik.Sitefinity.Packaging.Content.IContentTransfer,System.IO.FileInfo,Telerik.Sitefinity.Packaging.Content.ImportParams)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Packaging.Package.ContentImportJob"/> class.
+            </summary>
+            <param name="contentTransfer">The content transfer.</param>
+            <param name="file">The file.</param>
+            <param name="importParams">The import parameters.</param>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Package.ContentImportJob.ContentTransfer">
+            <summary>
+            Gets or sets the content transfer.
+            </summary>
+            <value>
+            The content transfer.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Package.ContentImportJob.File">
+            <summary>
+            Gets or sets the file.
+            </summary>
+            <value>
+            The file.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Package.ContentImportJob.ImportParams">
+            <summary>
+            Gets or sets the import parameters.
+            </summary>
+            <value>
+            The import parameters.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Package.ContentImportJob.Dependencies">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Package.ContentImportJob.Keys">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Sitefinity.Packaging.Package.Deployment.DeploymentPackageTransfer">
+            <summary>
+            Methods to Export and Import packages in Sitefinity
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.Deployment.DeploymentPackageTransfer.Export(Telerik.Sitefinity.Packaging.Package.Deployment.IDeploymentExportConfiguration)">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Sitefinity.Packaging.Package.Deployment.IDeploymentPackageTransfer">
+            <summary>
+            Interface that provides methods to Export and Import packages in Sitefinity
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.FileSystemVersionManager.GetFolderVersion(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.FileSystemVersionManager.CreateOrUpdateFolderVersion(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.FileSystemVersionManager.SetFolderVersion(System.String,Telerik.Sitefinity.Packaging.Package.FolderVersion)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.FileSystemVersionManager.HasFolderVersion(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.FileSystemVersionManager.RemoveFolderVersion(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.FileSystemVersionManager.GetFileVersion(System.String,System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.FileSystemVersionManager.CreateOrUpdateFileVersion(System.String,System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.FileSystemVersionManager.RemoveVersionTrackingForMissingFiles(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.FileSystemVersionManager.GetOrCreateFolderVersion(System.String)">
+            <summary>
+            Gets or creates a <see cref="T:Telerik.Sitefinity.Packaging.Package.FolderVersion"/> version item for the directory located at the provided path.
+            </summary>
+            <param name="directoryPath">The path of the directory. Cannot be null, empty or white space.</param>
+            <returns>The <see cref="T:Telerik.Sitefinity.Packaging.Package.FolderVersion"/> version item.</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.FileSystemVersionManager.GetFileVersion(Telerik.Sitefinity.Packaging.Package.FolderVersion,System.String)">
+            <summary>
+            Gets the <see cref="T:Telerik.Sitefinity.Packaging.Package.FileVersion"/> version item for the file with the provided name that is 
+            part of the provided <see cref="T:Telerik.Sitefinity.Packaging.Package.FolderVersion"/> version item.
+            </summary>
+            <param name="folderVersion">The <see cref="T:Telerik.Sitefinity.Packaging.Package.FolderVersion"/> version item. Cannot be null.</param>
+            <param name="fileName">The name of the file. Cannot be null, empty or white space.</param>
+            <returns>The <see cref="T:Telerik.Sitefinity.Packaging.Package.FolderVersion"/> version item.</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.FileSystemVersionManager.GetOrCreateFileVersion(Telerik.Sitefinity.Packaging.Package.FolderVersion,System.String)">
+            <summary>
+            Gets or creates a <see cref="T:Telerik.Sitefinity.Packaging.Package.FileVersion"/> version item for the file with the provided name that is 
+            part of the provided <see cref="T:Telerik.Sitefinity.Packaging.Package.FolderVersion"/> version item.
+            </summary>
+            <param name="folderVersion">The <see cref="T:Telerik.Sitefinity.Packaging.Package.FolderVersion"/> version item. Cannot be null.</param>
+            <param name="fileName">The name of the file. Cannot be null, empty or white space.</param>
+            <returns>The <see cref="T:Telerik.Sitefinity.Packaging.Package.FolderVersion"/> version item.</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.FileSystemVersionManager.ChangeVersion(Telerik.Sitefinity.Packaging.Package.IVersionItem)">
+            <summary>
+            Changes the version of the provided <see cref="T:Telerik.Sitefinity.Packaging.Package.IVersionItem"/> version item.
+            </summary>
+            <param name="versionItem">The version item. Cannot be null.</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.FileSystemVersionManager.ExistsOnFileSystem(System.String)">
+            <summary>
+            Returns whether or not the file at the provided path exists.
+            </summary>
+            <param name="filePath">The file path. Cannot be null, empty or white space.</param>
+            <returns>True if the file exists. False if it doesn't.</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.FileSystemVersionManager.ReadVersionFileFromFileSystem(System.String)">
+            <summary>
+            Reads the version file at the directory located at the provided path and returns a deserialized <see cref="T:Telerik.Sitefinity.Packaging.Package.FolderVersion"/> version item.
+            </summary>
+            <param name="directoryPath">The path of the directory which version should be set. Cannot be null, empty or white space.</param>
+            <returns>The <see cref="T:Telerik.Sitefinity.Packaging.Package.FolderVersion"/> version item.</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.FileSystemVersionManager.SaveVersionFileOnFileSystem(System.String,Telerik.Sitefinity.Packaging.Package.FolderVersion)">
+            <summary>
+            Serializes and saves the provided <see cref="T:Telerik.Sitefinity.Packaging.Package.FolderVersion"/> version item
+            into the version file for the directory located at the provided path.
+            </summary>
+            <param name="directoryPath">The path of the directory which version should be set. Cannot be null, empty or white space.</param>
+            <param name="folderVersionFile">The <see cref="T:Telerik.Sitefinity.Packaging.Package.FolderVersion"/> version item. Cannot be null.</param>
+            <returns>The saved <see cref="T:Telerik.Sitefinity.Packaging.Package.FolderVersion"/> version item.</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.FileSystemVersionManager.RemoveFolderVersionFileFromFileSystem(System.String)">
+            <summary>
+            Removes the version file for the directory located at the provided path.
+            </summary>
+            <param name="directoryPath">The path of the directory which version should be set. Cannot be null, empty or white space.</param>
+            <returns>True if the version file has been removed. False if not.</returns>
+        </member>
+        <member name="T:Telerik.Sitefinity.Packaging.Package.FileTransferObject">
+            <summary>
+            Object used for transferring package streams
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.FileTransferObject.#ctor(System.IO.FileInfo,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Packaging.Package.FileTransferObject" /> class.
+            </summary>
+            <param name="fileInfo">The file info of the file to be read</param>
+            <param name="name">The name of the package object</param>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Package.FileTransferObject.Name">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Package.FileTransferObject.LastModified">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.FileTransferObject.GetStream(System.DateTime,System.Boolean)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.IFileSystemVersionManager.GetFolderVersion(System.String)">
+            <summary>
+            Gets the <see cref="T:Telerik.Sitefinity.Packaging.Package.FolderVersion"/> version item for the directory located at the provided path.
+            </summary>
+            <param name="directoryPath">The path of the directory. Cannot be null, empty or white space.</param>
+            <returns>The <see cref="T:Telerik.Sitefinity.Packaging.Package.FolderVersion"/> version item.</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.IFileSystemVersionManager.SetFolderVersion(System.String,Telerik.Sitefinity.Packaging.Package.FolderVersion)">
+            <summary>
+            Sets the provided <see cref="T:Telerik.Sitefinity.Packaging.Package.FolderVersion"/> version item for the directory located at the provided path.
+            </summary>
+            <param name="directoryPath">The path of the directory which version should be set. Cannot be null, empty or white space.</param>
+            <param name="folderVersion">The <see cref="T:Telerik.Sitefinity.Packaging.Package.FolderVersion"/> version item. Cannot be null.</param>
+            <returns>The set <see cref="T:Telerik.Sitefinity.Packaging.Package.FolderVersion"/> version item.</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.IFileSystemVersionManager.HasFolderVersion(System.String)">
+            <summary>
+            Returns whether or not the directory located at the provided path has version tracking.
+            </summary>
+            <param name="directoryPath">The path of the directory. Cannot be null, empty or white space.</param>
+            <returns>True if a <see cref="T:Telerik.Sitefinity.Packaging.Package.FolderVersion"/> version item exists. False if it doesn't.</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.IFileSystemVersionManager.RemoveFolderVersion(System.String)">
+            <summary>
+            Removes version tracking for the directory located at the provided path.
+            </summary>
+            <param name="directoryPath">The path of the directory. Cannot be null, empty or white space.</param>
+            <returns>True if FolderVersion has been removed. False if not.</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.IFileSystemVersionManager.CreateOrUpdateFolderVersion(System.String)">
+            <summary>
+            Creates or updates the version of the <see cref="T:Telerik.Sitefinity.Packaging.Package.FolderVersion"/> version item for 
+            the directory located at the provided path.
+            </summary>
+            <param name="directoryPath">The path of the directory. Cannot be null, empty or white space.</param>
+            <returns>The <see cref="T:Telerik.Sitefinity.Packaging.Package.FolderVersion"/> version item.</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.IFileSystemVersionManager.GetFileVersion(System.String,System.String)">
+            <summary>
+            Gets the <see cref="T:Telerik.Sitefinity.Packaging.Package.FileVersion"/> version item for the file with the provided name that is located at the provided path.
+            </summary>
+            <param name="directoryPath">>The path of the directory. Cannot be null, empty or white space.</param>
+            <param name="fileName">The name of the file. Cannot be null, empty or white space.</param>
+            <returns>The <see cref="T:Telerik.Sitefinity.Packaging.Package.FileVersion"/> version item.</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.IFileSystemVersionManager.CreateOrUpdateFileVersion(System.String,System.String)">
+            <summary>
+            Creates or updates the version of the <see cref="T:Telerik.Sitefinity.Packaging.Package.FileVersion"/> version item for 
+            the file located at the provided path.
+            </summary>
+            <param name="directoryPath">The path of the directory. Cannot be null, empty or white space.</param>
+            <param name="fileName">The name of the file. Cannot be null, empty or white space.</param>
+            <returns>The <see cref="T:Telerik.Sitefinity.Packaging.Package.FileVersion"/> version item.</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.IFileSystemVersionManager.RemoveVersionTrackingForMissingFiles(System.String)">
+            <summary>
+            Removes version tracking for files that no longer exists in the directory located at the provided path.
+            </summary>
+            <param name="directoryPath">The path of the directory. Cannot be null, empty or white space.</param>
+            <returns>True if version tracking for missing files has been removed. False if not.</returns>
+        </member>
+        <member name="T:Telerik.Sitefinity.Packaging.Package.IHasDependencies">
+            <summary>
+            Interface that marks objects with dependencies
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Package.IHasDependencies.Dependencies">
+            <summary>
+            Gets or sets the dependencies.
+            </summary>
+            <value>
+            The dependencies.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Package.IHasDependencies.Keys">
+            <summary>
+            Gets or sets the dependency keys.
+            </summary>
+            <value>
+            The dependency keys.
+            </value>
+        </member>
+        <member name="E:Telerik.Sitefinity.Packaging.Package.IPackageTransfer`2.ModuleExporting">
+            <summary>
+            <see cref="T:Telerik.Sitefinity.Packaging.Events.IPackagingProgressEvent"/> will be raised before exporting the module
+            </summary>
+        </member>
+        <member name="E:Telerik.Sitefinity.Packaging.Package.IPackageTransfer`2.ModuleExported">
+            <summary>
+            <see cref="!:IModuleExportedEvent"/> will be raised after exporting the module
+            </summary>
+        </member>
+        <member name="E:Telerik.Sitefinity.Packaging.Package.IPackageTransfer`2.ContentExporting">
+            <summary>
+            <see cref="T:Telerik.Sitefinity.Packaging.Events.IPackagingProgressEvent"/> will be raised before exporting the content
+            </summary>
+        </member>
+        <member name="E:Telerik.Sitefinity.Packaging.Package.IPackageTransfer`2.ContentExported">
+            <summary>
+            <see cref="T:Telerik.Sitefinity.Packaging.Events.IPackagingProgressEvent"/> will be raised after exporting the content
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.Packaging.Package.IProgressTracker">
+            <summary>
+            Interface that provides methods for tracking the progress of the import and export operations
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.IProgressTracker.Reset">
+            <summary>
+            Resets this instance with values for totalSteps = 0 and currentStep = 0
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.IProgressTracker.Reset(System.Int32,System.Int32)">
+            <summary>
+            Resets this instance with the specified values
+            </summary>
+            <param name="totalSteps">The total steps.</param>
+            <param name="currentStep">The current step.</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.IProgressTracker.IncrementTotalSteps(System.Int32)">
+            <summary>
+            Increments the total steps.
+            </summary>
+            <param name="increment">The increment.</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.IProgressTracker.IncrementCurrentStep">
+            <summary>
+            Increments the current step by one
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.IProgressTracker.GetCurrentStep">
+            <summary>
+            Gets the current step.
+            </summary>
+            <returns>The current step.</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.IProgressTracker.GetProgressPercentage">
+            <summary>
+            Gets the progress percentage.
+            </summary>
+            <returns>The progress in percentage.</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.IProgressTracker.GetProgressPercentageTranslatedWithinRange(System.Int32,System.Int32)">
+            <summary>
+            Gets the progress percentage.
+            </summary>
+            <param name="percentageRangeStart">The percentage range start.</param>
+            <param name="percentageRangeEnd">The percentage range end.</param>
+            <returns>The progress in percentage.</returns>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Package.IVersionItem.Version">
+            <summary>
+            Gets or sets the <see cref="T:System.Guid"/> object containing the version numbers.
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.Packaging.Package.PackageTransferBase`2">
+            <summary>
+            Methods to Export and Import packages in Sitefinity
+            </summary>
+        </member>
+        <member name="E:Telerik.Sitefinity.Packaging.Package.PackageTransferBase`2.ModuleExported">
+            <inheritdoc />
+        </member>
+        <member name="E:Telerik.Sitefinity.Packaging.Package.PackageTransferBase`2.ContentExporting">
+            <inheritdoc />
+        </member>
+        <member name="E:Telerik.Sitefinity.Packaging.Package.PackageTransferBase`2.ContentExported">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Package.PackageTransferBase`2.DeploymentFolderPath">
+            <summary>
+            Gets location of the packages
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Package.PackageTransferBase`2.StructureTransfers">
+            <summary>
+            Gets the collection of structure transfer objects
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Package.PackageTransferBase`2.ContentTransfers">
+            <summary>
+            Gets the collection of content transfer objects
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Package.PackageTransferBase`2.SiteRoot">
+            <summary>
+            Gets the site root
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Package.PackageTransferBase`2.PckgManager">
+            <summary>
+            Gets the instance of PackagingManager
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Package.PackageTransferBase`2.ProgressTracker">
+            <summary>
+            Gets the progress tracker.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.PackageTransferBase`2.Export(`0)">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Sitefinity.Packaging.Package.ProgressTracker">
+            <summary>
+            Methods to track progress of import and export operations
+            </summary>
+            <seealso cref="T:Telerik.Sitefinity.Packaging.Package.IProgressTracker" />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.ProgressTracker.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Packaging.Package.ProgressTracker"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.ProgressTracker.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Packaging.Package.ProgressTracker"/> class.
+            </summary>
+            <param name="totalSteps">The total steps.</param>
+            <param name="currentStep">The current step.</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.ProgressTracker.Reset">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.ProgressTracker.Reset(System.Int32,System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.ProgressTracker.IncrementTotalSteps(System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.ProgressTracker.GetCurrentStep">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.ProgressTracker.IncrementCurrentStep">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.ProgressTracker.GetProgressPercentage">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.ProgressTracker.GetProgressPercentageTranslatedWithinRange(System.Int32,System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Sitefinity.Packaging.Package.StructureDeleteJob">
+            <summary>
+            Class containing structure delete operation objects
+            </summary>
+            <seealso cref="T:Telerik.Sitefinity.Packaging.Package.IHasDependencies" />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.StructureDeleteJob.#ctor(Telerik.Sitefinity.Packaging.Structure.IStructureTransfer)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Packaging.Package.StructureDeleteJob"/> class.
+            </summary>
+            <param name="structureTransfer">The structure transfer.</param>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Package.StructureDeleteJob.StructureTransfer">
+            <summary>
+            Gets or sets the structure transfer.
+            </summary>
+            <value>
+            The structure transfer.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Package.StructureDeleteJob.Dependencies">
+            <inheritdoc/>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Package.StructureDeleteJob.Keys">
+            <inheritdoc/>
+        </member>
+        <member name="T:Telerik.Sitefinity.Packaging.Package.StructureImportJob">
+            <summary>
+            Class containing structure import operation objects
+            </summary>
+            <seealso cref="T:Telerik.Sitefinity.Packaging.Package.IHasDependencies" />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Package.StructureImportJob.#ctor(Telerik.Sitefinity.Packaging.Structure.IStructureTransfer,System.IO.DirectoryInfo)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Packaging.Package.StructureImportJob"/> class.
+            </summary>
+            <param name="structureTransfer">The structure transfer.</param>
+            <param name="directory">The directory.</param>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Package.StructureImportJob.StructureTransfer">
+            <summary>
+            Gets or sets the structure transfer.
+            </summary>
+            <value>
+            The structure transfer.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Package.StructureImportJob.Directory">
+            <summary>
+            Gets or sets the directory.
+            </summary>
+            <value>
+            The directory.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Package.StructureImportJob.Dependencies">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Package.StructureImportJob.Keys">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Sitefinity.Packaging.PackagingExceptions">
+            <summary>
+            A static component used to handle exceptions that occurred in the Packaging module.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.PackagingExceptions.HandleException(System.Exception,System.String)">
+            <summary>
+            Handles the specified <see cref="T:System.Exception" />
+            object according to the rules configured for the translations policy.
+            </summary>
+            <param name="exceptionToHandle">An <see cref="T:System.Exception" /> object.</param>
+            <param name="policyName">Name of the policy.</param>
+            <returns>
+            Whether or not a re-throw is recommended.
+            </returns>
+            <seealso cref="!:ExceptionManager.Process" />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.PackagingExceptions.HandleException(System.Exception,System.String,System.Exception@)">
+            <summary>
+            Handles the specified <see cref="T:System.Exception" />
+            object according to the rules configured for the translations policy.
+            </summary>
+            <param name="exceptionToHandle">An <see cref="T:System.Exception" /> object.</param>
+            <param name="policyName">Name of the policy.</param>
+            <param name="exceptionToThrow">The new <see cref="T:System.Exception" /> to throw, if any.</param>
+            <returns>
+            Whether or not a re-throw is recommended.
+            </returns>
+            <remarks>
+            If a re-throw is recommended and <paramref name="exceptionToThrow" /> is <see langword="null" />,
+            then the original exception <paramref name="exceptionToHandle" /> should be re-thrown; otherwise,
+            the exception returned in <paramref name="exceptionToThrow" /> should be thrown.
+            </remarks>
+            <seealso cref="!:ExceptionManager.HandleException(Exception, string)" />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.PackagingExceptions.Process(System.Action,System.String)">
+            <summary>
+            Executes the supplied delegate <paramref name="action" /> and handles
+            any thrown exception according to the rules configured for the translations policy.
+            </summary>
+            <param name="action">The delegate to execute.</param>
+            <param name="policyName">Name of the policy.</param>
+            <seealso cref="!:ExceptionManager.HandleException(Exception, string)" />
+        </member>
+        <member name="T:Telerik.Sitefinity.Packaging.PackagingModule">
+            <summary>
+            Packaging module for Sitefinity
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.PackagingModule.LandingPageId">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.PackagingModule.Managers">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.PackagingModule.Install(Telerik.Sitefinity.Abstractions.SiteInitializer)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.PackagingModule.Uninstall(Telerik.Sitefinity.Abstractions.SiteInitializer)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.PackagingModule.Initialize(Telerik.Sitefinity.Services.ModuleSettings)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.PackagingModule.Telerik#Sitefinity#Services#IMultisiteContextModule#IsPageUseSiteContext(Telerik.Sitefinity.Web.PageSiteNode)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.PackagingModule.Telerik#Sitefinity#Services#IMultisiteContextModule#IsAccessible(Telerik.Sitefinity.Web.PageSiteNode)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.PackagingModule.GetModuleConfig">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.PackagingModule.Bootstrapper_Bootstrapped(System.Object,System.EventArgs)">
+            <summary>
+            Handles the Initialized event of the Bootstrapper.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:Telerik.Sitefinity.Data.ExecutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.PackagingModule.RegisterPackagingRestrictions">
+            <summary>
+            Registers the packaging module restrictions.
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.Packaging.PackagingModuleReport">
+            <summary>
+            Packaging Module Report
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.PackagingModuleReport.ModuleName">
+            <summary>
+            Gets or sets the module name
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.PackagingModuleReport.AddonsCount">
+            <summary>
+            Gets or sets the count of addons
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.PackagingModuleReport.EnabledAddonsCount">
+            <summary>
+            Gets or sets enabled addons count
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.Packaging.Serialization.CMISReader">
+            <summary>
+            Implements functionality for reading XML CMIS schema from <see cref="T:System.IO.Stream"/>.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Serialization.CMISReader.Read(System.IO.Stream)">
+            <summary>
+            Reads from the stream.
+            </summary>
+            <param name="stream">The stream to read from.</param>
+            <returns>Collection of <see cref="T:System.Dynamic.DynamicObject"/></returns>
+        </member>
+        <member name="T:Telerik.Sitefinity.Packaging.Serialization.CMISWriter">
+            <summary>
+            Implements functionality for writing in <see cref="T:System.IO.Stream"/> in XML CMIS schema.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Serialization.CMISWriter.Write(Telerik.Sitefinity.Publishing.WrapperObject)">
+            <summary>
+            Writes the specified transferable object.
+            </summary>
+            <param name="transferableObject">The transferable object.</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Serialization.CMISWriter.BeginWrite">
+            <summary>
+            Writes the start header in the stream.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Serialization.CMISWriter.EndWrite">
+            <summary>
+            Writes the end header in the stream.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Serialization.CMISWriter.Stream">
+            <summary>
+            Sets the stream.
+            </summary>
+            <value>
+            The stream.
+            </value>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Serialization.CMISWriter.ResolveConverter(System.Type,System.String)">
+            <summary>
+            We need to return our own SyncingManager-less implementations of converters without re-registering them.
+            </summary>
+            <param name="type">The type.</param>
+            <param name="prefix">The prefix.</param>
+            <returns>The converter.</returns>
+        </member>
+        <member name="T:Telerik.Sitefinity.Packaging.Serialization.Converters.ContentLinkConverter">
+            <summary>
+            Provides logic for converting <see cref="T:Telerik.Sitefinity.Model.ContentLinks.ContentLink"/>.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Serialization.Converters.ContentLinkConverter.Serialize(System.Object,System.Type,System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Serialization.Converters.ContentLinkConverter.Deserialize(System.String,System.Type,System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Serialization.Converters.ContentLinkConverter.SetApplicationName(Telerik.Sitefinity.Model.ContentLinks.ContentLink)">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Sitefinity.Packaging.Serialization.Converters.RelatedItemsConverter">
+            <summary>
+            Provides logic for converting related items.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Serialization.Converters.RelatedItemsConverter.Serialize(System.Object,System.Type,System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Serialization.Converters.RelatedItemsConverter.ImportProperty(System.Object,System.ComponentModel.PropertyDescriptor,System.Object,System.Type,System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Serialization.Converters.RelatedItemsConverter.Deserialize(System.String,System.Type,System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Serialization.Converters.RelatedItemsConverter.GetContentLinks(Telerik.Sitefinity.Publishing.WrapperObject,System.String)">
+            <summary>
+            Gets the content links.
+            </summary>
+            <param name="item">The item.</param>
+            <param name="fieldName">Name of the field.</param>
+            <returns>The content links.</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Serialization.Converters.RelatedItemsConverter.SetApplicationName(Telerik.Sitefinity.Model.ContentLinks.ContentLink)">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Sitefinity.Packaging.Serialization.IReader">
+            <summary>
+            Defines API for reading transferable objects.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Serialization.IReader.Read(System.IO.Stream)">
+            <summary>
+            Reads the transferable objects.
+            </summary>
+            <param name="stream">The stream to read from.</param>
+            <returns>Collection of <see cref="T:Telerik.Sitefinity.Publishing.WrapperObject"/></returns>
+        </member>
+        <member name="T:Telerik.Sitefinity.Packaging.Serialization.IWriter">
+            <summary>
+            Defines API for writing transferable objects.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Serialization.IWriter.Write(Telerik.Sitefinity.Publishing.WrapperObject)">
+            <summary>
+            Writes the specified transferable object.
+            </summary>
+            <param name="transferableObject">The transferable object.</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Serialization.IWriter.BeginWrite">
+            <summary>
+            Writes the start header in the stream.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Serialization.IWriter.EndWrite">
+            <summary>
+            Writes the end header in the stream.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Serialization.IWriter.Stream">
+            <summary>
+            Sets the stream that will be used for writing.
+            </summary>
+            <value>
+            The stream.
+            </value>
+        </member>
+        <member name="T:Telerik.Sitefinity.Packaging.Serialization.SerializationItemFailEventArgs">
+            <summary>
+            Event arguments used for events of failed items.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Serialization.SerializationItemFailEventArgs.#ctor(Telerik.Sitefinity.Publishing.WrapperObject,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Packaging.Serialization.SerializationItemFailEventArgs"/> class.
+            </summary>
+            <param name="item">The item.</param>
+            <param name="ex">The exception.</param>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Serialization.SerializationItemFailEventArgs.Exception">
+            <summary>
+            Gets the exception.
+            </summary>
+            <value>
+            The exception.
+            </value>
+        </member>
+        <member name="T:Telerik.Sitefinity.Packaging.Serialization.SerializationItemEventArgs">
+            <summary>
+            Event arguments used for events per item.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Serialization.SerializationItemEventArgs.#ctor(Telerik.Sitefinity.Publishing.WrapperObject)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Packaging.Serialization.SerializationItemEventArgs"/> class.
+            </summary>
+            <param name="item">The item.</param>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Serialization.SerializationItemEventArgs.Item">
+            <summary>
+            Gets the item.
+            </summary>
+            <value>
+            The item.
+            </value>
+        </member>
+        <member name="T:Telerik.Sitefinity.Packaging.Startup">
+            <summary>
+            Contains the application startup event handlers registering the required components for the packaging module of Sitefinity.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Startup.OnPreApplicationStart">
+            <summary>
+            Called before the Asp.Net application is started. Subscribes for the logging and exception handling configuration related events.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Tasks.PackagingActivateAddonScheduledTask.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Packaging.Tasks.PackagingActivateAddonScheduledTask"/> class.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Tasks.PackagingActivateAddonScheduledTask.AddonId">
+            <summary>
+            Gets or sets the add-on identifier.
+            </summary>
+            <value>
+            The add-on identifier.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Tasks.PackagingActivateAddonScheduledTask.IncludeContent">
+            <summary>
+            Gets or sets a value indicating whether [include content].
+            </summary>
+            <value>
+              <c>true</c> if [include content]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Tasks.PackagingActivateAddonScheduledTask.Deactivate">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:Telerik.Sitefinity.Packaging.Tasks.PackagingActivateAddonScheduledTask"/> is deactivate.
+            </summary>
+            <value>
+              <c>true</c> if deactivate; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Tasks.PackagingActivateAddonScheduledTask.ExecuteTask">
+            <summary>
+            Executes the packaging export task
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Tasks.PackagingActivateAddonScheduledTask.GetCustomData">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Tasks.PackagingActivateAddonScheduledTask.SetCustomData(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Tasks.PackagingDeleteContentScheduledTask.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Packaging.Tasks.PackagingDeleteContentScheduledTask"/> class.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Tasks.PackagingDeleteContentScheduledTask.AddonId">
+            <summary>
+            Gets or sets the add-on identifier.
+            </summary>
+            <value>
+            The add-on identifier.
+            </value>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Tasks.PackagingDeleteContentScheduledTask.ExecuteTask">
+            <summary>
+            Executes the packaging export task
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Tasks.PackagingDeleteContentScheduledTask.GetCustomData">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Tasks.PackagingDeleteContentScheduledTask.SetCustomData(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Tasks.PackagingExportForAddonScheduledTask.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Packaging.Tasks.PackagingExportForAddonScheduledTask"/> class.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Tasks.PackagingExportForAddonScheduledTask.StructureExportConfiguration">
+            <summary>
+            Gets or sets structure export configuration
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Tasks.PackagingExportForAddonScheduledTask.ContentExportConfiguration">
+            <summary>
+            Gets or sets content export configuration
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Tasks.PackagingExportForAddonScheduledTask.AddonName">
+            <summary>
+            Gets or sets the export directory.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Tasks.PackagingExportForAddonScheduledTask.ExecuteTask">
+            <summary>
+            Executes the packaging export task
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Tasks.PackagingExportForAddonScheduledTask.GetCustomData">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Tasks.PackagingExportForAddonScheduledTask.SetCustomData(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Tasks.PackagingExportForArchiveScheduledTask.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Packaging.Tasks.PackagingExportForArchiveScheduledTask"/> class.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Tasks.PackagingExportForArchiveScheduledTask.StructureExportConfiguration">
+            <summary>
+            Gets or sets structure export configuration
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Tasks.PackagingExportForArchiveScheduledTask.ContentExportConfiguration">
+            <summary>
+            Gets or sets content export configuration
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Tasks.PackagingExportForArchiveScheduledTask.ExecuteTask">
+            <summary>
+            Executes the packaging export task
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Tasks.PackagingExportForArchiveScheduledTask.GetCustomData">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Tasks.PackagingExportForArchiveScheduledTask.SetCustomData(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Tasks.PackagingExportForDeploymentScheduledTask.ExecuteTask">
+            <summary>
+            Executes the packaging export task
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Tasks.PackagingImportContentScheduledTask.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Packaging.Tasks.PackagingImportContentScheduledTask"/> class.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Tasks.PackagingImportContentScheduledTask.AddonId">
+            <summary>
+            Gets or sets the add-on identifier.
+            </summary>
+            <value>
+            The add-on identifier.
+            </value>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Tasks.PackagingImportContentScheduledTask.ExecuteTask">
+            <summary>
+            Executes the packaging export task
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Tasks.PackagingImportContentScheduledTask.GetCustomData">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Tasks.PackagingImportContentScheduledTask.SetCustomData(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Tasks.PackagingImportFromArchiveScheduledTask.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Packaging.Tasks.PackagingImportFromArchiveScheduledTask"/> class.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Tasks.PackagingImportFromArchiveScheduledTask.ArchiveName">
+            <summary>
+            Gets or sets the archive name.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Tasks.PackagingImportFromArchiveScheduledTask.ExecuteTask">
+            <summary>
+            Executes the archive import task
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Tasks.PackagingImportFromArchiveScheduledTask.GetCustomData">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Tasks.PackagingImportFromArchiveScheduledTask.SetCustomData(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Sitefinity.Packaging.Web.Services.Dto.AddonInfo">
+            <summary>
+            Add-on response message
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Web.Services.Dto.AddonInfo.GetAddonInfo(Telerik.Sitefinity.Packaging.Model.Addon)">
+            <summary>
+            Gets the add-on information.
+            </summary>
+            <param name="addon">The add-on.</param>
+            <returns>The add-on info</returns>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.Services.Dto.AddonInfo.Id">
+            <summary>
+            Gets or sets the Add-on id
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.Services.Dto.AddonInfo.Name">
+            <summary>
+            Gets or sets the Add-on name
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.Services.Dto.AddonInfo.IsActive">
+            <summary>
+            Gets or sets a value indicating whether the Add-on is active or not
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.Services.Dto.AddonInfo.Description">
+            <summary>
+            Gets or sets the Add-on description
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.Services.Dto.AddonInfo.IsDataImported">
+            <summary>
+            Gets or sets a value indicating whether the Add-on data is imported or not
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.Services.Dto.AddonInfo.Version">
+            <summary>
+            Gets or sets the Add-on version
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.Services.Dto.AddonInfo.Author">
+            <summary>
+            Gets or sets the Add-on author's name
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.Services.Dto.AddonInfo.DataImportedToSiteName">
+            <summary>
+            Gets or sets a value indicating whether the Add-on data is already imported in some website
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.Services.Dto.AddonInfo.Entries">
+            <summary>
+            Gets or sets the Add-on entries
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.Services.Dto.AddonInfo.HasErrorsOnContentImport">
+            <summary>
+            Gets or sets a value indicating whether this instance has errors on content import.
+            </summary>
+            <value>
+            <c>true</c> if this instance has errors on content import; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.Services.Dto.AddonInfo.HasErrorsOnStructureImport">
+            <summary>
+            Gets or sets a value indicating whether this instance has errors on structure import.
+            </summary>
+            <value>
+            <c>true</c> if this instance has errors on structure import; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.Services.Dto.AddonInfo.HasErrorsOnActivate">
+            <summary>
+            Gets or sets a value indicating whether this instance has errors on activate.
+            </summary>
+            <value>
+            <c>true</c> if this instance has errors on activate; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="T:Telerik.Sitefinity.Packaging.Web.Services.Dto.AddonMessage">
+            <summary>
+            Add-on message
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.Services.Dto.AddonMessage.Id">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>
+            The identifier.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.Services.Dto.AddonMessage.IncludeContent">
+            <summary>
+            Gets or sets a value indicating whether [include content].
+            </summary>
+            <value>
+              <c>true</c> if [include content]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.Services.Dto.AddonMessage.Deactivate">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:Telerik.Sitefinity.Packaging.Web.Services.Dto.AddonMessage"/> is deactivate.
+            </summary>
+            <value>
+              <c>true</c> if deactivate; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="T:Telerik.Sitefinity.Packaging.Web.Services.Dto.AddonsMessage">
+            <summary>
+            Add-ons message
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.Services.Dto.ArchiveStatus.Deleted">
+            <summary>
+            Gets or sets a value indicating whether the archive is deleted.
+            </summary>
+            <value>The deleted.</value>
+        </member>
+        <member name="T:Telerik.Sitefinity.Packaging.Web.Services.Dto.ContentMessage">
+            <summary>
+            Add-on message
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.Services.Dto.ContentMessage.AddonId">
+            <summary>
+            Gets or sets the add-on identifier.
+            </summary>
+            <value>
+            The add-on identifier.
+            </value>
+        </member>
+        <member name="T:Telerik.Sitefinity.Packaging.Web.Services.Dto.DownloadExportedArchiveConfigurationMessage">
+            <summary>
+            Export configuration message
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.Packaging.Web.Services.Dto.ExportForAddonConfigurationMessage">
+            <summary>
+            Export configuration message
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.Services.Dto.ExportForAddonConfigurationMessage.StructureExportConfiguration">
+            <summary>
+            Gets or sets structure export configuration
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.Services.Dto.ExportForAddonConfigurationMessage.ContentExportConfiguration">
+            <summary>
+            Gets or sets content export configuration
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.Services.Dto.ExportForAddonConfigurationMessage.ExportDirectory">
+            <summary>
+            Gets or sets the export directory.
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.Packaging.Web.Services.Dto.ExportForArchiveConfigurationMessage">
+            <summary>
+            Export configuration message
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.Services.Dto.ExportForArchiveConfigurationMessage.StructureExportConfiguration">
+            <summary>
+            Gets or sets structure export configuration
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.Services.Dto.ExportForArchiveConfigurationMessage.ContentExportConfiguration">
+            <summary>
+            Gets or sets content export configuration
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.Packaging.Web.Services.Dto.ExportForDeploymentConfigurationMessage">
+            <summary>
+            Export message
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.Packaging.Web.Services.Dto.ExportTypeInfo">
+            <summary>
+            Export type response message
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Web.Services.Dto.ExportTypeInfo.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Packaging.Web.Services.Dto.ExportTypeInfo"/> class.
+            </summary>
+            <param name="displayName">The display name</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Web.Services.Dto.ExportTypeInfo.#ctor(System.String,System.String,System.String,System.Boolean,System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Packaging.Web.Services.Dto.ExportTypeInfo"/> class.
+            </summary>
+            <param name="displayName">The display name</param>
+            <param name="structureTypeName">The structure type name</param>
+            <param name="contentTypeName">The content type name</param>
+            <param name="structureExportSupported">Indicator whether structure export is supported for current type</param>
+            <param name="contentExportSupported">Indicator whether content export is supported for current type</param>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.Services.Dto.ExportTypeInfo.DisplayName">
+            <summary>
+            Gets or sets the Display name
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.Services.Dto.ExportTypeInfo.StructureTypeName">
+            <summary>
+            Gets or sets the structure type name
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.Services.Dto.ExportTypeInfo.ContentTypeName">
+            <summary>
+            Gets or sets the content type name
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.Services.Dto.ExportTypeInfo.StructureExportSupported">
+            <summary>
+            Gets or sets a value indicating whether structure export is supported for current type
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.Services.Dto.ExportTypeInfo.ContentExportSupported">
+            <summary>
+            Gets or sets a value indicating whether content export is supported for current type
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.Services.Dto.ExportTypeInfo.ChildTypes">
+            <summary>
+            Gets a list of child types
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.Packaging.Web.Services.Dto.ImportFromArchiveConfigurationMessage">
+            <summary>
+            Import configuration message
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.Packaging.Web.Services.PackagingServiceStackPlugin">
+            <summary>
+            Represents a ServiceStack plug-in for Packaging service.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Web.Services.PackagingServiceStackPlugin.Register(ServiceStack.IAppHost)">
+            <summary>
+            Adds the Packaging service routes
+            </summary>
+            <param name="appHost">The service stack appHost</param>
+        </member>
+        <member name="T:Telerik.Sitefinity.Packaging.Web.Services.PackagingWebService">
+            <summary>
+             Represents the web service for the packaging functionality.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Web.Services.PackagingWebService.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Packaging.Web.Services.PackagingWebService" /> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Web.Services.PackagingWebService.Get(Telerik.Sitefinity.Packaging.Web.Services.Dto.ExportForDeploymentConfigurationMessage)">
+            <summary>
+            Gets export types
+            </summary>
+            <param name="message">Request message</param>
+            <returns>Export Types</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Web.Services.PackagingWebService.Get(Telerik.Sitefinity.Packaging.Web.Services.Dto.AddonsMessage)">
+            <summary>
+            Gets all add-ons
+            </summary>
+            <param name="message">Request message</param>
+            <returns>Add-ons info</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Web.Services.PackagingWebService.Get(Telerik.Sitefinity.Packaging.Web.Services.Dto.AddonMessage)">
+            <summary>
+            Gets an add-on
+            </summary>
+            <param name="message">Request message</param>
+            <returns>Add-on info</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Web.Services.PackagingWebService.Post(Telerik.Sitefinity.Packaging.Web.Services.Dto.AddonMessage)">
+            <summary>
+            Activates an add-on
+            </summary>
+            <param name="message">The message.</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Web.Services.PackagingWebService.Post(Telerik.Sitefinity.Packaging.Web.Services.Dto.ExportForDeploymentConfigurationMessage)">
+            <summary>
+            Exports packages
+            </summary>
+            <param name="message">Export message</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Web.Services.PackagingWebService.Post(Telerik.Sitefinity.Packaging.Web.Services.Dto.ExportForAddonConfigurationMessage)">
+            <summary>
+            Exports packages
+            </summary>
+            <param name="message">Export configuration message</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Web.Services.PackagingWebService.Post(Telerik.Sitefinity.Packaging.Web.Services.Dto.ExportForArchiveConfigurationMessage)">
+            <summary>
+            Exports packages
+            </summary>
+            <param name="message">Export configuration message</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Web.Services.PackagingWebService.Get(Telerik.Sitefinity.Packaging.Web.Services.Dto.ExportedArchiveInfo)">
+            <summary>
+            Gets the archive's status
+            </summary>
+            <param name="message">The message.</param>
+            <returns>The archive's status</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Web.Services.PackagingWebService.Get(Telerik.Sitefinity.Packaging.Web.Services.Dto.DownloadExportedArchiveConfigurationMessage)">
+            <summary>
+            Exports packages
+            </summary>
+            <param name="message">Export configuration message</param>
+            <returns>HttpResult containing the archive file.</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Web.Services.PackagingWebService.Put(Telerik.Sitefinity.Packaging.Web.Services.Dto.ContentMessage)">
+            <summary>
+            Imports the content of the specified add-on
+            </summary>
+            <param name="message">Request message</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Web.Services.PackagingWebService.Post(Telerik.Sitefinity.Packaging.Web.Services.Dto.UploadArchiveConfigurationMessage)">
+            <summary>
+            Uploads the archive
+            </summary>
+            <param name="message">Request message</param>
+            <returns> The name of the uploaded archive. </returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Web.Services.PackagingWebService.Post(Telerik.Sitefinity.Packaging.Web.Services.Dto.ImportFromArchiveConfigurationMessage)">
+            <summary>
+            Imports the archive
+            </summary>
+            <param name="message">Request message</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Web.Services.PackagingWebService.Delete(Telerik.Sitefinity.Packaging.Web.Services.Dto.ContentMessage)">
+            <summary>
+            Deletes the content of the specified add-on
+            </summary>
+            <param name="message">Request message</param>
+        </member>
+        <member name="T:Telerik.Sitefinity.Packaging.Web.UI.AddonsView">
+            <summary>
+            View used for listing all add-ons
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.UI.AddonsView.LayoutTemplatePath">
+            <summary>
+            Gets or sets the path of the external template to be used by the control.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.UI.AddonsView.LayoutTemplateName">
+            <summary>
+            Gets the name of the embedded layout template.
+            </summary>
+            <remarks>
+            Override this property to change the embedded template to be used with the dialog
+            </remarks>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.UI.AddonsView.AddonPageUrlHiddenField">
+            <summary>
+            Gets a reference to the html element that serves URL for single add-on page hidden field
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.UI.AddonsView.AddonsServiceUrlHiddenField">
+            <summary>
+            Gets the reference to the export types service URL hidden field
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.UI.AddonsView.TagKey">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Web.UI.AddonsView.GetScriptDescriptors">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Web.UI.AddonsView.GetScriptReferences">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Web.UI.AddonsView.InitializeControls(Telerik.Sitefinity.Web.UI.GenericContainer)">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Sitefinity.Packaging.Web.UI.AddonView">
+            <summary>
+            View used for showing an add-ons
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.UI.AddonView.LayoutTemplatePath">
+            <summary>
+            Gets or sets the path of the external template to be used by the control.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.UI.AddonView.LayoutTemplateName">
+            <summary>
+            Gets the name of the embedded layout template.
+            </summary>
+            <remarks>
+            Override this property to change the embedded template to be used with the dialog
+            </remarks>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.UI.AddonView.AddonIdHiddenField">
+            <summary>
+            Gets the reference to the add-on id hidden field
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.UI.AddonView.CurrentSiteNameHiddenField">
+            <summary>
+            Gets the reference to the current site name hidden field
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.UI.AddonView.AllAddonsButton">
+            <summary>
+            Gets a reference to the html element that serves as a back button to All add-ons
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.UI.AddonView.AddonsServiceUrlHiddenField">
+            <summary>
+            Gets the reference to the export types service URL hidden field
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.UI.AddonView.ContentServiceUrlHiddenField">
+            <summary>
+            Gets the reference to the import of content service URL hidden field
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.UI.AddonView.SheduledTaskProgressServiceUrl">
+            <summary>
+            Gets the reference to the scheduled task service URL hidden field
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.UI.AddonView.ScheduledTaskType">
+            <summary>
+            Gets the reference to the scheduled task full type name
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.UI.AddonView.ImportContentScheduledTaskType">
+            <summary>
+            Gets the reference to the import content scheduled task full type name
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.UI.AddonView.DeleteContentScheduledTaskType">
+            <summary>
+            Gets the reference to the delete content scheduled task full type name
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.UI.AddonView.ActivationButtonsPanel">
+            <summary>
+            Gets the reference to the activation buttons panel
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.UI.AddonView.ImportedToSiteLiteral">
+            <summary>
+            Gets the reference to the imported to site literal
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.UI.AddonView.NotImportedToSiteLiteral">
+            <summary>
+            Gets the reference to the not imported to site literal
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.UI.AddonView.TagKey">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Web.UI.AddonView.GetScriptDescriptors">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Web.UI.AddonView.GetScriptReferences">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Web.UI.AddonView.InitializeControls(Telerik.Sitefinity.Web.UI.GenericContainer)">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Sitefinity.Packaging.Web.UI.Controls.PackagingControlPanel">
+            <summary>
+            Control panel control for the packaging module.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Web.UI.Controls.PackagingControlPanel.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Packaging.Web.UI.Controls.PackagingControlPanel"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Web.UI.Controls.PackagingControlPanel.CreateViews">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Web.UI.Controls.PackagingControlPanel.CreateCustomCommandPanels(System.String,System.Collections.Generic.IList{Telerik.Sitefinity.Web.UI.Backend.ICommandPanel})">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Sitefinity.Packaging.Web.UI.Controls.PackagingCommandPanel">
+            <summary>
+            The control that represents the command panel of the packaging module.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Web.UI.Controls.PackagingCommandPanel.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Packaging.Web.UI.Controls.PackagingCommandPanel" /> class.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.UI.Controls.PackagingCommandPanel.ControlPanel">
+            <summary>
+            Gets or sets reference to the control panel tied to the command panel instance.
+            </summary>
+            <value></value>
+            <remarks>
+            This property is used for communication between the command panel and its control
+            panel.
+            </remarks>
+            <example>
+            You can refer to <see cref="T:Telerik.Sitefinity.Web.UI.Backend.ICommandPanel">ICommandPanel</see> interface for more
+            complicated example implementing the whole
+            <see cref="T:Telerik.Sitefinity.Web.UI.Backend.ICommandPanel">ICommandPanel</see> interface.
+            </example>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.UI.Controls.PackagingCommandPanel.LayoutTemplateName">
+            <summary>
+            Gets the name of the layout template.
+            </summary>
+            <value>The name of the layout template.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.UI.Controls.PackagingCommandPanel.DownloadZipLink">
+            <summary>
+            Gets the reference to the link which leads to download zip page.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.UI.Controls.PackagingCommandPanel.ExportForDeploymentLink">
+            <summary>
+            Gets the reference to the link which leads to export for deployment page.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.UI.Controls.PackagingCommandPanel.ExportForAddonLink">
+            <summary>
+            Gets the reference to the link which leads to export for addon page.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.UI.Controls.PackagingCommandPanel.ImportFromZipLink">
+            <summary>
+            Gets the reference to the link which leads to import from zip page.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Web.UI.Controls.PackagingCommandPanel.InitializeControls(System.Web.UI.Control)">
+            <summary>
+            Initializes the controls.
+            </summary>
+            <param name="viewContainer">The view container.</param>
+        </member>
+        <member name="T:Telerik.Sitefinity.Packaging.Web.UI.ExportForArchiveView">
+            <summary>
+            View used for exporting archives
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.UI.ExportForArchiveView.LayoutTemplatePath">
+            <summary>
+            Gets or sets the path of the external template to be used by the control.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.UI.ExportForArchiveView.LayoutTemplateName">
+            <summary>
+            Gets the name of the embedded layout template.
+            </summary>
+            <remarks>
+            Override this property to change the embedded template to be used with the dialog
+            </remarks>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.UI.ExportForArchiveView.ExportTypesServiceUrlHiddenField">
+            <summary>
+            Gets the reference to the export types service URL hidden field
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.UI.ExportForArchiveView.ExportForPackagingServiceUrlHiddenField">
+            <summary>
+            Gets the reference to the export for packaging service URL hidden field
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.UI.ExportForArchiveView.SheduledTaskProgressServiceUrl">
+            <summary>
+            Gets the reference to the scheduled task service URL hidden field
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.UI.ExportForArchiveView.ArchiveStatusServiceUrl">
+            <summary>
+            Gets the reference to the archive status service URL hidden field
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.UI.ExportForArchiveView.ScheduledTaskType">
+            <summary>
+            Gets the reference to the scheduled task full type name
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.UI.ExportForArchiveView.HasWriteAccess">
+            <summary>
+            Gets the reference to the value indicating whether user has write permissions or not
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.UI.ExportForArchiveView.IsInLBMode">
+            <summary>
+            Gets the reference to the value indicating whether site is in Load Balancing mode or not
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.UI.ExportForArchiveView.ExportedArchiveExceedsFileLimitMessage">
+            <summary>
+            Gets the reference to the value indicating whether site is in Load Balancing mode or not
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.UI.ExportForArchiveView.FolderPathWithoutPermissionsLiteral">
+            <summary>
+            Gets the reference to the folder path without permissions literal
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.UI.ExportForArchiveView.TagKey">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Web.UI.ExportForArchiveView.InitializeControls(System.Web.UI.Control)">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Sitefinity.Packaging.Web.UI.ExportForDeploymentView">
+            <summary>
+            View used for exporting packages
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.UI.ExportForDeploymentView.LayoutTemplatePath">
+            <summary>
+            Gets or sets the path of the external template to be used by the control.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.UI.ExportForDeploymentView.LayoutTemplateName">
+            <summary>
+            Gets the name of the embedded layout template.
+            </summary>
+            <remarks>
+            Override this property to change the embedded template to be used with the dialog
+            </remarks>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.UI.ExportForDeploymentView.ExportServiceUrlHiddenField">
+            <summary>
+            Gets the reference to the export service URL hidden field
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.UI.ExportForDeploymentView.SheduledTaskProgressServiceUrl">
+            <summary>
+            Gets the reference to the scheduled task service URL hidden field
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.UI.ExportForDeploymentView.ScheduledTaskType">
+            <summary>
+            Gets the reference to the scheduled task full type name
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.UI.ExportForDeploymentView.HasWriteAccess">
+            <summary>
+            Gets the reference to the value indicating whether user has write permissions or not
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.UI.ExportForDeploymentView.RootPath">
+            <summary>
+            Gets a reference to the literal control displaying the root path
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.UI.ExportForDeploymentView.ExportFolderPath">
+            <summary>
+            Gets a reference to the literal control displaying the export folder path
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.UI.ExportForDeploymentView.FolderPathWithoutPermissionsLiteral">
+            <summary>
+            Gets the reference to the folder path without permissions literal
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.UI.ExportForDeploymentView.TagKey">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Web.UI.ExportForDeploymentView.InitializeControls(System.Web.UI.Control)">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Sitefinity.Packaging.Web.UI.ExportForPackagingView">
+            <summary>
+            View used for exporting packages
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.UI.ExportForPackagingView.LayoutTemplatePath">
+            <summary>
+            Gets or sets the path of the external template to be used by the control.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.UI.ExportForPackagingView.LayoutTemplateName">
+            <summary>
+            Gets the name of the embedded layout template.
+            </summary>
+            <remarks>
+            Override this property to change the embedded template to be used with the dialog
+            </remarks>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.UI.ExportForPackagingView.ExportTypesServiceUrlHiddenField">
+            <summary>
+            Gets the reference to the export types service URL hidden field
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.UI.ExportForPackagingView.ExportForPackagingServiceUrlHiddenField">
+            <summary>
+            Gets the reference to the export for packaging service URL hidden field
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.UI.ExportForPackagingView.SheduledTaskProgressServiceUrl">
+            <summary>
+            Gets the reference to the scheduled task service URL hidden field
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.UI.ExportForPackagingView.ScheduledTaskType">
+            <summary>
+            Gets the reference to the scheduled task full type name
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.UI.ExportForPackagingView.HasWriteAccess">
+            <summary>
+            Gets the reference to the value indicating whether user has write permissions or not
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.UI.ExportForPackagingView.ExportPathLiteral">
+            <summary>
+            Gets the reference to the export path literal
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.UI.ExportForPackagingView.ExportedAddonPathLiteral">
+            <summary>
+            Gets the reference to the exported addon path literal
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.UI.ExportForPackagingView.FolderPathWithoutPermissionsLiteral">
+            <summary>
+            Gets the reference to the folder path without permissions literal
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.UI.ExportForPackagingView.TagKey">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Web.UI.ExportForPackagingView.InitializeControls(System.Web.UI.Control)">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Sitefinity.Packaging.Web.UI.ImportFromArchiveView">
+            <summary>
+            View used for importing archives
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.UI.ImportFromArchiveView.LayoutTemplatePath">
+            <summary>
+            Gets or sets the path of the external template to be used by the control.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.UI.ImportFromArchiveView.LayoutTemplateName">
+            <summary>
+            Gets the name of the embedded layout template.
+            </summary>
+            <remarks>
+            Override this property to change the embedded template to be used with the dialog
+            </remarks>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.UI.ImportFromArchiveView.ImportArchiveServiceUrlHiddenField">
+            <summary>
+            Gets the reference to the export types service URL hidden field
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.UI.ImportFromArchiveView.UploadArchiveServiceUrlHiddenField">
+            <summary>
+            Gets the reference to the upload archive service URL hidden field
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.UI.ImportFromArchiveView.SheduledTaskProgressServiceUrl">
+            <summary>
+            Gets the reference to the scheduled task service URL hidden field
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.UI.ImportFromArchiveView.ScheduledTaskType">
+            <summary>
+            Gets the reference to the scheduled task full type name
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.UI.ImportFromArchiveView.HasWriteAccess">
+            <summary>
+            Gets the reference to the value indicating whether user has write permissions or not
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.UI.ImportFromArchiveView.IsInLBMode">
+            <summary>
+            Gets the reference to the value indicating whether site is in Load Balancing mode or not
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.UI.ImportFromArchiveView.UploadFileSizeLimit">
+            <summary>
+            Gets the reference to the maximum upload file size
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.UI.ImportFromArchiveView.FolderPathWithoutPermissionsLiteral">
+            <summary>
+            Gets the reference to the folder path without permissions literal
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Packaging.Web.UI.ImportFromArchiveView.TagKey">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Packaging.Web.UI.ImportFromArchiveView.InitializeControls(System.Web.UI.Control)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,909 @@
+{
+    "MVC\\Views\\Navigation\\NavigationView.Vertical.cshtml":  [
+                                                                   "CFDB555332B84702AA9F0C0AEFBF1D34BBFFBA40CE7294B4976C70A760318DBF",
+                                                                   "A2B8EF946A692442295D4D5C292D69FE5D3BABB13F6E73C1E59F1271D3E4AE02"
+                                                               ],
+    "MVC\\Views\\Form\\Index.cshtml":  [
+                                           "2B186250154B91554D0A4E37EAC82629AE2E58F52370C07073A19B45D9353BC4",
+                                           "15DA64E0248CC46D93BB030399D1EDA8DD9B0869565F7DA3FD6B7630E119322D",
+                                           "FBB866B58159F8D5C51B42ECF56B52CB37618050E5085C116BEC872A12F0465B",
+                                           "E1316642BAF1D9E7EF332790090CE5D19C6F5797E46CECC75463E4B5554B8539",
+                                           "17F59D2A06025850880483FE1A2001CE4F05A5A0AD832A02EF7C9BDFE8084C89",
+                                           "F74A888CA2DFAA25048D7436C80A1E00D46CB2D8BA006BD08DED8195F2BE269B",
+                                           "BA8996D34654D102750231B171FDE7AFBDA92B82864222E8F83C7B1DA1D2551A",
+                                           "758F4BFB458940C8E734DA8190C7D679585BAC0DCEAF999903096345C7A09E98",
+                                           "8E17F3785892C8D19C325F9850502DE8250DE5C13D49FB6F9AA83821381C8F27",
+                                           "AE5A9CD9D8FFC94618C09DE9C5D71E8B0815C5849C6E732AD00A00FC591D1AF4"
+                                       ],
+    "assets\\src\\sitefinity\\sass\\base\\_media.scss":  [
+                                                             "75836A4639648F01552214E986DC696B803C2769491A876EB2C2835299593706",
+                                                             "6C8E936578997B93B1F601BD5CD6AA430092B0D3CEFC3413E6DBEB0CB4433D82",
+                                                             "E3E7D05D9F152A429716C6A379BF965EA51C10190EDBE595FEFB41F1276EE319"
+                                                         ],
+    "assets\\src\\sitefinity\\sass\\tools\\_bootstrap-mixins.scss":  [
+                                                                         "47C4BD9576B9A5470E88C0CF0856864F3711DC75B0049D1BCAB987DB77A9F149",
+                                                                         "EBD462660A4215A33F0D12F19A60B3946A63260E9D1D650864B1B78C3BCD1189"
+                                                                     ],
+    "MVC\\Views\\EmailTextField\\Write.Default.cshtml":  [
+                                                             "8A1A2517FAA5165FD12B9B24C28AA15BE4DB1F73E917E40BB8F7F532A4E90B8C",
+                                                             "C7F55EA71A5677C959C7BD1AC1F0D2C36F3D831C432A2726BC4AB9BD62765997"
+                                                         ],
+    "GridSystem\\Templates\\grid-4+8.html":  [
+                                                 "88E3DBF6971BC46CCFE0D7857CC54BE5749EEFEE06A49C510289032EA7A536B8",
+                                                 "22E2E1EDF2357E961728F772E8D095B278A34E611BDDC6FD4C851CA0F3A2FF5A"
+                                             ],
+    "assets\\src\\sitefinity\\sass\\widgets\\feed\\_sf-feed.scss":  [
+                                                                        "1AB7D2374E7B981DFF2F20209C4FFF1A4862697D603F0D9DA8C32ABD423B9687",
+                                                                        "EFCF5D3A1A5A4BD3F74DF095CFA77E2BD776B220CD78822C6CE28F4123D06E0F"
+                                                                    ],
+    "MVC\\Views\\Breadcrumb\\Breadcrumb.cshtml":  [
+                                                      "3F7AD82ABC90A52A9B765A22FE792AE8CCF3CB3800BC93F4E504F0A93F1776D1",
+                                                      "0F51100DE0C0FADDE1FFB0B2E88C81324D6602367F6653F0DEB51C0030FF1ADF"
+                                                  ],
+    "MVC\\Views\\EmbedCode\\Index.cshtml":  [
+                                                "BF1F8F0C3D72B42CB9B382E9C6C97D02347F411602A0D6A73858B54E482BE85E",
+                                                "64856CED14E9FE12998D6AE3D8C0831C5CF7B39C01D21AA471057ACCD8687BA1"
+                                            ],
+    "MVC\\Views\\CheckboxesField\\Write.Default_Inline.cshtml":  [
+                                                                     "906292A8828AF0593E0B257241ADA1147B6718D337E18963CF021CDA402A3CC4",
+                                                                     "D7BC47F4E867DE1A1BFC61B335D94800826E5FE38F98D8F4EE7A4FDACEB37945",
+                                                                     "7DFFC9510267E2C07CCE9DB83CCC8B91857534296886C00C4294E82D598F26D4",
+                                                                     "D15FC63DE54B200BC967009652D2437737C445CB13F1B3C860562383BE3D2882"
+                                                                 ],
+    "assets\\src\\sitefinity\\sass\\components\\loading\\_loading.scss":  [
+                                                                              "CA408987E09B9ADEED66312504841A5462EE56CB305DAC93CFC501927ABF2496",
+                                                                              "6DE265A31CC33555E5F015C3D813668E87706BBA6F35F2374109F005D1CE554B"
+                                                                          ],
+    "MVC\\Views\\SiteSelector\\SiteSelector.SiteLinks.cshtml":  [
+                                                                    "85A352227B7F41B537D5EEBED029FAE90E2DFA768C24A2C9863D130BB794A110",
+                                                                    "2F5E9A20AAFEBC09FD037F86E7D01BA8D808281990914332FBE2535FDB048FB0"
+                                                                ],
+    "MVC\\Views\\Captcha\\Write.Default.cshtml":  [
+                                                      "554A0CCBD021C4AB881E0F6C835FD9DCF5F6A04960DB93FF4C825B09D982C234",
+                                                      "62D338AF91D759935E38790C0A49566A629DC86C5C893C7C02A15C835B8AB791",
+                                                      "D024670053ECD68E3B43366BC6554555E6D6FC4CBE4CE5D02C75E75FF07348DB",
+                                                      "70D9D373376B5DB0290596CEF2E78E2E386E4A6F74AAE4342F7D47D3AA5BDBC2",
+                                                      "B1C7B03EABD25BEE3CFE3C5197AC7B6DD15135BD38A1331EA88C220B08A1590D"
+                                                  ],
+    "assets\\src\\sitefinity\\sass\\widgets\\navigation\\_sf-stacked.scss":  [
+                                                                                 "178BD63D3AAF62A1EB2CB97F598BCE4A98B3BCB3478D3701FA21B4D66343D818",
+                                                                                 "D8C0E520463925E4B46B9E76728434B781D3549DCC45C842706E61DECA3FA947"
+                                                                             ],
+    "MVC\\Views\\FileField\\Write.Default.cshtml":  [
+                                                        "D71CF2FBE786B4893778305BC321536F0E604F8722BB67DD508F21B4BC059B4F",
+                                                        "DDD45A53AA10FE0107D022EC79CF2D7CA6209C25B07FB8293D104D17FD46E270",
+                                                        "A77F698AE399471A0BE921658B6730606DCFF2C03B5E9DBD2BB2E14D4AB89636",
+                                                        "0EA8D7E449A44CE5C601C4A36E25171BB253A0CAB9AD224512300674208523E1",
+                                                        "D69D60E770B78345D3DA84E6B36DFFF877B72CFD20FB096625B26661ADC3DE64"
+                                                    ],
+    "assets\\dist\\css\\main.min.css":  [
+                                            "D115FC09A82595EEC1DC7D49A093ADD6D3EFB6570D02745EB7CB44152847D28C",
+                                            "6C284447E8D48C7E8E6B31E02139911D843E2A14B5FBAC2CF974EB2C007D442F",
+                                            "560DA1CB33872159E3B0D5758D8EDC7EB26543AC0B3CB33B4413DBA46BCBA435",
+                                            "8EF6886C8CCD004DEA30909B9FECED072CE40623FAF6D0973AFC3A4407DD0CC9",
+                                            "91CA09E0DC5D130A014CEBFCB9CC064A9EFEC890D00FC58DB5EA45B0258DAE24",
+                                            "19FFB2D687A03E62AD90AE385F265743D6D5C18D07FEA5AD661AB68DDBC83B06",
+                                            "423A2B1C51553BA3EAF6C9C8727BBC35287E7FCE158AD220B4D802F4B3EC15A1",
+                                            "5ABEFDF5FF7592DCB12F3110BBB21282DD9E8EC5AB6DED875C9DD7392EA5E54F",
+                                            "F299FCDCDEECA2A9B10CA8BBF1CD2CFF65C24388CB61B68753F8E1973A0BB3AF",
+                                            "8C0F11991A000C64B6A773B74CD05E9168AA25431308444DA9267185100DAF74",
+                                            "631505EB460873CFE229DC2E057C5D4FA81912F44D17435378C8B5DC28AD9B54",
+                                            "7CE389ACF68203323FFFD6F8079E492906E56923F9753F539BC0693758582848"
+                                        ],
+    "MVC\\Views\\VideoGallery\\List.VideoGallery.cshtml":  [
+                                                               "C6405F126AD56DA05E5BFCA230EDFAE094B969B857CB15BC5F8577AF5D331545",
+                                                               "39C43956172755FB9DF9EDBB377DF3F083898950DC358915BA2BA48B4F3A764F"
+                                                           ],
+    "MVC\\Views\\EventScheduler\\Detail.EventDetails.cshtml":  [
+                                                                   "1BFA8856A55A59E47544D084BF866B75F9CACB675EFCF46C7BD1382023C46CC4",
+                                                                   "3675FFB5DFB0985901E6286B0DA657AD2942B72995126DAD89995026084D78FE"
+                                                               ],
+    "MVC\\Views\\ChangePassword\\ChangePassword.ChangePassword.cshtml":  [
+                                                                             "83402EDF6646D50E1207DA4D13B1ECCC81F4E10A90983CF308AD9B00C9870B4B",
+                                                                             "8B6F556A23C0805E74DFC43C75FE0D9C23830D7B528A363955965D3255E16631",
+                                                                             "0FC3154E0569594FCFDC45B23D40AEF6BBB1D69E4398C7D6D5DEBC290789BE25"
+                                                                         ],
+    "MVC\\Views\\Lists\\List.ExpandedList.cshtml":  [
+                                                        "89BD415E2A38EE9389A2EF112BCB72BFBC55D72F739213E7B3EFCCB6E1E199C9",
+                                                        "C7F03A9585DDFB69D16274A94E9DBF317C2AC8D94F1AE87C4BEC712B64BB9255"
+                                                    ],
+    "MVC\\Views\\UsersList\\List.UsersList.cshtml":  [
+                                                         "1516122916FD402D6AE32DB2D761103BF627A986BBD33FD5C37F11BD8AF641FE",
+                                                         "F72F71B8BAD42DDE0A3D4E1AE5A54CE5807EACAE6ED5B8FB875F874661ABFE98"
+                                                     ],
+    "MVC\\Views\\LoginForm\\ResetPassword.ResetPassword.cshtml":  [
+                                                                      "B6E1983F9831F6A1393E1972E97F3C130078428AA60D2ABFAE53DCF2D75E599B",
+                                                                      "97665C1274726B5672D86343681BD35C6A0B33178B2E7DDE359E75D471DBDE17",
+                                                                      "2030A6D73439C17DBC350DA6F7A3E0DA284B063DE5E1729786C168099BEBAE51",
+                                                                      "077C02EE319732EBC3A758A9D61BA90EBC9E7F811B41271B11A595B1628B19E0"
+                                                                  ],
+    "MVC\\Views\\HiddenField\\Write.Default.cshtml":  [
+                                                          "075321D63ADB4B83392FE1231AFC29E142E332B04F069CC4A70839E7505F718A",
+                                                          "56A8A9B7AB7762F130DFE874B954FFB286674F8EF520AA72AC51479D3B51E76E"
+                                                      ],
+    "MVC\\Views\\EmailTextField\\Read.Default.cshtml":  [
+                                                            "084CD40FBC94BB7E2AD2828B42DB5399DB8ABF569D8BDCD47EC5B2F9AF75425B",
+                                                            "22E8232E07D66E9687412173E71BD743403B18483221C09142E2C6AF5B50E3E0"
+                                                        ],
+    "assets\\src\\sitefinity\\sass\\utilities\\_spacing.scss":  [
+                                                                    "F9E20002530B35B1286293BE20665BDB99D11A77C967FCCC0AE79E08206CED95",
+                                                                    "BFFD9A8E3698EF0CE96742BD913A696AABDDB025D9DB72BF0DF41A36EFB0B304"
+                                                                ],
+    "MVC\\Views\\HierarchicalTaxonomy\\HierarchicalTaxonomy.CategoriesList.cshtml":  [
+                                                                                         "B4D70DF13118E8EAC69337DD18C898CD6D4D43498DF27BD47FFF2169E829CEAF",
+                                                                                         "52701E47ED9345F6D506CF94D61631198A27CA99A61E2B6BCF2DA8EFE046ECAF"
+                                                                                     ],
+    "MVC\\Views\\Navigation\\NavigationView.Pills.cshtml":  [
+                                                                "3B0CBB4468764B98F518CD24A88177A800C875916CACD7866BA5FAD3EC4015FA",
+                                                                "D33A8384C2DA21120B18B8AA37C9488ACBDDD84327F7F5A1046671C7DB0F4183",
+                                                                "B36CCC8D8D780BB1ADD7E715DF87197CF5A792929691440006BF80C65B519BB3"
+                                                            ],
+    "MVC\\Views\\Layouts\\default.cshtml":  [
+                                                "7C30649D0D1A0D1FDE2E60C64AD0DC2665A03147E48F867BC7E55FA767517E09",
+                                                "A64F69D6E5BD8C5220B80769D6E3B40A9B671FC448C49625FC303A9F85CC87A3",
+                                                "6659E8AF3474CF6D5FABBDCA05A3DE44D50D3470A0D11282972E06A923076227",
+                                                "5807213C6FAEE70374F52D1E30E39A4EA762B836AB502AFE6ACD47A9C86E55F7"
+                                            ],
+    "MVC\\Views\\VideoGallery\\List.OverlayGallery.cshtml":  [
+                                                                 "8B53899FC292676A68DF7B086B43F289934BF3D27CA1B5CD5A9D48D7759A5B48",
+                                                                 "9B9601CE7604CC04216FA883572C3DD2D25F7765A977D25A6C508D304D81EBD7"
+                                                             ],
+    "MVC\\Views\\News\\List.NewsList.cshtml":  [
+                                                   "065358BC6D5B743D75077EEA8E2557EF4D5C64D76ADB3E3402B54CD97E58910A",
+                                                   "CCEAFCD7BA767B0DBBB574FDD6B43B6F18A157FD37D86A07028E93248DC60185",
+                                                   "521BDF2F69E3ADB7BD121E7EC6E7BD80479F0ED28E852A04B87A71C997EB51A9",
+                                                   "2C388DF412528E47A602D4DDDFD86CCE4AA62135653A427E098B1B85CD359349"
+                                               ],
+    "MVC\\Views\\Reviews\\ReviewsCount.Default.cshtml":  [
+                                                             "BF9BA847EB960CF8C6551808201BE915DD33227729040B073A7A3A05256B3A10",
+                                                             "2F729071A47B70B2E84C8A4E0B89E533B9D4659B7AE1D056AC5A24449DCD0787"
+                                                         ],
+    "MVC\\Views\\Lists\\List.AnchorList.cshtml":  [
+                                                      "E6E90E9266231ECC93729721CA7483EDF1B313BF929CA1D16220E0C18956B9F8",
+                                                      "63A36DEA632A68FF599CDA97EAB3885B3147D832B270E94C98CFE130A5CA6F8F"
+                                                  ],
+    "assets\\src\\project\\sass\\main.scss":  [
+                                                  "048914810521FB8DAA1D3F5496609227A569583E3E03DDBC4028326F5F374F10",
+                                                  "4F9524AACB4C0E83B99FE646F79D62806DE17E00F890D2643EF97FCFC81291FF"
+                                              ],
+    "MVC\\Views\\Lists\\List.SimpleList.cshtml":  [
+                                                      "8C3DC18377C67E6D2FDD0AF1220D58DA957ECA060BADCBB838F95ED82E28CA62",
+                                                      "D006D45D5222636694248487494FE8E092F3BD353B6364FEE72736A104462057"
+                                                  ],
+    "assets\\dist\\js\\popper.min.js":  [
+                                            "26CB7EB0F46B5B7121960589D947626D174F24E0B8E670C87DADC289989FECBC",
+                                            "AE93E3BC3E2F4D40EEBE06B95A10E8EA73E118AA50FF930A3D206B748DC76C01",
+                                            "DBB0EB6C2BCFF4C36EA5666C8C2E7CCF5DF558760FC67931A84C059CD55AF300",
+                                            "90083A42F19230BD77C9D37271CD270BB5101DC31A4C284D78C5012EA41A4AC6"
+                                        ],
+    "assets\\src\\vendors\\_magnific-popup.scss":  [
+                                                       "784C1231755FA682B4A0C6285AFFF6AA091EA8A2BC316992DC59EEB7F8D0A899",
+                                                       "CD52BC8B11C820DFDF3EB2EDC60F9CDD50B356D3901BE7E722C553CEC72A5F50"
+                                                   ],
+    "assets\\src\\sitefinity\\sass\\settings\\_variables.scss":  [
+                                                                     "D36F865044556BEC6E82BF143A69ADC89BB39D748ABB5232939A59A59C104038",
+                                                                     "74E10EED710A881C7AFF90F9D3326FA4B5A1804D4AC7B566265B0B0923C1968C",
+                                                                     "3718CB461204772C2143351421D60B2DA71180A73AFC6C047F1324BEFA1BF4BF"
+                                                                 ],
+    "package-lock.json":  [
+                              "3679F8769F57FEFA39112A3FEE670CF184FE2140020B5B921683F719A4637CF2",
+                              "621B15CB8C821271D5E39408F2438FC00B72AAB5E1B7C11406535C4D3FBA0F8E",
+                              "4B64349B0EA8EAACE8E63E530A59A120D58E828E5CDC3DBECEE26BC675287DCB",
+                              "86B37B0E22CABE61173CAC32E62993CCB41ECD9A9718749AEF6962C2CC5E9596",
+                              "038A0782D135B6B410A1CBF087FFFEAE9943EB80E91D6EDFAD78BF63237F63DD",
+                              "DC1B00C3DA746EAF3895544867D65A0901669611798BED02D04E39E3C62F16F1",
+                              "96A6A467DE8EC37C25A65CAF2741D0F20CD2BCA683034E1CC353939FEA866AB8",
+                              "1791891D7DA17EA62B3DD1FEDB4C7AE452806DF731A087AEED1B0DC523239A5B",
+                              "D9B8854498F6946B43B1A7CE1316B5847A77BBAA31F069F3AF83BCE979E49AEE",
+                              "4AF10BE951828749E90C2BCCB169DDCE9FF9C146597FF65E55C1E427C1C9A358",
+                              "21F87A15A5E862B657DA87C7512658534BE4CD8074F115D8B02367D13DBCD246",
+                              "E3B698CF9E8CB73AFDB9C2E5A5D6175DDF617663EB68F499FA4D87B84A01BAC9"
+                          ],
+    "MVC\\Views\\ImageGallery\\List.ImageGallery.cshtml":  [
+                                                               "3A15DF6B64D605B61D7756AD29DF1CD48A91E99C9050BB35444830B3FD893670",
+                                                               "284E4E41027782B268B2A438815E0AEDAE9703D3625BB80E023C9D3CEE8B6BC9",
+                                                               "45180B73F12821CA5F3F39E6270E018CE4242DC52031CE94FB5918C6BEF03B83"
+                                                           ],
+    "MVC\\Views\\LoginStatus\\LoginStatus.LoginButton.cshtml":  [
+                                                                    "A38D1DD002AA21C132F2FF29AF26E527838E7A31443322E96CCEC33FE662E4F3",
+                                                                    "E7D90FE3716560488768DDBEC09B90F25422E40CF144E4321469A6BAA7675504",
+                                                                    "96A9A1F4B65CD4A0D24C4D3A267C24C77EF2182F7ADA5972B8F7BB34AD794A56"
+                                                                ],
+    "GridSystem\\Templates\\grid-12.html":  [
+                                                "827DCBC0F253FD9E27A83B4239AEED0DFAE0AE832256E9D642A271FA349C70E1",
+                                                "9ACBFDE179F18F799443F5438F7DE8FBACBA22F0E410EDC991EEAED643ACC1E2"
+                                            ],
+    "assets\\src\\sitefinity\\sass\\tools\\_placeholder-selectors.scss":  [
+                                                                              "43B7E3D3E5664BA2CE913B31FEE537314BB90025A22588A8132E24AD40870F54",
+                                                                              "647998D85B350E912FC74DD8FF6BA999AEF5EB02296403E8936C484741636D97"
+                                                                          ],
+    "MVC\\Views\\LoginForm\\ForgotPassword.ForgottenPassword.cshtml":  [
+                                                                           "502455A444D39DA096393A6E7059A75391F0FBE08BE85878071E6DC3E2BBB201",
+                                                                           "6279A8CB98B0EE21B45BA0C76DB95297BD37E436BD9593DF90111091380B8278",
+                                                                           "FA7AE203A503672A235B0690FF9F74E9E1CD4A9F6F1F82170747EFCC0D0A1624"
+                                                                       ],
+    "assets\\src\\sitefinity\\sass\\widgets\\languageSelector\\_sf-language-selector.scss":  [
+                                                                                                 "2B8B6AA83D5FB716862A50FBA1DAF92E35956E08ADA4143BCFD6488957E2E7F6",
+                                                                                                 "72D9E9757E8D454D6DF47EDA809AF86324B5E508147F1BDAABCE8093B81467D0"
+                                                                                             ],
+    "assets\\src\\sitefinity\\sass\\widgets\\event\\_sf-event.scss":  [
+                                                                          "EEE61C4E49CE3B0F45FDFB8A3B159A5AB4E59968E232706CA5D42ACEDBD92858",
+                                                                          "9E6174A7A1EDB31A772D4F70E643096C36B6F27B55F17A14F3562511DCBD4892",
+                                                                          "F39B029E0CAB63DF8D80FBB5519E4E3FFA761932A88651A508E9972739DBF403",
+                                                                          "82914F8431DF5436204E18C19F06CF0EA7225AAFB73C102690D3177E23F91CEF"
+                                                                      ],
+    "assets\\src\\sitefinity\\sass\\widgets\\taxonomies\\_sf-tags.scss":  [
+                                                                              "648B8D61B8C7977BF7D4B7AA15C881ED87A501250D042FBDDCE4FDBD7A58EBB1",
+                                                                              "2E6C3856CC9EAA49A8BE35D7BD711E76EC0FE55966B253BC6DD70A7EA03203DE"
+                                                                          ],
+    "MVC\\Views\\Blog\\Detail.DetailPage.cshtml":  [
+                                                       "67CDA9CC36EDE7CE1210412C797CBC29256CC65B3FE44B803587A748F7AB2444",
+                                                       "93C81D2C8ECF247DBDBC8E7EDC40980F2518F3E753ABBD16DA511BA36ED9B36C"
+                                                   ],
+    "MVC\\Views\\SearchResults\\SearchResults.cshtml":  [
+                                                            "CA1CC23467A0AA00EB8C352F160876323B43E762F469FE76D0DA2000FE81DD44",
+                                                            "1895BFC86D61E4FCC3B1264C1282F434B9CA792D83DA4DEDEE1795FD795D1AE8",
+                                                            "876CFEB46E9B27CFDEB344560E8E02FEDB99CAC70B1B06553F77830119A2F709",
+                                                            "C18C19C84029955B93C08463027AB3BD42F8EF4590E033219F38D52BEB1B4B46",
+                                                            "2BEEA8876CA6927247CE326CCBD6D0CEB56611D085F7FDC924C20B0E73515D54",
+                                                            "969E7531BB9E45A6883B899D40010514E26B0F863CA90D6553CEEA2DAAB52EB4",
+                                                            "B638266909222D0BAC104BBA08A9F8D21793769FDCB2D4BD1C26DFB1317863A3"
+                                                        ],
+    "MVC\\Views\\FlatTaxonomy\\FlatTaxonomy.CloudList.cshtml":  [
+                                                                    "52B816DAEE65922611F778EA05D9430F6ABB412135580F310DAC48AFC2C4911E",
+                                                                    "9231AD42FAD0C3FC55E09F66EA7A4E76848E3361D87824068EFBD7149FB481CD"
+                                                                ],
+    "MVC\\Views\\LoginStatus\\LoginStatus.LoginName.cshtml":  [
+                                                                  "123AD8ACC1519210801AA4BE058A49FC1899D5CB0F3E53F3E43EC4837944AAC3",
+                                                                  "F5A74592735C2D739656F95E00B4A5E2EE1BDDCA7CC3386782A11DA0FAD654F5",
+                                                                  "502C1E17DC0DE9F80758A104EB1216B9B0EA1FBDA553DB07D694DA891AB2187C"
+                                                              ],
+    "MVC\\Views\\ImageGallery\\List.OverlayGallery.cshtml":  [
+                                                                 "17CBE54E2CAB22E0959EF72802EE1C1E20DA92D3F05F8873E17987ABE3F8E343",
+                                                                 "D4979ACAF277284B4DD55931E2ABDFC3F88787753A7BC7CFEBDEAE7918A54F08",
+                                                                 "21607CCA582AD835FAC1B66DABA77DFA0FE5909FA8C744A7B63C9216C89A2783"
+                                                             ],
+    "assets\\src\\sitefinity\\sass\\widgets\\pagination\\_sf-pagination.scss":  [
+                                                                                    "FA63F5ED77F08E33EDECB224D5F443A70AB1B670DEF503848ACC0895A2AA5F59",
+                                                                                    "A500134A3EFFC42636867D4004FF8D31D7554C33E9E4CC0E801EBA5C96BF4A56"
+                                                                                ],
+    "MVC\\Views\\Registration\\Registration.RegistrationForm.cshtml":  [
+                                                                           "029B95A30F3A22A6816AB55D5EC9326B125A904E901FAB21E6218906D41E0C47",
+                                                                           "ACFB70E8422687BA29801CEC773F21809E2A870430E0E01E05BD8BE40A032132",
+                                                                           "929BD0EA1438385276EB52D5EE572239766456007567D96FE466DF1C8815D7AF",
+                                                                           "2EA2F4EF0FEC9B40C2E0EBA48E6E7A1C9D40F2AC6E64F015189F03C99BCDCAA1",
+                                                                           "34CD3F540811A2081A824F4D3E4E7DE4839D286AE50330261F0EA7F08BDA2AE6",
+                                                                           "5C0C5DCEC813BF8EDCD93F86C031427F176799DEA253CEEA00A01A9614D59C27",
+                                                                           "58D421956588F4ACC54F4B952AA472B6721F215870AEA3993D53AE84DABCBE47",
+                                                                           "8C0FE94528E169E213463D29E967790F5E1E78F9E4958124466067384CB07C62",
+                                                                           "7FF3E6562484744F01C0485BB731746DA0B81AEB1E02C787A3F4D688F30254B2",
+                                                                           "5C79F1EBAEE02B995D413BBEDB36454309D34DF41D509C3730ECF1C76E6C5B31",
+                                                                           "D87B96C16C66BE0DF4F65FBB3E55CCFE6FEABF31A281F6FBABD66FB3AA3F1B3F",
+                                                                           "B38837CA29232AAE48CB4BF8D311722734B6DCD2E83701E73CF9FBA3285E0781"
+                                                                       ],
+    "assets\\src\\sitefinity\\sass\\base\\_pre.scss":  [
+                                                           "6AB4A7E49751BA86C916B465DDA5438A5BCC85EB85E253EE3002FEBC4DC3029F",
+                                                           "9F5E487EF6131B135B6F357E48016C73D06B5121C353F97A840D7DEAF78D7A5E"
+                                                       ],
+    "razorgenerator.directives":  [
+                                      "464007072218886379C980D742476EC53DDDABDB09D7D4F7373FC76B54D1E0B7",
+                                      "FB84F1FB3BA3A348AB926A67356ABFE15E12D6B334E926AEDC5CD771F76F159F"
+                                  ],
+    "MVC\\Views\\DocumentsList\\Detail.DocumentDetails.cshtml":  [
+                                                                     "A1808FA815CF34E46F6266285DDB5701BACAC2E34A56B36B5D75DC160D4116AA",
+                                                                     "5F0403ADE01EC6B34525928C1B3BD96DD528A50105DD9670E116F9F2506556A6",
+                                                                     "9F998F0EA2F04DEB44B50D7E46C428CC3619926F4858C784EE9F4B625CE9B9DD",
+                                                                     "FC4775C7052620E8110FB4C490E62572A61DC7DEF2F05E09DE2B1BC185FCD6D7"
+                                                                 ],
+    "MVC\\Views\\VideoGallery\\Detail.Default.cshtml":  [
+                                                            "B4D716F755C0658B755F0D92B70EDEA3E25866F1173FB427BFB3F5E680365B35",
+                                                            "765662C1B3A7C1E598AE19C5B51B3CD1F20B5DB44907AC743C5AAD85AE17950B",
+                                                            "8C867DFAEBA1FB1A37CFB39E82BAC1F186769EB7FEA6B021908DC5BB725BD2B7"
+                                                        ],
+    "MVC\\Views\\UnsubscribeForm\\UnsubscribeFormByEmailAddress.UnsubscribeForm.cshtml":  [
+                                                                                              "94E4A9BA3BF616C2C0646C2089E648830490705A1066C6266D94ECB4E8119A20",
+                                                                                              "DC2952C6A2A7CBEC03CF7CAACC06DC2DA997591DF7E51704BAE3814A83121A57",
+                                                                                              "64AFC9187178B5968A798F66A67D467D061C02F7DA379F6BC98E3F33441BE391",
+                                                                                              "2741C85E75A62F08EADE6BA43370DF89A8658D52000E1508BE61C176BCCB1626",
+                                                                                              "D6DF5FEAF61E58FB45E7458D87B94424C5500F706512F8D526199FDF64AC4FB8",
+                                                                                              "5C62CCFD6D5A17DD5856E93583AE1DE42C7B12A5E821DE344AA3AEF4B64164C2",
+                                                                                              "B4C44F942637C2E82C08603934C1E630D1024D3798CBAEF1C5FE732BE252308F",
+                                                                                              "9F13D8C33B844913F040E9074DEE1C49D1F7CC793A64BA761B7A193A8A91FDE1",
+                                                                                              "0B26F74DBC25E0F68CA53CC810185A7A80A75AFD0986CF422815D9EC11F7C5B4",
+                                                                                              "D087CB34D3647E102570D9AD86B8B259497213904BAF3FCA092597BC4E97B4C6"
+                                                                                          ],
+    "assets\\src\\sitefinity\\sass\\widgets\\media\\_sf-media.scss":  [
+                                                                          "E06F93DBAC8CD41DE9DF4AAD67A71B97CD69316E00DE9D56D3C40A3A042DD6ED",
+                                                                          "1A389B1A7638642D8F916F381A5CA989B4807EB65CFC7C46C476454FE391FF96"
+                                                                      ],
+    "MVC\\Views\\ImageGallery\\Detail.DetailPage.cshtml":  [
+                                                               "C24447562DAA2B1BB0675D9E28711F6423F09D04D24CD02231475363ED7F12D4",
+                                                               "510A92D375C155A3267F28B0B161140757D0E26972B62628937B150A64DF790B",
+                                                               "95D0AB24E52FAB170387126A7D32063F8F84E81DF6982BF63786AC828EB96110",
+                                                               "4606DFEC1DD134A96F5C7DFA2ECF4F1C773E485038B2A35493F81AED6C260D00"
+                                                           ],
+    "GridSystem\\Templates\\grid-8+4.html":  [
+                                                 "50667F5471113ADA8B7557CC2702D173CD8F040F5A5560FDBC09AFDFF39B2818",
+                                                 "9F0F15C8792EA3ACFEF2BD4D7AACB091766EFB4328EF2A4A4501F68876FA1B6E"
+                                             ],
+    "MVC\\Views\\Navigation\\Dropdown.cshtml":  [
+                                                    "56D8EC54106854B8DDF876366C39D2D14C453BE9FF07706AF336471880AAAFF8",
+                                                    "9BEC40D3AB22EFA7869E0213017947071362D67EA490F70D32892CA262E81C95",
+                                                    "3CC78C612EA58FF7503296D231783C8A3C72A81FE48590555A1AEEC9665E8F7F"
+                                                ],
+    "assets\\src\\sitefinity\\sass\\widgets\\list\\_sf-list.scss":  [
+                                                                        "6A324E4B1FE93BD74172820E500840F82554DF391077380332BBD6CC1F30AF5A",
+                                                                        "6EFE496BB82BAFC9008EC0722B1EBFFB9B312BEE8B4AD4BD648CF474D8EEEBE9"
+                                                                    ],
+    "MVC\\Views\\Image\\Image.cshtml":  [
+                                            "3B36D7B71BF26088CA49A23E0DD8DE44886B0F2BBDF816AC580FD16CDA2CD294",
+                                            "3EB29C0937D21B58B973E5467D63C236565C2DC3C01B9FF02B4A950C4A47D578",
+                                            "0B08C6B9EFEFB1E5367E8B833E68D3D380EC6EC0FFB3C56C9B09D904D04481D0",
+                                            "9D6DE8D226434EC34497C316D5D8974570BDE0CB067547062ED9CAB810142479",
+                                            "DA0E44407FEA6B866D43614D097D0B8897D3536DC15627FF86CB2936B939402C"
+                                        ],
+    "MVC\\Views\\ImageGallery\\List.SimpleList.cshtml":  [
+                                                             "660ED6AB47C075FFCE4D403448941B2E7B4095224F649D7DAB80C876577D5593",
+                                                             "721D7195F9506E96B450C1AC39B72DBEDEE1988E695996A9F71A966C9261551D",
+                                                             "65E20E096F2D70E12440438FCE42D2854DAA61DC5BD1096F53CC02106A9232C6"
+                                                         ],
+    "MVC\\Views\\LanguageSelector\\LanguageSelector.DropDownMenu.cshtml":  [
+                                                                               "373CB917A8C65CBB91701EB6F82181D3A93BBBF22B26B0F2DA38FB6ED260D6D4",
+                                                                               "19215803420BBBAA7C27BABDBD3E4C4949D5451068C0A1B908A4C0CEB1A326FD",
+                                                                               "4A0257C354A2848C65F016851508F4F97201A5971177048B89634FAD9FA11CF1"
+                                                                           ],
+    "MVC\\Views\\Reviews\\Reviews.Default.cshtml":  [
+                                                        "3C40D931FB29D3444E7E88A2B68AAFDD2620E2C00D61E5E789415F3483B8A3F5",
+                                                        "97938E9C354311CF225130C12617DF0EDE2F0A13E31361F61EFDB1DA52FE88A9",
+                                                        "4F36A1F486A5FB10E0A8AFD08A96181F15D35AED58AFA8A5C032E01E9D8AD30E"
+                                                    ],
+    "MVC\\Views\\DocumentsList\\List.DocumentsList.cshtml":  [
+                                                                 "C515E6C4B96A8ECF7BB53F7E1A4C59F4A9222585B22843AA4D4AE3A8F7146CB2",
+                                                                 "CC054B8AEFE892954B24C7C0D4EBBE35C7B43DF2A81E172782528EE32EB5052B",
+                                                                 "FE73C464A7517710191826641C7258FD291F1E1DEFE65C24E9E55486A50AB264"
+                                                             ],
+    "MVC\\Views\\DocumentsList\\List.DocumentsTable.cshtml":  [
+                                                                  "8EEF89F7F2650D4477C8B9E87919B3C825E08CB5F744A59B78011C4F281A806C",
+                                                                  "F45A8DC410249F77909B87DBFE8A8A9C2EA85A080D07077785ABA4C792EAFA4E",
+                                                                  "F41B4504FC0790D01245FAF842648D1AF99DA8B953CE9E574DC8F0B938EAAF9A"
+                                                              ],
+    "MVC\\Views\\CheckboxesField\\Write.Default.cshtml":  [
+                                                              "C987DBB5C9D023177227969F9E923406650EE4DA8443C3E03B70495704DF83E6",
+                                                              "15A4E7D6B53A2DFE411DC46D0A94C552B4D0F50D425A03AAE5470353F9EE6B16",
+                                                              "F2F9A319FCE0ED6F725EF3357381D133B6D2CA98987E3BED643936BE78B79268",
+                                                              "F93C5DD21B5F2400700E7A77C1EAE94CEA7782B2B64260CD6EC3F5BD61A4E78B"
+                                                          ],
+    "MVC\\Views\\DropdownListField\\Read.Default.cshtml":  [
+                                                               "9FD7492812D6BB7A922665487B44F4FCD2B6B7CF4707E528A3ED0E3676D5B614",
+                                                               "7AAA650FFEF17BA4E6AEB900D941B33DAAA9E777CF995887A00AA3E7AA638BC3"
+                                                           ],
+    "assets\\src\\sitefinity\\sass\\widgets\\gallery\\_sf-gallery.scss":  [
+                                                                              "4A6D3093407414D1EA2C3166C877C12B9B91E1C074FE3386B7E6475A89E1CF6E",
+                                                                              "13BBF8EDC20C050D5FAF8BF1A15503DD401DFE22F83975973E9674971DE0D92A",
+                                                                              "6BA31CD7AA79FFD874706B15E044062B79B414603D090694530394AF33EEDD8E"
+                                                                          ],
+    "assets\\src\\sitefinity\\sass\\widgets\\comments\\_sf-ratings.scss":  [
+                                                                               "2A70EA3544F90DB20F13C585047B11BF41A7D31CBA87468F49AA73C8A4462B7E",
+                                                                               "B5207041AC1A9F56CA036FF100C486A483D0D98FD2743ADCB79D7F48F1D4CE5B"
+                                                                           ],
+    "assets\\src\\sitefinity\\sass\\tools\\_mixins.scss":  [
+                                                               "34447E5752486A2683D90CB68365BB4D01A95DA7E7758CC218256ED87BA2D9CC",
+                                                               "D6957EC8FA549BDCAED4B4C9F666DE6CA56FA3056BA556B2EC53D850492F72D4"
+                                                           ],
+    "MVC\\Views\\SiteSelector\\SiteSelector.DropDownMenu.cshtml":  [
+                                                                       "8D7B5C27A3EE5EEE6EC961C9FF0EE333EA950E8362F9DC370412151804A9E4E5",
+                                                                       "DB99D2BE5D261971DCE97991A88E945CB9C6CB835666EC253BD889B2C715699D"
+                                                                   ],
+    "MVC\\Views\\StyleSheet\\Index.cshtml":  [
+                                                 "C8D5DA6B751DCFE42CAEAA6822F90FA922B12034E33925174CDD68B1B25F164E",
+                                                 "2EECC3FA3DD6E2FE91B059ABF7A015BAD513F96A5997087569B9FBC0AC5F9F83"
+                                             ],
+    "MVC\\Views\\News\\Detail.DetailPage.cshtml":  [
+                                                       "A8654C9BEEEFD8E6121B1C44B4C15EA842FBBD0CC53303E159E24233EC2DA804",
+                                                       "273F16F6FE8BBEEBCD137F4029F4EE0F9595C734B585901F9D12F9CA1A059E64",
+                                                       "63856E9D8326F7753095FCEF329444C3CAAFE5F659EFC1C0E59AE8FACB4B2A5D"
+                                                   ],
+    "MVC\\Views\\Event\\List.EventsList.cshtml":  [
+                                                      "F55557D393CC69D44AA90A9612F82B31065FC1A44A64950EC54A33B0B94D626A",
+                                                      "5DF11856F0AA72C6E383CB4347FEB1FAAA204EE526FFC0960F0A083AB057AC85",
+                                                      "844B4110D1DBD0DA80545193283DBF1ED3D06C76F050572E962FA1154C109261"
+                                                  ],
+    "MVC\\Views\\FlatTaxonomy\\FlatTaxonomy.TagCloud.cshtml":  [
+                                                                   "F6536B790721314C5BC01F69FF38BC8B1AB8A9EC41D9DE72DDDBB1FFE3346090",
+                                                                   "3FA8D9C3563A2FBA0F1EA0A765791E2AB3502754ED41525DB72AC7BD53D4E6C5"
+                                                               ],
+    "MVC\\Views\\Document\\DocumentLink.cshtml":  [
+                                                      "881FA48FF88915AA626EE16A62320956FF30734A21B8C4FAE796B98E3C2295DD",
+                                                      "59142F14D908DF898F19D11FB640D274C3072987B11B983FD418D04FF42FB5DF"
+                                                  ],
+    "MVC\\Views\\ParagraphTextField\\Write.Default.cshtml":  [
+                                                                 "ABBEFAB3398DC3CF0B866EB547702882A41389045F51E8522278749099A80BAC",
+                                                                 "A2E5E6C88A250B3753277B725DB9C5C26801BDD01C3F09452108224D9E08296F",
+                                                                 "A310B57E38201DDC02F4463BCAE1CAF5CF23F18086E837EB0670F09653FB51B0",
+                                                                 "7AA6B3C225E87738B70D27D7936AE7C21188EEC8B8FC36FDB291BA9ABDE1F92D",
+                                                                 "D6B9EDCE8240F7D7B2C1D2AD3E1C8170AD717BAADE1A8818D681AADE25052A82"
+                                                             ],
+    "MVC\\Views\\Lists\\Detail.DetailPage.cshtml":  [
+                                                        "A95283A997C4C5E9F54D89DA82C916BB8A0A2104C229057BC3BEBB5B7F56F6E6",
+                                                        "6601AF77BEEA014A584EB8EB74DFEA50352F3B8B6287F5A28197B237EDB8DD51"
+                                                    ],
+    "MVC\\Views\\BlogPost\\Detail.DetailPage.cshtml":  [
+                                                           "997CCB253CDE4B322DA2E93003E4CB9BEF32703CE3550ABD0DF5ECCA259F4184",
+                                                           "EE838767BD715278D566459F11E47CD3125224908D934DC22BA6D49E6050A650",
+                                                           "754668C415E9852254031F8A88C81379FCB81E093E67F10E967CBA9573F3D1BA",
+                                                           "8840AA7817D175524AD6BBF177E72ECBA00C81F59B3161F54489B06EF6D2D0C7"
+                                                       ],
+    "MVC\\Views\\Profile\\Read.ProfilePreview.cshtml":  [
+                                                            "E73EA3A888F91813308857E4439BDD3AC6B7C8EB2417746FC5546BE0C5E5D6ED",
+                                                            "ECD79EBA624B3EB207B15A3937830AE98FD3CB89C98DB9F3DA32CA46F84510E4"
+                                                        ],
+    "MVC\\Views\\NavigationField\\Read.ProgressBar.cshtml":  [
+                                                                 "8633D256F2CE8C0F7EED71E88E270C7777A6A5BD976F64CDCCBEE9A2CFEE8EB2",
+                                                                 "2E1BA6FCAD4B9110E01D6F42FBEC795432225383B64D895279633E1C61963AE2",
+                                                                 "E47294FFD7000982AA9AD0B17D7E7AE4DDC48BF5C493CB4B335F12DA2B944C45",
+                                                                 "B2D61CEE354354EC0EFFFE067FF41AAB89F0085DB85A2C864BFA6E31C0BD8104"
+                                                             ],
+    "assets\\src\\sitefinity\\sass\\sitefinity.scss":  [
+                                                           "A84D37769DA15B0F6E96C4E02778BD14C30B9D260EF511C37564545E31E0E85B",
+                                                           "F1E6247BB8B132974612456B1667162740AADB17B088447CA4C17B5E098D3105",
+                                                           "D60563ED980C390E44340554E32EEF4B65D352DA87D7D95AF95FA6AAD54B9A4B"
+                                                       ],
+    "client-components\\fields\\html-field\\sf-html-field.sf-cshtml":  [
+                                                                           "0414F1A0DF89D3DBED28E17508B73BE4B804D60417231F187EA7DFF21CE804C3",
+                                                                           "B9054605E56A9E7E15619F5ECB82AEA3B6A7A4BB2C2105B3538904C5B5AB7C14"
+                                                                       ],
+    "MVC\\Views\\Form\\Form.SubmitResultView.cshtml":  [
+                                                           "5AFD1CEC7189D0FA4C7A70C64D61AE09410C8FE3CF0D7B1209EAAA497F39A42B",
+                                                           "15B52699E7706AF57A7F4B62C44F8850658319E7FA593DC67C55ED95AE8F7753"
+                                                       ],
+    "assets\\src\\sitefinity\\sass\\widgets\\comments\\_sf-comments.scss":  [
+                                                                                "A581A11B5FFE95AA178F2EF091390CC34A7A268817B9E52D37A553CEEF21CD1A",
+                                                                                "DF0C9452617AE86380920401BB29700909B4FB20087CA650AC79C849EBBCD299"
+                                                                            ],
+    "MVC\\Views\\Image\\ImageDimensions.cshtml":  [
+                                                      "D2D868AE90D5F554F0D4239C95A1CFD0B1627DDB85AEA783A47C6F2E6C174843",
+                                                      "607B19A3063197227DD2D61DFF6E742009E87B959E00E9C07FB686F662E18DDB",
+                                                      "6C56BD4DB47624CCBC1C429B1F09D63665DB4694DBE851B1604AA7547A3AB839"
+                                                  ],
+    "assets\\src\\sitefinity\\sass\\widgets\\searchBox\\_sf-search-box.scss":  [
+                                                                                   "66383DB67A9365EC9E1182F8E80104BA404C934583FFFD92C0BCB217CED34279",
+                                                                                   "1563594CEC810AC916D9087DF40E4A393C127E7E92808B75FDD88D2C8691A61B"
+                                                                               ],
+    "MVC\\Views\\JavaScript\\Index.cshtml":  [
+                                                 "FBA72F5A06EEE15416BC1045092B1F08A50A084AA79D4A776B1B8CE95713391B",
+                                                 "BD998BDE06B8CA217ADDDF556C519B27AAA8714395D0D200451DA0C3A801C027"
+                                             ],
+    "MVC\\Views\\TextField\\Read.Default.cshtml":  [
+                                                       "5869C6FA72478DCD43EAD143D913E0602077D5532F40F9B9039B2793DB7AE9A5",
+                                                       "09441B8C5DD32ACF76953826980EBC6A8D5629B91D6BE7FE951CA9B82C4BDD40",
+                                                       "FBE542089D41DBA37AD6026CE6432F3119BB7AE9D1F460F4A9D6DBFA29DF371D"
+                                                   ],
+    "MVC\\Views\\TextField\\Write.Default.cshtml":  [
+                                                        "3DE9BD43E609B2A81F0FE89FF0F2F3D83FF7B940F9B8A3C401A4545A9F660188",
+                                                        "14C84E668E985C992F3256C46888D48FFD53A23B29A270699655B7107DDA265A",
+                                                        "E0227DB9B6CD6563881CB98CA2E22B3128C9CCA750919C4166218A8D57FEC736",
+                                                        "45A93393DEE8789ABA940A7D0FF4B47BC850FC7396D05A438ED1C8DCA8B74BF7",
+                                                        "844E1E7EB0839964B694A8BFCC95B7BA8A47D48DA12D98ABEDD0F3F1B2C34E94"
+                                                    ],
+    "MVC\\Views\\MultipleChoiceField\\Write.Default_Inline.cshtml":  [
+                                                                         "6A34D9D81DDBC184ED91EFD3733495CB26F0291496CA7AF4910777DCB0C675A6",
+                                                                         "EB3806DF2579063BAFF3EA3E9B64D26F40D55C6CD51914F24868B4A18EF9D51C",
+                                                                         "1A18EB43893BED57BCB3DD50BDC18DACEB8055C61200B197654F714350B249A4",
+                                                                         "44C67E3ABD87C9945A65ED0EB84C70A117B9E58E4CA56E42C4239F7D572C0DE7",
+                                                                         "5D3082FD23CCFEDCE8E44FE9173E3FB3193E76C9324548E6B3B4E872EC451506"
+                                                                     ],
+    "MVC\\Views\\Event\\Detail.EventDetails.cshtml":  [
+                                                          "AF52A552D2E4F335539E240A473480FC8D8055ACEB4C3CCB535E982545FC6806",
+                                                          "6262955D0E65C610FD6CFDC2CA03E127C97583E78E97B1ADE3134DDF2CDC356C",
+                                                          "09B7BD960E288154824CE133A5AC2EF2EA29DB7997EDCEB3B5D969E8DD13F199"
+                                                      ],
+    "MVC\\Views\\FlatTaxonomy\\FlatTaxonomy.SimpleList.cshtml":  [
+                                                                     "377189EBA29BF62AEB4BEDD189737B66EFB97F705D981A9FBFDB077213AC4836",
+                                                                     "E70825D8C68CD628088A9641514A3EEFDDE05229518FA7E8E9A7826D5E6B9C0A"
+                                                                 ],
+    "MVC\\Views\\HiddenField\\Read.Default.cshtml":  [
+                                                         "7562ED4BD138B0CF686DF01FCE20CA7AD49A07C4FBB87230BF0EE998332F2046",
+                                                         "C86E395128C31CCBE2C8D9B0A9ADF6CC36384007D0F38F025C4D6AF6F4544FFE"
+                                                     ],
+    "MVC\\Views\\SearchBox\\SearchBox.cshtml":  [
+                                                    "90969916F35F79906B8A808F03B41E0EBE3E95306CE12AEA5BD13C413190DC0F",
+                                                    "DF36D9F1BDD67E80E647FDDBA2932F732CD0EA5CB1645DF370BEECF916D58629",
+                                                    "D82F3238A7D1EA3C7E53D45948762F754B42CD10EE4FB95006D39F7BBFA712E7",
+                                                    "29C112876949DA0DEF260F8A171337803AA92EC8D6D38DFAA712F4DA614FB1DF",
+                                                    "2DCA8D6F624E95405BC9B7E2A73ABE1A16556F9D81DE35FD8F58598AAE4300AD",
+                                                    "E759BA4086FB7703A453D4143372D4D1D74465C2B6860DEB439259AF1DF54EDE",
+                                                    "5F4B27A96174C9B77CFE45169E5A1AB644C05D48061CD9846319C7DE9C912A84"
+                                                ],
+    "assets\\src\\sitefinity\\sass\\widgets\\facets\\_sf-facets.scss":  [
+                                                                            "A203E99F7275E125B502998FA3CF2CB770BB3EAAAC1D03CE28D9A9E343BB26FB",
+                                                                            "4AEF1E479D1452915F54F771D36C59A57126A83A3F199688E3882FDB6CFDBDA3"
+                                                                        ],
+    "assets\\src\\sitefinity\\sass\\utilities\\_text.scss":  [
+                                                                 "4C2CCE2D5C0A1E990E8A295FC8E743ED529C273FE82F056795D3A29753CE6BC4",
+                                                                 "032B58CCDBC87D30DE20B1F34C5BC387897FE5E1D57E0F81328FB9FF9E419BD3"
+                                                             ],
+    "MVC\\Views\\Navigation\\NavigationView.Sitemap.cshtml":  [
+                                                                  "0FFCD0C578396F6745C07753DB3DAA14A51D3D6B07E4E4B6768A415042C045C7",
+                                                                  "5D83A7FBEE0DF96A79B7241F890F135FA526098549AA19CC58C848BFDE8145AB"
+                                                              ],
+    "MVC\\Views\\ContentBlock\\Default.cshtml":  [
+                                                     "CD216E3D08F72750ED6D8F478679962035A3B7E372666FBA2064FBA46A8D143D",
+                                                     "BFCDDB85C5FC6CBA9B7188DF2437F0577662F7BD35062EF8B6247E8F8103D9A5"
+                                                 ],
+    "assets\\src\\sitefinity\\sass\\widgets\\navigation\\_sf-sitemap.scss":  [
+                                                                                 "BF9BF3A69184FA8D3308A019CF1DD70DA6BDF897F0E9B9D3CB85766F0634A5A9",
+                                                                                 "4AE320AD26076B6611FFE4949F621156F910C444C3D032B40B87107F7F11494D"
+                                                                             ],
+    "MVC\\Views\\DropdownListField\\Write.Default.cshtml":  [
+                                                                "9A1B7FA699B6B8402B29EE27AB32E1BF8C255AFE35C9FBFDE83487971B559FBE",
+                                                                "194F07638118D13E90543A188660A4A86A953321361AE3B3BF7640B63690217F",
+                                                                "48C43C074B7134F4952AF9350983382EC065E4FDF734D504B9356A32D0B6727C",
+                                                                "CE8F0DD117C76A5ED6372B001FA8E6247E1DA866B6FB73A8576EEBABD0F99987"
+                                                            ],
+    "GridSystem\\Templates\\grid-2+3+2+3+2.html":  [
+                                                       "E9C3377F9C62D715D3943CE9648B299EE8E129DC8FA6161D2844CA54132370FC",
+                                                       "ED8C667EF3363D1FF14E01C109ECCDA54CDE00BCF4400A7F996114B8D0A64AD9"
+                                                   ],
+    "assets\\dist\\sprites\\solid.svg":  [
+                                             "2CDC1C5BC9170D135ABE7BB440B589854C78D49CDA5059029B4FAE9147B7C846",
+                                             "0CD6CF66DFA9EB300661711219D2A4CA37B4B32BBE715FBE600E99B7C7F8462E",
+                                             "5690DC9396F6E8D854AECBEA44A83B46FE1DE44AA71FF3D497BDD9FADA3726BE",
+                                             "9C8A2353D29497DD96D79DB5111A2A6D99AC89D0920EA9277F287820C42334E7",
+                                             "4EFD77A367A647AA16EC8D00CFE3C4FDD8C39E685C852C55E5C21098C954ADBA"
+                                         ],
+    "MVC\\Views\\SectionHeader\\Read.Default.cshtml":  [
+                                                           "ABB52E6B245E45954929E086EF1900E716EB0F50370DDA4BF9777FB2459C140E",
+                                                           "F10B1BC19850258EDA6FF54966D081BFC9B7CF08743BAED166C0E5539C51D5D0"
+                                                       ],
+    "assets\\src\\sitefinity\\sass\\widgets\\documentList\\_sf-document-list.scss":  [
+                                                                                         "518F15E54DA9C9268B5613D65506EB805EA0CD308A8EA472157F677DDB909363",
+                                                                                         "944D8C556176249D5A01B0EC56E7AD48BE129266C39B57BA13103891BBD7114F"
+                                                                                     ],
+    "MVC\\Views\\NavigationField\\Read.Default.cshtml":  [
+                                                             "83159858B61610FE3187486DF1D964E6544029652F9003011EC3978F53C82BAC",
+                                                             "D70A90706D326537BDF4F54626EEE3DD42DBAE64B3AA71EF76ECE64B6E42A256",
+                                                             "744C08E40AFCCFBE71A5272D619E8682188AE73BA3D152EC79FF69A132B99B44"
+                                                         ],
+    "MVC\\Views\\EventScheduler\\List.Calendar.cshtml":  [
+                                                             "DAF5AF4EC66F2D2EC261A1F7BC2D3C08D7B733F8F535F876F77548D98DE7F8A5",
+                                                             "48D67EC1EBFA0A11781B1B4134C720C70FE0A50FC3C8B7B24A740D2CE201BB1D",
+                                                             "8A72CB732351A39DA4C7003F794AB506CBCE024146B5BB7C768AF482378F24FD",
+                                                             "570F16AB4D2894787A23F88A3E82C80BF967E31A76AC5E717536BB306B60E89B",
+                                                             "97AAAE9E68482BD0D21B349C002B425B51FE98401056E5A428918BBFBA86CF41",
+                                                             "49F1350CE0E75D3A451D6D0D24643D0EF1F8000B2E63A51A0002ED34D040824D",
+                                                             "C73978C618BBB50348F3AFF8430B3FA861BBCFCDE6E4CBF0DAB7E1A34CFAFAC5"
+                                                         ],
+    "MVC\\Views\\SubscribeForm\\SubscribeForm.SubscribeForm.cshtml":  [
+                                                                          "16CFFBBDED7F57F82E7F612693395C9B62E33231B440A9E450AE3B6FFE67E05D",
+                                                                          "C4E604D44FB2DE2E39B0175BBD8D6B0409C1D6D06C2E3E11E44BB76639B4B9AD",
+                                                                          "730B13D57731F1329350DB14ED5865368FEC5C2894E8DE42A0934AA9190F5E91",
+                                                                          "30AF568BB4922713F74010F6B6525194D2B4CAC7700261C8E43C417C20355FFB",
+                                                                          "0B9687AF71B16539AFC4C902CD716AECBFE8E0B7750533552AC80B99AFCC4587",
+                                                                          "0B7AD51BFE8EC180FA45DD94BF7E2725AA8DB25285840DB65BCD7D10E29F0389",
+                                                                          "D8AF79274C726586A5E615347C6D57B32CAAA5E1FC06B769D6B2362547372BB8",
+                                                                          "E656E456AC72926A9BF7F4D25C2F30A59AEBEA746874286A62D11B9317C25C14",
+                                                                          "0C76C0079FB0ABDB9A45956232E64834DA5FAF7149E9288E44D55273A8B782F9",
+                                                                          "AEE6687636733DA04ABE3638CD4819B6C31FDC3EB95F149AE4BDF8AAB9510D58"
+                                                                      ],
+    "MVC\\Views\\MultipleChoiceField\\Read.Default.cshtml":  [
+                                                                 "AFAB6432993E99352C0AF0289247B507A88B38F87F058036CE56F90CE9B08092",
+                                                                 "562129C7B4BAD5E311E689092B3BAB4F5C45363E0FE734E1456580DEA9763B59"
+                                                             ],
+    "MVC\\Views\\LoginForm\\LoginForm.LoginForm.cshtml":  [
+                                                              "40184889550E62871090EBD9FED3969351B8F8E6249C129033A8E50D17EE9BD7",
+                                                              "63ED13B9AF19A3714D052B76AD84C2F5D32E8B8604F37B75ED9BCAF6F01A82FC",
+                                                              "D6352A69BCD21A96984DAC4FFBB3A917A258E1ECFCED3C558B1C5DB45BF87AF7",
+                                                              "A2FD362F929AA5F08EE78617085E448C7813C85CED1EA23062413D19669213B0",
+                                                              "4E8279C585A05D759CF4CC1EE9B1E6C780CAB1CFDCFC77086BB049C4794BAC0C",
+                                                              "5C95B3347DEB202A9187AF8A0D738C15D6D2B8105A59A30B2420B7CD2A455D0B",
+                                                              "77EA5FE0CE72712F3EFAF9A43CA5E6E6D69D19C5D3ACA8113E3725D809987ED8",
+                                                              "A99446E56391FCBC512D1C49278C233B1CDBDFEF38C6A92F4CD45611E00289A9",
+                                                              "22A0DD75FE07E5EEE41D02FFC45A9203BFA219BC803392BEA1E179A59EA51013",
+                                                              "F9A79F3119AE3A7BDAE9BF00D3AE622DC1CDBD4733C010D6CA1CECAE7E3ACA94",
+                                                              "A57A8BDB0C96016427D5CE2319FBC5AFB4429B62B4A468444BC929EC2D1B30E3"
+                                                          ],
+    "MVC\\Views\\PageBreak\\Read.Default.cshtml":  [
+                                                       "141FEE69FA2C4F1E2E69F5F9E67212EA8368410193B417F75CD8B7D24AD9D772",
+                                                       "A21ACE875058FD1692CC4F187B77C3FF3304C78F5083E7E2B1E7ADF96CB94FC5",
+                                                       "C85199FEED2F19C14D25178007256D802E2182C3EC04C2802733DDBF310AD9A0"
+                                                   ],
+    "MVC\\Views\\Video\\Video.Default.cshtml":  [
+                                                    "FF6299EB3F1BA0482437461A0BB0E428F6CABF08672DA79002C2B73165B68F47",
+                                                    "E8F50342304A41575EAF9DC9EE3045051E228991684C289D082022F145487684",
+                                                    "9D70F4AAB7CBFF2EEDCB56BC1001BE0D7376E24BC2E602CEAB0BFFD2066CDE44",
+                                                    "635176D16BA25A1500C0066C5BAB75A863243ADE493E51CC7AF5D28392C05A10"
+                                                ],
+    "assets\\src\\sitefinity\\sass\\components\\icons\\_icons.scss":  [
+                                                                          "1131EC3B4B2FA1FCEE2549BCDBBE98D19602F531B9D7E77642B9A99F4E2163E1",
+                                                                          "628C360BBA50AE40725B8493C480DA00AB71033E1BF053B15710CD3F8FEF7F20",
+                                                                          "DE14DC557D4BBDA218897869D4BF8FA06E5A12AFE8D5C96A230ACDBAB4EB0A53"
+                                                                      ],
+    "assets\\src\\sitefinity\\sass\\widgets\\navigation\\_sf-navbar.scss":  [
+                                                                                "7EF0309CB0BDD5A2786453F9C95C07BEF267F5D31CC41767D2CCD3420EACAA6B",
+                                                                                "261966D4CCA15C9C563AB1FE28C510D285922CBCE9B529C002D3E9278943AF03"
+                                                                            ],
+    "assets\\src\\vendors\\_bootstrap.scss":  [
+                                                  "15034FBBBA1F47BBAAB3788D89BF7E2E9459B1A8134084974AF1407DFD8117D5",
+                                                  "5D239FAFF73BFE84C385B44F88141AB7ACDFF343DEBF0122C7EB917267CFEEF8",
+                                                  "F51A9F241E1B9BC851912DFBD836520C196DD3F6AA5611AE426D6AAC57D6265D",
+                                                  "9EBC0834CA8EB7E3D9F371C694688999F729083A57C6540858B34FA57BA7028C"
+                                              ],
+    "GridSystem\\Templates\\grid-3+6+3.html":  [
+                                                   "238A93B361F2206FAAF7AAA6F0A7D4E8AFCAEB383FCF436CCC10506F5EA82D6B",
+                                                   "48DF3D51EB9DE3A40740B00CC6727EF51C64E50CB1C8BDC9662729AEB79A25C8"
+                                               ],
+    "assets\\src\\vendors\\_all.scss":  [
+                                            "110D2D15BBEC081F5B064C5E5551BB47F543E9047B2B4DBB856F3A6702C917A5",
+                                            "FFA040113083B8ABCEEC9B820A76170166EF982EC00CB074F4FB0CEE2CE06F77"
+                                        ],
+    "MVC\\Views\\BlogPost\\List.BlogPostList.cshtml":  [
+                                                           "30821C69C2EFAC53687D53CDBDD891913A63533C0CA02A2428284305660B6040",
+                                                           "E22D6707BA7CD4DC4308A0C62DE605A3BD2BE9A489B7D8FB2800B6C75FB41319",
+                                                           "C48F5FDB656E65ABA6DAC7DD3498AACCC0B9603790457DFB68A7FBF176A1428C",
+                                                           "545C9BAA08565FC400F5A69DB4A0D9768992A95F5072E8C5A59E5A43FF02516C"
+                                                       ],
+    "MVC\\Views\\UsersList\\Detail.UserDetails.cshtml":  [
+                                                             "2176A49B702C543F89C4B3DE8D0D6C67A9609EB99049B718876C1189290A9DF8",
+                                                             "AAEB64357BAB3E83449BF0B2B678D87D046A2AD6B69B79B3FE8A79354BD0BFE6"
+                                                         ],
+    "MVC\\Views\\Facets\\Facets.cshtml":  [
+                                              "6249DD6DE7D86370831B5B21B1F8DAB3911E00E916B47FE10FD71EAB32410521",
+                                              "CAB09CA9266B012F9AE82D312CB06A30456583C75C84488D43F4E387AB7F7751",
+                                              "8FACAEB29E63E86C2DC633C198B89E191F314F4FE324236D2A8204EC6FD3B2A5"
+                                          ],
+    "MVC\\Views\\MultipleChoiceField\\Write.Default.cshtml":  [
+                                                                  "3AB700A58B54EDF60489F3E10443C680F744AC5F0011E78136772D9117683FB0",
+                                                                  "649D0942EA6AD77A3C8D4BC786B2DC1F5C43D0744BDCB971212DC73A5075F6F6",
+                                                                  "C89EDCCF95B628BEB7CC0610026978BBE07818EC11472A1804BD220854E8CA1E",
+                                                                  "AE213A2421F4B7034FB7CE6841B35B37FD9697F3F4488598C53E224F49B2D5F1",
+                                                                  "731D14E8C58BD2FE2C79E6AF46D3564694BFF505FF4E29F6C8EEC0545FEBC4BF"
+                                                              ],
+    "README.md":  [
+                      "0DF4433732FF0D15D56D36E7E7B2B5031BF598A9D644406403EC65362FA9612D",
+                      "D18ED928CED6C54C58E9BD99D2CEDFFF3169CA3F823359DAB3DABD4EF9DAC018",
+                      "3C6C6AF50927D3B3E9BEAC918745FA1526896B626458D2ECAAF7BF9FA62220D0",
+                      "0DFFB4716878B6061753CE25AACD3E8DF1FBB309197573A1FB791B4EF9E98077"
+                  ],
+    "MVC\\Views\\ContentPager\\Pager.cshtml":  [
+                                                   "F86A33074E5EF26A68C7F66CBFB11FDC5ADDF52D86DFD75959708FBD3A492A29",
+                                                   "E750D9AC9E2968543C7C571DF4CF9677C8C4B16A492C3E080BC018C540D340BB"
+                                               ],
+    "GridSystem\\Templates\\grid-3+9.html":  [
+                                                 "5A6D936C150731F4A1311468BB0EEF332568A9C5BFD935DB0583684DAF82126E",
+                                                 "BE96852B8F83C83741B7935E57BAAE91EC9F870638D8DD09525B1655971785C1"
+                                             ],
+    "MVC\\Views\\Feed\\Feed.FeedLink.cshtml":  [
+                                                   "523BEB1494040E5B6A769BE5711548300B12CFDA89788CB2EB25B2AF67690041",
+                                                   "3529E8FD5F2F473D5087B26D23BE684DE82D475F3D194628A30C61B18D6E6B95"
+                                               ],
+    "MVC\\Views\\ImageGallery\\List.ThumbnailStrip.cshtml":  [
+                                                                 "669725A4169918D7699ACBA2580FD18486DE2D7BF8F6771B3DFE7FEA7B2B4E44",
+                                                                 "BAAF077DC17DD020E25C5C1F86A78DE608BDE97CFB006B02D8E601787FC3214A",
+                                                                 "74695548D62B6267AB124614F63B0BC3C583B8BF55A0F0E1C0AA95BBEAD65070",
+                                                                 "79E8B0641A7439E89A45A56BB48D45032FA8721A559398E85EE88945B3A1E618"
+                                                             ],
+    "assets\\src\\sitefinity\\sass\\widgets\\code\\_sf-code.scss":  [
+                                                                        "B6BC6A59A16F6D0F2626F7295B1AD8D169209BD7931D93CDF4F4580A3F294D34",
+                                                                        "D776BDA571BDC4E646744596620DF06326945D579E28675FB0B50E4E92F77121"
+                                                                    ],
+    "assets\\src\\sitefinity\\sass\\base\\_list.scss":  [
+                                                            "D589214CFAFA9471A645166DA739756A4967D084AD777C453033801228EBE34C",
+                                                            "BF9F7147EDDACE238B255355A1BB76FAA4FCDE7646719ED3290F6B407DCF8DAF"
+                                                        ],
+    "MVC\\Views\\CheckboxesField\\Read.Default.cshtml":  [
+                                                             "2CD6DED2435EFA5F1DFF4149263D7151AD7D77E3FDB4FE18E29D734D9E050BF6",
+                                                             "0E33FDEDC0D6E95177282AADAD3AA054CE643DFF84A8FA38AB9B6F33E2C287A4",
+                                                             "5E02394412A1453A93C85B9AFED7913E24F821A1A953924B5B3425FC74DAD4B9"
+                                                         ],
+    "assets\\src\\project\\sass\\adminapp\\editor.scss":  [
+                                                              "AA9A52075E56000C21FF936181FEEDFDD3CECDBA369862222403AB0B16B08AC5",
+                                                              "AE665476F93959063169C6327345524256E19AE38A41BBE1288FD102F2298C0D"
+                                                          ],
+    "MVC\\Views\\Comments\\CommentsCount.Default.cshtml":  [
+                                                               "BF5101A442C21B7B7F80C4FDD76264C61DBD2B0DD8FC5D300E826B8148F052FF",
+                                                               "4262ED0844D06DDFCC354AD6D723DB046C6F1A8548596FC1E1BC92F0412F70B3"
+                                                           ],
+    "GridSystem\\Templates\\container.html":  [
+                                                  "FC816A7BEDB9261D8588E0632B2F66B97F48C7C65F4079C0B46FF941A1FC5B0C",
+                                                  "5445F73750B05278CB875442097606F47274D9345EDF5BDC33EBBAFD0FC2B5B8"
+                                              ],
+    "MVC\\Views\\AccountActivation\\AccountActivation.AccountActivation.cshtml":  [
+                                                                                      "6FC6003664F05DD23066E98682F39AF617DCF5A53B6F774C5D5326994EFECD66",
+                                                                                      "1B4CA9CCC2FAB35FBA7B7A0E892DE95C68C32EF3991CBF46FA24AE802917B903",
+                                                                                      "4691A2453C7F3EF229B5CF5088DCF0A0C3172DC1AC183CE62391B594877914E6"
+                                                                                  ],
+    "GridSystem\\Templates\\grid-4+4+4.html":  [
+                                                   "338733626AC5F5EF815CFE93FEF49455FB01DFD630D0938DE5CA72F73271907E",
+                                                   "6D9951630B39CE2AD0CA9E228CAF008C8FAECA5ABD35A16C7DE8DB1638FA02CD"
+                                               ],
+    "assets\\dist\\sprites\\regular.svg":  [
+                                               "A96AD5455CBE6E7762BA65E7476A3BED549D3283E7EC34F3A907CC08F2A4DAF0",
+                                               "324BC223314BF95089A1C0E3EBD26D9E2121D0A41D1911E25B347B4174CF474D",
+                                               "7296268EEEE6B3ABB135406C455CF1B483AF69FDD5ECB7E7821B7417F6F9DC30",
+                                               "71B0CAF4A424A282D400A395A9C1024F535EE13C4262B9AF43BB586F97A60078",
+                                               "A5567AD7E1DE5ED2B566E5D44F37FF71EE043C1000FD30C07F8421FD2944C5D6"
+                                           ],
+    "assets\\src\\sitefinity\\sass\\widgets\\searchResults\\_sf-search-results.scss":  [
+                                                                                           "3B18384C215341F634B5C4C444C9305AAC999C4E850784EDE7E4C57B24A58EEA",
+                                                                                           "02837BE5CCEA57F8A45DF34833543A85ABC79C52C6877A538C974D7559B1E2D9"
+                                                                                       ],
+    "assets\\src\\sitefinity\\sass\\widgets\\login\\_sf-login.scss":  [
+                                                                          "08BA414017593912FA8188935ED769939302815AF01C2E33B4D1ED1A9CA7E00D",
+                                                                          "0C553F3B8EC34027D335237506B332BFB68D07AE7DCC0250D74B1762530902F3"
+                                                                      ],
+    "MVC\\Views\\Card\\Card.cshtml":  [
+                                          "C219B1E04D7A69E89F39FFE645F013E94BF3D2766D751144FE58319E3EFDFCDB",
+                                          "0BA065093122B8BCDA46422CC3413ED85790E9FE5CC2C1A43D3B9D3400B9651B"
+                                      ],
+    "assets\\src\\sitefinity\\sass\\widgets\\profile\\_sf-profile.scss":  [
+                                                                              "784EF0C05F0D67BCA27C8D8D39F18E0EF0707970500D909F522CBB57D9627406",
+                                                                              "A34AB9F7680DAC995895FB089CA3E6876C96A493EE7B73606D6266764AA4BDB1"
+                                                                          ],
+    "MVC\\Views\\Card\\Card.Simple.cshtml":  [
+                                                 "B1465CBF5B0CA174CA04E8B09E9F1EEEA027AA5509CF9A83DD72FB2DB2BF5FC1",
+                                                 "70590A52C2AD1A2037CDC85A01579E2016220E7DEAEDD2E49DB1BAAAB9FAC0AB"
+                                             ],
+    "assets\\src\\sitefinity\\sass\\base\\_rtl.scss":  [
+                                                           "776BF84B709E7EEF79A428E0F97DAB3419916D6FDD52C2ECB8E5B184C186B2B9",
+                                                           "CF4B9A676B8F9D0EB0339DDFC7B43CF666025E6D905025A981EFFA0C020BA10F"
+                                                       ],
+    "MVC\\Views\\Profile\\Edit.ProfileEdit.cshtml":  [
+                                                         "22670078734F740D8CCCB4B0E608131324B589B2404E333B7A7362CA88F132F0",
+                                                         "1E59DF8DF0B3DA0505DE74F2EABFE93F65E24ED49F929AA1803A877FBF6558FD",
+                                                         "5A72A77C0A29A50CB2434ADED26795762C1EC202BB5CEAED4D3985B10B72A655",
+                                                         "DF23D4E35CE51B53B0735759560B56EB8C763B3EB20F1D25B521D2677A7FD0FB",
+                                                         "31BBA3089DE4FA8082E9694E7067AD79EA198521F53E7B1954DB21815C9D114C",
+                                                         "F869B8C0E7A740766DC6050FB524067015E6B79A41565B26A9EBC2E9ABDABE58",
+                                                         "CE2DC4641C8A499E1DBADF856ECEA3058401B20A6C613D24E75E8E6F758BC707",
+                                                         "C897FB590BF11CE13A8E1C933DED28D34C460A7AEEED9004914CB4354DBA50B6",
+                                                         "17440A5F6CC2011BC8A41AE908AC5746EAB3E92D093BD1C096DC4134BB5EC286",
+                                                         "D5AEC2F2FED28D79CE81C6982F65326112D04CF4A1547773F5EDFE1F95CEF266",
+                                                         "FF0ADA8FE49C579F52F1980A7A588D2D31CD18691BFC06B10883827727890262"
+                                                     ],
+    "assets\\src\\sitefinity\\sass\\widgets\\formNavigation\\_sf-form-nav.scss":  [
+                                                                                      "2AE7ABDBF484883E451A47150CA4873882B25C40BDD9B19DC2A8157D07CE7D9D",
+                                                                                      "3E92DF585D4CD0A5341EB5A50C23A959813F972F303027DF881DDAA7A664FF4F"
+                                                                                  ],
+    "assets\\dist\\sprites\\brands.svg":  [
+                                              "A99888ECFCE99A2A89A456EDE08C0CF0B54F32894809C226B628ABEA2539D03A",
+                                              "589A2757F6E7C18513A7E460D73A9FD261A6AD3E5219DBBD19C4E8B9D19BFF75",
+                                              "A5842BFBA9F19D4854F94E41A5B0829A39F22A8FDA4C8E288DA5481B57DB39E7",
+                                              "A41176A53D71E391E59E256EA7E5D849E2EF56A931A0AA5037E1EED53B8327BA",
+                                              "E94B194C08845E824732E52E5431EF025733DB14646B0DE375C0B87E2F3F66AF"
+                                          ],
+    "MVC\\Views\\Navigation\\NavigationView.Horizontal.cshtml":  [
+                                                                     "A07DE233258B4F6F659C03A84DE9C789932DBDDD417B1242FCE1C47BA5F399DD",
+                                                                     "70DCAE1FEF3756A390472A3857E4311B24AAAD30446C1C7CF325E6233681C72A"
+                                                                 ],
+    "assets\\src\\sitefinity\\sass\\widgets\\contentBlock\\_sf-content-block.scss":  [
+                                                                                         "2F770E5AD91814FA05A08F2A31D7772898E6F425A4A7F0495BBDF028B88CA3D7",
+                                                                                         "FA606086C5A93EFA481DBFDBCCB62B4A4AFD26E87891F02C20B03971275ADA53"
+                                                                                     ],
+    "MVC\\Scripts\\Navigation\\pills.js":  [
+                                               "ABEA51993CB5B45BEBED434A73B0350222E9FD8656F8875940203E3583A9DB1B",
+                                               "8966ED1A8F9AD231809AAFEA8C2F88C68AF7D9A34BE566681DF1A4E157514270",
+                                               "32E621319B16CC22C2F2FADDC40C05763E9AB9ED5146E9FB76467A18B4490473",
+                                               "A24D7D4B325F209C89F7BF87F82C6D48E6A821A5BF823B3572CC5F7CF684F194"
+                                           ],
+    "GridSystem\\Templates\\grid-6+6.html":  [
+                                                 "4F3989B29ECE3C60D959EBAF3D50250BA3D7F2A792DEF6B486624FAC1C33A272",
+                                                 "2CD49449D2778116C8CA01DC423F50975488FA3F64FB7727EFB15131459FA760"
+                                             ],
+    "MVC\\Views\\SearchResults\\InputValidationError.cshtml":  [
+                                                                   "9CBD854917E68B7DCF166D0E06478D2CCFBD2C04BA0042E50585B4CBDC3B1C97",
+                                                                   "8E60D62345A02B1B48EF4D269E512339521530E824BE856DB8D30460D63A1EAB"
+                                                               ],
+    "MVC\\Views\\SubmitButton\\Write.Default.cshtml":  [
+                                                           "D89B2E8E9A72DCA5C31708658E113FC658C91CA8665CE76572B327BC5004972C",
+                                                           "9193358A76E38FCAF473A7F6F0BABFE5C850252EBEC091992BE1177C40337673",
+                                                           "A2FFF90154CE050B5D36B41D4C27747DE1B5310C8216D02C292FA7C31467E573",
+                                                           "0BBCFAA4BB84BF42327BE53241ED309B4E8728E9A22523DD1CAC328D529862BC"
+                                                       ],
+    "assets\\dist\\js\\bootstrap.min.js":  [
+                                               "6B441E8A52C8A3714343A62D1B73C4B3D03C9E09B9708E71841EEFD68072DEF9",
+                                               "41E440504B5417576EE1207D6F27D4773E231D474F77C71E6C1BD13C817400E9",
+                                               "160992B1022200658A7AC93547CD5C194F42FBCD333C9EA9E810C5F661612C1D",
+                                               "A64FFF3708B497301270C1EE15E38F6B3DCFCD52E1E792E1051125945D81CB88",
+                                               "605DBB97C2C579C56EC6AA16188557D85488E57128A5D585630C3A305FF98CDE"
+                                           ],
+    "GridSystem\\Templates\\grid-9+3.html":  [
+                                                 "F7090DAB9D7BCDD6E2069A02C26B941C1DCBF6461F3B958F58D189A9A082211F",
+                                                 "065EFCB6D6933A03E22D33EAA4A79D236D06644C8323D22D7D7C2839E7D3CB2A"
+                                             ],
+    "MVC\\Views\\LanguageSelector\\LanguageSelector.LanguageLinks.cshtml":  [
+                                                                                "046E00707BDB4472D621D3A2AA906E532BC6CE3B5BCAB446AA1DC0921A8DB261",
+                                                                                "627462842B65781221CFB7611783856D5E828DA61474489638DF4CDC59F5B9C9",
+                                                                                "E506852E6BD24D6E228F84323FBF7EC44D3A883DB95A7F574DC44F40072DC219"
+                                                                            ],
+    "MVC\\Views\\ParagraphTextField\\Read.Default.cshtml":  [
+                                                                "43750393194F6F5677E03EE75A267F6C9F2D7FEBC17F1537CCAA2A289C870FF4",
+                                                                "621DA987222E4E53130A6B429D800D9838A70C9E390A693D7E3D49504DAB4F4C"
+                                                            ],
+    "MVC\\Views\\Lists\\List.PagesList.cshtml":  [
+                                                     "37A5AFE0BEA21914DD72D1A38A9626770606995569F11EB36B8E943BD51D017B",
+                                                     "0689D9AEF6FC7421469BA908BD4BAA72527CB9A4D080429BB047704F8AE4F1C6"
+                                                 ],
+    "MVC\\Views\\UnsubscribeForm\\UnsubscribeFormByLink.UnsubscribeMessage.cshtml":  [
+                                                                                         "7D1F60F110EAC0AB6AC269B9EE81FADAD85B71AD73C1708B4F47A04A5CCABC82",
+                                                                                         "CFFEE3926E6E456EAB0071AE4109BD2CC03349BD198F4613540205F61E3924C7"
+                                                                                     ],
+    "MVC\\Views\\Blog\\List.BlogList.cshtml":  [
+                                                   "DC49E4FDF7A321985916C01BB8691A25CCFCAE92B4043F765401DB86B7EE473B",
+                                                   "227618B8853FC4B3CE8C3DABD17DD1B8EC4C53F1D26CB614DE84A5AE1EFCDBF4",
+                                                   "F9161FF8222912473B3CB48B18734C1DE3017F404F4CBD1AFA15ED4BA40E2080"
+                                               ],
+    "MVC\\Views\\Card\\Card.Hero.cshtml":  [
+                                               "81C7613EBEDD09DD5D80869FB84AC34BD767C6F3997BEB2B9ECD666495806D09",
+                                               "912A31B1A7DB7F80ACAE27F316389FB22FDA5C0E812046CC27D34BC9A9124E9C",
+                                               "E9E21FB66CA14C4F5CBD3CB2308F664FA76A7E0F15D8211B7DD7BAE0B9C8C69D"
+                                           ],
+    "GridSystem\\Templates\\grid-3+3+3+3.html":  [
+                                                     "873235296B3F361C4D5514944D4439005AA77D86B9BCB686D910E360CFE15367",
+                                                     "CCEAAB565C67D682B0FAFFB718272AA9E321E85DDEBEF9B0D26704DEAAB06EBC"
+                                                 ],
+    "MVC\\Views\\Lists\\List.ExpandableList.cshtml":  [
+                                                          "5711510185B931789F1DCC90D45862D4F099531F6C1B3E14A8EA951B5CE0B724",
+                                                          "D385E47101B59C6DFF4FA9EAB87B6E2EB6EF9578B0C69215D187D21D33583D10",
+                                                          "0C3CB60446E1A29CB994E6A0D6B493901698799D3943C79984859C97046FEEB9",
+                                                          "33555B0ADC2EC1C0EAA67AA6DCF2D4231EAB47A8E24A88F3F54AA875E4FD7A71"
+                                                      ],
+    "assets\\dist\\css\\main.css":  [
+                                        "8E773C51B9405FE5B24383CB9A7B59B1A03FFC68609014CA360D22FFB0D85FFC",
+                                        "2B133CF3FCC0FCA68D9FA4E0F9B71CF65F7B8DF3CFD3E6CD75A1037F215641C3",
+                                        "9A2F28C0EBAD3C4BD1A4CFC58731B985E9D8F0CAA08D7383915AD7A90E623A2D",
+                                        "068171E73C85FB4CE85BB25DC4452266973958511AFD16B97EACC81EA9571526",
+                                        "6EFDB41445EEB360401CF07A30A9F06CE3BB7E722812D77DDF489CA91A7F9E7E",
+                                        "3B3F0D6CD5480FBAB07EEB08DE58FCE1F8F69F852386722DBB5598DEE9C3D326",
+                                        "33C93E110661829932FA81F7497A5E775CF7F010292687AF5D5CE5CA1976C716",
+                                        "8EB9A038DB194BB5DA531D3F3DAF7B55F9758B2590B8E8A3BD2979220AA3A1FF",
+                                        "AC4D3734A5AB5726D51678EA38135E3505BCF6D7ACBE282F44E1A09CF1108D9A",
+                                        "5282EAD5C1405FADA603B1C39E7AF5DB0BF17D203DDAE2ACF085CC60B0F6306E",
+                                        "945282A536BD1A34D174DDD825B8AE5AA1CBBB938ECFF33EC570EEA4B713AA88",
+                                        "27E9ADA6A53FC104F49C0AB08AE944D1A4B37E2B6764E2AB61A77E9CEF411E9D"
+                                    ],
+    "MVC\\Views\\Profile\\ConfirmPassword.ProfileEdit.cshtml":  [
+                                                                    "E8850A6C31EE8A98DB2F936929F37B7A49B1A3A4B7DFC40C479E47D8A23461EE",
+                                                                    "63BECEE8F177141B005C2E35863E921C69A447E23548E494B39184EB040CB248",
+                                                                    "40617FB8B211E1DBB2848F979A318CC067D3F1249BE85DBF288BEC462845FCBF",
+                                                                    "182EB0B536C70F644D7459D9B7744BC79062C0D960D72E12E8CE1D15A4897A43",
+                                                                    "944731950256CC6C2FDE8FD4BF720EBF8069DAA2374BFF0E242AD2087B887B5F",
+                                                                    "FCD631E196825AD0514A1F29C8150FEBF7CE9607B7D17E0CC89DD2FDA47F8458",
+                                                                    "B0C3E6DA3F8E458D17F4CBB53DE4AC9F71DF575327C3D6547AA8876E6BD6DFE0"
+                                                                ],
+    "assets\\src\\sitefinity\\sass\\widgets\\siteSelector\\_sf-site-selector.scss":  [
+                                                                                         "1ADA9225A9F5785734BB246477E98A5FA2509583B908F5F56DDDE3BF250FA6CD",
+                                                                                         "BE4D458085FE058CC9F023E94FE209AFE48219D2CF0ECD7E34D5C1CFD339074C"
+                                                                                     ],
+    "assets\\src\\sitefinity\\sass\\widgets\\fileField\\_sf-file-field.scss":  [
+                                                                                   "9B1B7FDE107BEB942240FAE0DAD2BE84F5EB9032438444CB298BC9159CB3C68A",
+                                                                                   "F9A6216A12197F3C823662C1C350F3D9D50FB22E9AD8DB19D1AB45F144B7F788"
+                                                                               ],
+    "MVC\\Views\\Navigation\\NavigationView.Tabs.cshtml":  [
+                                                               "63183DC4E44F29958D97D733AF7F05703948A9B6AF4CAC75D836A5E625A5BC71",
+                                                               "D9C2D28B364F523389A2DB121E72CB6669985251DA1011B50D8A6FB0141CE3C6"
+                                                           ],
+    "MVC\\Views\\Comments\\Comments.Default.cshtml":  [
+                                                          "F40C0C1C9E6256745ED8EB8D81A017CD38B65BC3927DB8839C689B2B9611019C",
+                                                          "5272BB4EBBADFE795CFBB20875DFDD67A948B386679AE2EB4C6B0267E04B8477",
+                                                          "AD0BE8F2B38156260A476B2A6A0FB33E2242E560816F966DE74E4C97B69B5023",
+                                                          "5DC011FE0BB3F64C6A5FAD903307702E8C90E03E5D2695B5221B5CDE6F6D20CA"
+                                                      ],
+    "package.json":  [
+                         "06224588231D4F61640B6FA7CDAD1BB20762419CECBF3AB681571929F84C5DED",
+                         "12E6D7966F1DE4E18F3305085CD54A9C5FEF402F9F0DD90FEA374567F982009C",
+                         "5DF904CD33501BB114E381587D63B2BF7491DE9B38119DA9BDA18119507009A7",
+                         "DD68A31FF291C9CF33893C254477CED9D02B2E117AAA9ADC73D89DF081F34331",
+                         "CC6F223EB1C6E1303DCD2BFC96787FFB047F6338C5CA3B0DC93F61B6BF81DCB9",
+                         "EFD9B6385D1D7384DE93877D2C67A5C6D9F72BD591091C85C562279420CEDF8D",
+                         "04DFB9091DAB3953432A4F21A66D6DFECD9EC327773E61DA0F67B732901F502B",
+                         "D31D228FBDEFAC04E98CDF86CC1E20C41F88726A93F19AA5854E2174DBED08FB",
+                         "815702F1296DD3FAA198218C185965F00D1380125E9307EF45672A6004026C91",
+                         "B7115F737E8F8EDC155A4ABCC3EFE664AF065035B787D125B06A68CBFF7156F6",
+                         "257AF11D0F714C190BC019D480B751BDE794AACD672B062C9C048C315C9696C5",
+                         "82F8F5E873EA60DF0178FDFC16A0A023BA3C210B4CBD6C778654DE62E640DB3B"
+                     ],
+    "assets\\src\\sitefinity\\sass\\widgets\\form\\_sf-form.scss":  [
+                                                                        "6DEB9ED896F94E1DA07B7F56EEFD7FCCE85ED999C700D5BF8E8D876B131DF25F",
+                                                                        "9BD25C94286AE07BBE768230C09EBBB9FF960B7A83A00D1346AA31C98CF8938D"
+                                                                    ]
+}

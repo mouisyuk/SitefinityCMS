@@ -1,0 +1,968 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Telerik.Sitefinity.Frontend.EmailCampaigns</name>
+    </assembly>
+    <members>
+        <member name="T:Telerik.Sitefinity.Frontend.EmailCampaigns.InterfaceMappings">
+            <summary>
+            This class is used to describe the bindings which will be used by the Ninject container when resolving classes
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.EmailCampaigns.InterfaceMappings.Load">
+            <summary>
+            Loads the module into the kernel.
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Controllers.SubscribeFormController">
+            <summary>
+            This class represents the controller of the subscribe form widget.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Controllers.SubscribeFormController.TemplateName">
+            <summary>
+            Gets or sets the name of the template that widget will be displayed.
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Controllers.SubscribeFormController.Model">
+            <summary>
+            Gets the subscribe form widget model.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Controllers.SubscribeFormController.WidgetCssClass">
+            <summary>
+            Gets the widget CSS class.
+            </summary>
+            <value>
+            The widget CSS class.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Controllers.SubscribeFormController.EmptyLinkText">
+            <summary>
+            Gets the empty link text.
+            </summary>
+            <value>
+            The empty link text.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Controllers.SubscribeFormController.IsEmpty">
+            <summary>
+            Gets a value indicating whether widget is empty.
+            </summary>
+            <value>
+              <c>true</c> if widget has no image selected; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Controllers.SubscribeFormController.IsLicensed">
+            <summary>
+            Gets a value indicating whether this instance of the control is licensed.
+            </summary>
+            <value>
+            <c>true</c> if this instance is licensed; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Controllers.SubscribeFormController.LicensingMessage">
+            <summary>
+            Gets the custom licensing message. If null the system will use a default message
+            </summary>
+            <value>The licensing message.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Controllers.SubscribeFormController.NewslettersModuleDeactivatedMessage">
+            <summary>
+            Gets the message shown when the newsletters module is deactivated.
+            </summary>
+            <value>The newsletters module deactivated message.</value>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Controllers.SubscribeFormController.Index">
+            <summary>
+            Default Action
+            </summary>
+            <returns>
+            The <see cref="T:System.Web.Mvc.ActionResult"/>.
+            </returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Controllers.SubscribeFormController.Subscribe(Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.SubscribeFormViewModel)">
+            <summary>
+            Indexes the specified model.
+            </summary>
+            <param name="viewModel">The model.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Controllers.SubscribeFormController.HandleUnknownAction(System.String)">
+            <summary>
+            Called when a request matches this controller, but no method with the specified action name is found in the controller.
+            </summary>
+            <param name="actionName">The name of the attempted action.</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Controllers.SubscribeFormController.GetResource(System.String)">
+            <summary>
+            Gets the resource.
+            </summary>
+            <typeparam name="T">The type of the T.</typeparam>
+            <param name="resourceName">Name of the resource.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Controllers.SubscribeFormController.IsNewslettersModuleActivated">
+            <summary>
+            Determines whether the newsletters module is activated.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Controllers.UnsubscribeFormController">
+            <summary>
+            This class represents the controller of the Unsubscribe widget.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Controllers.UnsubscribeFormController.LinkTemplateName">
+            <summary>
+            Gets or sets the name of the template that widget will be displayed when Link unsubscribe mode is selected.
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Controllers.UnsubscribeFormController.EmailAddressTemplateName">
+            <summary>
+            Gets or sets the name of the template that widget will be displayed when EmailAddress unsubscribe mode is selected.
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Controllers.UnsubscribeFormController.Model">
+            <summary>
+            Gets the Unsubscribe widget model.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Controllers.UnsubscribeFormController.IsLicensed">
+            <summary>
+            Gets a value indicating whether this instance of the control is licensed.
+            </summary>
+            <value>
+            <c>true</c> if this instance is licensed; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Controllers.UnsubscribeFormController.LicensingMessage">
+            <summary>
+            Gets the custom licensing message. If null the system will use a default message
+            </summary>
+            <value>The licensing message.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Controllers.UnsubscribeFormController.NewslettersModuleDeactivatedMessage">
+            <summary>
+            Gets the message shown when the newsletters module is deactivated.
+            </summary>
+            <value>The newsletters module deactivated message.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Controllers.UnsubscribeFormController.CurrentHttpContext">
+            <summary>
+            Gets the current HTTP context from the SystemManager.
+            </summary>
+            <value>The current HTTP context.</value>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Controllers.UnsubscribeFormController.Index">
+            <summary>
+            Default Action
+            </summary>
+            <returns>
+            The <see cref="T:System.Web.Mvc.ActionResult"/>.
+            </returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Controllers.UnsubscribeFormController.Unsubscribe(Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.UnsubscribeForm.UnsubscribeFormViewModel)">
+            <summary>
+            Indexes the specified model.
+            </summary>
+            <param name="viewModel">The model.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Controllers.UnsubscribeFormController.HandleUnknownAction(System.String)">
+            <summary>
+            Called when a request matches this controller, but no method with the specified action name is found in the controller.
+            </summary>
+            <param name="actionName">The name of the attempted action.</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Controllers.UnsubscribeFormController.IsNewslettersModuleActivated">
+            <summary>
+            Determines whether the newsletters module is activated.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Helpers.EmailCampaignsExtensions.GetMergedTags">
+            <summary>
+            Gets the merged tags.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Helpers.EmailCampaignsExtensions.IsModuleActivated">
+            <summary>
+            Determines whether the newsletters module is activated.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.ISubscribeFormModel">
+            <summary>
+            This interface is used as a model for the SubscribeFormController.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.ISubscribeFormModel.SelectedMailingListId">
+            <summary>
+            Gets or sets the selected mailing list id.
+            </summary>
+            <value>The selected mailing list id.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.ISubscribeFormModel.SuccessfullySubmittedForm">
+            <summary>
+            Gets or sets the successfully submitted form.
+            </summary>
+            <value>The successfully submitted form.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.ISubscribeFormModel.CssClass">
+            <summary>
+            Gets or sets the css class that will be applied on the wrapping element of the widget.
+            </summary>
+            <value>
+            The css class value as a string.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.ISubscribeFormModel.Provider">
+            <summary>
+            Gets or sets the provider.
+            </summary>
+            <value>The provider.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.ISubscribeFormModel.PageId">
+            <summary>
+            Gets or sets the page id.
+            </summary>
+            <value>The page id.</value>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.ISubscribeFormModel.CreateViewModel">
+            <summary>
+            Creates the view model.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.ISubscribeFormModel.AddSubscriber(Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.SubscribeFormViewModel,System.String@)">
+            <summary>
+            Adds the subscriber.
+            </summary>
+            <param name="model">The model.</param>
+            <param name="error">The error.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.SubscribeFormModel">
+            <summary>
+            The model of the subscribe form widget.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.SubscribeFormModel.Provider">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.SubscribeFormModel.SelectedMailingListId">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.SubscribeFormModel.SuccessfullySubmittedForm">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.SubscribeFormModel.CssClass">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.SubscribeFormModel.PageId">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.SubscribeFormModel.CreateViewModel">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.SubscribeFormModel.AddSubscriber(Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.SubscribeFormViewModel,System.String@)">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.SubscribeFormViewModel">
+            <summary>
+            This class represents the view model of the subscribe form item.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.SubscribeFormViewModel.FirstName">
+            <summary>
+            Gets or sets the first name.
+            </summary>
+            <value>The first name.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.SubscribeFormViewModel.LastName">
+            <summary>
+            Gets or sets the last name.
+            </summary>
+            <value>The last name.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.SubscribeFormViewModel.CssClass">
+            <summary>
+            Gets or sets the CSS class.
+            </summary>
+            <value>The CSS class.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.SubscribeFormViewModel.RedirectPageUrl">
+            <summary>
+            Gets or sets the redirect page URL.
+            </summary>
+            <value>The redirect page URL.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.SubscribeFormViewModel.Email">
+            <summary>
+            Gets or sets the email.
+            </summary>
+            <value>The email.</value>
+        </member>
+        <member name="T:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.SuccessfullySubmittedForm">
+            <summary>
+            Gets the action that will be executed on successful submission.
+            </summary>
+        </member>
+        <member name="F:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.SuccessfullySubmittedForm.ShowMessage">
+            <summary>
+            Specify a message that will be displayed after successful submission.
+            </summary>
+        </member>
+        <member name="F:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.SuccessfullySubmittedForm.OpenSpecificPage">
+            <summary>
+            Specify a page that will be used for redirect afer successful submission.
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.UnsubscribeForm.IUnsubscribeFormModel">
+            <summary>
+            The public interface of the Unsubscribe widget's model.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.UnsubscribeForm.IUnsubscribeFormModel.ListId">
+            <summary>
+            Gets or sets the id of the list from which the user will unsubscribe.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.UnsubscribeForm.IUnsubscribeFormModel.ProviderName">
+            <summary>
+            Gets or sets the name of the provider to be used to unsubscribe.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.UnsubscribeForm.IUnsubscribeFormModel.WidgetTitle">
+            <summary>
+            Gets or sets the title of the widget when EmailAddress unsubscribe mode is selected.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.UnsubscribeForm.IUnsubscribeFormModel.WidgetDescription">
+            <summary>
+            Gets or sets the description of the widget when EmailAddress unsubscribe mode is selected.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.UnsubscribeForm.IUnsubscribeFormModel.Message">
+            <summary>
+            Gets or sets the message that will be shown when Link unsubscribe mode is selected.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.UnsubscribeForm.IUnsubscribeFormModel.UnsubscribeMode">
+            <summary>
+            Determines how to unsubscribe the user, by entering an e-mail address or by link included in a newsletter.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.UnsubscribeForm.IUnsubscribeFormModel.PageId">
+            <summary>
+            Gets or sets the page id.
+            </summary>
+            <value>The page id.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.UnsubscribeForm.IUnsubscribeFormModel.SuccessfullySubmittedForm">
+            <summary>
+            Gets or sets the successfully submitted form.
+            </summary>
+            <value>The successfully submitted form.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.UnsubscribeForm.IUnsubscribeFormModel.LinkCssClass">
+            <summary>
+            Gets or sets the CSS class that will be applied on the wrapper div of the widget when Link unsubscribe mode is selected.
+            </summary>
+            <value>
+            The CSS class.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.UnsubscribeForm.IUnsubscribeFormModel.EmailAddressCssClass">
+            <summary>
+            Gets or sets the CSS class that will be applied on the wrapper div of the widget when EmailAddress unsubscribe mode is selected.
+            </summary>
+            <value>
+            The CSS class.
+            </value>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.UnsubscribeForm.IUnsubscribeFormModel.CreateViewModel">
+            <summary>
+            Creates the view model.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.UnsubscribeForm.IUnsubscribeFormModel.ExecuteAction(System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            Subscribes or unsubscribes a user from an issue's mailing list.
+            </summary>
+            <param name="subscriberId">The subscriber id.</param>
+            <param name="issueId">The issue id.</param>
+            <param name="listId">The mailing list id.</param>
+            <param name="shouldSubscribe">This value indicates whether to subscribe when executing the action.</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.UnsubscribeForm.IUnsubscribeFormModel.Unsubscribe(Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.UnsubscribeForm.UnsubscribeFormViewModel,System.String@)">
+            <summary>
+            Unsubscribes specific user by hit email.
+            </summary>
+            <param name="viewModel">The view model.</param>
+            <param name="error">The error.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.UnsubscribeForm.StaticUnsubscribeFormControllerResources">
+            <summary>
+            This class is used as a resource class for localization of strings rendered by the MVC framework. It should not be used directly.
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.UnsubscribeForm.UnsubscribeFormModel">
+            <summary>
+            This class represents the model used for Unsubscribe widget.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.UnsubscribeForm.UnsubscribeFormModel.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.UnsubscribeForm.UnsubscribeFormModel" /> class.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.UnsubscribeForm.UnsubscribeFormModel.ListId">
+            <inheritDoc/>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.UnsubscribeForm.UnsubscribeFormModel.ProviderName">
+            <inheritDoc/>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.UnsubscribeForm.UnsubscribeFormModel.WidgetTitle">
+            <inheritDoc/>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.UnsubscribeForm.UnsubscribeFormModel.WidgetDescription">
+            <inheritDoc/>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.UnsubscribeForm.UnsubscribeFormModel.Message">
+            <inheritDoc/>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.UnsubscribeForm.UnsubscribeFormModel.UnsubscribeMode">
+            <inheritDoc/>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.UnsubscribeForm.UnsubscribeFormModel.SuccessfullySubmittedForm">
+            <inheritDoc/>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.UnsubscribeForm.UnsubscribeFormModel.PageId">
+            <inheritDoc/>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.UnsubscribeForm.UnsubscribeFormModel.LinkCssClass">
+            <inheritDoc/>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.UnsubscribeForm.UnsubscribeFormModel.EmailAddressCssClass">
+            <inheritDoc/>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.UnsubscribeForm.UnsubscribeFormModel.CreateViewModel">
+            <inheritDoc/>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.UnsubscribeForm.UnsubscribeFormModel.ExecuteAction(System.String,System.String,System.String,System.Boolean)">
+            <inheritDoc/>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.UnsubscribeForm.UnsubscribeFormModel.Unsubscribe(Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.UnsubscribeForm.UnsubscribeFormViewModel,System.String@)">
+            <inheritDoc/>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.UnsubscribeForm.UnsubscribeFormModel.Subscribe(Telerik.Sitefinity.Modules.Newsletters.NewslettersManager,Telerik.Sitefinity.Newsletters.Model.Subscriber,System.Guid)">
+            <summary>
+            Subscribes by the provided in the query string subscriber id and issue id.
+            </summary>
+            <param name="newslettersManager">The newsletters manager.</param>
+            <param name="subscriber">The subscriber.</param>
+            <param name="mailingListId">The issue's mailing list id.</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.UnsubscribeForm.UnsubscribeFormModel.Unsubscribe(Telerik.Sitefinity.Modules.Newsletters.NewslettersManager,Telerik.Sitefinity.Newsletters.Model.Subscriber,System.Guid,Telerik.Sitefinity.Newsletters.Model.Campaign)">
+            <summary>
+            Unsubscribes by the provided in the query string subscriber id and issue id.
+            </summary>
+            <param name="newslettersManager">The newsletters manager.</param>
+            <param name="subscriber">The subscriber.</param>
+            <param name="mailingListId">The mailing list id.</param>
+            <param name="issue">The issue.</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.UnsubscribeForm.UnsubscribeFormModel.GetUnsubscribeSuccessfulMessage(Telerik.Sitefinity.Newsletters.Model.Subscriber,Telerik.Sitefinity.Newsletters.Model.Campaign,Telerik.Sitefinity.Newsletters.Model.MailingList)">
+            <summary>
+            Resolves the unsubscribe successful message.
+            </summary>
+            <param name="subscriber">The subscriber.</param>
+            <param name="issue">The issue.</param>
+            <param name="list">The mailing list.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.UnsubscribeForm.UnsubscribeFormModel.MergeContextItems">
+            <summary>
+            Helper class for merge context
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.UnsubscribeForm.UnsubscribeFormModel.MergeContextItems.SubscribeLink">
+            <summary>
+            Gets or sets the subscribe link.
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.UnsubscribeForm.UnsubscribeFormViewModel">
+            <summary>
+            This class represents the view model of Unsubscribe widget.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.UnsubscribeForm.UnsubscribeFormViewModel.Message">
+            <summary>
+            Gets or sets the message that will be shown when Link unsubscribe mode is selected.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.UnsubscribeForm.UnsubscribeFormViewModel.WidgetTitle">
+            <summary>
+            Gets or sets the title of the widget when EmailAddress unsubscribe mode is selected.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.UnsubscribeForm.UnsubscribeFormViewModel.WidgetDescription">
+            <summary>
+            Gets or sets the description of the widget when EmailAddress unsubscribe mode is selected.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.UnsubscribeForm.UnsubscribeFormViewModel.RedirectPageUrl">
+            <summary>
+            Gets or sets the redirect page URL.
+            </summary>
+            <value>The redirect page URL.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.UnsubscribeForm.UnsubscribeFormViewModel.CssClass">
+            <summary>
+            Gets or sets the CSS class that will be applied on the wrapper div of the widget.
+            </summary>
+            <value>
+            The CSS class.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.UnsubscribeForm.UnsubscribeFormViewModel.Email">
+            <summary>
+            Gets or sets the email.
+            </summary>
+            <value>The email.</value>
+        </member>
+        <member name="T:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.UnsubscribeForm.UnsubscribeMode">
+            <summary>
+            Defines available modes for unsubscribing.
+            </summary>
+        </member>
+        <member name="F:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.UnsubscribeForm.UnsubscribeMode.Link">
+            <summary>
+            Unsubscribe by link included in a newsletter.
+            </summary>
+        </member>
+        <member name="F:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.Models.UnsubscribeForm.UnsubscribeMode.EmailAddress">
+            <summary>
+            Unsubscribe by entering an e-mail.
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.StaticSubscribeFormResources">
+            <summary>
+            This class is used as a resource class for localization of strings rendered by the MVC framework. It should not be used directly.
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.SubscribeFormResources">
+            <summary>
+            Sitefinity localizable strings
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.SubscribeFormResources.#ctor">
+            <summary>
+            Initializes new instance of <see cref="T:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.SubscribeFormResources"/> class with the default <see cref="T:Telerik.Sitefinity.Localization.Data.ResourceDataProvider"/>.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.SubscribeFormResources.#ctor(Telerik.Sitefinity.Localization.Data.ResourceDataProvider)">
+            <summary>
+            Initializes new instance of <see cref="T:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.SubscribeFormResources"/> class with the provided <see cref="T:Telerik.Sitefinity.Localization.Data.ResourceDataProvider"/>.
+            </summary>
+            <param name="dataProvider"><see cref="T:Telerik.Sitefinity.Localization.Data.ResourceDataProvider"/></param>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.SubscribeFormResources.SubscribeFormResourcesTitle">
+            <summary>
+            The title of the class.
+            </summary>
+            <value>SubscribeFormResources labels</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.SubscribeFormResources.SubscribeFormResourcesTitlePlural">
+            <summary>
+            The plural title of this class.
+            </summary>
+            <value>SubscribeFormResources labels</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.SubscribeFormResources.SubscribeFormResourcesDescription">
+            <summary>
+            The description of this class.
+            </summary>
+            <value>Contains localizable resources.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.SubscribeFormResources.MoreOptions">
+            <summary>
+            Gets phrase : More options
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.SubscribeFormResources.CssClasses">
+            <summary>
+            Gets phrase : CSS classes
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.SubscribeFormResources.TemplateLabel">
+            <summary>
+            Gets phrase : Template
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.SubscribeFormResources.MailingList">
+            <summary>
+            phrase: Mailing lists
+            </summary>
+            <value>Mailing lists</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.SubscribeFormResources.UsersSubscribeLists">
+            <summary>
+            phrase: Subscribe users to selected mailing lists
+            </summary>
+            <value>Subscribe users to selected mailing lists</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.SubscribeFormResources.SuccessfullySubmittedLabel">
+            <summary>
+            phrase: When the form is successfully submitted...
+            </summary>
+            <value>When the form is successfully submitted...</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.SubscribeFormResources.ShowMessageLabel">
+            <summary>
+            phrase: Show message
+            </summary>
+            <value>Show message</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.SubscribeFormResources.OpenSpecificPageLabel">
+            <summary>
+            phrase: Open a specially prepared page...
+            </summary>
+            <value>Open a specially prepared page...</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.SubscribeFormResources.MissingMailingList">
+            <summary>
+            phrase: The selected mailing list has been deleted.
+            </summary>
+            <value>The selected mailing list has been deleted.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.SubscribeFormResources.EmptyLinkText">
+            <summary>
+            phrase: Select a mailing list
+            </summary>
+            <value>Select a mailing list</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.SubscribeFormResources.Subscribe">
+            <summary>
+            phrase: Subscribe
+            </summary>
+            <value>Subscribe</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.SubscribeFormResources.SubscribeMail">
+            <summary>
+            phrase: Subscribe to our email newsletter to receive updates
+            </summary>
+            <value>Subscribe to our email newsletter to receive updates</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.SubscribeFormResources.FirstName">
+            <summary>
+            phrase: First name.
+            </summary>
+            <value>First name.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.SubscribeFormResources.LastName">
+            <summary>
+            phrase: Last name.
+            </summary>
+            <value>Last name.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.SubscribeFormResources.Optional">
+            <summary>
+            phrase: (Optional)
+            </summary>
+            <value>(Optional)</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.SubscribeFormResources.Email">
+            <summary>
+            phrase: Email
+            </summary>
+            <value>Email</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.SubscribeFormResources.ButtonSubscribe">
+            <summary>
+            phrase: Subscribe
+            </summary>
+            <value>Subscribe</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.SubscribeFormResources.ThankYou">
+            <summary>
+            phrase: Thank you
+            </summary>
+            <value>Thank you</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.SubscribeFormResources.ThankYouMessage">
+            <summary>
+            phrase: You have successfully subscribed to our newsletter
+            </summary>
+            <value>You have successfully subscribed to our newsletter</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.SubscribeFormResources.EmailAddressErrorMessageResourceName">
+            <summary>
+            phrase: Email address is invalid
+            </summary>
+            <value>Email address is invalid</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.SubscribeFormResources.SuccessfulSubscription">
+            <summary>
+            phrase: You have successfully subscribed to this mailing list. Thank you.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.SubscribeFormResources.ModuleNotLicensed">
+            <summary>
+            phrase: Email Campaigns functionality is disabled since the Email Campaigns module is not licensed.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.SubscribeFormResources.NewslettersModuleDeactivatedMessage">
+            <summary>
+            Message shown when the newsletters module is deactivated
+            </summary>
+            <value>This widget doesn't work, because Newsletters module has been deactivated.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.SubscribeFormResources.Close">
+            <summary>
+            word: Close
+            </summary>
+            <value>Close</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.SubscribeFormResources.MissingPage">
+            <summary>
+            phrase: The selected page has been deleted.
+            </summary>
+            <value>The selected page has been deleted.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.SubscribeFormResources.SubscribeFormTitle">
+            <summary>
+            Title of the subscribe form control
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.SubscribeFormResources.SubscribeFormDescription">
+            <summary>
+            The description of the subscribe form
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.UnsubscribeFormResources">
+            <summary>
+            Localizable strings for the Unsubscribe widget
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.UnsubscribeFormResources.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.UnsubscribeFormResources"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.UnsubscribeFormResources.#ctor(Telerik.Sitefinity.Localization.Data.ResourceDataProvider)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.UnsubscribeFormResources"/> class.
+            </summary>
+            <param name="dataProvider">The data provider.</param>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.UnsubscribeFormResources.UnsubscribeFormResourcesTitle">
+            <summary>
+            Gets Title for the Unsubscribe widget resources class.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.UnsubscribeFormResources.UnsubscribeFormResourcesDescription">
+            <summary>
+            Gets Description for the Unsubscribe widget resources class.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.UnsubscribeFormResources.ModuleNotLicensed">
+            <summary>
+            Module Not Licensed message
+            </summary>
+            <value>Email Campaigns functionality is disabled since the Email Campaigns module is not licensed.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.UnsubscribeFormResources.UnsubscribeMessageOnSuccess">
+            <summary>
+            Unsubscribe message shown on success.
+            </summary>
+            <value>You have been successfully unsubscribed from our newsletter ({|Subscriber.Email|}). \r\nIf you change your mind you can {|MergeContextItems.SubscribeLink|} to our newsletter again. \r\nThank you.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.UnsubscribeFormResources.SubscribeSuccessful">
+            <summary>
+            Message shown when the user is successfully subscribed.
+            </summary>
+            <value><strong>Thank you</strong> <br/> You have successfully subscribed to our newsletter ({0})</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.UnsubscribeFormResources.SubscribeLink">
+            <summary>
+            word: subscribe
+            </summary>
+            <value>subscribe</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.UnsubscribeFormResources.UnsubscribeBy">
+            <summary>
+            word: Unsubscribe by
+            </summary>
+            <value>subscribe</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.UnsubscribeFormResources.Email">
+            <summary>
+            word: Emal
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.UnsubscribeFormResources.EmailAddress">
+            <summary>
+            word: Email address
+            </summary>
+            <value>Email address</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.UnsubscribeFormResources.ButtonUnsubscribe">
+            <summary>
+            word: Unsubscribe
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.UnsubscribeFormResources.Link">
+            <summary>
+            word: Link
+            </summary>
+            <value>Link</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.UnsubscribeFormResources.EmailAddressErrorMessageResourceName">
+            <summary>
+            phrase: Email address is invalid
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.UnsubscribeFormResources.IncludedInNewsletter">
+            <summary>
+            word: included in newsletter
+            </summary>
+            <value>included in newsletter</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.UnsubscribeFormResources.TemplateLabel">
+            <summary>
+            Gets phrase : Template
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.UnsubscribeFormResources.YouDontBelongToTheMailingList">
+            <summary>
+            Message displayed to user who tries to unsubscribe from the campaign he or she does not belong to.
+            </summary>
+            <value>{0} does not exist in our mailing list</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.UnsubscribeFormResources.UnsubscribedFromMailingListSuccessMessage">
+            <summary>
+            Unsubscribe message shown when the user is successfully unsubscribed by email address.
+            </summary>
+            <value>You have been successfully unsubscribed from our newsletter ({0}). Thank you.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.UnsubscribeFormResources.UnsubscribeSuccessful">
+            <summary>
+            Unsubscribe successful resource
+            </summary>
+            <value>Unsubscribe successful</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.UnsubscribeFormResources.CssClasses">
+            <summary>
+            Gets phrase : CSS classes
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.UnsubscribeFormResources.UnsubscribeWidgetTitle">
+            <summary>
+            Unsubscribe widget title shown when EmailAddress unsubscribe mode is selected.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.UnsubscribeFormResources.MailingList">
+            <summary>
+            phrase: Mailing lists
+            </summary>
+            <value>Mailing lists</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.UnsubscribeFormResources.UsersUnSubscribeLists">
+            <summary>
+            phrase: Unsubscribe users from selected mailing list
+            </summary>
+            <value>Unsubscribe users from selected mailing list</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.UnsubscribeFormResources.SuccessfullySubmittedLabel">
+            <summary>
+            phrase: When the form is successfully submitted...
+            </summary>
+            <value>When the form is successfully submitted...</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.UnsubscribeFormResources.ShowMessageLabel">
+            <summary>
+            phrase: Show message
+            </summary>
+            <value>Show message</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.UnsubscribeFormResources.OpenSpecificPageLabel">
+            <summary>
+            phrase: Open a specially prepared page...
+            </summary>
+            <value>Open a specially prepared page...</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.UnsubscribeFormResources.MoreOptions">
+            <summary>
+            Gets phrase : More options
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.UnsubscribeFormResources.InsertDynamicData">
+            <summary>
+            word: Insert dynamic data
+            </summary>
+            <value>Insert dynamic data</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.UnsubscribeFormResources.CopyPaste">
+            <summary>
+            word: Copy / paste in the text...
+            </summary>
+            <value>Copy / paste in the text...</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.UnsubscribeFormResources.ToDsiplay">
+            <summary>
+            word: to display...
+            </summary>
+            <value>to display...</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.UnsubscribeFormResources.UnsubscribeWidgetDescription">
+            <summary>
+            Unsubscribe widget description shown when EmailAddress unsubscribe mode is selected.
+            </summary>
+            <value>Unsubscribe from our email newsletter</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.UnsubscribeFormResources.NewslettersModuleDeactivatedMessage">
+            <summary>
+            Message shown when the newsletters module is deactivated
+            </summary>
+            <value>This widget doesn't work, because Newsletters module has been deactivated.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.UnsubscribeFormResources.Close">
+            <summary>
+            word: Close
+            </summary>
+            <value>Close</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.UnsubscribeFormResources.MissingMailingList">
+            <summary>
+            phrase: The selected mailing list has been deleted.
+            </summary>
+            <value>The selected mailing list has been deleted.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.UnsubscribeFormResources.MissingPage">
+            <summary>
+            phrase: The selected page has been deleted.
+            </summary>
+            <value>The selected page has been deleted.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.UnsubscribeFormResources.UnsubscribeFormTitle">
+            <summary>
+            Title of the unsubscribe form control
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.EmailCampaigns.Mvc.StringResources.UnsubscribeFormResources.UnsubscribeFormDescription">
+            <summary>
+            The description of the unsubscribe form
+            </summary>
+        </member>
+    </members>
+</doc>

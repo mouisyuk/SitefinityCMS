@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Telerik.Sitefinity.GraphQL</name>
+    </assembly>
+    <members>
+        <member name="T:Telerik.Sitefinity.GraphQL.GraphQLController">
+            <summary>
+            A graphQL controller for sitefinity web services.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.GraphQL.GraphQLController.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.GraphQL.GraphQLController" /> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.GraphQL.GraphQLController.PostAsync(System.Net.Http.HttpRequestMessage,Telerik.Sitefinity.GraphQL.GraphQLQuery)">
+            <summary>
+            Handles the graphql query.
+            </summary>
+            <param name="request">The request message.</param>
+            <param name="query">The query.</param>
+            <returns>The executed result.</returns>
+        </member>
+        <member name="T:Telerik.Sitefinity.GraphQL.GraphQLQuery">
+            <summary>
+            A graphQL query object.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.GraphQL.GraphQLQuery.OperationName">
+            <summary>
+            Gets or sets the operation name.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.GraphQL.GraphQLQuery.Query">
+            <summary>
+            Gets or sets the query.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.GraphQL.GraphQLQuery.Variables">
+            <summary>
+            Gets or sets the variables.
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.GraphQL.Initializer">
+            <summary>
+            Defines the initialization logic for the assembly
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.GraphQL.Initializer.Initialize">
+            <summary>
+            Initializes this instance.
+            </summary>
+        </member>
+    </members>
+</doc>

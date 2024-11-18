@@ -1,0 +1,1152 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Telerik.Sitefinity.Frontend.Blogs</name>
+    </assembly>
+    <members>
+        <member name="T:Telerik.Sitefinity.Frontend.Blogs.InterfaceMappings">
+            <summary>
+            This class is used to describe the bindings which will be used by the Ninject container when resolving classes
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Blogs.InterfaceMappings.Load">
+            <summary>
+            Loads the module into the kernel.
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.Frontend.Blogs.Mvc.Controllers.BlogController">
+            <summary>
+            This class represents the controller of the Blog widget.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.Controllers.BlogController.Model">
+            <summary>
+            Gets the Blog widget model.
+            </summary>
+            <value>
+            The model.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.Controllers.BlogController.ListTemplateName">
+            <summary>
+            Gets or sets the name of the template that will be displayed when widget is in List view.
+            </summary>
+            <value>
+            The name of the list template.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.Controllers.BlogController.DetailTemplateName">
+            <summary>
+            Gets or sets the name of the template that will be displayed when widget is in Detail view.
+            </summary>
+            <value>
+            The name of the details template.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.Controllers.BlogController.DetailPageMode">
+            <summary>
+            Gets or sets a value indicating where detail view for the blog should be opened.
+            </summary>
+            <value>
+            The detail page mode.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.Controllers.BlogController.DetailsPageId">
+            <summary>
+            Gets or sets the id of the page where will be displayed details view for selected item when <see cref="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.Controllers.BlogController.DetailPageMode"/> is set to SelectedExistingPage.
+            </summary>
+            <value>
+            The details page id.
+            </value>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Blogs.Mvc.Controllers.BlogController.Index(System.Nullable{System.Int32})">
+            <summary>
+            Renders appropriate list view depending on the <see cref="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.Controllers.BlogController.ListTemplateName" />
+            </summary>
+            <param name="page">The page.</param>
+            <returns>
+            The <see cref="T:System.Web.Mvc.ActionResult" />.
+            </returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Blogs.Mvc.Controllers.BlogController.Details(Telerik.Sitefinity.Blogs.Model.Blog)">
+            <summary>
+            Renders appropriate list view depending on the <see cref="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.Controllers.BlogController.DetailTemplateName"/>
+            </summary>
+            <param name="item">The item which details will be displayed.</param>
+            <returns>
+            The <see cref="T:System.Web.Mvc.ActionResult"/>.
+            </returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Blogs.Mvc.Controllers.BlogController.HandleUnknownAction(System.String)">
+            <summary>
+            Called when a request matches this controller, but no method with the specified action name is found in the controller.
+            </summary>
+            <param name="actionName">The name of the attempted action.</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Blogs.Mvc.Controllers.BlogController.InitializeListViewBag(System.String)">
+            <summary>
+            Initializes the ListView bag.
+            </summary>
+            <param name="redirectPageUrl">The redirect page URL.</param>
+        </member>
+        <member name="T:Telerik.Sitefinity.Frontend.Blogs.Mvc.Controllers.BlogPostController">
+            <summary>
+            This class represents the controller of the Blog post widget.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.Controllers.BlogPostController.Model">
+            <summary>
+            Gets the Blog posts widget model.
+            </summary>
+            <value>
+            The model.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.Controllers.BlogPostController.ListTemplateName">
+            <summary>
+            Gets or sets the name of the template that will be displayed when widget is in List view.
+            </summary>
+            <value>
+            The name of the list template.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.Controllers.BlogPostController.DetailTemplateName">
+            <summary>
+            Gets or sets the name of the template that will be displayed when widget is in Detail view.
+            </summary>
+            <value>
+            The name of the details template.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.Controllers.BlogPostController.OpenInSamePage">
+            <summary>
+            Gets or sets a value indicating whether detail view for the blog post should be opened in the same page.
+            </summary>
+            <value>
+            <c>true</c> if details link should be opened in the same page; otherwise, (if should redirect to custom selected page)<c>false</c>.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.Controllers.BlogPostController.DetailsPageId">
+            <summary>
+            Gets or sets the id of the page where will be displayed details view for selected item.
+            </summary>
+            <value>
+            The details page id.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.Controllers.BlogPostController.MetadataFields">
+            <summary>
+            Gets the metadata container.
+            </summary>
+            <value>
+            The metadata container.
+            </value>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Blogs.Mvc.Controllers.BlogPostController.Index(System.Nullable{System.Int32})">
+            <summary>
+            Renders appropriate list view depending on the <see cref="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.Controllers.BlogPostController.ListTemplateName" />
+            </summary>
+            <param name="page">The page.</param>
+            <returns>
+            The <see cref="T:System.Web.Mvc.ActionResult" />.
+            </returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Blogs.Mvc.Controllers.BlogPostController.Successors(Telerik.Sitefinity.Blogs.Model.Blog,System.Nullable{System.Int32})">
+            <summary>
+            Displays successors of the specified parent item.
+            </summary>
+            <param name="parentItem">The parent item.</param>
+            <param name="page">The page.</param>
+            <returns>
+            The <see cref="T:System.Web.Mvc.ActionResult" />.
+            </returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Blogs.Mvc.Controllers.BlogPostController.ListByTaxon(Telerik.Sitefinity.Taxonomies.Model.ITaxon,System.Nullable{System.Int32})">
+            <summary>
+            Renders appropriate list view depending on the <see cref="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.Controllers.BlogPostController.ListTemplateName" />
+            </summary>
+            <param name="taxonFilter">The taxonomy filter.</param>
+            <param name="page">The page.</param>
+            <returns>
+            The <see cref="T:System.Web.Mvc.ActionResult" />.
+            </returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Blogs.Mvc.Controllers.BlogPostController.ListByDate(System.DateTime,System.DateTime,System.Nullable{System.Int32})">
+            <summary>
+            Renders appropriate list view depending on the <see cref="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.Controllers.BlogPostController.ListTemplateName" />
+            </summary>
+            <param name="from">The start date from the date filter.</param>
+            <param name="to">The end date from the date filter.</param>
+            <param name="page">The page.</param>
+            <returns>
+            The <see cref="T:System.Web.Mvc.ActionResult" />.
+            </returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Blogs.Mvc.Controllers.BlogPostController.Details(Telerik.Sitefinity.Blogs.Model.BlogPost)">
+            <summary>
+            Renders appropriate list view depending on the <see cref="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.Controllers.BlogPostController.DetailTemplateName"/>
+            </summary>
+            <param name="item">The item which details will be displayed.</param>
+            <returns>
+            The <see cref="T:System.Web.Mvc.ActionResult"/>.
+            </returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Blogs.Mvc.Controllers.BlogPostController.GetParentTypes">
+            <summary>
+            Gets the parent types.
+            </summary>
+            <returns>Collection of parent types to filter by.</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Blogs.Mvc.Controllers.BlogPostController.HandleUnknownAction(System.String)">
+            <summary>
+            Called when a request matches this controller, but no method with the specified action name is found in the controller.
+            </summary>
+            <param name="actionName">The name of the attempted action.</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Blogs.Mvc.Controllers.BlogPostController.TryMapRouteParameters(System.String[],System.Web.Routing.RequestContext)">
+            <summary>
+            Maps the route parameters from URL and returns true if the URL is a valid route.
+            </summary>
+            <param name="urlParams">The URL parameters.</param>
+            <param name="requestContext">The request context.</param>
+            <returns>True if the URL is a valid route. False otherwise.</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Blogs.Mvc.Controllers.BlogPostController.TryResolveParentFilterMode(System.String[],System.Web.Routing.RequestContext,Telerik.Sitefinity.Modules.Blogs.BlogsManager)">
+            <summary>
+            Tries to resolve parent filter mode.
+            </summary>
+            <param name="urlParams">The URL params.</param>
+            <param name="requestContext">The request context.</param>
+            <returns></returns>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.Controllers.BlogPostController.DisableCanonicalUrlMetaTag">
+            <summary>
+            Gets or sets a value indicating whether the canonical URL tag should be added to the page when the canonical meta tag should be added to the page.
+            If the value is not set, the settings from SystemConfig -> ContentLocationsSettings -> DisableCanonicalURLs will be used. 
+            </summary>
+            <value>
+            The disable canonical URLs.
+            </value>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Blogs.Mvc.Controllers.BlogPostController.GetLocations">
+            <summary>
+            Gets the information for all of the content types that a control is able to show.
+            </summary>
+            <returns>
+            List of location info of the content that this control is able to show.
+            </returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Blogs.Mvc.Controllers.BlogPostController.InitializeListViewBag(System.String)">
+            <summary>
+            Initializes the ListView bag.
+            </summary>
+            <param name="redirectPageUrl">The redirect page URL.</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Blogs.Mvc.Controllers.BlogPostController.SetRedirectUrlQueryString(Telerik.Sitefinity.Taxonomies.Model.ITaxon)">
+            <summary>
+            Sets the redirect URL query string.
+            </summary>
+            <param name="taxon">The taxon.</param>
+        </member>
+        <member name="T:Telerik.Sitefinity.Frontend.Blogs.Mvc.Helpers.BlogPostHelper">
+            <summary>
+            Provides helpers for working with blogs.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Blogs.Mvc.Helpers.BlogPostHelper.GetLastPostDates(Telerik.Sitefinity.Frontend.Mvc.Models.ContentListViewModel)">
+            <summary>
+            Gets the last post dates for each blog in the model that has blog posts.
+            </summary>
+            <param name="model">The blog model.</param>
+            <returns>Prefetched dictionary containing last post date for each blog in the model that has blog posts.</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Blogs.Mvc.Helpers.BlogPostHelper.GetLastPostDate(Telerik.Sitefinity.Frontend.Mvc.Models.ItemViewModel,System.Collections.Generic.IDictionary{System.Guid,System.DateTime})">
+            <summary>
+            Gets the last post date of the given post.
+            </summary>
+            <param name="item">The item.</param>
+            <param name="lastDates">The last dates.</param>
+            <returns>Last post date for the given blog.</returns>
+            <exception cref="T:System.ArgumentNullException">lastDates</exception>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Blogs.Mvc.Helpers.BlogPostHelper.GetLastPostDate(Telerik.Sitefinity.Frontend.Mvc.Models.ItemViewModel)">
+            <summary>
+            Gets the last post date of the blog.
+            </summary>
+            <param name="item">The blog view model.</param>
+            <returns>The date of the last post if such exists.</returns>
+            <remarks>This method causes an SQL query. For multiple items use the overload that accepts a dictionary with preloaded dates. Get the dictionary with Model.GetLastPostDates().</remarks>
+        </member>
+        <member name="T:Telerik.Sitefinity.Frontend.Blogs.Mvc.Helpers.DetailLocationHyperLinkHelper">
+            <summary>
+            This class contains helpers for determining detail action URLs for blogs.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Blogs.Mvc.Helpers.DetailLocationHyperLinkHelper.GetDetailPageUrl(Telerik.Sitefinity.Frontend.Mvc.Models.ItemViewModel,System.Guid,Telerik.Sitefinity.Frontend.Blogs.Mvc.Models.Blog.BlogDetailLocationMode)">
+            <summary>
+            Gets the detail page URL for blog item.
+            </summary>
+            <param name="item">The item.</param>
+            <param name="detailsPageId">The details page identifier.</param>
+            <param name="blogDetailLocationMode">The blog detail location mode.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Telerik.Sitefinity.Frontend.Blogs.Mvc.Models.BlogPost.BlogPostModel">
+            <summary>
+            Provides API for working with <see cref="T:Telerik.Sitefinity.Blogs.Model.BlogPost"/> items.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.Models.BlogPost.BlogPostModel.ParentFilterMode">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.Models.BlogPost.BlogPostModel.SerializedSelectedParentsIds">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.Models.BlogPost.BlogPostModel.ContentType">
+            <summary>
+            Gets or sets the type of content that is loaded.
+            </summary>
+            <value>
+            The type of the content.
+            </value>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Blogs.Mvc.Models.BlogPost.BlogPostModel.CreateListViewModelByParent(Telerik.Sitefinity.Blogs.Model.Blog,System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Blogs.Mvc.Models.BlogPost.BlogPostModel.GetItemsQuery">
+            <summary>
+            Gets the items query.
+            </summary>
+            <returns>The query.</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Blogs.Mvc.Models.BlogPost.BlogPostModel.CompileFilterExpression">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Sitefinity.Frontend.Blogs.Mvc.Models.BlogPost.IBlogPostModel">
+            <summary>
+            This interface defines API for working with <see cref="T:Telerik.Sitefinity.Blogs.Model.BlogPost"/> items.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.Models.BlogPost.IBlogPostModel.SerializedSelectedItemsIds">
+            <summary>
+            Gets the list of blog posts to be displayed inside the widget when option "Selected blog posts" is enabled.
+            </summary>
+            <value>
+            The selected blog post items.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.Models.BlogPost.IBlogPostModel.SerializedSelectedParentsIds">
+            <summary>
+            Gets or sets the serialized selected parent ids.
+            </summary>
+            <value>
+            The serialized selected parents ids.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.Models.BlogPost.IBlogPostModel.ListCssClass">
+            <summary>
+            Gets or sets the CSS class that will be applied on the wrapper div of the widget when it is in List view.
+            </summary>
+            <value>
+            The CSS class.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.Models.BlogPost.IBlogPostModel.DetailCssClass">
+            <summary>
+            Gets or sets the CSS class that will be applied on the wrapper div of the widget when it is in Details view.
+            </summary>
+            <value>
+            The CSS class.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.Models.BlogPost.IBlogPostModel.SelectionMode">
+            <summary>
+            Gets or sets which blog posts to be displayed in the list view.
+            </summary>
+            <value>The page display mode.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.Models.BlogPost.IBlogPostModel.SelectionGroupLogicalOperator">
+            <summary>
+            Gets or sets the group logical operator used for filtering.
+            </summary>
+            <value>
+            The group logical operator used for filtering.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.Models.BlogPost.IBlogPostModel.ProviderName">
+            <summary>
+            Gets or sets the name of the provider.
+            </summary>
+            <value>The name of the provider.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.Models.BlogPost.IBlogPostModel.DisplayMode">
+            <summary>
+            Gets or sets a value indicating whether to divide items in the list.
+            </summary>
+            <value>
+            The display mode.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.Models.BlogPost.IBlogPostModel.ItemsPerPage">
+            <summary>
+            Gets or sets the items count per page.
+            </summary>
+            <value>
+            The items per page.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.Models.BlogPost.IBlogPostModel.LimitCount">
+            <summary>
+            Gets or sets the items limit count.
+            </summary>
+            <value>
+            The items limit.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.Models.BlogPost.IBlogPostModel.SortExpression">
+            <summary>
+            Gets or sets the sort expression.
+            </summary>
+            <value>
+            The sort expression.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.Models.BlogPost.IBlogPostModel.SerializedAdditionalFilters">
+            <summary>
+            Gets or sets the serialized additional filters.
+            </summary>
+            <value>
+            The serialized additional filters.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.Models.BlogPost.IBlogPostModel.SerializedDateFilters">
+            <summary>
+            Gets or sets the serialized date filters.
+            </summary>
+            <value>
+            The serialized date filters.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.Models.BlogPost.IBlogPostModel.FilterExpression">
+            <summary>
+            Gets or sets the additional filter expression.
+            </summary>
+            <value>
+            The filter expression.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.Models.BlogPost.IBlogPostModel.ParentFilterMode">
+            <summary>
+            Gets or sets the parent filtering mode.
+            </summary>
+            <value>
+            The parent filtering mode.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.Models.BlogPost.IBlogPostModel.UrlKeyPrefix">
+            <summary>
+            Gets or sets the URL key prefix.
+            </summary>
+            <value>The URL key prefix.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.Models.BlogPost.IBlogPostModel.ContentViewDisplayMode">
+            <summary>
+            Gets or sets the display mode of the content view.
+            </summary>
+            <remarks>
+            Note that this enumeration differs from the FieldDisplayMode.
+            </remarks>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Blogs.Mvc.Models.BlogPost.IBlogPostModel.CreateListViewModel(Telerik.Sitefinity.Taxonomies.Model.ITaxon,System.Int32)">
+            <summary>
+            Creates a view model for use in list views.
+            </summary>
+            <param name="taxonFilter">The taxon filter.</param>
+            <param name="page">The page.</param>
+            <returns>A view model for use in list views.</returns>
+            <exception cref="T:System.ArgumentException">'page' argument has to be at least 1.;page</exception>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Blogs.Mvc.Models.BlogPost.IBlogPostModel.CreateDetailsViewModel(Telerik.Sitefinity.Model.IDataItem)">
+            <summary>
+            Creates the details view model.
+            </summary>
+            <param name="item">The item.</param>
+            <returns>A view model for use in detail views.</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Blogs.Mvc.Models.BlogPost.IBlogPostModel.CreateListViewModelByParent(Telerik.Sitefinity.Blogs.Model.Blog,System.Int32)">
+            <summary>
+            Creates the ListView model by parent.
+            </summary>
+            <param name="parentItem">The parent item.</param>
+            <param name="page">The page.</param>
+            <returns>A list view model containing all descendant items from the given parent.</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Blogs.Mvc.Models.BlogPost.IBlogPostModel.CreateListViewModelByDate(System.DateTime,System.DateTime,System.Int32)">
+            <summary>
+            Creates the ListView model by date filter.
+            </summary>
+            <param name="from">The start date from the date filter.</param>
+            <param name="to">The end date from the date filter.</param>
+            <param name="page">The page.</param>
+            <returns>A list view model containing all descendant items from the given parent.</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Blogs.Mvc.Models.BlogPost.IBlogPostModel.GetKeysOfDependentObjects(Telerik.Sitefinity.Frontend.Mvc.Models.ContentListViewModel)">
+            <summary>
+            Gets a collection of <see cref="!:CacheDependencyNotifiedObject"/>.
+                The <see cref="!:CacheDependencyNotifiedObject"/> represents a key for which cached items could be subscribed for
+                notification.
+                When notified, all cached objects with dependency on the provided keys will expire.
+            </summary>
+            <param name="viewModel">View model that will be used for displaying the data.</param>
+            <returns>
+            The <see cref="!:IList"/>.
+            </returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Blogs.Mvc.Models.BlogPost.IBlogPostModel.GetKeysOfDependentObjects(Telerik.Sitefinity.Frontend.Mvc.Models.ContentDetailsViewModel)">
+            <summary>
+            Gets a collection of <see cref="!:CacheDependencyNotifiedObject"/>.
+                The <see cref="!:CacheDependencyNotifiedObject"/> represents a key for which cached items could be subscribed for
+                notification.
+                When notified, all cached objects with dependency on the provided keys will expire.
+            </summary>
+            <param name="viewModel">View model that will be used for displaying the data.</param>
+            <returns>
+            The <see cref="!:IList"/>.
+            </returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Blogs.Mvc.Models.BlogPost.IBlogPostModel.GetLocations">
+            <summary>
+            Gets the information for all of the content types that a control is able to show.
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.Frontend.Blogs.Mvc.Models.BlogPost.ParentFilterMode">
+            <summary>
+            Mode for filtering blog posts by parent.
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.Frontend.Blogs.Mvc.Models.Blog.BlogDetailLocationMode">
+            <summary>
+            Options for forming the location of blogs detail page.
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.Frontend.Blogs.Mvc.Models.Blog.BlogDetailsViewModel">
+            <summary>
+            The view model for the detail page of <see cref="!:BlogController"/>
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.Models.Blog.BlogDetailsViewModel.PostsCount">
+            <summary>
+            Gets or sets the blogs count.
+            </summary>
+            <value>
+            The blogs count.
+            </value>
+        </member>
+        <member name="T:Telerik.Sitefinity.Frontend.Blogs.Mvc.Models.Blog.BlogModel">
+            <summary>
+            Provides API for working with <see cref="T:Telerik.Sitefinity.Blogs.Model.Blog"/> items.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.Models.Blog.BlogModel.ContentType">
+            <summary>
+            Gets or sets the type of content that is loaded.
+            </summary>
+            <value>
+            The type of the content.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.Models.Blog.BlogModel.MinPostsCount">
+            <inheritDoc/>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.Models.Blog.BlogModel.MaxPostsAge">
+            <inheritDoc/>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.Models.Blog.BlogModel.FilteredSelectionMode">
+            <inheritDoc/>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Blogs.Mvc.Models.Blog.BlogModel.CreateListViewModel(System.Int32)">
+            <inheritDoc/>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Blogs.Mvc.Models.Blog.BlogModel.AdaptMultilingualFilterExpression(System.String)">
+            <inheritDoc/>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Blogs.Mvc.Models.Blog.BlogModel.AddLiveFilterExpression(System.String)">
+            <inheritDoc/>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Blogs.Mvc.Models.Blog.BlogModel.CreateDetailsViewModelInstance">
+            <inheritDoc/>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Blogs.Mvc.Models.Blog.BlogModel.CreateDetailsViewModel(Telerik.Sitefinity.Model.IDataItem)">
+            <inheritDoc/>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Blogs.Mvc.Models.Blog.BlogModel.GetItemsQuery">
+            <inheritDoc/>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Blogs.Mvc.Models.Blog.BlogModel.SetExpression``1(System.Linq.IQueryable{``0},System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32}@)">
+            <inheritDoc/>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Blogs.Mvc.Models.Blog.BlogModel.CompileFilterExpression">
+            <inheritDoc/>
+        </member>
+        <member name="T:Telerik.Sitefinity.Frontend.Blogs.Mvc.Models.Blog.FilteredSelectionMode">
+            <summary>
+            Specifies when <see cref="!:SelectionMode"/> is Filtered, By which value is it filtered
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.Frontend.Blogs.Mvc.Models.Blog.IBlogModel">
+            <summary>
+            This interface defines API for working with <see cref="T:Telerik.Sitefinity.Blogs.Model.Blog"/> items.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.Models.Blog.IBlogModel.SerializedSelectedItemsIds">
+            <summary>
+            Gets the list of blog to be displayed inside the widget when option "Selected blogs" is enabled.
+            </summary>
+            <value>
+            The selected blog items.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.Models.Blog.IBlogModel.ProviderName">
+            <summary>
+            Gets or sets the name of the provider.
+            </summary>
+            <value>The name of the provider.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.Models.Blog.IBlogModel.DisplayMode">
+            <summary>
+            Gets or sets a value indicating whether to divide items in the list.
+            </summary>
+            <value>
+            The display mode.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.Models.Blog.IBlogModel.MinPostsCount">
+            <summary>
+            Specifies the least amount of posts needed to show a blog in the list (when selection mode is Filtered)
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.Models.Blog.IBlogModel.MaxPostsAge">
+            <summary>
+            Specifies the minimum age of the posts in months (when selection mode is Filtered)
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.Models.Blog.IBlogModel.FilteredSelectionMode">
+            <summary>
+            Specifies when <see cref="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.Models.Blog.IBlogModel.SelectionMode"/> is Filtered, By which value is it filtered
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.Models.Blog.IBlogModel.ItemsPerPage">
+            <summary>
+            Gets or sets the items count per page.
+            </summary>
+            <value>
+            The items per page.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.Models.Blog.IBlogModel.LimitCount">
+            <summary>
+            Gets or sets the items limit count.
+            </summary>
+            <value>
+            The items limit.
+            </value>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Telerik.Sitefinity.Frontend.Blogs.Mvc.Models.Blog.IBlogModel.ListCssClass" -->
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.Models.Blog.IBlogModel.DetailCssClass">
+            <summary>
+            Gets or sets the CSS class that will be applied on the wrapper div of the widget when it is in Details view.
+            </summary>
+            <value>
+            The CSS class.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.Models.Blog.IBlogModel.SortExpression">
+            <summary>
+            Gets or sets the sort expression.
+            </summary>
+            <value>
+            The sort expression.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.Models.Blog.IBlogModel.ContentViewDisplayMode">
+            <summary>
+            Gets or sets the display mode of the content view.
+            </summary>
+            <remarks>
+            Note that this enumeration differs from the FieldDisplayMode.
+            </remarks>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.Models.Blog.IBlogModel.SelectionMode">
+            <summary>
+            Gets or sets which blogs to be displayed in the list view.
+            </summary>
+            <value>The page display mode.</value>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Blogs.Mvc.Models.Blog.IBlogModel.CreateListViewModel(System.Int32)">
+            <summary>
+            Creates a view model for use in list views.
+            </summary>
+            <param name="page">The page.</param>
+            <returns>A view model for use in list views.</returns>
+            <exception cref="T:System.ArgumentException">'page' argument has to be at least 1.;page</exception>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Blogs.Mvc.Models.Blog.IBlogModel.CreateDetailsViewModel(Telerik.Sitefinity.Model.IDataItem)">
+            <summary>
+            Creates the details view model.
+            </summary>
+            <param name="item">The item.</param>
+            <returns>A view model for use in detail views.</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Blogs.Mvc.Models.Blog.IBlogModel.GetKeysOfDependentObjects(Telerik.Sitefinity.Frontend.Mvc.Models.ContentListViewModel)">
+            <summary>
+            Gets a collection of <see cref="!:CacheDependencyNotifiedObject"/>.
+                The <see cref="!:CacheDependencyNotifiedObject"/> represents a key for which cached items could be subscribed for
+                notification.
+                When notified, all cached objects with dependency on the provided keys will expire.
+            </summary>
+            <param name="viewModel">View model that will be used for displaying the data.</param>
+            <returns>
+            The <see cref="!:IList"/>.
+            </returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Blogs.Mvc.Models.Blog.IBlogModel.GetKeysOfDependentObjects(Telerik.Sitefinity.Frontend.Mvc.Models.ContentDetailsViewModel)">
+            <summary>
+            Gets a collection of <see cref="!:CacheDependencyNotifiedObject"/>.
+                The <see cref="!:CacheDependencyNotifiedObject"/> represents a key for which cached items could be subscribed for
+                notification.
+                When notified, all cached objects with dependency on the provided keys will expire.
+            </summary>
+            <param name="viewModel">View model that will be used for displaying the data.</param>
+            <returns>
+            The <see cref="!:IList"/>.
+            </returns>
+        </member>
+        <member name="T:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogListResources">
+            <summary>
+            Localizable strings for the Blog widget
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogListResources.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogListResources"/> class. 
+            Initializes new instance of <see cref="T:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogListResources"/> class with the default <see cref="T:Telerik.Sitefinity.Localization.Data.ResourceDataProvider"/>.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogListResources.#ctor(Telerik.Sitefinity.Localization.Data.ResourceDataProvider)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogListResources"/> class.
+            </summary>
+            <param name="dataProvider">The data provider.</param>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogListResources.BlogResourcesTitle">
+            <summary>
+            Gets Blog widget resources title.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogListResources.BlogResourcesDescription">
+            <summary>
+            Gets Blog widget resources description.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogListResources.BlogListResourcesTitle">
+            <summary>
+            Gets phrase: Blog List Resources
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogListResources.BlogListResourcesDescription">
+            <summary>
+            Gets phrase: Contains localizable resources for the Blog List user interface
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogListResources.PostsCount">
+            <summary>
+            phrase: {PostCount} posts
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogListResources.LastPost">
+            <summary>
+            phrase: Last post
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogListResources.Content">
+            <summary>
+            Gets word : Content
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogListResources.Provider">
+            <summary>
+            Gets the Provider
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogListResources.ListSettings">
+            <summary>
+            phrase: List settings
+            </summary>
+            <value>List settings</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogListResources.UseLimit">
+            <summary>
+            Gets phrase : Use limit
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogListResources.ShowLimitedItems">
+            <summary>
+            Phrase: Show only limited number of items {0} items in total
+            </summary>
+            <value>Show only limited number of items {0} items in total</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogListResources.NoLimitPaging">
+            <summary>
+            Phrase: No limit and paging
+            </summary>
+            <value>No limit and paging</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogListResources.ShowAllItems">
+            <summary>
+            Phrase: Show all published items at once
+            </summary>
+            <value>Show all published items at once</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogListResources.SortItems">
+            <summary>
+            Phrase: Sort blogs
+            </summary>
+            <value>Sort blogs</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogListResources.LastPublished">
+            <summary>
+            Gets phrase : Last published on top
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogListResources.LastModified">
+            <summary>
+            Gets phrase : Last modified on top
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogListResources.ByTitleAZ">
+            <summary>
+            Gets phrase : By Title (A-Z)
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogListResources.ByTitleZA">
+            <summary>
+            Gets phrase : By Title (Z-A)
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogListResources.AsSetManually">
+            <summary>
+            phrase: As set manually
+            </summary>
+            <value>As set manually</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogListResources.AsSetInAdvancedMode">
+            <summary>
+            phrase: As set in Advanced mode
+            </summary>
+            <value>As set in Advanced mode</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogListResources.ListTemplate">
+            <summary>
+            Gets phrase : List template
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogListResources.MoreOptions">
+            <summary>
+            Gets phrase : More options
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogListResources.CssClasses">
+            <summary>
+            Gets phrase : CSS classes
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogListResources.DivideToItemPerPage" -->
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogListResources.ItemsToDisplay">
+            <summary>
+            Gets phrase : Which blogs to display?
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogListResources.AllBlogs">
+            <summary>
+            phrase: All blogs
+            </summary>
+            <value>All blogs</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogListResources.SelectedItems">
+            <summary>
+            Gets phrase : Selected blogs...
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogListResources.UsePaging" -->
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogListResources.SingleItemSettings">
+            <summary>
+            Gets phrase : Single item settings
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogListResources.OpenSingleItem" -->
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogListResources.ShowInSamePage">
+            <summary>
+            Gets phrase : Auto-generated page
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogListResources.DefaultPageForBlog">
+            <summary>
+            Gets phrase : Default page for blog
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogListResources.DetailTemplate">
+            <summary>
+            Gets phrase : Detail template
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogListResources.BlogsWithMoreThanPosts">
+            <summary>
+            Phrase: Blogs with more than {0} posts
+            </summary>
+            <value>Blogs with more than {0} posts</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogListResources.OnlyBlogsThatHavePostsNotOlderYhanMonths">
+            <summary>
+            Phrase: Only blogs that have posts not older than {0} months
+            </summary>
+            <value>Only blogs that have posts not older than {0} months</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogListResources.ShowInExistingPage">
+            <summary>
+            Gets phrase : Selected existing page...
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogListResources.BlogsListDescription">
+            <summary>
+            BlogsListDescription
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogListResources.BlogsList">
+            <summary>
+            Translated message, similar to "BlogsListViewTitle"
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogListResources.BlogListDetailViewDesignerResponseMessage">
+            <summary>
+            Gets External Link Label: Work with revision history
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogPostResources">
+            <summary>
+            Localizable strings for the Blog post widget
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogPostResources.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogPostResources"/> class. 
+            Initializes new instance of <see cref="T:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogPostResources"/> class with the default <see cref="T:Telerik.Sitefinity.Localization.Data.ResourceDataProvider"/>.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogPostResources.#ctor(Telerik.Sitefinity.Localization.Data.ResourceDataProvider)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogPostResources"/> class.
+            </summary>
+            <param name="dataProvider">The data provider.</param>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogPostResources.BlogPostResourcesTitle">
+            <summary>
+            Gets Blog post widget resources title.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogPostResources.BlogPostResourcesDescription">
+            <summary>
+            Gets Blog post widget resources description.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogPostResources.By">
+            <summary>
+            Gets word : by
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogPostResources.FullStory">
+            <summary>
+            Gets phrase : Full story
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogPostResources.Content">
+            <summary>
+            Gets word : Content
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogPostResources.Provider">
+            <summary>
+            Gets the Provider
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogPostResources.ListSettings">
+            <summary>
+            phrase: List settings
+            </summary>
+            <value>List settings</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogPostResources.SingleItemSettings">
+            <summary>
+            Gets phrase : Single item settings
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogPostResources.MissingBlogs">
+            <summary>
+            phrase: Some of the selected blog were deleted.
+            </summary>
+            <value>Some of the selected blogs were deleted.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogPostResources.ItemsToDisplay">
+            <summary>
+            Gets phrase : Which blog posts to display?
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogPostResources.FromCurrentlyOpen">
+            <summary>
+            Gets phrase : From currently open blog
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogPostResources.FromSelectedBlogs">
+            <summary>
+            Phrase: From selected blogs only...
+            </summary>
+            <value>From selected blogs only...</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogPostResources.NarrowSelection">
+            <summary>
+            Gets phrase : Narrow selection
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogPostResources.AllPublishedBlogPosts">
+            <summary>
+            Gets phrase : All published blog posts
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogPostResources.SelectionOfBlogPosts">
+            <summary>
+            Gets phrase : Selection of blog posts...
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogPostResources.UsePaging" -->
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogPostResources.SelectedItems">
+            <summary>
+            Gets phrase : Selected blog posts...
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogPostResources.DivideToItemPerPage" -->
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogPostResources.UseLimit">
+            <summary>
+            Gets phrase : Use limit
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogPostResources.ShowLimitedItems">
+            <summary>
+            Phrase: Show only limited number of items {0} items in total
+            </summary>
+            <value>Show only limited number of items {0} items in total</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogPostResources.NoLimitPaging">
+            <summary>
+            Phrase: No limit and paging
+            </summary>
+            <value>No limit and paging</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogPostResources.ShowAllItems">
+            <summary>
+            Phrase: Show all published items at once
+            </summary>
+            <value>Show all published items at once</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogPostResources.SortItems">
+            <summary>
+            Phrase: Sort blog posts.
+            </summary>
+            <value>Sort blog posts</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogPostResources.LastPublished">
+            <summary>
+            Gets phrase : Last published on top
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogPostResources.LastModified">
+            <summary>
+            Gets phrase : Last modified on top
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogPostResources.ByTitleAZ">
+            <summary>
+            Gets phrase : By Title (A-Z)
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogPostResources.ByTitleZA">
+            <summary>
+            Gets phrase : By Title (Z-A)
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogPostResources.AsSetManually">
+            <summary>
+            phrase: As set manually
+            </summary>
+            <value>As set manually</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogPostResources.AsSetInAdvancedMode">
+            <summary>
+            phrase: As set in Advanced mode
+            </summary>
+            <value>As set in Advanced mode</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogPostResources.ListTemplate">
+            <summary>
+            Gets phrase : List template
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogPostResources.MoreOptions">
+            <summary>
+            Gets phrase : More options
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogPostResources.CssClasses">
+            <summary>
+            Gets phrase : CSS classes
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogPostResources.FromAllBlogs">
+            <summary>
+            phrase: From all blogs
+            </summary>
+            <value>From all blogs</value>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogPostResources.OpenSingleItem" -->
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogPostResources.ShowInSamePage">
+            <summary>
+            Gets phrase : Auto-generated page
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogPostResources.ShowInExistingPage">
+            <summary>
+            Gets phrase : Selected existing page...
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogPostResources.DetailTemplate">
+            <summary>
+            Gets phrase : Detail template
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogPostResources.BlogPostsViewTitle">
+            <summary>
+            Messsage: Blog Posts.
+            </summary>
+            <value>BlogPostsView title in the toolbox</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogPostResources.BlogPostsViewDescription">
+            <summary>
+            Messsage: BlogPostsView title in the toolbox
+            </summary>
+            <value>Describes the BlogPostsView title in the toolbox</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Blogs.Mvc.StringResources.BlogPostResources.BlogPostDetailViewDesignerResponseMessage">
+            <summary>
+            Gets External Link Label: Work with revision history
+            </summary>
+        </member>
+    </members>
+</doc>

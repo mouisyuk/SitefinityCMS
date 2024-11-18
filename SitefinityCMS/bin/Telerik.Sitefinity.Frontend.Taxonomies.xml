@@ -1,0 +1,1167 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Telerik.Sitefinity.Frontend.Taxonomies</name>
+    </assembly>
+    <members>
+        <member name="T:Telerik.Sitefinity.Frontend.Taxonomies.Helpers.ContentTypeModel">
+            <summary>
+            This class represents the basci model for content type. 
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Taxonomies.Helpers.ContentTypeModel.#ctor(System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Frontend.Taxonomies.Helpers.ContentTypeModel" /> class.
+            </summary>
+            <param name="displayName">The display name.</param>
+            <param name="fullTypeName">Full name of the type.</param>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Helpers.ContentTypeModel.FullTypeName">
+            <summary>
+            Gets or sets the full name of the type.
+            </summary>
+            <value>The full name of the type.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Helpers.ContentTypeModel.DisplayName">
+            <summary>
+            Gets or sets the display name.
+            </summary>
+            <value>The display name.</value>
+        </member>
+        <member name="T:Telerik.Sitefinity.Frontend.Taxonomies.InterfaceMappings">
+            <summary>
+            This class is used to describe the bindings which will be used by the Ninject container when resolving classes
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Taxonomies.InterfaceMappings.Load">
+            <summary>
+            Loads the module into the kernel.
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Controllers.FlatTaxonomyController">
+            <summary>
+            This class represents the controller of the Flat taxonomy widget.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Controllers.FlatTaxonomyController.TemplateName">
+            <summary>
+            Gets or sets the name of the template that widget will be displayed.
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Controllers.FlatTaxonomyController.Model">
+            <summary>
+            Gets the Flat taxonomy widget model.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Controllers.FlatTaxonomyController.Index">
+            <summary>
+            Default Action
+            </summary>
+            <returns>
+            The <see cref="T:System.Web.Mvc.ActionResult"/>.
+            </returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Controllers.FlatTaxonomyController.HandleUnknownAction(System.String)">
+            <summary>
+            Called when a request matches this controller, but no method with the specified action name is found in the controller.
+            </summary>
+            <param name="actionName">The name of the attempted action.</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Controllers.FlatTaxonomyController.GetResource(System.String)">
+            <summary>
+            Gets the resource.
+            </summary>
+            <typeparam name="T">The type of the T.</typeparam>
+            <param name="resourceName">Name of the resource.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Controllers.HierarchicalTaxonomyController">
+            <summary>
+            This class represents the controller of the Hierarchical taxonomy widget.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Controllers.HierarchicalTaxonomyController.TemplateName">
+            <summary>
+            Gets or sets the name of the template that widget will be displayed.
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Controllers.HierarchicalTaxonomyController.Model">
+            <summary>
+            Gets the Hierarchical taxonomy widget model.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Controllers.HierarchicalTaxonomyController.Index">
+            <summary>
+            Default Action
+            </summary>
+            <returns>
+            The <see cref="T:System.Web.Mvc.ActionResult"/>.
+            </returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Controllers.HierarchicalTaxonomyController.HandleUnknownAction(System.String)">
+            <summary>
+            Called when a request matches this controller, but no method with the specified action name is found in the controller.
+            </summary>
+            <param name="actionName">The name of the attempted action.</param>
+        </member>
+        <member name="T:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.DesignerModelHelper">
+            <summary>
+            Helper class for views of the designer.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.DesignerModelHelper.GetTaxonomyId(System.Web.UI.Control)">
+            <summary>
+            Gets the taxonomy id from the model of the control.
+            </summary>
+            <param name="control">The control.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.DesignerModelHelper.GetTaxonomyProviderName(System.Web.UI.Control)">
+            <summary>
+            Gets the name of the taxonomy provider from the model of the control.
+            </summary>
+            <param name="control">The control.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.FlatTaxonomy.FlatTaxaToDisplay">
+            <summary>
+            Determines what taxa will be displayed by the widget.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.FlatTaxonomy.FlatTaxonomyModel.TaxaToDisplay">
+            <summary>
+            Determines what taxa will be displayed by the widget.
+            </summary>
+            <value>The taxa to display.</value>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.FlatTaxonomy.FlatTaxonomyModel.CreateViewModel">
+            <summary>
+            Creates the view model.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.FlatTaxonomy.FlatTaxonomyModel.GetTaxonUrl(Telerik.Sitefinity.Taxonomies.Model.ITaxon)">
+            <summary>
+            Gets the taxon URL.
+            </summary>
+            <param name="taxon">The taxon.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.FlatTaxonomy.FlatTaxonomyModel.GetTaxaByContentType">
+            <summary>
+            Creates list of view models each representing a taxon that is used by the content type that the widget is set to work with.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.FlatTaxonomy.IFlatTaxonomyModel">
+            <summary>
+            The public interface of the flat taxonomy model.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.FlatTaxonomy.IFlatTaxonomyModel.ContentTypeName">
+            <summary>
+            Gets or sets the full name of the static type that taxons associated to will be displayed.
+            </summary>
+            <value>The full name of the content type.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.FlatTaxonomy.IFlatTaxonomyModel.DynamicContentTypeName">
+            <summary>
+            Gets or sets the full name of the dynamic type that taxons associated to will be displayed.
+            </summary>
+            <value>The full name of the dynamic content type.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.FlatTaxonomy.IFlatTaxonomyModel.ContentProviderName">
+            <summary>
+            Gets or sets the name of the provider of the content type that filters the displayed taxa.
+            </summary>
+            <value>The name of the content provider.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.FlatTaxonomy.IFlatTaxonomyModel.ShowItemCount">
+            <summary>
+            Determiens whether to display the count of the items associated with every taxon.
+            </summary>
+            <value>Show item count.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.FlatTaxonomy.IFlatTaxonomyModel.TaxaCountLimit">
+            <summary>
+            Gets or sets the maximum number of taxa to display.
+            </summary>
+            <value>The taxa count limit.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.FlatTaxonomy.IFlatTaxonomyModel.BaseUrl">
+            <summary>
+            Gets or sets the URL of the page where content will be filtered by selected taxon.
+            </summary>
+            <value>The base URL.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.FlatTaxonomy.IFlatTaxonomyModel.TaxonomyProviderName">
+            <summary>
+            Gets or sets the name taxonomy provider.
+            </summary>
+            <value>The taxonomy provider.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.FlatTaxonomy.IFlatTaxonomyModel.TaxonomyId">
+            <summary>
+            Gets or sets the taxonomy id.
+            </summary>
+            <value>The taxonomy id.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.FlatTaxonomy.IFlatTaxonomyModel.ContentId">
+            <summary>
+            Gets or sets the Id of the content item for which the control should display the taxa.
+            </summary>
+            <value>The content id.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.FlatTaxonomy.IFlatTaxonomyModel.FieldName">
+            <summary>
+            Gets or sets the name of the property that contains the taxonomy.
+            </summary>
+            <value>The name of the field.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.FlatTaxonomy.IFlatTaxonomyModel.SerializedSelectedTaxaIds">
+            <summary>
+            Gets or sets the serialized collection with the ids of the specific taxa that the widget will show.
+            Used only if the display mode setting of the widget is set to show only specific items.
+            </summary>
+            <value>The serialized collection with the selected taxa ids.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.FlatTaxonomy.IFlatTaxonomyModel.TaxaToDisplay">
+            <summary>
+            Determines what taxa will be displayed by the widget.
+            </summary>
+            <value>The taxa to display.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.FlatTaxonomy.IFlatTaxonomyModel.UrlEvaluationMode">
+            <summary>
+            Gets or sets the URL evaluation mode - URL segments or query string.
+            The value of this property indicates which one is used.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.FlatTaxonomy.IFlatTaxonomyModel.ShowEmptyTaxa">
+            <summary>
+            Gets or sets the show empty taxa.
+            </summary>
+            <value>The show empty taxa.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.FlatTaxonomy.IFlatTaxonomyModel.SortExpression">
+            <summary>
+            Gets or sets the sort expression.
+            </summary>
+            <value>The sort expression.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.FlatTaxonomy.IFlatTaxonomyModel.UrlKeyPrefix">
+            <summary>
+            Gets or sets the URL key prefix. Used when building and evaluating URLs together with ContentView controls
+            </summary>
+            <value>The URL key prefix.</value>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.FlatTaxonomy.IFlatTaxonomyModel.CssClass" -->
+        <member name="M:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.FlatTaxonomy.IFlatTaxonomyModel.CreateViewModel">
+            <summary>
+            Creates the view model.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.HierarchicalTaxonomy.HierarchicalTaxaToDisplay">
+            <summary>
+            Determines what taxa to display.
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.HierarchicalTaxonomy.HierarchicalTaxonomyModel">
+            <summary>
+            The hierarchical taxonomy model.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.HierarchicalTaxonomy.HierarchicalTaxonomyModel.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.HierarchicalTaxonomy.HierarchicalTaxonomyModel" /> class.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.HierarchicalTaxonomy.HierarchicalTaxonomyModel.TaxaToDisplay">
+            <summary>
+            Determines what taxa will be displayed by the widget.
+            </summary>
+            <value>The taxa to display.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.HierarchicalTaxonomy.HierarchicalTaxonomyModel.Levels">
+            <summary>
+            Determines how many levels from the hierarchy to include.
+            </summary>
+            <value>The levels.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.HierarchicalTaxonomy.HierarchicalTaxonomyModel.RootTaxonId">
+            <summary>
+            Gets or sets the root taxon which children will be displayed as a top level in the widget.
+            Used only if this display mode is selected.
+            </summary>
+            <value>The parent category.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.HierarchicalTaxonomy.HierarchicalTaxonomyModel.FlattenHierarchy">
+            <summary>
+            If set to true, all hierarchical taxa will be shown as a flat list.
+            </summary>
+            <value>The flatten hierarchy.</value>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.HierarchicalTaxonomy.HierarchicalTaxonomyModel.CreateViewModel">
+            <summary>
+            Creates the view model.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.HierarchicalTaxonomy.HierarchicalTaxonomyModel.GetTaxonUrl(Telerik.Sitefinity.Taxonomies.Model.ITaxon)">
+            <summary>
+            Gets the taxon URL.
+            </summary>
+            <param name="taxon">The taxon.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.HierarchicalTaxonomy.HierarchicalTaxonomyModel.GetTopLevelTaxa">
+            <summary>
+            Gets the taxa view model trees starting from the root level.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.HierarchicalTaxonomy.HierarchicalTaxonomyModel.GetTaxaByParent">
+            <summary>
+            Gets the taxa view model trees starting from the children of the provided parent id.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.HierarchicalTaxonomy.HierarchicalTaxonomyModel.GetTaxaByContentType">
+            <summary>
+            Creates trees of view models each representing a taxon that is used by the content type that the widget is set to work with.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.HierarchicalTaxonomy.HierarchicalTaxonomyModel.GetTaxaViewModels(System.Linq.IQueryable{Telerik.Sitefinity.Taxonomies.Model.TaxonomyStatistic},System.Linq.IQueryable{Telerik.Sitefinity.Taxonomies.Model.Taxon})">
+            <summary>
+            Gets the view models of the given taxa.
+            </summary>
+            <param name="statistics">The statistics.</param>
+            <param name="taxa">The taxa.</param>
+            <returns>Returns flat or hierarchical structure based on the widget settings.</returns>
+        </member>
+        <member name="T:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.HierarchicalTaxonomy.IHierarchicalTaxonomyModel">
+            <summary>
+            The public interface of the hierarchical taxonomy widget't model.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.HierarchicalTaxonomy.IHierarchicalTaxonomyModel.ContentTypeName">
+            <summary>
+            Gets or sets the full name of the static type that taxons associated to will be displayed.
+            </summary>
+            <value>The full name of the content type.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.HierarchicalTaxonomy.IHierarchicalTaxonomyModel.DynamicContentTypeName">
+            <summary>
+            Gets or sets the full name of the dynamic type that taxons associated to will be displayed.
+            </summary>
+            <value>The full name of the dynamic content type.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.HierarchicalTaxonomy.IHierarchicalTaxonomyModel.ContentProviderName">
+            <summary>
+            Gets or sets the name of the provider of the content type that filters the displayed taxa.
+            </summary>
+            <value>The name of the content provider.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.HierarchicalTaxonomy.IHierarchicalTaxonomyModel.ShowItemCount">
+            <summary>
+            Determiens whether to display the count of the items associated with every taxon.
+            </summary>
+            <value>Show item count.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.HierarchicalTaxonomy.IHierarchicalTaxonomyModel.BaseUrl">
+            <summary>
+            Gets or sets the URL of the page where content will be filtered by selected taxon.
+            </summary>
+            <value>The base URL.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.HierarchicalTaxonomy.IHierarchicalTaxonomyModel.TaxonomyProviderName">
+            <summary>
+            Gets or sets the name taxonomy provider.
+            </summary>
+            <value>The taxonomy provider.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.HierarchicalTaxonomy.IHierarchicalTaxonomyModel.TaxonomyId">
+            <summary>
+            Gets or sets the taxonomy id.
+            </summary>
+            <value>The taxonomy id.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.HierarchicalTaxonomy.IHierarchicalTaxonomyModel.ContentId">
+            <summary>
+            Gets or sets the Id of the content item for which the control should display the taxa.
+            </summary>
+            <value>The content id.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.HierarchicalTaxonomy.IHierarchicalTaxonomyModel.FieldName">
+            <summary>
+            Gets or sets the name of the property that contains the taxonomy.
+            </summary>
+            <value>The name of the field.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.HierarchicalTaxonomy.IHierarchicalTaxonomyModel.SerializedSelectedTaxaIds">
+            <summary>
+            Gets or sets the serialized collection with the ids of the specific taxa that the widget will show.
+            Used only if the display mode setting of the widget is set to show only specific items.
+            </summary>
+            <value>The serialized collection with the selected taxa ids.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.HierarchicalTaxonomy.IHierarchicalTaxonomyModel.UrlKeyPrefix">
+            <summary>
+            Gets or sets the URL key prefix. Used when building and evaluating URLs together with ContentView controls
+            </summary>
+            <value>The URL key prefix.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.HierarchicalTaxonomy.IHierarchicalTaxonomyModel.TaxaToDisplay">
+            <summary>
+            Determines what taxa will be displayed by the widget/
+            </summary>
+            <value>The taxa to display.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.HierarchicalTaxonomy.IHierarchicalTaxonomyModel.ShowEmptyTaxa">
+            <summary>
+            Determines whether to show taxa that doesn't have classificated content.
+            </summary>
+            <value>The show empty taxa.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.HierarchicalTaxonomy.IHierarchicalTaxonomyModel.FlattenHierarchy">
+            <summary>
+            If set to true, all hierarchical taxa will be shown as a flat list.
+            </summary>
+            <value>The flatten hierarchy.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.HierarchicalTaxonomy.IHierarchicalTaxonomyModel.Levels">
+            <summary>
+            Determines how many levels from the hierarchy to include.
+            </summary>
+            <value>The levels.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.HierarchicalTaxonomy.IHierarchicalTaxonomyModel.TaxaCountLimit">
+            <summary>
+            Gets or sets the maximum number of taxa to display.
+            </summary>
+            <value>The taxa count limit.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.HierarchicalTaxonomy.IHierarchicalTaxonomyModel.RootTaxonId">
+            <summary>
+            Gets or sets the root category which children will be displayed as a top level in the widget.
+            Used only if this display mode is selected.
+            </summary>
+            <value>The parent category.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.HierarchicalTaxonomy.IHierarchicalTaxonomyModel.SortExpression">
+            <summary>
+            Gets or sets the sort expression.
+            </summary>
+            <value>The sort expression.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.HierarchicalTaxonomy.IHierarchicalTaxonomyModel.CssClass">
+            <summary>
+            Gets or sets the CSS class that will be applied on the wrapper div of the Taxonomy widget (if such is presented).
+            </summary>
+            <value>The CSS class.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.HierarchicalTaxonomy.IHierarchicalTaxonomyModel.UrlEvaluationMode">
+            <summary>
+            Gets or sets the URL evaluation mode - URL segments or query string.
+            The value of this property indicates which one is used.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.HierarchicalTaxonomy.IHierarchicalTaxonomyModel.CreateViewModel">
+            <summary>
+            Creates the view model.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.HierarchicalTaxonomy.TaxaViewModelTreeBuilder">
+            <summary>
+            A helper class that creates trees of taxon view models that represents the taxa hierarchy.
+            It allows filtering of the taxa that should be included in the trees.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.HierarchicalTaxonomy.TaxaViewModelTreeBuilder.BuildTaxaTree(System.Linq.IQueryable{Telerik.Sitefinity.Taxonomies.Model.Taxon},System.Func{Telerik.Sitefinity.Taxonomies.Model.ITaxon,Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.TaxonViewModel},System.Func{System.Linq.IQueryable{Telerik.Sitefinity.Taxonomies.Model.Taxon},System.Linq.IQueryable{Telerik.Sitefinity.Taxonomies.Model.Taxon}},Telerik.Sitefinity.Taxonomies.TaxonomyManager,System.Int32)">
+            <summary>
+            Creates trees of view models that represents the hierarchy of the given taxa.
+            A method delegate for creating a taxon view model should be provided.
+            If the method returns null, the taxon won't be included in the tree.
+            The taxa hierarchy is traversed in a breadth-first manner so the ordering of the taxa in each level is preserved.
+            </summary>
+            <param name="taxa">The taxa.</param>
+            <param name="viewModelBuilder">A method that creates a taxon view model by given taxon.
+            If null is returned, the taxon won't be included in the tree.</param>
+            <param name="sort">The sort.</param>
+            <param name="manager">The taxonomy manager that will be used to retrieve the children.</param>
+            <param name="taxaCountLimit">The maximum number of taxa that will be included in the tree.</param>
+            <returns></returns>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.HierarchicalTaxonomy.TaxaViewModelTreeBuilder.TaxonData.Taxon">
+            <summary>
+            Gets or sets the taxon that is currently examined.
+            </summary>
+            <value>The taxon.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.HierarchicalTaxonomy.TaxaViewModelTreeBuilder.TaxonData.LastKnownParent">
+            <summary>
+            Gets or sets the last known parent in the newly constructed tree.
+            </summary>
+            <value>The last known parent.</value>
+        </member>
+        <member name="T:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.TaxonomyModel">
+            <summary>
+            The model of the taxonomies widgets.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.TaxonomyModel.ContentTypeName">
+            <summary>
+            Gets or sets the full name of the static type that taxons associated to will be displayed.
+            </summary>
+            <value>The full name of the content type.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.TaxonomyModel.DynamicContentTypeName">
+            <summary>
+            Gets or sets the full name of the dynamic type that taxons associated to will be displayed.
+            </summary>
+            <value>The full name of the dynamic content type.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.TaxonomyModel.ContentProviderName">
+            <summary>
+            Gets or sets the name of the provider of the content type that filters the displayed taxa.
+            </summary>
+            <value>The name of the content provider.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.TaxonomyModel.ShowItemCount">
+            <summary>
+            Determiens whether to display the count of the items associated with every taxon.
+            </summary>
+            <value>Show item count.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.TaxonomyModel.TaxaCountLimit">
+            <summary>
+            Gets or sets the maximum number of taxa to display.
+            </summary>
+            <value>The taxa count limit.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.TaxonomyModel.ShowEmptyTaxa">
+            <summary>
+            Gets or sets whether to show empty taxa.
+            </summary>
+            <value>Show empty taxonomies.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.TaxonomyModel.BaseUrl">
+            <summary>
+            Gets or sets the URL of the page where content will be filtered by selected taxon.
+            </summary>
+            <value>The base URL.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.TaxonomyModel.TaxonomyProviderName">
+            <summary>
+            Gets or sets the taxonomy provider.
+            </summary>
+            <value>The taxonomy provider.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.TaxonomyModel.TaxonomyId">
+            <summary>
+            Gets or sets the taxonomy id.
+            This is the default Id used by all sites and is not resolved for the current site.
+            Plese use the ResolvedTaxonomyId when fetching taxa because it returns the id of the split taxonomy or the default one used by the other sites.
+            </summary>
+            <value>The taxonomy id.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.TaxonomyModel.ContentId">
+            <summary>
+            Gets or sets the Id of the content item for which the control should display the taxa.
+            </summary>
+            <value>The content id.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.TaxonomyModel.FieldName">
+            <summary>
+            Gets or sets the name of the property that contains the taxonomy.
+            </summary>
+            <value>The name of the field.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.TaxonomyModel.SortExpression">
+            <summary>
+            Gets or sets the sort expression.
+            </summary>
+            <value>The sort expression.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.TaxonomyModel.SerializedSelectedTaxaIds">
+            <summary>
+            Gets or sets the serialized collection with the ids of the specific taxa that the widget will show.
+            Used only if the display mode setting of the widget is set to show only specific items.
+            </summary>
+            <value>The serialized collection with the selected taxa ids.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.TaxonomyModel.UrlKeyPrefix">
+            <summary>
+            Gets or sets the URL key prefix. Used when building and evaluating URLs together with ContentView controls
+            </summary>
+            <value>The URL key prefix.</value>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.TaxonomyModel.CssClass" -->
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.TaxonomyModel.UrlEvaluationMode">
+            <summary>
+            Gets or sets the URL evaluation mode - URL segments or query string.
+            The value of this property indicates which one is used.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.TaxonomyModel.CreateViewModel">
+            <summary>
+            Creates the view model.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.TaxonomyModel.GetTaxonUrl(Telerik.Sitefinity.Taxonomies.Model.ITaxon)">
+            <summary>
+            Gets the taxon URL.
+            </summary>
+            <param name="taxon">The taxon.</param>
+            <returns></returns>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.TaxonomyModel.ResolvedTaxonomyId">
+            <summary>
+            Gets the id of the split taxonomy used by the current site or the id of the default taxonomy used by all sites.
+            Use it to fetch taxa that will be relevant for the current site with regards to the taxonomy's site sharing settings.
+            </summary>
+            <value>The resolved taxonomy id.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.TaxonomyModel.CurrentTaxonomyManager">
+            <summary>
+            Gets the taxonomy manager based on the specified provider.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.TaxonomyModel.ContentType">
+            <summary>
+            Gets or sets the type of the content that taxonomy control is going to display.
+            If ContentTypeName is set returns it otherwise try to resolve DynamicContentTypeName.
+            </summary>
+            <value>The type of the content.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.TaxonomyModel.Taxonomy">
+            <summary>
+            Gets the instance of <see cref="T:Telerik.Sitefinity.Taxonomies.Model.ITaxonomy"/> representing the taxonomy to which the taxon field is bound to.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.TaxonomyModel.FieldPropertyDescriptor">
+            <summary>
+            Returns the property descriptor of the specified FieldName.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.TaxonomyModel.GetAllTaxa``1">
+            <summary>
+            Gets view models of all available taxa in a flat list.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.TaxonomyModel.GetSpecificTaxa``1">
+            <summary>
+            Gets the taxa view models for each taxon by using the provided ids of taxons that we want explicitly to be shown by the widget.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.TaxonomyModel.GetTaxonomyStatistics">
+            <summary>
+            Gets all taxa statistics for the currently used taxonomy.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.TaxonomyModel.GetFlatTaxaViewModelsWithStatistics(System.Collections.Generic.IEnumerable{Telerik.Sitefinity.Taxonomies.Model.ITaxon},System.Linq.IQueryable{Telerik.Sitefinity.Taxonomies.Model.TaxonomyStatistic})">
+            <summary>
+            Gets the taxa view models with statistics for the usage of each taxon in the collection.
+            </summary>
+            <param name="taxa">The taxa.</param>
+            <param name="statistics">The statistics.</param>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.TaxonomyModel.FilterTaxonByCount(Telerik.Sitefinity.Taxonomies.Model.ITaxon,System.Linq.ILookup{System.Guid,Telerik.Sitefinity.Taxonomies.Model.TaxonomyStatistic},Telerik.Sitefinity.Taxonomies.Model.ITaxonomy,System.String)" -->
+        <member name="M:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.TaxonomyModel.HasTranslationInCurrentLanguage(Telerik.Sitefinity.Taxonomies.Model.ITaxon)">
+            <summary>
+            Determines whether the provided taxon has translation to the current language.
+            </summary>
+            <param name="taxon">The taxon.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.TaxonomyModel.InitializeTaxonomyManagerFromFieldName">
+            <summary>
+            Initializes the taxonomy manager from field name.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.TaxonomyModel.GetTaxaByContentItem">
+            <summary>
+            Gets the taxa contained in a field which name is stored in the FieldName property.
+            The field belongs to a content item with id stored in the ContentId property.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.TaxonomyModel.GetTaxaFromFieldValue(System.Object,System.Boolean)">
+            <summary>
+            Gets the taxa from the taxonomy's field of the item.
+            </summary>
+            <param name="value">The value.</param>
+            <param name="isSingleTaxon">The is single taxon.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.TaxonomyModel.GetSingleTaxon(System.Object)">
+            <summary>
+            Gets the taxon from given id or taxon object.
+            </summary>
+            <param name="value">The value.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.TaxonomyModel.GetContentProviderName">
+            <summary>
+            Resolves the name of the provider used by the manager which is responsible for the content type that is filtering the shown taxa.
+            Returns the default provider name for the manager if ContentProviderName is not set.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.TaxonomyModel.GetContentItem">
+            <summary>
+            Gets the content item from whose field the taxa will be retrieved.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.TaxonomyModel.PopulateCloudSize(System.Collections.Generic.IList{Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.TaxonViewModel})">
+            <summary>
+            Populates the taxon size used for Cloud template.
+            </summary>
+            <param name="taxa">The taxa.</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.TaxonomyModel.StandardDeviation(System.Collections.Generic.ICollection{System.Double},System.Double@)">
+            <summary>
+            Calculates standard deviation
+            </summary>       
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.TaxonomyModel.GetSize(System.Double,System.Double,System.Double)">
+            <summary>
+            The size is calculated by the occurrence (count) of the taxa
+            in relation to the mean value and the standard deviation.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.TaxonomyModel.BuildUrl(System.String,System.String,Telerik.Sitefinity.Taxonomies.Model.ITaxonomy)">
+            <summary>
+            Builds the full url for a particular taxon filter
+            Override this method to change the pattern of the url 
+            </summary>
+            <param name="taxonRelativeUrl">The taxon relative URL.</param>
+            <param name="baseUrl">The base URL.</param>
+            <param name="taxonomy">The taxonomy.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.TaxonomyModel.ResolveBaseUrl">
+            <summary>
+            Resolves the base url
+            Override this method to change how the base url is resolved 
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.TaxonomyModel.Sort(System.Linq.IQueryable{Telerik.Sitefinity.Taxonomies.Model.Taxon})">
+            <summary>
+            Sorts the specified list.
+            </summary>
+            <param name="list">The list.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.TaxonomyViewModel">
+            <summary>
+            This class represents the view model of the taxonomy item.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.TaxonomyViewModel.Taxa">
+            <summary>
+            Gets or sets the taxa that belongs to this taxonomy.
+            </summary>
+            <value>The taxa.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.TaxonomyViewModel.ShowItemCount">
+            <summary>
+            Determines whether to display number of items classified by the taxon.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.TaxonomyViewModel.CssClass">
+            <summary>
+            Gets or sets the CSS class that will be applied on the wrapper div of the Taxonomy widget (if such is presented).
+            </summary>
+            <value>The CSS class.</value>
+        </member>
+        <member name="T:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.TaxonViewModel">
+            <summary>
+            This class represents the view model of a Taxon item.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.TaxonViewModel.SubTaxa">
+            <summary>
+            Gets or sets the sub taxa of the taxon if it is hierarchical.
+            </summary>
+            <value>The sub taxa.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.TaxonViewModel.Count">
+            <summary>
+            Gets or sets how many content items are classified by this taxon.
+            </summary>
+            <value>The count.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.TaxonViewModel.Title">
+            <summary>
+            Gets or sets the title of the taxon.
+            </summary>
+            <value>The title.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.TaxonViewModel.CloudSize">
+            <summary>
+            Gets or sets the taxon size used for Cloud template.
+            </summary>
+            <value>The size of the cloud.</value>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.Models.TaxonViewModel.Url" -->
+        <member name="T:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.StringResources.FlatTaxonomyResources">
+            <summary>
+            Sitefinity localizable strings
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.StringResources.FlatTaxonomyResources.#ctor">
+            <summary>
+            Initializes new instance of <see cref="T:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.StringResources.FlatTaxonomyResources"/> class with the default <see cref="T:Telerik.Sitefinity.Localization.Data.ResourceDataProvider"/>.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.StringResources.FlatTaxonomyResources.#ctor(Telerik.Sitefinity.Localization.Data.ResourceDataProvider)">
+            <summary>
+            Initializes new instance of <see cref="T:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.StringResources.FlatTaxonomyResources"/> class with the provided <see cref="T:Telerik.Sitefinity.Localization.Data.ResourceDataProvider"/>.
+            </summary>
+            <param name="dataProvider"><see cref="T:Telerik.Sitefinity.Localization.Data.ResourceDataProvider"/></param>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.StringResources.FlatTaxonomyResources.FlatTaxonomyResourcesTitle">
+            <summary>
+            The title of the class.
+            </summary>
+            <value>FlatTaxonomyResources labels</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.StringResources.FlatTaxonomyResources.FlatTaxonomyResourcesTitlePlural">
+            <summary>
+            The plural title of this class.
+            </summary>
+            <value>FlatTaxonomyResources labels</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.StringResources.FlatTaxonomyResources.FlatTaxonomyResourcesDescription">
+            <summary>
+            The description of this class.
+            </summary>
+            <value>Contains localizable resources.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.StringResources.FlatTaxonomyResources.MoreOptions">
+            <summary>
+            Gets phrase : More options
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.StringResources.FlatTaxonomyResources.CssClasses">
+            <summary>
+            Gets phrase : CSS classes
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.StringResources.FlatTaxonomyResources.NewsItem">
+            <summary>
+            Gets phrase : News
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.StringResources.FlatTaxonomyResources.BlogPost">
+            <summary>
+            Gets phrase : Blog posts
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.StringResources.FlatTaxonomyResources.Blog">
+            <summary>
+            Gets phrase : Blogs
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.StringResources.FlatTaxonomyResources.Image">
+            <summary>
+            Gets phrase : Images
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.StringResources.FlatTaxonomyResources.Document" -->
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.StringResources.FlatTaxonomyResources.Video">
+            <summary>
+            Gets phrase : Videos
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.StringResources.FlatTaxonomyResources.ListItem">
+            <summary>
+            Gets phrase : List items
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.StringResources.FlatTaxonomyResources.Event">
+            <summary>
+            Gets word : Event
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.StringResources.FlatTaxonomyResources.ShowContentTypeFlatTaxonomiesLabel">
+            <summary>
+            The phrase: Only [taxonomies] used by content type...
+            </summary>
+            <value>Only {0} used by content type...</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.StringResources.FlatTaxonomyResources.SelectedFlatTaxonomyLabel">
+            <summary>
+            The phrase: Selected [taxonomy]...
+            </summary>
+            <value>Selected {0}...</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.StringResources.FlatTaxonomyResources.AllFlatTaxonomies">
+            <summary>
+            The phrase: All [taxonomies]
+            </summary>
+            <value>All {0}</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.StringResources.FlatTaxonomyResources.WhichFlatTaxonomiesLabel">
+            <summary>
+            The phrase: Which [taxonomies] to display?
+            </summary>
+            <value>Which {0} to display?</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.StringResources.FlatTaxonomyResources.ShowItemCountLabel">
+            <summary>
+            Gets phrase : Show item count
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.StringResources.FlatTaxonomyResources.ShowEmptyFlatTaxonomies">
+            <summary>
+            The phrase: Show empty [taxonomies]
+            </summary>
+            <value>Show empty {0}</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.StringResources.FlatTaxonomyResources.SortFlatTaxonomiesLabel">
+            <summary>
+            The phrase: Sort [taxonomies]
+            </summary>
+            <value>Sort {0}</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.StringResources.FlatTaxonomyResources.TemplateLabel">
+            <summary>
+            Gets phrase : Template
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.StringResources.FlatTaxonomyResources.LastPublished">
+            <summary>
+            Gets phrase : Last published
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.StringResources.FlatTaxonomyResources.LastModified">
+            <summary>
+            Gets phrase : Last modified
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.StringResources.FlatTaxonomyResources.ByTitleAZ">
+            <summary>
+            Gets phrase : By Title (A-Z)
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.StringResources.FlatTaxonomyResources.ByTitleZA">
+            <summary>
+            Gets phrase : By Title (Z-A)
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.StringResources.FlatTaxonomyResources.AsSetManually">
+            <summary>
+            phrase: As set manually
+            </summary>
+            <value>As set manually</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.StringResources.FlatTaxonomyResources.AsSetInAdvancedMode">
+            <summary>
+            phrase: As set in Advanced mode
+            </summary>
+            <value>As set in Advanced mode</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.StringResources.FlatTaxonomyResources.Tags">
+            <summary>
+            word: Tags
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.StringResources.FlatTaxonomyResources.SelectTaxonomiesHeader">
+            <summary>
+            phrase: Select [taxonimies]
+            </summary>
+            <value>Select {0}</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.StringResources.FlatTaxonomyResources.FlatTaxonomyTitle">
+            <summary>
+            phrase: Tags
+            </summary>
+            <value>Tags</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.StringResources.FlatTaxonomyResources.FlatTaxonomyDescription">
+            <summary>
+            phrase: List of predefined tags.
+            </summary>
+            <value>List of predefined tags.</value>
+        </member>
+        <member name="T:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.StringResources.HierarchicalTaxonomyResources">
+            <summary>
+            Sitefinity localizable strings
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.StringResources.HierarchicalTaxonomyResources.#ctor">
+            <summary>
+            Initializes new instance of <see cref="T:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.StringResources.HierarchicalTaxonomyResources"/> class with the default <see cref="T:Telerik.Sitefinity.Localization.Data.ResourceDataProvider"/>.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.StringResources.HierarchicalTaxonomyResources.#ctor(Telerik.Sitefinity.Localization.Data.ResourceDataProvider)">
+            <summary>
+            Initializes new instance of <see cref="T:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.StringResources.HierarchicalTaxonomyResources"/> class with the provided <see cref="T:Telerik.Sitefinity.Localization.Data.ResourceDataProvider"/>.
+            </summary>
+            <param name="dataProvider"><see cref="T:Telerik.Sitefinity.Localization.Data.ResourceDataProvider"/></param>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.StringResources.HierarchicalTaxonomyResources.HierarchicalTaxonomyResourcesTitle">
+            <summary>
+            The title of the class.
+            </summary>
+            <value>HierarchicalTaxonomyResources labels</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.StringResources.HierarchicalTaxonomyResources.HierarchicalTaxonomyResourcesTitlePlural">
+            <summary>
+            The plural title of this class.
+            </summary>
+            <value>HierarchicalTaxonomyResources labels</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.StringResources.HierarchicalTaxonomyResources.HierarchicalTaxonomyResourcesDescription">
+            <summary>
+            The description of this class.
+            </summary>
+            <value>Contains localizable resources.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.StringResources.HierarchicalTaxonomyResources.WhichHierarchicalTaxonomiesLabel">
+            <summary>
+            Phrase: Which [taxonomies] to display?
+            </summary>
+            <value>Which {0} to display?</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.StringResources.HierarchicalTaxonomyResources.AllHierarchicalTaxonomies">
+            <summary>
+            Phrase: All [taxonomies]
+            </summary>
+            <value>All {0}</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.StringResources.HierarchicalTaxonomyResources.TopLevelHierarchicalTaxonomies">
+            <summary>
+            Phrase: Top level [taxonomies] only
+            </summary>
+            <value>Top level {0} only</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.StringResources.HierarchicalTaxonomyResources.UnderParticularHierarchicalTaxonomies">
+            <summary>
+            Phrase: All [taxonomies] under particular [taxonomy]...
+            </summary>
+            <value>All {0} under particular {1}...</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.StringResources.HierarchicalTaxonomyResources.SelectedHierachicalTaxonomies">
+            <summary>
+            Phrase: Selected [taxonomies]...
+            </summary>
+            <value>Selected {0}...</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.StringResources.HierarchicalTaxonomyResources.ContentTypeHierarchicalTaxonomies">
+            <summary>
+            Phrase: Only [taxonomies] used by content type...
+            </summary>
+            <value>Only {0} used by content type...</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.StringResources.HierarchicalTaxonomyResources.ShowItemCountLabel">
+            <summary>
+            Phrase: Show item count
+            </summary>
+            <value>Show item count</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.StringResources.HierarchicalTaxonomyResources.ShowEmptyHierarchicalTaxonomies">
+            <summary>
+            Phrase: Show empty [taxonomies]
+            </summary>
+            <value>Show empty {0}</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.StringResources.HierarchicalTaxonomyResources.SortHierarchicalTaxonomiesLabel">
+            <summary>
+            Phrase: Sort [taxonomies]
+            </summary>
+            <value>Sort {0}</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.StringResources.HierarchicalTaxonomyResources.LastPublished">
+            <summary>
+            Gets phrase : Last published
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.StringResources.HierarchicalTaxonomyResources.LastModified">
+            <summary>
+            Gets phrase : Last modified
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.StringResources.HierarchicalTaxonomyResources.ByTitleAZ">
+            <summary>
+            Gets phrase : By Title (A-Z)
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.StringResources.HierarchicalTaxonomyResources.ByTitleZA">
+            <summary>
+            Gets phrase : By Title (Z-A)
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.StringResources.HierarchicalTaxonomyResources.AsSetManually">
+            <summary>
+            phrase: As set manually
+            </summary>
+            <value>As set manually</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.StringResources.HierarchicalTaxonomyResources.AsSetInAdvancedMode">
+            <summary>
+            phrase: As set in Advanced mode
+            </summary>
+            <value>As set in Advanced mode</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.StringResources.HierarchicalTaxonomyResources.MoreOptions">
+            <summary>
+            Gets phrase : More options
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.StringResources.HierarchicalTaxonomyResources.CssClasses">
+            <summary>
+            Gets phrase : CSS classes
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.StringResources.HierarchicalTaxonomyResources.Content">
+            <summary>
+            Word: Content
+            </summary>
+            <value>Content</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.StringResources.HierarchicalTaxonomyResources.Settings">
+            <summary>
+            Word: Settings
+            </summary>
+            <value>Settings</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.StringResources.HierarchicalTaxonomyResources.SelectTaxonomiesHeader">
+            <summary>
+            Phrase: Select [taxonomies]
+            </summary>
+            <value>Select {0}</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.StringResources.HierarchicalTaxonomyResources.TemplateLabel">
+            <summary>
+            word: Template
+            </summary>
+            <value>Template</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.StringResources.HierarchicalTaxonomyResources.CategoriesWidgetTitle">
+            <summary>
+            word: Categories
+            </summary>
+            <value>Categories</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Taxonomies.Mvc.StringResources.HierarchicalTaxonomyResources.CategoriesWidgetDescription">
+            <summary>
+            word: Categories
+            </summary>
+            <value>Categories</value>
+        </member>
+    </members>
+</doc>

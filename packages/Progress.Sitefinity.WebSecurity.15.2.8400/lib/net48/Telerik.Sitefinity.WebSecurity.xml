@@ -1,0 +1,1586 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Telerik.Sitefinity.WebSecurity</name>
+    </assembly>
+    <members>
+        <member name="T:Telerik.Sitefinity.WebSecurity.BasicSettings.ContentSecurityPolicyDetailsWindow">
+            <summary>
+            A control managing a client window for updating content security policy.
+            </summary>
+            <seealso cref="T:Telerik.Sitefinity.Web.UI.SimpleScriptView" />
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.BasicSettings.ContentSecurityPolicyDetailsWindow.LayoutTemplatePath">
+            <summary>
+            Gets the layout template path.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.BasicSettings.ContentSecurityPolicyDetailsWindow.ServiceUrl">
+            <summary>
+            Gets the cache profiles settings service URL.
+            </summary>
+            <value>
+            The service URL.
+            </value>
+        </member>
+        <member name="T:Telerik.Sitefinity.WebSecurity.BasicSettings.PublicKeyPinsDetailsWindow">
+            <summary>
+            A control managing a client window for updating Public-Key-Pins policy.
+            </summary>
+            <seealso cref="T:Telerik.Sitefinity.Web.UI.SimpleScriptView" />
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.BasicSettings.PublicKeyPinsDetailsWindow.LabelManager">
+            <summary>
+            Gets a reference to the label manager.
+            </summary>
+            <value>
+            The label manager.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.BasicSettings.PublicKeyPinsDetailsWindow.LayoutTemplatePath">
+            <summary>
+            Gets the layout template path.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.BasicSettings.PublicKeyPinsDetailsWindow.ServiceUrl">
+            <summary>
+            Gets the cache profiles settings service URL.
+            </summary>
+            <value>
+            The service URL.
+            </value>
+        </member>
+        <member name="T:Telerik.Sitefinity.WebSecurity.BasicSettings.ReferrerPolicyDetailsWindow">
+            <summary>
+            A control managing a client window for updating referrer policy.
+            </summary>
+            <seealso cref="T:Telerik.Sitefinity.Web.UI.SimpleScriptView" />
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.BasicSettings.ReferrerPolicyDetailsWindow.LayoutTemplatePath">
+            <summary>
+            Gets the layout template path.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.BasicSettings.ReferrerPolicyDetailsWindow.ServiceUrl">
+            <summary>
+            Gets the cache profiles settings service URL.
+            </summary>
+            <value>
+            The service URL.
+            </value>
+        </member>
+        <member name="M:Telerik.Sitefinity.WebSecurity.BasicSettings.Services.IWebSecuritySettingsService.GetSecurityHeaders">
+            <summary>
+            Gets the security policies and returns it in JSON format.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.WebSecurity.BasicSettings.Services.IWebSecuritySettingsService.GetSecurityHeader(System.String)">
+            <summary>
+            Gets the security header by specified name
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.WebSecurity.BasicSettings.Services.IWebSecuritySettingsService.UpdateSecurityHeader(Telerik.Sitefinity.WebSecurity.BasicSettings.ViewModels.HttpHeaderViewModel)">
+            <summary>
+            Gets the security header by specified name
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Telerik.Sitefinity.WebSecurity.BasicSettings.StrictTransportSecurityDetailsWindow">
+            <summary>
+            A control managing a client window for updating Strict-Transport-Security policy.
+            </summary>
+            <seealso cref="T:Telerik.Sitefinity.Web.UI.SimpleScriptView" />
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.BasicSettings.StrictTransportSecurityDetailsWindow.LayoutTemplatePath">
+            <summary>
+            Gets the layout template path.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.BasicSettings.StrictTransportSecurityDetailsWindow.ServiceUrl">
+            <summary>
+            Gets the cache profiles settings service URL.
+            </summary>
+            <value>
+            The service URL.
+            </value>
+        </member>
+        <member name="T:Telerik.Sitefinity.WebSecurity.BasicSettings.WebSecurityBasicSettingsView">
+            <summary>
+            The base class for cache profile settings view.
+            </summary>
+            <seealso cref="!:Telerik.Sitefinity.Web.UI.ViewModeControl&lt;Telerik.Sitefinity.Configuration.Web.UI.Basic.BasicSettingsPanel&gt;" />
+            <seealso cref="T:System.Web.UI.IScriptControl" />
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.BasicSettings.WebSecurityBasicSettingsView.LayoutTemplatePath">
+            <summary>
+            Gets the layout template path.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.BasicSettings.WebSecurityBasicSettingsView.LayoutTemplateName">
+            <summary>
+            Gets the name of the layout template.
+            </summary>
+            <value>The name of the layout template.</value>
+        </member>
+        <member name="M:Telerik.Sitefinity.WebSecurity.BasicSettings.WebSecurityBasicSettingsView.GetScriptDescriptors">
+            <summary>
+            Gets a collection of script descriptors that represent ECMAScript (JavaScript) client components.
+            </summary>
+            <returns>
+            An <see cref="T:System.Collections.IEnumerable" /> collection of <see cref="T:System.Web.UI.ScriptDescriptor" /> objects.
+            </returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.WebSecurity.BasicSettings.WebSecurityBasicSettingsView.GetScriptReferences">
+            <summary>
+            Gets a collection of <see cref="T:System.Web.UI.ScriptReference" /> objects that define script resources that the control requires.
+            </summary>
+            <returns>
+            An <see cref="T:System.Collections.IEnumerable" /> collection of <see cref="T:System.Web.UI.ScriptReference" /> objects.
+            </returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.WebSecurity.BasicSettings.WebSecurityBasicSettingsView.Render(System.Web.UI.HtmlTextWriter)">
+            <summary>
+            Writes the <see cref="T:System.Web.UI.WebControls.CompositeControl"/> content to the 
+            specified <see cref="T:System.Web.UI.HtmlTextWriter"/> object, for display on the client.
+            </summary>
+            <param name="writer">An <see cref="T:System.Web.UI.HtmlTextWriter"/> that represents 
+            the output stream to render HTML content on the client.
+            </param>
+        </member>
+        <member name="M:Telerik.Sitefinity.WebSecurity.BasicSettings.WebSecurityBasicSettingsView.OnPreRender(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Web.UI.Control.PreRender"/> event.
+            </summary>
+            <param name="e">
+            An <see cref="T:System.EventArgs"/> object that contains the event data.
+            </param>
+        </member>
+        <member name="T:Telerik.Sitefinity.WebSecurity.BasicSettings.XContentTypeOptionsDetailsWindow">
+            <summary>
+            A control managing a client window for updating X-Content-Type-Options policy.
+            </summary>
+            <seealso cref="T:Telerik.Sitefinity.Web.UI.SimpleScriptView" />
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.BasicSettings.XContentTypeOptionsDetailsWindow.LayoutTemplatePath">
+            <summary>
+            Gets the layout template path.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.BasicSettings.XContentTypeOptionsDetailsWindow.ServiceUrl">
+            <summary>
+            Gets the cache profiles settings service URL.
+            </summary>
+            <value>
+            The service URL.
+            </value>
+        </member>
+        <member name="T:Telerik.Sitefinity.WebSecurity.BasicSettings.XFrameOptionsDetailsWindow">
+            <summary>
+            A control managing a client window for updating X-Frame-Options policy.
+            </summary>
+            <seealso cref="T:Telerik.Sitefinity.Web.UI.SimpleScriptView" />
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.BasicSettings.XFrameOptionsDetailsWindow.LayoutTemplatePath">
+            <summary>
+            Gets the layout template path.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.BasicSettings.XFrameOptionsDetailsWindow.ServiceUrl">
+            <summary>
+            Gets the cache profiles settings service URL.
+            </summary>
+            <value>
+            The service URL.
+            </value>
+        </member>
+        <member name="T:Telerik.Sitefinity.WebSecurity.BasicSettings.XXssProtectionDetailsWindow">
+            <summary>
+            A control managing a client window for updating X-XSS-Protection policy.
+            </summary>
+            <seealso cref="T:Telerik.Sitefinity.Web.UI.SimpleScriptView" />
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.BasicSettings.XXssProtectionDetailsWindow.LayoutTemplatePath">
+            <summary>
+            Gets the layout template path.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.BasicSettings.XXssProtectionDetailsWindow.ServiceUrl">
+            <summary>
+            Gets the cache profiles settings service URL.
+            </summary>
+            <value>
+            The service URL.
+            </value>
+        </member>
+        <member name="T:Telerik.Sitefinity.WebSecurity.Configuration.CaptchaElement">
+            <summary>
+            Represents generic captcha configuration section.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.WebSecurity.Configuration.CaptchaElement.#ctor(Telerik.Sitefinity.Configuration.ConfigElement)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.WebSecurity.Configuration.CaptchaElement"/> class.
+            </summary>
+            <param name="parent">The parent element.</param>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.Configuration.CaptchaElement.Parameters">
+            <summary>
+            Gets or sets the parameters settings.
+            </summary>
+            <value>The parameters.</value>
+        </member>
+        <member name="T:Telerik.Sitefinity.WebSecurity.Configuration.CookiesProtectorElement">
+            <summary>
+            Configuration for cookies secure configuration.
+            </summary>
+            <seealso cref="T:Telerik.Sitefinity.Configuration.ConfigElement" />
+        </member>
+        <member name="M:Telerik.Sitefinity.WebSecurity.Configuration.CookiesProtectorElement.#ctor(Telerik.Sitefinity.Configuration.ConfigElement)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.WebSecurity.Configuration.CookiesProtectorElement"/> class.
+            </summary>
+            <param name="parent">The parent element.</param>
+            <remarks>
+            ConfigElementCollection generally needs to have a parent, however, sometimes it is necessary
+            to create a collection in memory only which is then used later on in the context of a parent.
+            Therefore, is the element is of ConfigElementCollection, exception for a non existing parent
+            will not be thrown.
+            </remarks>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.Configuration.CookiesProtectorElement.EnableCookiesProtector">
+            <summary>
+            Gets or sets a value indicating whether cookies protector will be enabled.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.Configuration.CookiesProtectorElement.SkippedCookies">
+            <summary>
+            Gets or sets a value which cookies should be skiped from configuration.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.Configuration.CookiesProtectorElement.SkippedCookiesParsed">
+            <summary>Gets the skipped cookies parsed.</summary>
+            <value>The skipped cookies parsed.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.Configuration.CookiesProtectorElement.HttpOnly">
+            <summary>
+            Gets or sets a value indicating whether cookies will be configured as HttpOnly.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.Configuration.CookiesProtectorElement.Secure">
+            <summary>
+            Gets or sets a value indicating whether cookies will be configured as Secure.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.Configuration.CookiesProtectorElement.SameSite">
+            <summary>
+            Gets or sets a value indicating whether cookies will be configured with SameSite.
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.WebSecurity.Configuration.CsrfProtectionElement">
+            <summary>
+            Configuration for CSRF protection.
+            </summary>
+            <seealso cref="T:Telerik.Sitefinity.Configuration.ConfigElement" />
+        </member>
+        <member name="M:Telerik.Sitefinity.WebSecurity.Configuration.CsrfProtectionElement.#ctor(Telerik.Sitefinity.Configuration.ConfigElement)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.WebSecurity.Configuration.CsrfProtectionElement"/> class.
+            </summary>
+            <param name="parent">The parent element.</param>
+            <remarks>
+            ConfigElementCollection generally needs to have a parent, however, sometimes it is necessary
+            to create a collection in memory only which is then used later on in the context of a parent.
+            Therefore, is the element is of ConfigElementCollection, exception for a non existing parent
+            will not be thrown.
+            </remarks>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.Configuration.CsrfProtectionElement.EnableCsrfProtection">
+            <summary>
+            Gets or sets a value indicating whether cookies protector will be enabled.
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.WebSecurity.Configuration.RedirectValidationElement">
+            <summary>
+            Configuration for Redirect Validation
+            </summary>
+            <seealso cref="T:Telerik.Sitefinity.Configuration.ConfigElement" />
+        </member>
+        <member name="M:Telerik.Sitefinity.WebSecurity.Configuration.RedirectValidationElement.#ctor(Telerik.Sitefinity.Configuration.ConfigElement)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.WebSecurity.Configuration.RedirectValidationElement"/> class.
+            </summary>
+            <param name="parent">The parent element.</param>
+            <remarks>
+            ConfigElementCollection generally needs to have a parent, however, sometimes it is necessary
+            to create a collection in memory only which is then used later on in the context of a parent.
+            Therefore, is the element is of ConfigElementCollection, exception for a non existing parent
+            will not be thrown.
+            </remarks>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.Configuration.RedirectValidationElement.DisableRedirectValidation">
+            <summary>
+            Gets or sets a value indicating whether https is required
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.Configuration.RedirectValidationElement.TrustedLocations">
+            <summary>
+            Gets or sets a value of trusted locations for redirection outside the site.
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.WebSecurity.Configuration.RefererValidationElement">
+            <summary>
+            Configuration for Redirect Validation
+            </summary>
+            <seealso cref="T:Telerik.Sitefinity.Configuration.ConfigElement" />
+        </member>
+        <member name="M:Telerik.Sitefinity.WebSecurity.Configuration.RefererValidationElement.#ctor(Telerik.Sitefinity.Configuration.ConfigElement)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.WebSecurity.Configuration.RefererValidationElement"/> class.
+            </summary>
+            <param name="parent">The parent element.</param>
+            <remarks>
+            ConfigElementCollection generally needs to have a parent, however, sometimes it is necessary
+            to create a collection in memory only which is then used later on in the context of a parent.
+            Therefore, is the element is of ConfigElementCollection, exception for a non existing parent
+            will not be thrown.
+            </remarks>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.Configuration.RefererValidationElement.DisableRefererValidation">
+            <summary>
+            Gets or sets a value indicating whether https is required
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.Configuration.RefererValidationElement.TrustedLocations">
+            <summary>
+            Gets or sets a value of trusted locations for redirection outside the site.
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.WebSecurity.Configuration.SecurityHeadersElement">
+            <summary>
+            WebSecurityModule's Security Headers configurations.
+            </summary>
+            <seealso cref="T:Telerik.Sitefinity.Configuration.ConfigSection" />
+        </member>
+        <member name="M:Telerik.Sitefinity.WebSecurity.Configuration.SecurityHeadersElement.#ctor(Telerik.Sitefinity.Configuration.ConfigElement)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.WebSecurity.Configuration.SecurityHeadersElement"/> class.
+            </summary>
+            <param name="parent">The parent element.</param>
+            <remarks>
+            ConfigElementCollection generally needs to have a parent, however, sometimes it is necessary
+            to create a collection in memory only which is then used later on in the context of a parent.
+            Therefore, is the element is of ConfigElementCollection, exception for a non existing parent
+            will not be thrown.
+            </remarks>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.Configuration.SecurityHeadersElement.DisableResponseHeaders">
+            <summary>
+            Gets or sets a value indicating whether https is required
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.Configuration.SecurityHeaders.ContentSecurityPolicyElement.AppendUnsafeInlineEval">
+            <summary>
+            Gets or sets a value indicating whether unsafe-inline and unsafe-eval values are allowed
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.WebSecurity.Configuration.SecurityHeaders.ContentSecurityPolicyElement.GetProxy">
+            <summary>
+            Whitelist of content sources. By default allow all content from the current site and specific domains for different types of content.
+            <para>
+                default-src 'self' (Default source for all content groups. Fallback for any resource group that has not been specified.)
+            </para>
+            <para>
+                script-src 'self' (allow all scripts from current domain) maps.googleapis.com (Google maps for address field) *.gstatic.com (backend login), www.google.com, apis.google.com, *.google-analytics.com (analytics), connect.facebook.net (social share) ajax.aspnetcdn.com (mvc, scheduling etc.); https://www.youtube.com platform.twitter.com https://syndication.twitter.com/ https://s.ytimg.com https://publish.twitter.com *.twimg.com (embed tweets and youtube links) platform.linkedin.com http://platform.stumbleupon.com/1/widgets.js (social share) https://*.googletagmanager.com (Google tag manager); 
+            </para>
+            <para>
+                style-src 'self' (allow all styles from current domain) fonts.googleapis.com (backend login) netdna.bootstrapcdn.com kendo.cdn.telerik.com www.google.com (Angular backend) platform.twitter.com/css/ *.twimg.com (embed tweets);
+            </para>
+            <para>
+                img-src 'self' (allow all images from current domain) maps.gstatic.com maps.googleapis.com (Google maps for address field), platform.tumblr.com web.facebook.com www.facebook.com www.redditstatic.com www.linkedin.com https://syndication.twitter.com https://static.licdn.com/scds/common/u/images/apps/connect/sprites/sprite_connect_v14.png (social share), pbs.twimg.com platform.twitter.com/css *.twimg.com (twitter images), data: (allows loading images via data scheme - Base64 encoded), blob: (allows images from local file system), i.ytimg.com  (Embedding content from Youtube) https://*.googletagmanager.com (Google tag manager);
+            </para>
+            <para>
+                font-src 'self' (allow all fonts from current domain) fonts.gstatic.com kendo.cdn.telerik.com netdna.bootstrapcdn.com data: (backend login, angular backend); 
+            </para>
+            <para>
+                frame-src 'self' (allow all frames from current domain) 
+            </para>
+            <para>
+                connect-src 'self' (allow all XHR, WebSocket, EventSource calls from/to the current domain) data: (allows the preview of GoogleAmp) accounts.google.com (social share) *.google-analytics.com (analytics) https://*.insight.sitefinity.com (Insight) https://*.dec.sitefinity.com (legacy DEC) *.mktoresp.com (Marketo) https://*.googletagmanager.com (Google tag manager)
+            </para>
+            <para>
+                media-src 'self' (allow all media from current domain) data: (Angular backend) blob: (allow media from local file system)
+            </para>
+            <para>
+                child-src 'self' apis.google.com accounts.google.com staticxx.facebook.com www.facebook.com web.facebook.com badge.stumbleupon.com (social share) https://platform.twitter.com/ https://syndication.twitter.com/ https://www.youtube.com/ youtube-nocookie.com https://player.vimeo.com/ https://w.soundcloud.com/ (embed tweets and video and music sites links) web-chat.nativechat.com (NativeChat connector)
+            </para>
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.WebSecurity.Configuration.SecurityHeaders.ContentSecurityPolicyReportOnlyElement">
+            <summary>
+            Represents the configuration for Content-Security-Policy-Report-Only header.
+            </summary>
+            <seealso cref="!:Telerik.Sitefinity.WebSecurity.Configuration.HttpResponseHeaderElement" />
+        </member>
+        <member name="M:Telerik.Sitefinity.WebSecurity.Configuration.SecurityHeaders.ContentSecurityPolicyReportOnlyElement.#ctor(Telerik.Sitefinity.Configuration.ConfigElement)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.WebSecurity.Configuration.SecurityHeaders.ContentSecurityPolicyReportOnlyElement"/> class.
+            </summary>
+            <param name="parent">The parent element.</param>
+            <remarks>
+            ConfigElementCollection generally needs to have a parent, however, sometimes it is necessary
+            to create a collection in memory only which is then used later on in the context of a parent.
+            Therefore, is the element is of ConfigElementCollection, exception for a non existing parent
+            will not be thrown.
+            </remarks>
+        </member>
+        <member name="T:Telerik.Sitefinity.WebSecurity.Configuration.SecurityHeaders.CrossOriginEmbedderPolicyElement">
+            <summary>
+            Represents the configuration for Cross-Origin-Embedder-Policy header.
+            </summary>
+            <seealso cref="!:Telerik.Sitefinity.WebSecurity.Configuration.HttpResponseHeaderElement" />
+        </member>
+        <member name="T:Telerik.Sitefinity.WebSecurity.Configuration.SecurityHeaders.CrossOriginOpenerPolicyElement">
+            <summary>
+            Represents the configuration for Cross-Origin-Opener-Policy header.
+            </summary>
+            <seealso cref="!:Telerik.Sitefinity.WebSecurity.Configuration.HttpResponseHeaderElement" />
+        </member>
+        <member name="T:Telerik.Sitefinity.WebSecurity.Configuration.SecurityHeaders.CrossOriginResourcePolicyElement">
+            <summary>
+            Represents the configuration for Cross-Origin-Resource-Policy header.
+            </summary>
+            <seealso cref="!:Telerik.Sitefinity.WebSecurity.Configuration.HttpResponseHeaderElement" />
+        </member>
+        <member name="M:Telerik.Sitefinity.WebSecurity.Configuration.SecurityHeaders.EnumValueHeaderElement`1.GetProxy">
+            <inheritdoc/>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.Configuration.SecurityHeaders.EnumValueHeaderElement`1.Value">
+            <inheritdoc/>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.Configuration.SecurityHeaders.EnumValueHeaderElement`1.EnumValue">
+            <summary>
+            Gets or sets the value enum.
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.WebSecurity.Configuration.SecurityHeaders.PermissionsPolicyElement">
+            <summary>
+            Represents the configuration for Permissions-Policy header.
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.WebSecurity.Configuration.SecurityHeaders.PublicKeyPinsElement">
+            <summary>
+            Represents the configuration for Public-Key-Pins header.
+            </summary>
+            <seealso cref="!:Telerik.Sitefinity.WebSecurity.Configuration.HttpResponseHeaderElement" />
+        </member>
+        <member name="M:Telerik.Sitefinity.WebSecurity.Configuration.SecurityHeaders.PublicKeyPinsElement.#ctor(Telerik.Sitefinity.Configuration.ConfigElement)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.WebSecurity.Configuration.SecurityHeaders.PublicKeyPinsElement"/> class.
+            </summary>
+            <param name="parent">The parent element.</param>
+            <remarks>
+            ConfigElementCollection generally needs to have a parent, however, sometimes it is necessary
+            to create a collection in memory only which is then used later on in the context of a parent.
+            Therefore, is the element is of ConfigElementCollection, exception for a non existing parent
+            will not be thrown.
+            </remarks>
+        </member>
+        <member name="T:Telerik.Sitefinity.WebSecurity.Configuration.SecurityHeaders.PublicKeyPinsReportOnlyElement">
+            <summary>
+            Represents the configuration for Public-Key-Pins-Report-Only header.
+            </summary>
+            <seealso cref="!:Telerik.Sitefinity.WebSecurity.Configuration.HttpResponseHeaderElement" />
+        </member>
+        <member name="M:Telerik.Sitefinity.WebSecurity.Configuration.SecurityHeaders.PublicKeyPinsReportOnlyElement.#ctor(Telerik.Sitefinity.Configuration.ConfigElement)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.WebSecurity.Configuration.SecurityHeaders.PublicKeyPinsReportOnlyElement"/> class.
+            </summary>
+            <param name="parent">The parent element.</param>
+            <remarks>
+            ConfigElementCollection generally needs to have a parent, however, sometimes it is necessary
+            to create a collection in memory only which is then used later on in the context of a parent.
+            Therefore, is the element is of ConfigElementCollection, exception for a non existing parent
+            will not be thrown.
+            </remarks>
+        </member>
+        <member name="T:Telerik.Sitefinity.WebSecurity.Configuration.SecurityHeaders.ReferrerPolicyElement">
+            <summary>
+            Represents the configuration for Referrer-Policy header.
+            </summary>
+            <seealso cref="!:Telerik.Sitefinity.WebSecurity.Configuration.HttpResponseHeaderElement" />
+        </member>
+        <member name="M:Telerik.Sitefinity.WebSecurity.Configuration.SecurityHeaders.ReferrerPolicyElement.#ctor(Telerik.Sitefinity.Configuration.ConfigElement)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.WebSecurity.Configuration.SecurityHeaders.ReferrerPolicyElement"/> class.
+            </summary>
+            <param name="parent">The parent element.</param>
+            <remarks>
+            ConfigElementCollection generally needs to have a parent, however, sometimes it is necessary
+            to create a collection in memory only which is then used later on in the context of a parent.
+            Therefore, is the element is of ConfigElementCollection, exception for a non existing parent
+            will not be thrown.
+            </remarks>
+        </member>
+        <member name="T:Telerik.Sitefinity.WebSecurity.Configuration.SecurityHeaders.StrictTransportSecurityElement">
+            <summary>
+            Represents the configuration for Strict-Transport-Security header.
+            </summary>
+            <seealso cref="!:Telerik.Sitefinity.WebSecurity.Configuration.HttpResponseHeaderElement" />
+        </member>
+        <member name="M:Telerik.Sitefinity.WebSecurity.Configuration.SecurityHeaders.StrictTransportSecurityElement.#ctor(Telerik.Sitefinity.Configuration.ConfigElement)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.WebSecurity.Configuration.SecurityHeaders.StrictTransportSecurityElement"/> class.
+            </summary>
+            <param name="parent">The parent element.</param>
+            <remarks>
+            ConfigElementCollection generally needs to have a parent, however, sometimes it is necessary
+            to create a collection in memory only which is then used later on in the context of a parent.
+            Therefore, is the element is of ConfigElementCollection, exception for a non existing parent
+            will not be thrown.
+            </remarks>
+        </member>
+        <member name="T:Telerik.Sitefinity.WebSecurity.Configuration.SecurityHeaders.XContentTypeOptionsElement">
+            <summary>
+            Represents the configuration for X-Content-Type-Options header.
+            </summary>
+            <seealso cref="!:Telerik.Sitefinity.WebSecurity.Configuration.HttpResponseHeaderElement" />
+        </member>
+        <member name="M:Telerik.Sitefinity.WebSecurity.Configuration.SecurityHeaders.XContentTypeOptionsElement.#ctor(Telerik.Sitefinity.Configuration.ConfigElement)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.WebSecurity.Configuration.SecurityHeaders.XContentTypeOptionsElement"/> class.
+            </summary>
+            <param name="parent">The parent element.</param>
+            <remarks>
+            ConfigElementCollection generally needs to have a parent, however, sometimes it is necessary
+            to create a collection in memory only which is then used later on in the context of a parent.
+            Therefore, is the element is of ConfigElementCollection, exception for a non existing parent
+            will not be thrown.
+            </remarks>
+        </member>
+        <member name="T:Telerik.Sitefinity.WebSecurity.Configuration.SecurityHeaders.XFrameOptionsElement">
+            <summary>
+            Represents the configuration for X-Frame-Options header.
+            </summary>
+            <seealso cref="!:Telerik.Sitefinity.WebSecurity.Configuration.HttpResponseHeaderElement" />
+        </member>
+        <member name="M:Telerik.Sitefinity.WebSecurity.Configuration.SecurityHeaders.XFrameOptionsElement.#ctor(Telerik.Sitefinity.Configuration.ConfigElement)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.WebSecurity.Configuration.SecurityHeaders.XFrameOptionsElement"/> class.
+            </summary>
+            <param name="parent">The parent element.</param>
+            <remarks>
+            ConfigElementCollection generally needs to have a parent, however, sometimes it is necessary
+            to create a collection in memory only which is then used later on in the context of a parent.
+            Therefore, is the element is of ConfigElementCollection, exception for a non existing parent
+            will not be thrown.
+            </remarks>
+        </member>
+        <member name="T:Telerik.Sitefinity.WebSecurity.Configuration.SecurityHeaders.XXssProtectionElement">
+            <summary>
+            Represents the configuration for X-XSS-Protection header.
+            </summary>
+            <seealso cref="!:Telerik.Sitefinity.WebSecurity.Configuration.HttpResponseHeaderElement" />
+        </member>
+        <member name="M:Telerik.Sitefinity.WebSecurity.Configuration.SecurityHeaders.XXssProtectionElement.#ctor(Telerik.Sitefinity.Configuration.ConfigElement)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.WebSecurity.Configuration.SecurityHeaders.XXssProtectionElement"/> class.
+            </summary>
+            <param name="parent">The parent element.</param>
+            <remarks>
+            ConfigElementCollection generally needs to have a parent, however, sometimes it is necessary
+            to create a collection in memory only which is then used later on in the context of a parent.
+            Therefore, is the element is of ConfigElementCollection, exception for a non existing parent
+            will not be thrown.
+            </remarks>
+        </member>
+        <member name="T:Telerik.Sitefinity.WebSecurity.Configuration.WebSecurityConfig">
+            <summary>
+            Represents the configuration section for Security module.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.WebSecurity.Configuration.WebSecurityConfig.Upgrade(System.Version,System.Version)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Telerik.Sitefinity.WebSecurity.Configuration.WebSecurityConfig.WhitelistSitefinityInsightUrls">
+            <summary>
+            Upgrades the Web Security Module CSP Header configuration to include the rebranded Sitefinity Insight URLS (formerly DEC).
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.WebSecurity.Cookies.CookiesProtectorConfigurator">
+            <summary>
+            Provides secure configuration of response cookies.
+            </summary>
+            <seealso cref="!:Telerik.Sitefinity.Security.ICookiesConfigurator" />
+        </member>
+        <member name="M:Telerik.Sitefinity.WebSecurity.Cookies.CookiesProtectorConfigurator.ProtectCookies(System.Web.HttpContextBase)">
+            <summary>Configures the specified cookies.</summary>
+            <param name="context">The context.</param>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="T:Telerik.Sitefinity.WebSecurity.CSRF.AntiCsrf">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.CSRF.AntiCsrf.Enabled">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.CSRF.AntiCsrf.CsrfCookieName">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.CSRF.AntiCsrf.CustomHeaderName">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.CSRF.AntiCsrf.HiddenFieldName">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.CSRF.AntiCsrf.ServicePath">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.WebSecurity.CSRF.AntiCsrf.GenerateAndAddTokenToSession">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.WebSecurity.CSRF.AntiCsrf.IsTokenValidForCurrentSession(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Sitefinity.WebSecurity.CSRF.AntiCsrfMiddleware">
+            <summary>
+            Used to provide anti csrf tokens to browsers via ajax.
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.WebSecurity.Redirects.RedirectValidator">
+            <summary>
+            Filters HTTP redirects (status code 3xx) - checks if the new location is trusted (whitelist) and may protect and/or report it.
+            Prevents the "Redirects" part from 'Unvalidated Redirects and Forwards' - https://www.owasp.org/index.php/Top_10_2013-A10-Unvalidated_Redirects_and_Forwards
+            More info on how to protect - https://www.owasp.org/index.php/Unvalidated_Redirects_and_Forwards_Cheat_Sheet
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.WebSecurity.Redirects.RedirectValidator.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.WebSecurity.Redirects.RedirectValidator"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.WebSecurity.Redirects.RedirectValidator.IsValid(System.String)">
+            <summary>
+            Returns <c>true</c> if the given requestUri is trusted for redirection.
+            </summary>
+            <param name="redirectUri">The redirectUri URI.</param>
+            <returns>
+              <c>true</c> if the specified request URI is trusted; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.Redirects.RedirectValidator.RazorTemplatesProvider">
+            <summary>
+            Gets or sets the Razor templates file provider. It will be used to fetch razor template files.
+            </summary>
+            <value>The templates provider.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.Redirects.RedirectValidator.ResourceFileProvider">
+            <summary>
+            Gets or sets the resource file provider that will be used to fetch files that are not handled by more specific file providers.
+            </summary>
+            <value>The resource file provider instance.</value>
+        </member>
+        <member name="T:Telerik.Sitefinity.WebSecurity.Redirects.RedirectValidatorTemplateHelper">
+            <summary>
+            Contains methods used in rendering external redirect warning screen.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.WebSecurity.Redirects.RedirectValidatorTemplateHelper.GetRedirectWarningSubtitle">
+            <summary>
+            Gets the redirect warning subtitle.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.WebSecurity.Redirects.RedirectValidatorTemplateHelper.GetProceedText">
+            <summary>
+            Gets the proceed text.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.WebSecurity.Redirects.RedirectValidatorTemplateHelper.GetRedirectLocation">
+            <summary>
+            Gets the redirect location.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.WebSecurity.Redirects.RedirectValidatorTemplateHelper.GetRedirectLocationSchemeAuthority">
+            <summary>
+            Gets the redirect location.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.WebSecurity.Redirects.RedirectValidatorTemplateHelper.GetCurrentSiteUrl">
+            <summary>
+            Gets the current site url.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.WebSecurity.Redirects.RedirectValidatorTemplateHelper.GetRedirectLocationShortened(System.Int32)">
+            <summary>
+            Gets the redirect location.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Telerik.Sitefinity.WebSecurity.SecurityHeaders.SecurityHeadersMiddleware">
+            <summary>
+            Responsible for sending Security HTTP Headers in the response.
+            </summary>
+            <seealso cref="!:Microsoft.Owin.OwinMiddleware" />
+        </member>
+        <member name="M:Telerik.Sitefinity.WebSecurity.SecurityHeaders.SecurityHeadersMiddleware.#ctor(Microsoft.Owin.OwinMiddleware)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.WebSecurity.SecurityHeaders.SecurityHeadersMiddleware"/> class.
+            </summary>
+            <param name="next">The next middleware in the execution chain (if any).</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.WebSecurity.SecurityHeaders.SecurityHeadersMiddleware.Invoke(Microsoft.Owin.IOwinContext)">
+            <summary>
+            Process an individual request.
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.WebSecurity.SecurityHeaders.SecurityHeadersSource.TryGetCustomHeaderValue(System.Xml.XmlNodeList,System.String,System.String@)">
+            <summary>
+            Tries the get custom header value.
+            </summary>
+            <param name="customHeaders">The custom headers.</param>
+            <param name="headerName">Name of the header.</param>
+            <param name="headerValue">The header value.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.WebSecurity.SecurityHeaders.SecurityHeadersSource.GetWebConfigHttpHeaders">
+            <summary>
+            Gets the added HTTP headers from the web config file.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Telerik.Sitefinity.WebSecurity.WebSecurityModule">
+            <summary>
+            Sitefinity module for security features.
+            </summary>
+            <seealso cref="T:Telerik.Sitefinity.Services.ModuleBase" />
+        </member>
+        <member name="M:Telerik.Sitefinity.WebSecurity.WebSecurityModule.DisableRedirectValidation(Telerik.Sitefinity.Abstractions.SiteInitializer)">
+            <summary>
+            Upgrades this module from the specified version.
+            </summary>
+            <param name="initializer">The Site Initializer. A helper class for installing Sitefinity modules.</param>
+            <param name="upgradeFrom">The version this module us upgrading from.</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.WebSecurity.WebSecurityModule.DisableCookieProtection(Telerik.Sitefinity.Abstractions.SiteInitializer)">
+            <summary>
+            Upgrades this module from the specified version.
+            </summary>
+            <param name="initializer">The Site Initializer. A helper class for installing Sitefinity modules.</param>
+            <param name="upgradeFrom">The version this module us upgrading from.</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.WebSecurity.WebSecurityModule.RemoveUnneededValuesFromCsp(Telerik.Sitefinity.Abstractions.SiteInitializer)">
+            <summary>
+            Upgrades this module from the specified version.
+            </summary>
+            <param name="initializer">The Site Initializer. A helper class for installing Sitefinity modules.</param>
+            <param name="upgradeFrom">The version this module us upgrading from.</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.WebSecurity.WebSecurityModule.DisableCorsHeaders(Telerik.Sitefinity.Abstractions.SiteInitializer)">
+            <summary>
+            Upgrades this module from the specified version.
+            </summary>
+            <param name="initializer">The Site Initializer. A helper class for installing Sitefinity modules.</param>
+            <param name="upgradeFrom">The version this module us upgrading from.</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.WebSecurity.WebSecurityModule.Telerik#Sitefinity#UsageTracking#TrackingReporters#ITrackingReporter#GetReport">
+            <inheritdoc />
+        </member>
+        <member name="F:Telerik.Sitefinity.WebSecurity.WebSecurityModule.ModuleId">
+            <summary>
+            Id of the module. Used for licensing.
+            </summary>
+        </member>
+        <member name="F:Telerik.Sitefinity.WebSecurity.WebSecurityModule.WebSecuritySettingsServiceUrl">
+            <summary>
+            The responsive design settings service URL.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityModuleReport.ModuleName">
+            <summary>
+            Gets or sets the module name
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityModuleReport.HasFineTuning">
+            <summary>
+            Gets or sets a value indication whether the module has settings different than the defaults
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityModuleReport.HasResponeHeaderValidation">
+            <summary>
+            Gets or sets a value indication whether response header validation is enabled
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityModuleReport.HasRefererValidation">
+            <summary>
+            Gets or sets a value indication whether referer validation is enabled
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityModuleReport.HasRedirectValidation">
+            <summary>
+            Gets or sets a value indication whether redirect validation is enabled
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityModuleReport.HasCookiesProtector">
+            <summary>
+            Gets or sets a value indication whether cookie protection is enabled
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityModuleReport.EnabledSecurityHeaders">
+            <summary>
+            Gets or sets the enabled security headers.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityModuleReport.EnableRegistrationCaptchaValidation">
+            <summary>
+            Gets or sets a value indication whether the registration captcha validation is enabled
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.WebSecurity.WebSecurityResources">
+            <summary>
+            Localizable strings for the WebSecurityModule
+            </summary>
+            <seealso cref="T:Telerik.Sitefinity.Localization.Resource" />
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.SecurityModuleResourcesTitle">
+            <summary>
+            Gets Web Security module labels
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.SecurityModuleResourcesDescription">
+            <summary>
+            Gets localizable resources for help information such as UI elements descriptions, usage explanations, FAQ and etc.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.SecurityHeadersSection">
+            <summary>
+            These settings are applicable only for the Siteinity backend and when MVC is used for the frontend. When Sitefinity ASP.NET Core is used please visit section AspNetCoreRenderer. Security headers instruct the client (browser) how to protect the user from security vulnerabilities. They are sent with each successful response from the server. Note: If some of those headers have been applied in the response (e.g. by code or server level configuration) those configured in Sitefinity won't be used to prevent duplications. They are only set if no such header is present already.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.RedirectValidationSection">
+            <summary>
+            Redirect Validation provides protection from \"Open Redirect\" type of attacks. For more information check https://www.owasp.org/index.php/Top_10_2013-A10-Unvalidated_Redirects_and_Forwards or http://cwe.mitre.org/data/definitions/601.html.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.RefererValidationSection">
+            <summary>
+            Referer Validation provides protection from \"Cross-Site Request Forgery\" type of attacks. For more information check https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF) or https://cwe.mitre.org/data/definitions/352.html.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.CookiesProtectorSection">
+            <summary>
+            Provides common configurations for server-side generated cookies and helps protect your site from XSRF, XSS and stealing sensitive data.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.CsrfProtectionSection">
+            <summary>
+            Provides common configurations for CSRF protection.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.DisableHttpResponseSecurityHeadersCaption">
+            <summary>
+            Disable sending security http headers in the response. (Not recommended)
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.DisableHttpResponseSecurityHeadersDescription">
+            <summary>
+            If you disable sending them from Sitefinity they should be configured on the server or by code. It is strongly recommended to send them always.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.HttpResponseSecurityHeadersCaption">
+            <summary>
+            Response Security
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.HttpResponseSecurityHeadersDescription">
+            <summary>
+            Http Headers that could be configured and sent with each response from the server. Note: If some of those headers have been applied in the response (e.g. by code or server level configuration) the configured headers below won't be used to prevent duplications. They are only set if no such header is present already.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.XFrameOptionsDescription">
+            <summary>
+            Helps protecting against clickjacking attacks. For more information for its usage check https://www.progress.com/sf-clickjacking
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.StrictTransportSecurityDescription">
+            <summary>
+            Prevents sending data over unencrypted channel (when a secured one is available). Strict - Transport - Security - HSTS tells browsers that content should only be communicated with using HTTPS, instead of using HTTP. It converts automatically all HTTP requests to HTTPS if the site has been opened previously with HTTPS with valid certificate. For more information for its usage check https://www.progress.com/sf-hsts
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.XContentTypeOptionsDescription">
+            <summary>
+            Prevents Content sniffing for styles and scripts. For more information for its usage check https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Content-Type-Options
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.XXssProtectionDescription">
+            <summary>
+            Prevents reflected cross site scripting attacks. Default value (1; mode=block) prevents rendering the page if an attack is detected. Report uri could be specified for auditing purposes X-XSS-Protection: 1; report=/Sitefinity/Frontend/Diagnostics/HttpHeadersReport?header=X-XSS-Protection. In case of using the default report uri you could check the violation reports in the Diagnostics module > Http Headers profiler. For more information for its usage check https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-XSS-Protection"
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.PublicKeyPinsDescription">
+            <summary>
+            Tells a web client to associate a specific cryptographic public key with a certain web server to decrease the risk of MITM attacks with forged certificates. Report uri could be specified for auditing purposes (report-uri=/Sitefinity/Frontend/Diagnostics/HttpHeadersReport?header=Public-Key-Pins). For more information for its usage check https://developer.mozilla.org/en-US/docs/Web/HTTP/Public_Key_Pinning
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.PublicKeyPinsReportOnlyDescription">
+            <summary>
+            The HTTP Public-Key-Pins-Report-Only response header sends reports of pinning violation to the report-uri specified in the header but, unlike Public-Key-Pins still allows browsers to connect to the server if the pinning is violated (report-uri=/Sitefinity/Frontend/Diagnostics/HttpHeadersReport?header=Public-Key-Pins-Report-Only). In case of using the default report uri you could check the violation reports in the Diagnostics module > Http Headers profiler. For more information for its usage check https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Public-Key-Pins-Report-Only.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.MoreResource">
+            <summary>
+            word: More
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.LessResource">
+            <summary>
+            word: Less
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.ReferrerPolicyHeading">
+            <summary>
+            Referrer information sent by your pages
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.EnableReferrerPolicyCaption">
+            <summary>
+            Enable referrer information policy
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.EnableReferrerPolicyDescription">
+            <summary>
+            Control which referrer information your pages send
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.ReferrerPolicyChoicesCaption">
+            <summary>
+            Referrer information policy
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.ReferrerPolicyDescription">
+            <summary>
+            Governs which referrer information, sent in the Referer header, should be included with requests made. For more information for its usage check https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.NoReferrer">
+            <summary>
+            No referrer
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.NoReferrerTooltipMessage">
+            <summary>
+            Do not send referrer information
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.NoReferrerWhenDowngrade">
+            <summary>
+            No referrer when downgrade
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.NoReferrerWhenDowngradeTooltipMessage">
+            <summary>
+            Do not send referrer when navigating from HTTPS to HTTP page. Else, send full URL.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.Origin">
+            <summary>
+            Origin
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.OriginTooltipMessage">
+            <summary>
+            Send domain only, not full URL.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.UnsafeUrl">
+            <summary>
+            Full URL
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.UnsafeUrlTooltipMessage">
+            <summary>
+            Send full URL. This policy may cause security issues.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.OriginWhenCrossOrigin">
+            <summary>
+            Origin when cross origin
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.OriginWhenCrossOriginTooltipMessage">
+            <summary>
+            Send full URL when navigating to a page from the same site. Send domain only when navigating to other sites.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.SameOrigin">
+            <summary>
+            Same origin
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.SameOriginTooltipMessage">
+            <summary>
+            Send full URL when navigating to a page from the same site. Do not send referrer information when navigating to other sites.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.StrictOrigin">
+            <summary>
+            Strict origin
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.StrictOriginTooltipMessage">
+            <summary>
+            Send domain when navigating to HTTPS pages. Else, do not send referrer information.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.StrictOriginWhenCrossOrigin">
+            <summary>
+            Strict origin when cross origin
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.StrictOriginWhenCrossOriginTooltipMessage">
+            <summary>
+            Send full URL when navigating to a page from the same site. Send domain when navigating to HTTPS pages from other sites. Else, do not send referrer information.
+            Otherwise, don't send refferer information.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.CrossOriginOpenerPolicyDescription">
+            <summary>
+            The HTTP Cross-Origin-Opener-Policy (COOP) response header allows you to ensure a top-level document does not share a browsing context group with cross-origin documents.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.CrossOriginEmbedderPolicyDescription">
+            <summary>
+            The HTTP Cross-Origin-Embedder-Policy (COEP) response header prevents a document from loading any cross-origin resources that don't explicitly grant the document permission (using CORP or CORS).
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.CrossOriginResourcePolicyDescription">
+            <summary>
+            The HTTP Cross-Origin-Resource-Policy response header conveys a desire that the browser blocks no-cors cross-origin/cross-site requests to the given resource.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.PermissionsPolicyDescription">
+            <summary>
+            Permissions Policy (formerly known as feature policy) allows web developers to selectively enable, disable, and modify the behavior of certain APIs and web features in the browser.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.WebSecurityBasicSettings">
+            <summary>
+            Phrase: Web security
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.SecurityPolicyCaption">
+            <summary>
+            Phrase: Security policy
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.SecurityPolicyEnabledTitle">
+            <summary>
+            Enabled
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.HttpHeaderCaption">
+            <summary>
+            Http Header
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.ContentSecurityPolicyGridTitle">
+            <summary>
+            Phrase: Trusted sources
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.ContentSecurityPolicyGridDescription">
+            <summary>
+            Phrase: Load scripts, styles, fonts, videos, and so on from trusted sources only
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.AppendUnsafeInlineEvalTitle">
+            <summary>
+            Append unsafe-inline and unsafe-eval
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.AllowUnsafeInlineEvalDescription">
+            <summary>
+            Append unsafe-inline and unsafe-eval unless explicitly restricted.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.LoadFromTrustedSourcesOnly">
+            <summary>
+            Phrase: Load external scripts, styles, fonts, videos, etc. from trusted sources only
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.EnableContentSecurityPolicy">
+            <summary>
+            Phrase: Enable trusted sources
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.EnableContentSecurityPolicyDescription">
+            <summary>
+            Phrase: Load scripts, styles, fonts, videos, and so on from trusted sources only
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.ContentSecurityPolicyReportUrlDescription">
+            <summary>
+            Phrase: URL where content security policy failures are reported.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.TrustedSourcesFor">
+            <summary>
+            Phrase: Trusted sources for...
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.ContentSecurityPolicyWarningMessage">
+            <summary>
+            Phrase: Removing any of the trusted sources from the lists below may cause serious problems with your sites or Sitefinity CMS.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.AnyContent">
+            <summary>
+            Phrase: Any content
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.AnyContentDescription">
+            <summary>
+            Phrase: If no trusted sources are added for a specific type (e.g. scripts, styles, fonts, and so on), the sources listed in Any content are applied for this type.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.Scripts">
+            <summary>
+            Phrase: Scripts
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.Styles">
+            <summary>
+            Phrase: Styles
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.Fonts">
+            <summary>
+            Phrase: Fonts
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.FontsImagesVideoAndAudio">
+            <summary>
+            Phrase: Fonts, images, video and audio
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.Images">
+            <summary>
+            Phrase: Images
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.VideoAndAudio">
+            <summary>
+            Phrase: Video and audio
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.FormsFramesChildSourcesConnectSourcesPlugins">
+            <summary>
+            Phrase: Forms, frames, child sources, connect sources, plugins
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.FormActions">
+            <summary>
+            Phrase: Form actions
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.Frames">
+            <summary>
+            Phrase: Frames
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.FrameAncestors">
+            <summary>
+            Phrase: Frame ancestors
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.Sandbox">
+            <summary>
+            Phrase: Sandbox
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.ChildSources">
+            <summary>
+            Phrase: Child sources
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.ConnectSources">
+            <summary>
+            Phrase: Connect sources
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.Objects">
+            <summary>
+            Phrase: Objects
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.PluginTypes">
+            <summary>
+            Phrase: Plugin types
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.PublicKeyPinsGridTitle">
+            <summary>
+            Phrase: Public keys for web servers
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.PublicKeyPinsGridDescription">
+            <summary>
+            Phrase: Аssociate a public key with a certain web server
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.ReferrerPolicyGridTitle">
+            <summary>
+            Phrase: Referrer information
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.ReferrerPolicyGridDescription">
+            <summary>
+            Phrase: Control which referrer information your pages send
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.StrictTransportSecurityGridTitle">
+            <summary>
+            Phrase: HTTP strict transport security
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.StrictTransportSecurityGridDescription">
+            <summary>
+            Phrase: Allow access and send data only when using HTTPS, instead of HTTP
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.XContentTypeOptionsGridTitle">
+            <summary>
+            Phrase: Prevention of styles and scripts sniffing
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.XContentTypeOptionsGridDescription">
+            <summary>
+            Phrase: Prevent browsers for MIME type content sniffing
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.XFrameOptionsGridTitle">
+            <summary>
+            Phrase: Control of embeding your content
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.XFrameOptionsGridDescription" -->
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.XXssProtectionGridTitle">
+            <summary>
+            Phrase: Prevention of cross-site scripting attack
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.XXssProtectionGridDescription">
+            <summary>
+            Phrase: Stop pages from loading when cross-site scripting attacks are detected
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.HttpHeaderPreview">
+            <summary>
+            Phrase: HTTP header preview
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.EnableStricTransportSecurity">
+            <summary>
+            Phrase: Enable strict transport security
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.EnableXXssProtectionDescription">
+            <summary>
+            Phrase: Control what to do when cross-site scripting attacks are detected
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.EnableXFrameOptionsDescription" -->
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.EnableXContentTypeOptionsDescription">
+            <summary>
+            Phrase: Prevent browsers for MIME type sniffing
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.EnableStrictTransportSecurityDescription">
+            <summary>
+            Phrase: Allow access and send data only when using HTTPS, instead of HTTP
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.EnablePublicKeyPinsDescription">
+            <summary>
+            Phrase: Аssociate public key with a certain web server
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.MaxAge">
+            <summary>
+            Phrase: Max age
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.StrictTransportSecurityMaxAgeDescription">
+            <summary>
+            Phrase: The maximum time period, during which the browser remembers the page is accessible via HTTPS.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.Subdomains">
+            <summary>
+            Phrase: Subdomains
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.IncludeSubDomains">
+            <summary>
+            Phrase: Include sub-domains
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.EnableXFrameOptions">
+            <summary>
+            Phrase: Enable control of embeding your content
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.YourContentCanBeEmbeded" -->
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.Nowhere">
+            <summary>
+            Phrase: Nowhere
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.OnlyOnPagesFromTheSameSite">
+            <summary>
+            Phrase: Only on pages from the same site
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.OnPagesFromOtherSites">
+            <summary>
+            Phrase: On pages from other sites...
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.DomainsWhereContentCanBeEmbeded">
+            <summary>
+            Phrase: Domains where your content can be embeded
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.OneDomainPerLine">
+            <summary>
+            Phrase: One domain per line
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.XContentTypeOptionsViewDescription">
+            <summary>
+            Phrase: Prevention for sniffing for styles and scripts
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.EnableXContentTypeOptions">
+            <summary>
+            Phrase: Enable prevention for sniffing for styles and scripts
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.EnableXXssProtection">
+            <summary>
+            Phrase: Enable prevention of cross-scripting attack
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.IfXSSIsDetected">
+            <summary>
+            Phrase: If a cross-site scripting attack is detected...
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.BlockPageRendering">
+            <summary>
+            Phrase: Block rendering of the whole page
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.SanitizePageDescription">
+            <summary>
+            Phrase: Sanitize the page (remove the unsafe parts only)
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.SanitizePageAndReportDescription">
+            <summary>
+            Phrase: Sanitize the page and report a violation (for Google Chrome only)
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.DoNothing">
+            <summary>
+            Phrase: Do nothing
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.ReportUrl">
+            <summary>
+            Phrase: Report URL
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.XXssReportUrlDescription">
+            <summary>
+            Phrase: URL where XSS violations are reported.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.EnablePublicKeyPins">
+            <summary>
+            Phrase: Enable public keys for web servers
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.PublicKeyPIN">
+            <summary>
+            Phrase: Public key PIN
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.PublicKeyPinInformation">
+            <summary>
+            Phrase: Base64 encoded Subject Public Key Information (SPKI) fingerprint, extracted from the web server certificate.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.PinsDescription">
+            <summary>
+            Phrase: You can enter multiple public keys (one per line).
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.PublicKeyPinsMaxAgeDescription">
+            <summary>
+            Phrase: The maximum time period, for which the browser remembers that the web server is only to be accessed using one of the defined public keys.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.PublicKeyPinsReportUrlDescription">
+            <summary>
+            Phrase: URL where PIN failures are reported.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.ValueTitle">
+            <summary>
+            Phrase: Value
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.DisableRedirectValidationCaption">
+            <summary>
+            Disable redirect validation.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.DisableRedirectValidationDescription">
+            <summary>
+            Disabling centralized redirect validation does not check if external redirects are to trusted sites..
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.TrustedLocationsCaption">
+            <summary>
+            Trusted locations
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.TrustedLocationsDescription">
+            <summary>
+            Comma separated list of URLs that are considered trusted and won't trigger the confirmation screen. Licensed domains and site domains are considered trusted by default. (e.g. https://somesite.com, https://anothersite.info)
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.ORTitle">
+            <summary>
+            Proceed with caution!
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.ORSubTitle">
+            <summary>
+            You are being redirected to {0} This site is out of our control.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.ORPassWarning">
+            <summary>
+            Phrase: For your safety never enter your password for
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.OnThisSite">
+            <summary>
+            Phrase: on this site
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.ORDescription">
+            <summary>
+            Be warned that any time you see this message you may be heading to a non-trusted site. Untrusted sites may contain malware or may imitate the design of other sites in attempt to deceit you to give away credentials, personal or financial information.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.ORGoHomePage">
+            <summary>
+            Go to homepage
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.ORProceed">
+            <summary>
+            Proceed to {0}
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.DisableRefererValidationCaption">
+            <summary>
+            Disable referer validation.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.DisableRefererValidationDescription">
+            <summary>
+            Disabling centralized referer validation does not check if external redirects are to trusted sites..
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.TrustedRefererLocationsCaption">
+            <summary>
+            Trusted referer locations
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.TrustedRefererLocationsDescription">
+            <summary>
+            Comma separated list of URLs that are considered trusted and won't trigger the confirmation screen. Licensed domains and site domains are considered trusted by default. (e.g. somesite.com, anothersite.info)
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.EnableCookiesProtectorCaption">
+            <summary>
+            Enable cookies protection
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.EnableCookiesProtectorDescription">
+            <summary>
+            If not enabled, the CookiesProtector settings are ignored and you can configure protection for each cookie separately.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.SkippedCookiesCaption">
+            <summary>
+            Skipped Cookies
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.SkippedCookiesDescription">
+            <summary>
+            Enter a comma-separated list of cookie names (or name parts) of all cookies that you want omitted from this protection configuration.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.HttpOnlyCaption">
+            <summary>
+            HttpOnly
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.HttpOnlyDescription">
+            <summary>
+            Restricts client-side scripts from accessing the cookies. Cookies can only be accessed by the server via HTTP protocol.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.SecureCaption">
+            <summary>
+            Secure
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.SecureDescription">
+            <summary>
+            Prevents browsers from sending cookies over unencrypted HTTP requests. Cookies are sent only over HTTPS requests.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.SameSiteCaption">
+            <summary>
+            SameSite
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.SameSiteDescription">
+            <summary>
+            Prevents browsers from sending cookies on cross-site requests. To prevent sending cookies for all types of cross-site requests, select "Strict". To allow sending cookies only with GET requests, select "Lax". To skip this prevention, select "None".
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.EnableCsrfProtectionCaption">
+            <summary>
+            Enable CSRF protection
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.WebSecurity.WebSecurityResources.EnableCsrfProtectionDescription">
+            <summary>
+            If not enabled, the CSRF protection will not be applied for submitted Sitefinity form widgets and login widgets.
+            </summary>
+        </member>
+    </members>
+</doc>

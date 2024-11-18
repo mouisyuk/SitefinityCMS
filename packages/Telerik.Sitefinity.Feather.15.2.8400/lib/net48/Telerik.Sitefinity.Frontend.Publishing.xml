@@ -1,0 +1,363 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Telerik.Sitefinity.Frontend.Publishing</name>
+    </assembly>
+    <members>
+        <member name="M:Telerik.Sitefinity.Frontend.Publishing.Helpers.PublishingWidgetExtensions.IsModuleActivated">
+            <summary>
+            Determines whether the publishing module is activated.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Telerik.Sitefinity.Frontend.Publishing.InterfaceMappings">
+            <summary>
+            This class is used to describe the bindings which will be used by the Ninject container when resolving classes
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Publishing.InterfaceMappings.Load">
+            <summary>
+            Loads the module into the kernel.
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.Frontend.Publishing.Mvc.Controllers.FeedController">
+            <summary>
+            This class represents the controller of Feed widget.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Publishing.Mvc.Controllers.FeedController.TemplateName">
+            <summary>
+            Gets or sets the name of the template that widget will be displayed.
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Publishing.Mvc.Controllers.FeedController.Model">
+            <summary>
+            Gets the Feed widget model.
+            </summary>
+            <value>
+            The model.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Publishing.Mvc.Controllers.FeedController.WidgetCssClass">
+            <inheritDocs/>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Publishing.Mvc.Controllers.FeedController.EmptyLinkText">
+            <inheritDocs/>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Publishing.Mvc.Controllers.FeedController.IsEmpty">
+            <inheritDocs/>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Publishing.Mvc.Controllers.FeedController.Index">
+            <summary>
+            Renders appropriate view depending on the <see cref="P:Telerik.Sitefinity.Frontend.Publishing.Mvc.Controllers.FeedController.TemplateName" />
+            </summary>
+            <returns>
+            The <see cref="T:System.Web.Mvc.ActionResult" />.
+            </returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Publishing.Mvc.Controllers.FeedController.HandleUnknownAction(System.String)">
+            <summary>
+            Called when a request matches this controller, but no method with the specified action name is found in the controller.
+            </summary>
+            <param name="actionName">The name of the attempted action.</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Publishing.Mvc.Controllers.FeedController.GetHttpContext">
+            <summary>
+            Gets the HTTP context.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Publishing.Mvc.Controllers.FeedController.IsPublishingModuleActivated">
+            <summary>
+            Determines whether the publishing module is activated.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Publishing.Mvc.Controllers.FeedController.InitializeModel">
+            <summary>
+            Initializes the model instance.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Telerik.Sitefinity.Frontend.Publishing.Mvc.Models.FeedInsertionOption">
+            <summary>
+            Enumeration for the feed insertion option
+            </summary>
+        </member>
+        <member name="F:Telerik.Sitefinity.Frontend.Publishing.Mvc.Models.FeedInsertionOption.PageAndAddressBar">
+            <summary>
+            Link is inserted both on the page and the address bar feeds
+            </summary>
+        </member>
+        <member name="F:Telerik.Sitefinity.Frontend.Publishing.Mvc.Models.FeedInsertionOption.AddressBarOnly">
+            <summary>
+            Link is inserted on the address bar feeds only
+            </summary>
+        </member>
+        <member name="F:Telerik.Sitefinity.Frontend.Publishing.Mvc.Models.FeedInsertionOption.PageOnly">
+            <summary>
+            Link is inserted on the page only
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.Frontend.Publishing.Mvc.Models.FeedModel">
+            <summary>
+            This class represents the model used for Feed widget.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Publishing.Mvc.Models.FeedModel.FeedId">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Publishing.Mvc.Models.FeedModel.InsertionOption">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Publishing.Mvc.Models.FeedModel.TextToDisplay">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Publishing.Mvc.Models.FeedModel.OpenInNewWindow">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Publishing.Mvc.Models.FeedModel.Tooltip">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Publishing.Mvc.Models.FeedModel.CssClass">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Publishing.Mvc.Models.FeedModel.GetViewModel">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Sitefinity.Frontend.Publishing.Mvc.Models.FeedViewModel">
+            <summary>
+            This class represents the view model of feed.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Publishing.Mvc.Models.FeedViewModel.InsertionOption">
+            <summary>
+            Gets or sets the feed insertion option.
+            </summary>
+            <value>The feed insertion option.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Publishing.Mvc.Models.FeedViewModel.HeadLink">
+            <summary>
+            Gets or sets the feed link that will be embedded in the head tag.
+            </summary>
+            <value>The java script code.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Publishing.Mvc.Models.FeedViewModel.Title">
+            <summary>
+            Gets or sets the title.
+            </summary>
+            <value>The title.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Publishing.Mvc.Models.FeedViewModel.Url">
+            <summary>
+            Gets or sets the URL.
+            </summary>
+            <value>The URL.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Publishing.Mvc.Models.FeedViewModel.Tooltip">
+            <summary>
+            Gets or sets the tooltip.
+            </summary>
+            <value>The tooltip.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Publishing.Mvc.Models.FeedViewModel.OpenInNewWindow">
+            <summary>
+            Gets or sets a value indicating whether [open in new window].
+            </summary>
+            <value><c>true</c> if [open in new window]; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Publishing.Mvc.Models.FeedViewModel.CssClass">
+            <summary>
+            Gets or sets the CSS class that will be applied on the wrapper div of the widget.
+            </summary>
+            <value>
+            The CSS class.
+            </value>
+        </member>
+        <member name="T:Telerik.Sitefinity.Frontend.Publishing.Mvc.Models.IFeedModel">
+            <summary>
+            Classes that implement this interface could be used as a model for Feed widget.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Publishing.Mvc.Models.IFeedModel.FeedId">
+            <summary>
+            Gets or sets the programmatic identifier assigned to the feed.
+            </summary>
+            <value></value>
+            <returns>
+            The programmatic identifier assigned to the feed.
+            </returns>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Publishing.Mvc.Models.IFeedModel.InsertionOption">
+            <summary>
+            Gets or sets the feed insertion option.
+            </summary>
+            <value>The feed insertion option.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Publishing.Mvc.Models.IFeedModel.TextToDisplay">
+            <summary>
+            Gets or sets the text displayed in the link.
+            </summary>
+            <value>The displayed text.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Publishing.Mvc.Models.IFeedModel.OpenInNewWindow">
+            <summary>
+            Gets or sets a value indicating whether [open in new window].
+            </summary>
+            <value><c>true</c> if [open in new window]; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Publishing.Mvc.Models.IFeedModel.Tooltip">
+            <summary>
+            Gets or sets the tooltip.
+            </summary>
+            <value>The tooltip.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Publishing.Mvc.Models.IFeedModel.CssClass">
+            <summary>
+            Gets or sets the CSS class that will be applied on the wrapper div of the widget.
+            </summary>
+            <value>
+            The CSS class.
+            </value>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Publishing.Mvc.Models.IFeedModel.GetViewModel">
+            <summary>
+            Gets the view model of the current model that will be displayed by the view.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Telerik.Sitefinity.Frontend.Publishing.Mvc.StringResources.FeedResources">
+            <summary>
+            Localizable strings for the Feed widget
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Publishing.Mvc.StringResources.FeedResources.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Frontend.Publishing.Mvc.StringResources.FeedResources"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Publishing.Mvc.StringResources.FeedResources.#ctor(Telerik.Sitefinity.Localization.Data.ResourceDataProvider)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Frontend.Publishing.Mvc.StringResources.FeedResources"/> class.
+            </summary>
+            <param name="dataProvider">The data provider.</param>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Publishing.Mvc.StringResources.FeedResources.FeedResourcesTitle">
+            <summary>
+            Gets Title for the Feed widget resources class.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Publishing.Mvc.StringResources.FeedResources.FeedResourcesDescription">
+            <summary>
+            Gets Description for the Feed widget resources class.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Publishing.Mvc.StringResources.FeedResources.SelectFeed">
+            <summary>
+            Phrase: Select a feed
+            </summary>
+            <value>Select a feed</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Publishing.Mvc.StringResources.FeedResources.WhichFeedToUse">
+            <summary>
+            Phrase: Which feed to use?
+            </summary>
+            <value>Which feed to use?</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Publishing.Mvc.StringResources.FeedResources.InsertLinkBothInPageAndBrowser">
+            <summary>
+            Phrase: Links both in the page and in the browser address-bar
+            </summary>
+            <value>Links both in the page and in the browser address-bar</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Publishing.Mvc.StringResources.FeedResources.InsertLinkInPageOnly">
+            <summary>
+            Phrase: Link in the page only
+            </summary>
+            <value>Link in the page only</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Publishing.Mvc.StringResources.FeedResources.InsertLinkInBrowserOnly">
+            <summary>
+            Phrase: Link in the browser address-bar only
+            </summary>
+            <value>Link in the browser address-bar only</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Publishing.Mvc.StringResources.FeedResources.TextToDisplay">
+            <summary>
+            Phrase: Text to display
+            </summary>
+            <value>Text to display</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Publishing.Mvc.StringResources.FeedResources.OpenInNewWin">
+            <summary>
+            Phrase: Open this link in a new window
+            </summary>
+            <value>Open this link in a new window</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Publishing.Mvc.StringResources.FeedResources.Tooltip">
+            <summary>
+            Word: Tooltip
+            </summary>
+            <value>Tooltip</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Publishing.Mvc.StringResources.FeedResources.Template">
+            <summary>
+            Word: Template
+            </summary>
+            <value>Template</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Publishing.Mvc.StringResources.FeedResources.CssClasses">
+            <summary>
+            Phrase: Css classes
+            </summary>
+            <value>Css classes</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Publishing.Mvc.StringResources.FeedResources.Insert">
+            <summary>
+            Phrase: Insert...
+            </summary>
+            <value>Insert...</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Publishing.Mvc.StringResources.FeedResources.TooltipDescription">
+            <summary>
+            Phrase: Appears when the cursor is pointed to the link
+            </summary>
+            <value>Appears when the cursor is pointed to the link</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Publishing.Mvc.StringResources.FeedResources.MoreOptions">
+            <summary>
+            Phrase: More options
+            </summary>
+            <value>More options</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Publishing.Mvc.StringResources.FeedResources.NotActiveModule">
+            <summary>
+            Phrase: More options
+            </summary>
+            <value>More options</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Publishing.Mvc.StringResources.FeedResources.Close">
+            <summary>
+            word: Close
+            </summary>
+            <value>Close</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Publishing.Mvc.StringResources.FeedResources.MissingFeed">
+            <summary>
+            phrase: The selected feed has been deleted or deactivated.
+            </summary>
+            <value>The selected feed has been deleted or deactivated.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Publishing.Mvc.StringResources.FeedResources.FeedEmbedControlTitle">
+            <summary>
+            Control name: FeedEmbedControl
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Publishing.Mvc.StringResources.FeedResources.FeedEmbedControlDescription">
+            <summary>
+            Control description: A link to a published feed.
+            </summary>
+        </member>
+    </members>
+</doc>

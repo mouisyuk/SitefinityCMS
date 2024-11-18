@@ -1,0 +1,3469 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Telerik.Sitefinity.MobileFormats</name>
+    </assembly>
+    <members>
+        <member name="T:Telerik.Sitefinity.MobileFormats.AmpMobileFormat">
+            <summary>
+            Implementation of <see cref="T:Telerik.Sitefinity.MobileFormats.IMobileFormat" /> interface for Google AMP.
+            </summary>
+            <seealso cref="T:Telerik.Sitefinity.MobileFormats.IMobileFormat" />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.AmpMobileFormat.#ctor(Telerik.Sitefinity.MobileFormats.ItemResolvers.IMobileFormatItemResolver,Telerik.Sitefinity.Localization.UrlLocalizationStrategies.IUrlLocalizationService,Telerik.Sitefinity.MobileFormats.Cache.IMobileFormatCacheDependencyResolver)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.MobileFormats.AmpMobileFormat" /> class.
+            </summary>
+            <param name="itemResolver">The item resolver.</param>
+            <param name="localizationService">The localization service.</param>
+            <param name="mobileFormatCacheDependencyResolver">The mobile format cache dependency resolver.</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.AmpMobileFormat.Initialize">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.AmpMobileFormat.Name">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.AmpMobileFormat.ControllerName">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.AmpMobileFormat.RoutePrefix">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.AmpMobileFormat.GenerateContentTypeTemplate(Telerik.Sitefinity.MobileFormats.Model.MobileFormatContentType)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.AmpMobileFormat.GenerateLayoutTemplate">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.AmpMobileFormat.GetMobileFormatConfig">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.AmpMobileFormat.OnPagePreRenderCompleted(Telerik.Sitefinity.Web.Events.IPagePreRenderCompleteEvent)">
+            <inheritdoc />
+        </member>
+        <member name="F:Telerik.Sitefinity.MobileFormats.AmpMobileFormat.FormatName">
+            <summary>
+            The format name
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.AmpScriptsBucket">
+            <summary>
+            Amp Scripts Bucket
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.AmpScriptsBucket.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.MobileFormats.AmpScriptsBucket" /> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.AmpScriptsBucket.GetScriptsString">
+            <summary>
+            Gets the scripts string.
+            </summary>
+            <returns>The html string.</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.AmpScriptsBucket.AddComponentScripts(System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Adds component scripts
+            </summary>
+            <param name="componentName">The component name.</param>
+            <param name="componentScripts">Scripts for the component.</param>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.AmpScriptsBucket.Instance">
+            <summary>
+            Gets the amp scripts bucket instance.
+            </summary>
+            <value>The instance.</value>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.AmpScriptsBucket.GenerateSciptTag(System.String,System.String)">
+            <summary>
+            Generates the script tag.
+            </summary>
+            <param name="scriptCustomElement">The script custom element.</param>
+            <param name="scriptSource">The script source.</param>
+            <returns>Script tag.</returns>
+        </member>
+        <member name="F:Telerik.Sitefinity.MobileFormats.AmpScriptsBucket.ComponentScriptBucket">
+            <summary>
+            Component script bucket
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Cache.AmpOutputCacheAttribute">
+            <summary>
+            MVC output cache attribute class
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Cache.AmpOutputCacheAttribute.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.MobileFormats.Cache.AmpOutputCacheAttribute" /> class.
+            </summary>
+            <param name="varyByParam">The vary by parameter.</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Cache.AmpOutputCacheAttribute.OnActionExecuting(System.Web.Mvc.ActionExecutingContext)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Cache.AmpOutputCacheAttribute.OnActionExecuted(System.Web.Mvc.ActionExecutedContext)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Cache.AmpOutputCacheAttribute.OnResultExecuting(System.Web.Mvc.ResultExecutingContext)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Cache.AmpOutputCacheAttribute.OnResultExecuted(System.Web.Mvc.ResultExecutedContext)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Cache.AmpOutputCacheAttribute.GetOutputCacheProfile">
+            <summary>
+            Gets the output cache profile.
+            </summary>
+            <returns>The output cache profile.</returns>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Cache.AmpOutputCacheAttribute.OutputCacheInstance">
+            <summary>
+            Gets or sets the output cache instance.
+            </summary>
+            <value>
+            The output cache instance.
+            </value>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Cache.IMobileFormatCacheDependencyResolver">
+            <summary>
+            interface for resolving Mobile format cache dependencies
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Cache.IMobileFormatCacheDependencyResolver.GetCacheDependencyKeys(System.String,Telerik.Sitefinity.Model.IDataItem,System.Guid)">
+            <summary>
+            Gets the cache dependency keys for the given data item and page id..
+            </summary>
+            <param name="formatName">The mobile format name.</param>
+            <param name="dataItem">The data item.</param>
+            <param name="pageId">The page identifier.</param>
+            <returns>The cache dependency keys for the given data item and page id.</returns>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Cache.MobileFormatCacheDependencyResolver">
+            <summary>
+            Class for resolving Mobile format cache dependencies
+            </summary>
+            <seealso cref="T:Telerik.Sitefinity.MobileFormats.Cache.IMobileFormatCacheDependencyResolver" />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Cache.MobileFormatCacheDependencyResolver.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.MobileFormats.Cache.MobileFormatCacheDependencyResolver"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Cache.MobileFormatCacheDependencyResolver.GetCacheDependencyKeys(System.String,Telerik.Sitefinity.Model.IDataItem,System.Guid)">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Cache.MobileFormatCacheDependencyResolver.MobileFormatsManager">
+            <summary>
+            Gets the Mobile formats manager
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Configuration.AmpCacheProfileElement">
+            <summary>
+            Amp cache profile config element
+            </summary>
+            <seealso cref="T:Telerik.Sitefinity.Configuration.ConfigElement" />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Configuration.AmpCacheProfileElement.#ctor(Telerik.Sitefinity.Configuration.ConfigElement)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.MobileFormats.Configuration.AmpCacheProfileElement"/> class.
+            </summary>
+            <param name="parent">The parent element.</param>
+            <remarks>
+            ConfigElementCollection generally needs to have a parent, however, sometimes it is necessary
+            to create a collection in memory only which is then used later on in the context of a parent.
+            Therefore, is the element is of ConfigElementCollection, exception for a non existing parent
+            will not be thrown.
+            </remarks>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Configuration.AmpCacheProfileElement.Name">
+            <summary>
+            Gets or sets the programmatic name of the profile.
+            </summary>
+            <value>The name.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Configuration.AmpCacheProfileElement.Location">
+            <summary>
+            Gets or sets a location where the content will be cached
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Configuration.AmpCacheProfileElement.Duration">
+            <summary>
+            Gets or sets a value indicating the time duration, in seconds, during which the page or control is cached. 
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Configuration.AmpCacheProfileElement.Enabled">
+            <summary>
+            Gets or sets a value indicating whether caching is enabled. 
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Configuration.AmpCacheProfileElement.Parameters">
+            <summary>
+            Gets or sets a collection of user-defined parameters for the provider.
+            </summary>
+            <value>
+            The parameters.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Configuration.AmpCacheProfileElement.VaryByUserAgent">
+            <summary>
+            Gets or sets a value indicating whether the cache should vary by user agent (browser) header.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Configuration.AmpCacheProfileElement.VaryByHost">
+            <summary>
+            Gets or sets a value indicating whether the cache should vary by the host header.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Configuration.AmpCacheProfileElement.VaryByCustom">
+            <summary>
+            Gets or sets the vary by custom.
+            </summary>
+            <value>
+            The vary by custom.
+            </value>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Configuration.AmpScripDependenciesConfigElement">
+            <summary>
+            Represents the settings for the script dependencies used by Google AMP
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Configuration.AmpScripDependenciesConfigElement.#ctor(Telerik.Sitefinity.Configuration.ConfigElement)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Configuration.AmpScripDependenciesConfigElement.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.MobileFormats.Configuration.AmpScripDependenciesConfigElement"/> class.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Configuration.AmpScripDependenciesConfigElement.Name">
+            <summary>
+            Gets or sets the name of the amp script config element
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Configuration.AmpScripDependenciesConfigElement.Value">
+            <summary>
+             Gets or sets the value of the amp script config element
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Configuration.GoogleAmpConfig">
+            <summary>
+            The configuration of Google Amp mobile format
+            </summary>
+            <seealso cref="T:Telerik.Sitefinity.Configuration.ConfigSection" />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Configuration.GoogleAmpConfig.OnPropertiesInitialized">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Configuration.GoogleAmpConfig.OutputCacheProfile">
+            <summary>
+            Gets or sets the name of the default output cache profile. 
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Configuration.GoogleAmpConfig.Profiles">
+            <summary>
+            Gets the output cache profiles.
+            </summary>
+            <value>The output cache profiles.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Configuration.GoogleAmpConfig.AmpScriptDependencies">
+            <summary>
+            Gets the amp script dependencies.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Configuration.GoogleAmpConfig.AmpScript">
+            <summary>
+            Gets or sets the amp script.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Configuration.GoogleAmpConfig.AmpValidatorScript">
+            <summary>
+            Gets or sets the amp script.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Configuration.GoogleAmpConfig.SetOriginalWidthAndHeightToImages">
+            <summary>
+            Gets or sets a value indicating whether this option is selected. If this option is not selected, images are displayed with the Default aspect ratio for images and videos.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Configuration.GoogleAmpConfig.DefaultElementAspectRatio">
+            <summary>
+            Gets or sets the default aspect ratio for images and videos.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Configuration.GoogleAmpConfig.ForbiddenHtmlElements">
+            <summary>
+            Gets or sets the forbidden html elements
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Configuration.GoogleAmpConfig.ForbiddenHtmlAttributes">
+            <summary>
+            Gets or sets the forbidden html attributes
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Configuration.MobileFormatsConfig">
+            <summary>
+            The configuration of Mobile Formats module
+            </summary>
+            <seealso cref="T:Telerik.Sitefinity.Configuration.ConfigSection" />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Configuration.MobileFormatsConfig.OnPropertiesInitialized">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Configuration.MobileFormatsConfig.InitializeDefaultProviders(Telerik.Sitefinity.Configuration.ConfigElementDictionary{System.String,Telerik.Sitefinity.Configuration.DataProviderSettings})">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Configuration.MobileFormatsConfig.MobileFormatSettings">
+            <summary>
+            Gets a collection of mobile format settings.
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Configuration.MobileFormatSettings">
+            <summary>
+            Represents the configuration elements associated with a mobile format.
+            </summary>
+            <seealso cref="T:Telerik.Sitefinity.Configuration.ConfigElement" />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Configuration.MobileFormatSettings.#ctor(Telerik.Sitefinity.Configuration.ConfigElement)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.MobileFormats.Configuration.MobileFormatSettings" /> class.
+            </summary>
+            <param name="parent">The parent.</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Configuration.MobileFormatSettings.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.MobileFormats.Configuration.MobileFormatSettings" /> class.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Configuration.MobileFormatSettings.Name">
+            <summary>
+            Gets or sets the name of the mobile format.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Configuration.MobileFormatSettings.Title">
+            <summary>
+            Gets or sets the title of the mobile format.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Configuration.MobileFormatSettings.ResourceClassId">
+            <summary>
+            Gets or sets the global resource class ID for retrieving localized strings.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Configuration.MobileFormatSettings.MobileFormatTypeName">
+            <summary>
+            Gets or sets the name of the mobile format type.
+            </summary>
+            <value>The name of the mobile format type.</value>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Data.MobileFormatsDataProvider">
+            <summary>
+            Defines the basic functionality that should be implemented by Mobile formats data providers.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Data.MobileFormatsDataProvider.GetKnownTypes">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Data.MobileFormatsDataProvider.RootKey">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Data.MobileFormatsDataProvider.CreateItem(System.Type,System.Guid)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Data.MobileFormatsDataProvider.GetItem(System.Type,System.Guid)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Data.MobileFormatsDataProvider.DeleteItem(System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Data.MobileFormatsDataProvider.CreateMobileFormatContentType">
+            <summary>
+            Creates new instance of <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatContentType"/>.
+            </summary>
+            <returns>New instance of <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatContentType"/></returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Data.MobileFormatsDataProvider.CreateMobileFormatContentType(System.Guid)">
+            <summary>
+            Creates new instance of <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatContentType"/>.
+            </summary>
+            <param name="id">The id of the <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatContentType"/></param>
+            <returns>New instance of <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatContentType"/></returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Data.MobileFormatsDataProvider.GetMobileFormatContentTypes">
+            <summary>
+            Get a query for all <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatContentType"/> items.
+            </summary>
+            <returns>Query for all <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatContentType"/> items</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Data.MobileFormatsDataProvider.GetMobileFormatContentType(System.Guid)">
+            <summary>
+            Search for a <see cref="N:Telerik.Sitefinity.Packaging"/> by its identity.
+            </summary>
+            <param name="id">The id of the <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatContentType"/></param>
+            <returns>The found <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatContentType"/> item.</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Data.MobileFormatsDataProvider.DeleteMobileFormatContentType(Telerik.Sitefinity.MobileFormats.Model.MobileFormatContentType)">
+            <summary>
+            Deletes the provided <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatContentType"/>.
+            </summary>
+            <param name="mobileFormatContentType">The <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatContentType"/> to delete.</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Data.MobileFormatsDataProvider.CreateMobileFormatDefinition">
+            <summary>
+            Creates new instance of <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatDefinition"/>.
+            </summary>
+            <returns>New instance of <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatDefinition"/></returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Data.MobileFormatsDataProvider.CreateMobileFormatDefinition(System.Guid)">
+            <summary>
+            Creates new instance of <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatDefinition"/>.
+            </summary>
+            <param name="id">The id of the <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatDefinition"/></param>
+            <returns>New instance of <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatDefinition"/></returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Data.MobileFormatsDataProvider.GetMobileFormatDefinitions">
+            <summary>
+            Get a query for all <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatDefinition"/> items.
+            </summary>
+            <returns>Query for all <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatDefinition"/> items</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Data.MobileFormatsDataProvider.GetMobileFormatDefinition(System.Guid)">
+            <summary>
+            Search for a <see cref="N:Telerik.Sitefinity.Packaging"/> by its identity.
+            </summary>
+            <param name="id">The id of the <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatDefinition"/></param>
+            <returns>The found <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatDefinition"/> item.</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Data.MobileFormatsDataProvider.DeleteMobileFormatDefinition(Telerik.Sitefinity.MobileFormats.Model.MobileFormatDefinition)">
+            <summary>
+            Deletes the provided <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatDefinition"/>.
+            </summary>
+            <param name="mobileFormatDefinition">The <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatDefinition"/> to delete.</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Data.MobileFormatsDataProvider.CreateMobileFormatTemplate">
+            <summary>
+            Creates new instance of <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatTemplate"/>.
+            </summary>
+            <returns>New instance of <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatTemplate"/></returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Data.MobileFormatsDataProvider.CreateMobileFormatTemplate(System.Guid)">
+            <summary>
+            Creates new instance of <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatDefinition"/>.
+            </summary>
+            <param name="id">The id of the <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatTemplate"/></param>
+            <returns>New instance of <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatTemplate"/></returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Data.MobileFormatsDataProvider.CreateMobileFormatTemplate(System.Guid,System.Guid)">
+            <summary>
+            Creates new instance of <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatTemplate" />.
+            </summary>
+            <param name="mobileFormatDefinitionId">The mobile format definition id.</param>
+            <param name="mobileFormatContentTypeId">The mobile format content type id.</param>
+            <returns>New instance of <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatTemplate" /></returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Data.MobileFormatsDataProvider.GetMobileFormatTemplates">
+            <summary>
+            Get a query for all <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatTemplate"/> items.
+            </summary>
+            <returns>Query for all <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatTemplate"/> items</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Data.MobileFormatsDataProvider.GetMobileFormatTemplate(System.Guid)">
+            <summary>
+            Gets the mobile format template.
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns>The found <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatTemplate" /> item.</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Data.MobileFormatsDataProvider.GetMobileFormatTemplate(System.Guid,System.Guid)">
+            <summary>
+            Search for a <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatTemplate" /> by mobile format definition id and mobile format content type id.
+            </summary>
+            <param name="mobileFormatDefinitionId">The mobile format definition id.</param>
+            <param name="mobileFormatContentTypeId">The mobile format content type id.</param>
+            <returns>The found <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatTemplate" /> item.</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Data.MobileFormatsDataProvider.DeleteMobileFormatTemplate(Telerik.Sitefinity.MobileFormats.Model.MobileFormatTemplate)">
+            <summary>
+            Deletes the provided <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatTemplate"/>.
+            </summary>
+            <param name="mobileFormatTemplate">The <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatTemplate"/> to delete.</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Data.MobileFormatsFluentMapping.#ctor(Telerik.Sitefinity.Model.IDatabaseMappingContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.MobileFormats.Data.MobileFormatsFluentMapping"/> class.
+            </summary>
+            <param name="context">The context.</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Data.MobileFormatsFluentMapping.GetMapping">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Data.MobileFormatsMetadataSource.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.MobileFormats.Data.MobileFormatsMetadataSource"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Data.MobileFormatsMetadataSource.#ctor(Telerik.Sitefinity.Model.IDatabaseMappingContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.MobileFormats.Data.MobileFormatsMetadataSource" /> class.
+            </summary>
+            <param name="context">The context.</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Data.MobileFormatsMetadataSource.BuildCustomMappings">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Data.OpenAccessMobileFormatsDataProvider">
+            <summary>
+            An implementation of the MobileFormatsDataProvider based on OpenAccess ORM persistence framework
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Data.OpenAccessMobileFormatsDataProvider.Context">
+            <summary>
+            Gets or sets the OpenAccess context. Alternative to Database.
+            </summary>
+            <value>The context.</value>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Data.OpenAccessMobileFormatsDataProvider.GetMetaDataSource(Telerik.Sitefinity.Model.IDatabaseMappingContext)">
+            <summary>
+            Gets the <see cref="T:Telerik.Sitefinity.MobileFormats.Data.MobileFormatsMetadataSource"/> object.
+            </summary>
+            <param name="context">IDatabaseMappingContext context</param>
+            <returns>The <see cref="T:Telerik.Sitefinity.MobileFormats.Data.MobileFormatsMetadataSource"/></returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Data.OpenAccessMobileFormatsDataProvider.CreateMobileFormatContentType">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Data.OpenAccessMobileFormatsDataProvider.CreateMobileFormatContentType(System.Guid)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Data.OpenAccessMobileFormatsDataProvider.GetMobileFormatContentTypes">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Data.OpenAccessMobileFormatsDataProvider.GetMobileFormatContentType(System.Guid)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Data.OpenAccessMobileFormatsDataProvider.DeleteMobileFormatContentType(Telerik.Sitefinity.MobileFormats.Model.MobileFormatContentType)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Data.OpenAccessMobileFormatsDataProvider.CreateMobileFormatDefinition">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Data.OpenAccessMobileFormatsDataProvider.CreateMobileFormatDefinition(System.Guid)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Data.OpenAccessMobileFormatsDataProvider.GetMobileFormatDefinitions">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Data.OpenAccessMobileFormatsDataProvider.GetMobileFormatDefinition(System.Guid)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Data.OpenAccessMobileFormatsDataProvider.DeleteMobileFormatDefinition(Telerik.Sitefinity.MobileFormats.Model.MobileFormatDefinition)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Data.OpenAccessMobileFormatsDataProvider.CreateMobileFormatTemplate">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Data.OpenAccessMobileFormatsDataProvider.CreateMobileFormatTemplate(System.Guid)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Data.OpenAccessMobileFormatsDataProvider.CreateMobileFormatTemplate(System.Guid,System.Guid)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Data.OpenAccessMobileFormatsDataProvider.GetMobileFormatTemplates">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Data.OpenAccessMobileFormatsDataProvider.GetMobileFormatTemplate(System.Guid)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Data.OpenAccessMobileFormatsDataProvider.GetMobileFormatTemplate(System.Guid,System.Guid)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Data.OpenAccessMobileFormatsDataProvider.DeleteMobileFormatTemplate(Telerik.Sitefinity.MobileFormats.Model.MobileFormatTemplate)">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Exceptions.TemplateFolderUnauthorizedAccessException">
+            <summary>
+            Class for TemplateFolderUnauthorizedAccessException
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Exceptions.TemplateFolderUnauthorizedAccessException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.MobileFormats.Exceptions.TemplateFolderUnauthorizedAccessException"/> class.
+            </summary>
+            <param name="message">The exception message</param>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.ExportImport.MobileFormatsContentTransfer">
+            <summary>
+            Class for exporting Mobile formats module settings
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.ExportImport.MobileFormatsContentTransfer.#ctor(Telerik.Sitefinity.MobileFormats.IMobileFormatsManager)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.MobileFormats.ExportImport.MobileFormatsContentTransfer" /> class.
+            </summary>
+            <param name="mobileFormatsManager">The mobile formats manager.</param>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.ExportImport.MobileFormatsContentTransfer.Area">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.ExportImport.MobileFormatsContentTransfer.ItemsImporter">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.ExportImport.MobileFormatsContentTransfer.SupportedTypes">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.ExportImport.MobileFormatsContentTransfer.GetItemsQueries(Telerik.Sitefinity.Packaging.Content.ExportParams)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.ExportImport.MobileFormatsContentTransfer.Count(System.IO.Stream,Telerik.Sitefinity.Packaging.Package.ScanOperation)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.ExportImport.MobileFormatsContentTransfer.GetSupportTypesList">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.ExportImport.MobileFormatsContentTransfer.OnImportStart(Telerik.Sitefinity.Packaging.Content.ImportParams)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.ExportImport.MobileFormatsContentTransfer.OnItemImported(Telerik.Sitefinity.Model.IDataItem,Telerik.Sitefinity.Publishing.WrapperObject,Telerik.Sitefinity.Data.IManager)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.ExportImport.MobileFormatsContentTransfer.PreProcessExportObject(System.Object,Telerik.Sitefinity.Packaging.Content.ExportParams,System.String)">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.ExportImport.MobileFormatsImporter">
+            <summary>
+            Mobile formats content importer class
+            </summary>
+            <seealso cref="T:Telerik.Sitefinity.SiteSync.SiteSyncImporter" />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.ExportImport.MobileFormatsImporter.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.MobileFormats.ExportImport.MobileFormatsImporter"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.ExportImport.MobileFormatsImporter.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.MobileFormats.ExportImport.MobileFormatsImporter"/> class.
+            </summary>
+            <param name="registrationPrefix">The registration prefix.</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.ExportImport.MobileFormatsImporter.SetFacadeManager(System.Type,Telerik.Sitefinity.Fluent.IDataItemFacade.IDataItemFacade)">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.ExportImport.MobileFormatsStructureTransfer">
+            <summary>
+            Class for exporting Mobile formats module structure
+            </summary>
+            <seealso cref="T:Telerik.Sitefinity.Packaging.Structure.StaticStructureTransferBase" />
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.ExportImport.MobileFormatsStructureTransfer.Area">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.ExportImport.MobileFormatsStructureTransfer.SupportedTypes">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.ExportImport.MobileFormatsStructureTransfer.GroupName">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.ExportImport.MobileFormatsStructureTransfer.Dependencies">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.ExportImport.MobileFormatsStructureTransfer.Import(System.Collections.Generic.IEnumerable{Telerik.Sitefinity.Packaging.Package.IPackageTransferObject})">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.ExportImport.MobileFormatsStructureTransfer.Export(System.Collections.Generic.IDictionary{System.String,System.String})">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.ExportImport.MobileFormatsStructureTransfer.ImportCompleted">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.ExportImport.MobileFormatsStructureTransfer.AllowToDelete(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.ExportImport.MobileFormatsStructureTransfer.ImportConfiguration(System.Collections.Generic.KeyValuePair{System.Type,System.String},Telerik.Sitefinity.Configuration.ConfigManager,System.String)">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Extensions.DataItemExtensions">
+            <summary>
+            Extensions for the IDataItem
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Extensions.DataItemExtensions.IsViewPermissionsRestricted(Telerik.Sitefinity.Model.IDataItem)">
+            <summary>
+            Checks if the data item has view permissions are restricted (not set to everyone)
+            </summary>
+            <param name="dataItem">The data item to be checked.</param>
+            <returns>true if the item has restricted view permissions; false otherwise</returns>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.HtmlConverterToAmpFactory">
+            <summary>
+            HtmlConverterToAmp Factory
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.HtmlConverterToAmpFactory.AmpConverter">
+            <summary>
+            Gets or sets the amp converter.
+            </summary>
+            <value>The amp converter.</value>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.HtmlConverterToAmpFactory.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:Telerik.Sitefinity.MobileFormats.HtmlConverterToAmpFactory"/> class
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.HtmlConverterToAmpFactory.GetConverter">
+            <summary>
+            Gets the converter.
+            </summary>
+            <returns>HtmlToAmp Converter.</returns>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.IMobileFormat">
+            <summary>
+            Mobile format interface
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.IMobileFormat.Initialize">
+            <summary>
+            Initializes this mobile format.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.IMobileFormat.Load">
+            <summary>
+            Loads this instance.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.IMobileFormat.Unload">
+            <summary>
+            Unloads this instance.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.IMobileFormat.Name">
+            <summary>
+            Gets the name.
+            </summary>
+            <value>The name.</value>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.IMobileFormat.GetMobileFormatConfig">
+            <summary>
+            Gets the mobile format configuration.
+            </summary>
+            <returns>The config section for the mobile format.</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.IMobileFormat.GetAbsoulteMobileFormatUrl(Telerik.Sitefinity.Model.IDataItem,System.Guid)">
+            <summary>
+            Gets the full mobile format url for the item of the requested site
+            </summary>
+            <param name="dataItem">The item arguments</param>
+            <param name="siteId">The site id</param>
+            <returns>The mobile format url</returns>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.IMobileFormatsManager">
+            <summary>
+            Interface for Mobile format manager
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.IMobileFormatsManager.CreateMobileFormatContentType">
+            <summary>
+            Creates new instance of <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatContentType"/>.
+            </summary>
+            <returns>New instance of <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatContentType"/></returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.IMobileFormatsManager.CreateMobileFormatContentType(System.Guid)">
+            <summary>
+            Creates new instance of <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatContentType"/>.
+            </summary>
+            <param name="id">The id of the package</param>
+            <returns>New instance of <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatContentType"/></returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.IMobileFormatsManager.DeleteMobileFormatContentType(Telerik.Sitefinity.MobileFormats.Model.MobileFormatContentType)">
+            <summary>
+            Deletes the provided <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatContentType"/>.
+            </summary>
+            <param name="mobileFormatContentType">The <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatContentType"/> to delete.</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.IMobileFormatsManager.GetMobileFormatContentType(System.Guid)">
+            <summary>
+            Gets the mobile format content type by given id
+            </summary>
+            <param name="id">The id of the mobile format content type</param>
+            <returns>The found mobile format content type</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.IMobileFormatsManager.GetMobileFormatContentTypes">
+            <summary>
+            Get a query for all <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatContentType"/> items.
+            </summary>
+            <returns>Query for all <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatContentType"/> items</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.IMobileFormatsManager.CreateMobileFormatDefinition">
+            <summary>
+            Creates new instance of <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatDefinition"/>.
+            </summary>
+            <returns>New instance of <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatDefinition"/></returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.IMobileFormatsManager.CreateMobileFormatDefinition(System.Guid)">
+            <summary>
+            Creates new instance of <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatDefinition"/>.
+            </summary>
+            <param name="id">The id of the package</param>
+            <returns>New instance of <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatDefinition"/></returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.IMobileFormatsManager.DeleteMobileFormatDefinition(Telerik.Sitefinity.MobileFormats.Model.MobileFormatDefinition)">
+            <summary>
+            Deletes the provided <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatDefinition"/>.
+            </summary>
+            <param name="mobileFormatDefinition">The <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatDefinition"/> to delete.</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.IMobileFormatsManager.GetMobileFormatDefinition(System.Guid)">
+            <summary>
+            Creates new instance of <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatDefinition"/>.
+            </summary>
+            <param name="id">The id of the <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatDefinition"/></param>
+            <returns>Instance of <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatDefinition"/></returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.IMobileFormatsManager.GetMobileFormatDefinitions">
+            <summary>
+            Get a query for all <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatDefinition"/> items.
+            </summary>
+            <returns>Query for all <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatDefinition"/> items</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.IMobileFormatsManager.GetMobileFormatDefinition(System.String,System.Guid)">
+            <summary>
+            Gets the mobile format definition.
+            </summary>
+            <param name="formatName">Name of the format.</param>
+            <param name="siteId">The site id.</param>
+            <returns>Instance of <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatDefinition" /></returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.IMobileFormatsManager.CreateMobileFormatTemplate(System.Guid,System.Guid)">
+            <summary>
+            Creates new instance of <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatTemplate" />.
+            </summary>
+            <param name="mobileFormatDefinitionId">The mobile format definition id.</param>
+            <param name="mobileFormatContentTypeId">The mobile format content type id.</param>
+            <returns>New instance of <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatTemplate" /></returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.IMobileFormatsManager.GetMobileFormatTemplates">
+            <summary>
+            Get a query for all <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatTemplate"/> items.
+            </summary>
+            <returns>Query for all <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatTemplate"/> items</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.IMobileFormatsManager.GetMobileFormatTemplate(System.Guid,System.Guid)">
+            <summary>
+            Gets mobile format template
+            </summary>
+            <param name="mobileFormatDefinitionId">The mobile format definition id.</param>
+            <param name="mobileFormatContentTypeId">The mobile format content type id.</param>
+            <returns>The found <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatTemplate" /> item.</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.IMobileFormatsManager.GetMobileFormatTemplate(System.String,System.String,System.Guid)">
+            <summary>
+            Gets mobile format template
+            </summary>
+            <param name="mobileFormatName">The mobile format name.</param>
+            <param name="contentTypeFullName">The content type full name.</param>
+            <param name="siteId">The site id.</param>
+            <returns>The found <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatTemplate" /> item.</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.IMobileFormatsManager.DeleteMobileFormatTemplate(Telerik.Sitefinity.MobileFormats.Model.MobileFormatTemplate)">
+            <summary>
+            Deletes the provided <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatTemplate"/>.
+            </summary>
+            <param name="mobileFormatTemplate">The <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatTemplate"/> to delete.</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.IMobileFormatsManager.SaveChanges">
+            <summary>
+            Saves any changes made to objects retrieved with this manager.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.IMobileFormatsManager.IsMobileFormatContentTypeActive(System.String,System.Type,System.Guid)">
+            <summary>
+            Determines whether specified content type is active for given mobile format and site.
+            </summary>
+            <param name="mobileFormatName">The mobile format name.</param>
+            <param name="contentType">The content type.</param>
+            <param name="siteId">The site id.</param>
+            <returns>True if the mobile format content type is active, false otherwise.</returns>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.InterfaceMappings">
+            <summary>
+            This class is used to describe the bindings which will be used by the container when resolving classes
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.InterfaceMappings.Load">
+            <summary>
+            Loads the module into the kernel.
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.ItemResolvers.DataItemInfo">
+            <summary>
+            Class containing information needed for retrieving a <see cref="!:IDataItem"/> item.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.ItemResolvers.DataItemInfo.ItemTypeName">
+            <summary>
+            Gets or sets the name of the item type.
+            </summary>
+            <value>The name of the item type.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.ItemResolvers.DataItemInfo.ProviderName">
+            <summary>
+            Gets or sets the name of the provider.
+            </summary>
+            <value>The name of the provider.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.ItemResolvers.DataItemInfo.ItemUrlName">
+            <summary>
+            Gets or sets the name of the item URL.
+            </summary>
+            <value>The name of the item URL.</value>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.ItemResolvers.DataItemInfoResolver">
+            <summary>
+            Class responsible for resolving <see cref="T:Telerik.Sitefinity.MobileFormats.ItemResolvers.DataItemInfo"/> item from given URL and 
+            resolve a URL from given <see cref="T:Telerik.Sitefinity.MobileFormats.ItemResolvers.DataItemInfo"/> item
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.ItemResolvers.DataItemInfoResolver.Resolve(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.ItemResolvers.DataItemInfoResolver.ResolveUrl(Telerik.Sitefinity.MobileFormats.ItemResolvers.DataItemInfo)">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.ItemResolvers.IDataItemInfoResolver">
+            <summary>
+            Interface for objects responsible for resolving <see cref="T:Telerik.Sitefinity.MobileFormats.ItemResolvers.DataItemInfo"/> item from given URL and 
+            resolve a URL from given <see cref="T:Telerik.Sitefinity.MobileFormats.ItemResolvers.DataItemInfo"/> item
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.ItemResolvers.IDataItemInfoResolver.Resolve(System.String)">
+            <summary>
+            Resolves <see cref="T:Telerik.Sitefinity.MobileFormats.ItemResolvers.DataItemInfo"/> item from the specified URL.
+            </summary>
+            <param name="url">The URL.</param>
+            <returns><see cref="T:Telerik.Sitefinity.MobileFormats.ItemResolvers.DataItemInfo"/> item.</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.ItemResolvers.IDataItemInfoResolver.ResolveUrl(Telerik.Sitefinity.MobileFormats.ItemResolvers.DataItemInfo)">
+            <summary>
+            Resolves the URL of the given <see cref="T:Telerik.Sitefinity.MobileFormats.ItemResolvers.DataItemInfo"/> item.
+            </summary>
+            <param name="dataItemInfo">The data item info.</param>
+            <returns>The resolved URL.</returns>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.ItemResolvers.IMobileFormatItemResolver">
+            <summary>
+            Interface for resolving data item from url
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.ItemResolvers.IMobileFormatItemResolver.GetItem(System.String,System.Nullable{Telerik.Sitefinity.GenericContent.Model.ContentLifecycleStatus},System.Globalization.CultureInfo)">
+            <summary>
+            Gets the item.
+            </summary>
+            <param name="url">The url.</param>
+            <param name="status">The status.</param>
+            <param name="culture">The culture.</param>
+            <returns>
+            The data item.
+            </returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.ItemResolvers.IMobileFormatItemResolver.GetItemUrl(Telerik.Sitefinity.Model.IDataItem)">
+            <summary>
+            Gets the item URL.
+            </summary>
+            <param name="dataItem">The data item.</param>
+            <returns>The data item url.</returns>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.ItemResolvers.MobileFormatItemResolver">
+            <summary>
+            Class that resolves data items
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.ItemResolvers.MobileFormatItemResolver.#ctor(Telerik.Sitefinity.MobileFormats.ItemResolvers.IDataItemInfoResolver)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.MobileFormats.ItemResolvers.MobileFormatItemResolver" /> class.
+            </summary>
+            <param name="dataItemInfoResolver">The data item info resolver.</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.ItemResolvers.MobileFormatItemResolver.GetItem(System.String,System.Nullable{Telerik.Sitefinity.GenericContent.Model.ContentLifecycleStatus},System.Globalization.CultureInfo)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.ItemResolvers.MobileFormatItemResolver.PermissionsGranted(Telerik.Sitefinity.Model.IDataItem,System.Nullable{Telerik.Sitefinity.GenericContent.Model.ContentLifecycleStatus})">
+            <summary>
+            Checks if needed permissions are granted for the given data item
+            </summary>
+            <param name="dataItem">The data item</param>
+            <param name="status">The requested status of the item</param>
+            <returns>True if permissions are granted; False - otherwise</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.ItemResolvers.MobileFormatItemResolver.GetItemUrl(Telerik.Sitefinity.Model.IDataItem)">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.MobileFormatBase">
+            <summary>
+            Mobile format base class
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.MobileFormatBase.#ctor(Telerik.Sitefinity.MobileFormats.ItemResolvers.IMobileFormatItemResolver,Telerik.Sitefinity.Localization.UrlLocalizationStrategies.IUrlLocalizationService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.MobileFormats.MobileFormatBase" /> class.
+            </summary>
+            <param name="itemResolver">The item resolver.</param>
+            <param name="localizationService">The localization service.</param>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatBase.Name">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatBase.ControllerName">
+            <summary>
+            Gets the controller name for the mobile format pages
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatBase.RoutePrefix">
+            <summary>
+            Gets the route prefix for the mobile format pages
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatBase.MobileFormatsManager">
+            <summary>
+            Gets the Mobile formats manager
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.MobileFormatBase.Initialize">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.MobileFormatBase.Load">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.MobileFormatBase.Unload">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.MobileFormatBase.GenerateContentTypeTemplate(Telerik.Sitefinity.MobileFormats.Model.MobileFormatContentType)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.MobileFormatBase.GenerateLayoutTemplate">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.MobileFormatBase.GetMobileFormatConfig">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.MobileFormatBase.GetAbsoulteMobileFormatUrl(Telerik.Sitefinity.Model.IDataItem,System.Guid)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.MobileFormatBase.RegisterRoutes">
+            <summary>
+            Registers the routes.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.MobileFormatBase.OnPagePreRenderCompleted(Telerik.Sitefinity.Web.Events.IPagePreRenderCompleteEvent)">
+            <summary>
+            Called when [page pre render completed].
+            </summary>
+            <param name="event">The event.</param>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.MobileFormatResources">
+            <summary>
+            Represents the string resources for the Mobile formats module 
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.MobileFormatResources.#ctor(Telerik.Sitefinity.Localization.Data.ResourceDataProvider)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.MobileFormats.MobileFormatResources"/> class with the provided <see cref="T:Telerik.Sitefinity.Localization.Data.ResourceDataProvider"/>.
+            </summary>
+            <param name="dataProviderName"><see cref="T:Telerik.Sitefinity.Localization.Data.ResourceDataProvider"/>dataProviderName</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.MobileFormatResources.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.MobileFormats.MobileFormatResources"/> class.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.MobileFormatsBasicSettings">
+            <summary>
+            Gets MobileFormatsBasicSettings
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.ExternalLinkMobileFormatDescription">
+            <summary>
+            Gets External Link: MobileFormatDescription
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.MobileFormatDescription">
+            <summary>
+            Gets MobileFormatDescription
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.MobileFormatsConfigCaption">
+            <summary>
+            Gets MobileFormatsConfigCaption
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.MobileFormatsConfigDescription">
+            <summary>
+            Gets MobileFormatsConfigDescription
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.MobileFormatsSettingsCaption">
+            <summary>
+            Gets MobileFormatsSettingsCaption
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.MobileFormatsSettingsDescription">
+            <summary>
+            Gets MobileFormatsSettingsDescription
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.MobileFormatDefinitionGridFirstCol">
+            <summary>
+            Gets MobileFormatDefinitionGridFirstCol
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.MobileFormatsConfigurationsDialogSaveBtn">
+            <summary>
+            Gets MobileFormatsConfigurationsDialogCancel button
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.Cancel">
+            <summary>
+            Gets Cancel button
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.Delete">
+            <summary>
+            Gets Delete button
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.DeleteContentTypeConfirmation">
+            <summary>
+            Gets Delete button
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.Publish">
+            <summary>
+            Gets Publish text
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.ContentTypeLabel">
+            <summary>
+            Gets MobileFormatContentTypeFirstCol
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.MobileFormatContentTypeGridTitle">
+            <summary>
+            Gets MobileFormatContentTypeTitle
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.AddNewContentTypeBtn">
+            <summary>
+            Gets AddNewContentType button
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.ChangeBtn">
+            <summary>
+            Gets AddNewContentType button
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.AddContentLabel">
+            <summary>
+            Gets AddContent label
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.Activate">
+            <summary>
+            Gets Activate label
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.ActivationConfirmation">
+            <summary>
+            Gets Activation confirmation label
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.DeactivationConfirmation">
+            <summary>
+            Gets Deactivation confirmation label
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.Deactivate">
+            <summary>
+            Gets Deactivate label
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.Active">
+            <summary>
+            Gets Active label
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.Inactive">
+            <summary>
+            Gets Inactive label
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.Configure">
+            <summary>
+            Gets Configure label
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.OutputCacheProfileTitle">
+            <summary>
+            Gets the OutputCacheProfileTitle
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.OutputCacheProfilesTitle">
+            <summary>
+            Gets the OutputCacheProfilesTitle
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.OutputCacheProfilesDescription">
+            <summary>
+            Gets the OutputCacheProfilesDescription.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.ErrorInitializingContentTypesGrid">
+            <summary>
+            Gets the error text for initializing content types grid.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.ErrorInitializingMobileDefinitionsGrid">
+            <summary>
+            Gets the error text for initializing mobile format definitions grid.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.ErrorDeletingContentType">
+            <summary>
+            Gets the error text for deleting mobile format content types.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.ErrorLoadingMobileFormatTemplates">
+            <summary>
+            Gets the error text for loading mobile format templates.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.ErrorActivatingMobileFormatDefinition">
+            <summary>
+            Gets the error text for activating mobile format definition.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.ErrorChangeTemplate">
+            <summary>
+            Gets the error text for activating mobile format definition.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.ErrorChangingContentTypes">
+            <summary>
+            Gets the error text for activating mobile format definition.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.CanonicalUrlLabel">
+            <summary>
+            Gets the canonical URL label.
+            </summary>
+            <value>
+            The canonical URL label.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.CustomCanonicalUrlFormatLabel">
+            <summary>
+            Gets the custom canonical URL format label.
+            </summary>
+            <value>
+            The custom canonical URL format label.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.CustomCanonicalUrlFormatDescription">
+            <summary>
+            Gets the custom canonical URL format description.
+            </summary>
+            <value>
+            The custom canonical URL format description.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.CustomCanonicalUrlOption">
+            <summary>
+            Gets the custom canonical URL option.
+            </summary>
+            <value>
+            The custom canonical URL option.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.DefaultCanonicalUrlOption">
+            <summary>
+            Gets the default canonical URL option.
+            </summary>
+            <value>
+            The custom default URL option.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.NoTemplateSelectedOption">
+            <summary>
+            Gets the no template selected option.
+            </summary>
+            <value>
+            The no template selected option.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.NoFeatherEnabled">
+            <summary>
+            Gets the error text when the Feather module is not enabled.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.HowTo">
+            <summary>
+            Gets the "How to..." label.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.PreviewGoogleAMPPages">
+            <summary>
+            Gets the "Preview Google AMP pages" label.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.ExternalLinkPreviewGoogleAMPPages">
+            <summary>
+            Gets External Link: Preview Google AMP pages.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.ModifyAmpTemplates">
+            <summary>
+            Gets the "Modify AMP templates" label.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.HowToModifyTemplates">
+            <summary>
+            Gets the "How to modify templates" label.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.PreviewLink">
+            <summary>
+            Gets the Preview link label text.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.AmpLink">
+            <summary>
+            Gets the Amp link label text.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.PreviewAs">
+            <summary>
+            Gets the Preview link label text.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.FailToLoadPreview">
+            <summary>
+            Gets the error message when mobile format preview fails to load.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.PreviewMobileFormatsTitle">
+            <summary>
+            Gets the Preview for mobile formats title.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.PreviewFor">
+            <summary>
+            Gets the Preview for label.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.PreviewLabel">
+            <summary>
+            Gets the Preview label.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.ExternalLinkModifyTemplatesForGoogleAMPPages">
+            <summary>
+            Gets External Link: Modify templates for  Google AMP pages.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.AmpScriptDependencies">
+            <summary>
+            Gets the amp script dependencies title
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.AmpScriptDependenciesDescription">
+            <summary>
+            Gets the amp script dependencies description
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.GoogleAMPScript">
+            <summary>
+            Gets the GoogleAMPScript label.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.GoogleAMPScriptDescription">
+            <summary>
+            Gets the GoogleAMPScriptDescription label.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.GoogleAMPValidatorScript">
+            <summary>
+            Gets the GoogleAMPValidatorScript label.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.GoogleAMPValidatorScriptDescription">
+            <summary>
+            Gets the GoogleAMPValidatorScriptDescription label.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.ImagesOriginalWidthAndHeight">
+            <summary>
+            Gets the ImagesOriginalWidthAndHeight label.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.ImagesOriginalWidthAndHeightDescription">
+            <summary>
+            Gets the Should download images description settings label.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.ElementAspectRatio">
+            <summary>
+            Gets the element aspect ratio label.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.ElementAspectRatioDescription">
+            <summary>
+            Gets the element aspect ratio description label.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.AmpScriptDependenciesConfigElementDescription">
+            <summary>
+            Gets the description of amp script dependency config.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.ForbiddenHtmlElements">
+            <summary>
+            Gets the description of amp script dependency config.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.ForbiddenHtmlElementsDescription">
+            <summary>
+            Gets the description of amp script dependency config.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.ForbiddenHtmlAttributes">
+            <summary>
+            Gets the description of amp script dependency config.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.ForbiddenHtmlAttributesDescription">
+            <summary>
+            Gets the description of amp script dependency config.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.ValidAmp">
+            <summary>
+            Gets the valid AMP label text.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.InvalidAmp">
+            <summary>
+            Gets the invalid AMP label text.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.InvalidAmpDescription">
+            <summary>
+            Gets the invalid AMP description label text.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.ValidMarkup">
+            <summary>
+            Gets the valid Markup label text.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.InvalidMarkup">
+            <summary>
+            Gets the invalid Markup label text.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.InvalidMarkupDescription">
+            <summary>
+            Gets the invalid Markup description label text.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.ViewErrors">
+            <summary>
+            Gets the view errors label text.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.BackToPreview">
+            <summary>
+            Gets the back to preview label text.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.AmpErrors">
+            <summary>
+            Gets the AMP errors label text.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.ValidationErrors">
+            <summary>
+            Gets the validation errors label text.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.LearnMore">
+            <summary>
+            Gets the learn more label text.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.PreviewUnauthorized">
+            <summary>
+            Gets the failed to load preview because of restricted permissions label.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.NoContentItemsCreated">
+            <summary>
+            Gets the message shown on preview when no content items are created
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.ItemHasBeenDeleted">
+            <summary>
+            Gets the message shown on preview when requested item is deleted or restricted
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.MobileFormatResourcesTitle">
+            <summary>
+            Gets phrase: Mobile Format Resources
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatResources.MobileFormatResourcesDescription">
+            <summary>
+            Gets phrase: Contains localizable resources for the Mobile Format user interface.
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.MobileFormatsManager">
+            <summary>
+            Manager for mobile formats module
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.MobileFormatsManager.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.MobileFormats.MobileFormatsManager"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.MobileFormatsManager.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.MobileFormats.MobileFormatsManager"/> class.
+            </summary>
+            <param name="providerName">Name of the provider.</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.MobileFormatsManager.#ctor(System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.MobileFormats.MobileFormatsManager"/> class.
+            </summary>
+            <param name="providerName">Name of the provider.</param>
+            <param name="transactionName">The name of a distributed transaction. If empty string or null this manager will use separate transaction.</param>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatsManager.ModuleName">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatsManager.DefaultProviderDelegate">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatsManager.ProvidersSettings">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.MobileFormatsManager.GetManager">
+            <summary>
+            Get an instance of the <see cref="T:Telerik.Sitefinity.MobileFormats.MobileFormatsManager"/> using the default provider
+            </summary>
+            <returns>Instance of <see cref="T:Telerik.Sitefinity.MobileFormats.MobileFormatsManager"/></returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.MobileFormatsManager.GetManager(System.String)">
+            <summary>
+            Get an instance of the <see cref="T:Telerik.Sitefinity.MobileFormats.MobileFormatsManager"/> by explicitly specifying the provider name to be used.
+            </summary>
+            <param name="providerName">Name of the provider to use, or null/empty string to use the default provider.</param>
+            <returns>Instance of the <see cref="T:Telerik.Sitefinity.MobileFormats.MobileFormatsManager"/></returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.MobileFormatsManager.GetManager(System.String,System.String)">
+            <summary>
+            Get an instance of the <see cref="T:Telerik.Sitefinity.MobileFormats.MobileFormatsManager"/> by explicitly specifying the provider and transaction name to be used.
+            </summary>
+            <param name="providerName">Name of the provider to use, or null/empty string to use the default provider.</param>
+            <param name="transactionName">The name of a named transaction to be used.</param>
+            <returns>Instance of the <see cref="T:Telerik.Sitefinity.MobileFormats.MobileFormatsManager"/></returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.MobileFormatsManager.CreateMobileFormatContentType">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.MobileFormatsManager.CreateMobileFormatContentType(System.Guid)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.MobileFormatsManager.DeleteMobileFormatContentType(Telerik.Sitefinity.MobileFormats.Model.MobileFormatContentType)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.MobileFormatsManager.GetMobileFormatContentType(System.Guid)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.MobileFormatsManager.GetMobileFormatContentTypes">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.MobileFormatsManager.CreateMobileFormatDefinition">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.MobileFormatsManager.CreateMobileFormatDefinition(System.Guid)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.MobileFormatsManager.DeleteMobileFormatDefinition(Telerik.Sitefinity.MobileFormats.Model.MobileFormatDefinition)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.MobileFormatsManager.GetMobileFormatDefinition(System.Guid)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.MobileFormatsManager.GetMobileFormatDefinitions">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.MobileFormatsManager.GetMobileFormatDefinition(System.String,System.Guid)">
+            <summary>
+            Gets the mobile format definition.
+            </summary>
+            <param name="formatName">Name of the format.</param>
+            <param name="siteId">The site id.</param>
+            <returns>Instance of <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatDefinition" /></returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.MobileFormatsManager.CreateMobileFormatTemplate(System.Guid,System.Guid)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.MobileFormatsManager.GetMobileFormatTemplates">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.MobileFormatsManager.GetMobileFormatTemplate(System.Guid,System.Guid)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.MobileFormatsManager.GetMobileFormatTemplate(System.String,System.String,System.Guid)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.MobileFormatsManager.DeleteMobileFormatTemplate(Telerik.Sitefinity.MobileFormats.Model.MobileFormatTemplate)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.MobileFormatsManager.SaveChanges">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.MobileFormatsManager.IsMobileFormatContentTypeActive(System.String,System.Type,System.Guid)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.MobileFormatsManager.DeleteItem(System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.MobileFormatsModule">
+            <summary>
+            Module for mobile formats (i.e. Google AMP, Facebook instant articles, etc.)
+            </summary>
+            <seealso cref="T:Telerik.Sitefinity.Services.ModuleBase" />
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatsModule.LandingPageId">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.MobileFormatsModule.Initialize(Telerik.Sitefinity.Services.ModuleSettings)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.MobileFormatsModule.Load">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.MobileFormatsModule.Unload">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.MobileFormatsModule.Install(Telerik.Sitefinity.Abstractions.SiteInitializer)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.MobileFormatsModule.GetHeaders(Telerik.Sitefinity.Security.HttpSecurityHeaders.HttpSecurityHeadersFactory)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.MobileFormatsModule.GetModuleConfig">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.MobileFormatsModule.GetVirtualPaths">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatsModule.Managers">
+            <inheritdoc />
+        </member>
+        <member name="F:Telerik.Sitefinity.MobileFormats.MobileFormatsModule.ModuleName">
+            <summary>
+            The module name
+            </summary>
+        </member>
+        <member name="F:Telerik.Sitefinity.MobileFormats.MobileFormatsModule.MobileFormatsVirtualPath">
+            <summary>
+            The virtual path key for Mobile formats module
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatsModule.Telerik#Sitefinity#Modules#IExportableModule#ModuleName">
+            <summary>
+            Gets the module name
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.MobileFormatsModule.GetModuleMetaTypes">
+            <summary>
+            Gets the module meta types.
+            </summary>
+            <returns>Empty list</returns>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MobileFormatsModule.MobileFormats">
+            <summary>
+            Gets the mobile formats.
+            </summary>
+            <value>The mobile formats.</value>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.MobileFormatsModule.DynamicModuleTypeDeletedEventHandler(Telerik.Sitefinity.DynamicModules.Builder.Events.IDynamicModuleTypeDeletedEvent)">
+            <summary>
+            Dynamic module type deleted event handler
+            </summary>
+            <param name="event">The dynamic module type deleted event</param>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatContentType">
+            <summary>
+            Mobile formats content type model
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Model.MobileFormatContentType.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatContentType"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Model.MobileFormatContentType.#ctor(System.String,System.Guid)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatContentType" /> class.
+            </summary>
+            <param name="applicationName">Name of the application.</param>
+            <param name="id">The identifier of the <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatContentType" />.</param>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Model.MobileFormatContentType.Id">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>
+            The identifier.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Model.MobileFormatContentType.SiteId">
+            <summary>
+            Gets or sets the site identifier.
+            </summary>
+            <value>
+            The site identifier.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Model.MobileFormatContentType.Name">
+            <summary>
+            Gets or sets the name.
+            </summary>
+            <value>
+            The name.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Model.MobileFormatContentType.DisplayName">
+            <summary>
+            Gets or sets the display name.
+            </summary>
+            <value>
+            The display name.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Model.MobileFormatContentType.FullName">
+            <summary>
+            Gets or sets the full name.
+            </summary>
+            <value>
+            The full name.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Model.MobileFormatContentType.Transaction">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Model.MobileFormatContentType.Provider">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Model.MobileFormatContentType.LastModified">
+            <summary>
+            Gets or sets the time this item was last modified.
+            </summary>
+            <value>
+            The last modified time.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Model.MobileFormatContentType.ApplicationName">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Model.MobileFormatContentType.Templates">
+            <summary>
+            Gets the templates.
+            </summary>
+            <value>
+            The templates.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Model.MobileFormatContentType.Definitions">
+            <summary>
+            Gets the definitions.
+            </summary>
+            <value>The definitions.</value>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Model.MobileFormatContentType.GetKeysOfDependentObjects">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatDefinition">
+            <summary>
+            Mobile format definition model
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Model.MobileFormatDefinition.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatDefinition"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Model.MobileFormatDefinition.#ctor(System.String,System.Guid)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatDefinition" /> class.
+            </summary>
+            <param name="applicationName">Name of the application.</param>
+            <param name="id">The identifier of the <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatDefinition" />.</param>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Model.MobileFormatDefinition.Id">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>
+            The identifier.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Model.MobileFormatDefinition.SiteId">
+            <summary>
+            Gets or sets the site identifier.
+            </summary>
+            <value>
+            The site identifier.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Model.MobileFormatDefinition.Name">
+            <summary>
+            Gets or sets the name.
+            </summary>
+            <value>
+            The name.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Model.MobileFormatDefinition.AdditionalData">
+            <summary>
+            Gets or sets the additional data.
+            </summary>
+            <value>
+            The additional data.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Model.MobileFormatDefinition.Templates">
+            <summary>
+            Gets the templates.
+            </summary>
+            <value>
+            The templates.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Model.MobileFormatDefinition.ContentTypes">
+            <summary>
+            Gets the content types.
+            </summary>
+            <value>The content types.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Model.MobileFormatDefinition.Active">
+            <summary>
+            Gets or sets a value indicating whether the mobile format is active or not
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Model.MobileFormatDefinition.SettingName">
+            <summary>
+            Gets or sets the setting name for the mobile definition
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Model.MobileFormatDefinition.Transaction">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Model.MobileFormatDefinition.Provider">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Model.MobileFormatDefinition.LastModified">
+            <summary>
+            Gets or sets the time this item was last modified.
+            </summary>
+            <value>
+            The last modified time.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Model.MobileFormatDefinition.ApplicationName">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Model.MobileFormatDefinition.GetKeysOfDependentObjects">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatTemplate">
+            <summary>
+            Mobile format template model
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Model.MobileFormatTemplate.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatTemplate"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Model.MobileFormatTemplate.#ctor(System.String,System.Guid)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatTemplate" /> class.
+            </summary>
+            <param name="applicationName">Name of the application.</param>
+            <param name="id">The identifier of the <see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatTemplate" />.</param>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Model.MobileFormatTemplate.Id">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>
+            The identifier.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Model.MobileFormatTemplate.MobileFormatDefinitionId">
+            <summary>
+            Gets or sets the mobile format definition identifier.
+            </summary>
+            <value>
+            The mobile format definition identifier.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Model.MobileFormatTemplate.MobileFormatContentTypeId">
+            <summary>
+            Gets or sets the mobile format content type identifier.
+            </summary>
+            <value>
+            The mobile format content type identifier.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Model.MobileFormatTemplate.LayoutTemplateName">
+            <summary>
+            Gets or sets the name of the layout template.
+            </summary>
+            <value>
+            The name of the layout template.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Model.MobileFormatTemplate.TemplateName">
+            <summary>
+            Gets or sets the name of the template.
+            </summary>
+            <value>
+            The name of the template.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Model.MobileFormatTemplate.MobileFormatDefinition">
+            <summary>
+            Gets or sets the mobile format definition.
+            </summary>
+            <value>
+            The mobile format definition.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Model.MobileFormatTemplate.MobileFormatContentType">
+            <summary>
+            Gets or sets the type of the mobile format content.
+            </summary>
+            <value>
+            The type of the mobile format content.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Model.MobileFormatTemplate.Transaction">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Model.MobileFormatTemplate.Provider">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Model.MobileFormatTemplate.LastModified">
+            <summary>
+            Gets or sets the time this item was last modified.
+            </summary>
+            <value>
+            The last modified time.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Model.MobileFormatTemplate.ApplicationName">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Model.MobileFormatTemplate.UseCustomCanonicalUrl">
+            <summary>
+            Gets or sets a value indicating whether [use custom canonical URL].
+            </summary>
+            <value>
+            <c>true</c> if [use custom canonical URL]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Model.MobileFormatTemplate.CustomCanonicalUrlFormat">
+            <summary>
+            Gets or sets the custom canonical URL format.
+            </summary>
+            <value>
+            The custom canonical URL format.
+            </value>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Model.MobileFormatTemplate.GetKeysOfDependentObjects">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.MVC.Controllers.AmpController">
+            <summary>
+            Class that represents the controller for resolving amp pages
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.MVC.Controllers.AmpController.#ctor(Telerik.Sitefinity.MobileFormats.ItemResolvers.IMobileFormatItemResolver,Telerik.Sitefinity.Localization.UrlLocalizationStrategies.IUrlLocalizationService,Telerik.Sitefinity.MobileFormats.IMobileFormatsManager,Telerik.Sitefinity.MobileFormats.Cache.IMobileFormatCacheDependencyResolver)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.MobileFormats.MVC.Controllers.AmpController" /> class.
+            </summary>
+            <param name="resolver">The resolver.</param>
+            <param name="localizationService">The localization service.</param>
+            <param name="mobileFormatsManager">The mobile formats manager.</param>
+            <param name="mobileFormatCacheDependencyResolver">The amp cache dependency resolver.</param>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MVC.Controllers.AmpController.FormatName">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.MVC.Controllers.AmpController.Index(System.String,System.Nullable{Telerik.Sitefinity.GenericContent.Model.ContentLifecycleStatus},System.Nullable{System.Guid})">
+            <summary>
+            Renders the amp page depending on the item url
+            </summary>
+            <param name="itemUrl">The item url.</param>
+            <param name="status">The status.</param>
+            <param name="siteId">The site id used to resolve the item in preview mode.</param>
+            <returns>
+            The <see cref="T:System.Web.Mvc.ActionResult" />.
+            </returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.MVC.Controllers.AmpController.SetViewBagProperties(Telerik.Sitefinity.Model.IDataItem)">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.MVC.Controllers.MobileFormatBaseController">
+            <summary>
+            Class that represents the controller for resolving mobile format pages
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.MVC.Controllers.MobileFormatBaseController.#ctor(Telerik.Sitefinity.MobileFormats.ItemResolvers.IMobileFormatItemResolver,Telerik.Sitefinity.Localization.UrlLocalizationStrategies.IUrlLocalizationService,Telerik.Sitefinity.MobileFormats.IMobileFormatsManager,Telerik.Sitefinity.MobileFormats.Cache.IMobileFormatCacheDependencyResolver)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.MobileFormats.MVC.Controllers.MobileFormatBaseController" /> class.
+            </summary>
+            <param name="resolver">The resolver.</param>
+            <param name="localizationService">The localization service.</param>
+            <param name="mobileFormatsManager">The mobile formats manager.</param>
+            <param name="mobileFormatCacheDependencyResolver">The mobile format cache dependency resolver.</param>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MVC.Controllers.MobileFormatBaseController.Model">
+            <summary>
+            Gets the model.
+            </summary>
+            <value>The model.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MVC.Controllers.MobileFormatBaseController.FormatName">
+            <summary>
+            Gets the current format name
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.MVC.Controllers.MobileFormatBaseController.Index(System.String,System.Nullable{Telerik.Sitefinity.GenericContent.Model.ContentLifecycleStatus},System.Nullable{System.Guid})">
+            <summary>
+            Renders the mobile format page depending on the item url
+            </summary>
+            <param name="itemUrl">The item url.</param>
+            <param name="status">The status.</param>
+            <param name="siteId">The site id used to resolve the item in preview mode.</param>
+            <returns>
+            The <see cref="T:System.Web.Mvc.ActionResult" />.
+            </returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.MVC.Controllers.MobileFormatBaseController.SetViewBagProperties(Telerik.Sitefinity.Model.IDataItem)">
+            <summary>
+            Set view bag properties
+            </summary>
+            <param name="dataItem">The current data item</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.MVC.Controllers.MobileFormatBaseController.IsPreviewRequested">
+            <summary>
+            Gets a value indicating whether the current request is preview request
+            </summary>
+            <returns>True if current request is preview request; False otherwise</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.MVC.Controllers.MobileFormatBaseController.IsBackendUser">
+            <summary>
+            Gets a value indicating whether the current user is backend user
+            </summary>
+            <returns>True if current user is backend user; False otherwise</returns>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.MVC.Controllers.MobileFormatsBackendController">
+            <summary>
+            Class that represents the controller for mobile formats preview page
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MVC.Controllers.MobileFormatsBackendController.Model">
+            <summary>
+            Gets the model.
+            </summary>
+            <value>The model.</value>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.MVC.Controllers.MobileFormatsBackendController.Preview(System.String,System.String,System.String,System.Nullable{Telerik.Sitefinity.GenericContent.Model.ContentLifecycleStatus},System.String,System.Nullable{System.Guid})">
+            <summary>
+            Renders the mobile formats preview page
+            </summary>
+            <param name="culture">The culture.</param>
+            <param name="itemType">Type of the item.</param>
+            <param name="provider">The provider.</param>
+            <param name="itemStatus">The item status.</param>
+            <param name="itemUrlName">Name of the item URL.</param>
+            <param name="siteId">The site id</param>
+            <returns>
+            The <see cref="T:System.Web.Mvc.ActionResult" />.
+            </returns>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.MVC.HtmlHelpers.AmpHtmlHelper">
+            <summary>
+            Html Amp Helper
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.MVC.HtmlHelpers.AmpHtmlHelper.AmpHtml(System.Web.Mvc.HtmlHelper,System.String)">
+            <summary>
+            Extension method that converts html to valid amp html
+            </summary>
+            <param name="htmlHelper">The html helper.</param>
+            <param name="html">The html.</param>
+            <returns>Html String</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.MVC.HtmlHelpers.AmpHtmlHelper.AmpHtml(System.Web.Mvc.HtmlHelper,System.Object)">
+            <summary>
+            Extension method that converts html to valid amp html
+            </summary>
+            <param name="htmlHelper">The html helper.</param>
+            <param name="html">The html.</param>
+            <returns>Html String</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.MVC.HtmlHelpers.AmpHtmlHelper.AmpComponentScript(System.Web.Mvc.HtmlHelper,System.String,System.String)">
+            <summary>
+            Adds new component script
+            </summary>
+            <param name="htmlHelper">The html helper.</param>
+            <param name="componentName">The component name.</param>
+            <param name="componentScriptUrl">The component script URL.</param>
+            <returns>Empty html string</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.MVC.HtmlHelpers.AmpHtmlHelper.AmpComponentScript(System.Web.Mvc.HtmlHelper,System.String)">
+            <summary>
+            Adds new component script by taking the component script URL from Google AMP configuration in Advanced settings.
+            </summary>
+            <param name="htmlHelper">The html helper.</param>
+            <param name="componentName">The component name.</param>
+            <returns>Empty html string</returns>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.MVC.Models.IMobileFormatModel">
+            <summary>
+            Interface for the amp model
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.MVC.Models.IMobileFormatModel.CreateItemViewModelInstance(Telerik.Sitefinity.Model.IDataItem)">
+            <summary>
+            Creates the item view model instance.
+            </summary>
+            <param name="item">The item.</param>
+            <returns>Item view model.</returns>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.MVC.Models.IMobileFormatsBackendModel">
+            <summary>
+            Interface for model used for Mobile Formats backend pages
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MVC.Models.IMobileFormatsBackendModel.Culture">
+            <summary>
+            Gets or sets the culture.
+            </summary>
+            <value>
+            The culture.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MVC.Models.IMobileFormatsBackendModel.Provider">
+            <summary>
+            Gets or sets the provider.
+            </summary>
+            <value>
+            The provider.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MVC.Models.IMobileFormatsBackendModel.ItemType">
+            <summary>
+            Gets or sets the type of the item.
+            </summary>
+            <value>
+            The type of the item.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MVC.Models.IMobileFormatsBackendModel.ItemUrlName">
+            <summary>
+            Gets or sets the name of the item URL.
+            </summary>
+            <value>
+            The name of the item URL.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MVC.Models.IMobileFormatsBackendModel.ItemStatus">
+            <summary>
+            Gets or sets the item status.
+            </summary>
+            <value>
+            The item status.
+            </value>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.MVC.Models.MobileFormatModel">
+            <summary>
+            This class represents model used for Amp
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.MVC.Models.MobileFormatModel.CreateItemViewModelInstance(Telerik.Sitefinity.Model.IDataItem)">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.MVC.Models.MobileFormatsBackendModel">
+            <summary>
+            Model used for Mobile Formats backend pages
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MVC.Models.MobileFormatsBackendModel.Culture">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MVC.Models.MobileFormatsBackendModel.Provider">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MVC.Models.MobileFormatsBackendModel.ItemType">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MVC.Models.MobileFormatsBackendModel.ItemUrlName">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.MVC.Models.MobileFormatsBackendModel.ItemStatus">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Strategies.Operations.PreviewItemOperation.#ctor(System.Object,System.Type,System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.MobileFormats.Strategies.Operations.PreviewItemOperation"/> class.
+            </summary>
+            <param name="item">The item for which this operation is created. The item must implement both <see cref="T:Telerik.Sitefinity.GenericContent.Model.ILocatableExtended"/> and <see cref="T:Telerik.Sitefinity.Lifecycle.ILifecycleDataItem"/>.</param>
+            <param name="itemType">The type of the item for which this operation is created.</param>
+            <param name="culture">The culture in the context of which this operation is created.</param>
+            <param name="provider">The provider in the context of which this operation is created.</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Strategies.Operations.PreviewItemOperation.Execute(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Strategies.PreviewOperationStrategy">
+            <summary>
+            <see cref="T:Telerik.Sitefinity.MobileFormats.Strategies.PreviewOperationStrategy"/> implementation for <see cref="T:Telerik.Sitefinity.Modules.IOperationStrategy"/>.
+            </summary>
+            <seealso cref="T:Telerik.Sitefinity.Modules.IOperationStrategy" />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Strategies.PreviewOperationStrategy.#ctor(Telerik.Sitefinity.MobileFormats.IMobileFormatsManager)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.MobileFormats.Strategies.PreviewOperationStrategy"/> class.
+            </summary>
+            <param name="mobileFormatsManager">The <see cref="T:Telerik.Sitefinity.MobileFormats.IMobileFormatsManager"/> dependency.</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Strategies.PreviewOperationStrategy.GetOperations(System.Object,System.Guid,System.Type,System.String,System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Strategies.PreviewOperationStrategy.GetMobileFormatContentType(System.Type,System.Guid)">
+            <summary>
+            Gets the mobile format activated for the given content type in the given website.
+            </summary>
+            <param name="contentType">The content type.</param>
+            <param name="siteId">The website id.</param>
+            <returns><see cref="T:Telerik.Sitefinity.MobileFormats.Model.MobileFormatContentType"/> for the given content type in the given website. Returns null if not found.</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Strategies.PreviewOperationStrategy.IsMobileFormatsModuleEnabled">
+            <summary>
+            Checks if the mobile formats module is activated.
+            </summary>
+            <returns>True if the module is activated, otherwise false.</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Strategies.PreviewOperationStrategy.GetCurrentSiteId">
+            <summary>
+            Gets the id of the current multisite website.
+            </summary>
+            <returns>The id of the current multisite website.</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Strategies.PreviewOperationStrategy.GetPreviewMobileFormatsTitleResource">
+            <summary>
+            Gets the PreviewMobileFormatsTitle resource.
+            </summary>
+            <returns>The PreviewMobileFormatsTitle resource.</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Strategies.PreviewOperationStrategy.GetPreviewForResource">
+            <summary>
+            Gets the PreviewFor resource.
+            </summary>
+            <returns>The PreviewFor resource.</returns>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Template.Fields.Amp.AmpFormatAddressField">
+            <summary>
+            This class represents field generation strategy for address dynamic fields for amp 
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Template.Fields.Amp.AmpFormatAddressField.GetTemplatePath(Telerik.Sitefinity.DynamicModules.Builder.Model.IDynamicModuleField)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Template.Fields.Amp.AmpFormatChoicesField">
+            <summary>
+            This class represents field generation strategy for related image dynamic fields for amp 
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Template.Fields.Amp.AmpFormatChoicesField.GetTemplatePath(Telerik.Sitefinity.DynamicModules.Builder.Model.IDynamicModuleField)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Template.Fields.Amp.AmpFormatClassificationField">
+            <summary>
+            This class represents field generation strategy for classification fields for amp 
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Template.Fields.Amp.AmpFormatClassificationField.GetTemplatePath(Telerik.Sitefinity.DynamicModules.Builder.Model.IDynamicModuleField)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Template.Fields.Amp.AmpFormatDateField">
+            <summary>
+            This class represents field generation strategy for date dynamic fields for amp 
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Template.Fields.Amp.AmpFormatDateField.GetTemplatePath(Telerik.Sitefinity.DynamicModules.Builder.Model.IDynamicModuleField)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Template.Fields.Amp.AmpFormatLongTextField">
+            <summary>
+            This class represents field generation strategy for long rich text dynamic fields for amp 
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Template.Fields.Amp.AmpFormatLongTextField.GetTemplatePath(Telerik.Sitefinity.DynamicModules.Builder.Model.IDynamicModuleField)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Template.Fields.Amp.AmpFormatNumberField">
+            <summary>
+            This class represents field generation strategy for number dynamic fields for amp 
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Template.Fields.Amp.AmpFormatNumberField.GetTemplatePath(Telerik.Sitefinity.DynamicModules.Builder.Model.IDynamicModuleField)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Template.Fields.Amp.AmpFormatPriceField">
+            <summary>
+            This class represents field generation strategy for price dynamic fields for amp 
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Template.Fields.Amp.AmpFormatPriceField.GetTemplatePath(Telerik.Sitefinity.DynamicModules.Builder.Model.IDynamicModuleField)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Template.Fields.Amp.AmpFormatRelatedDataField">
+            <summary>
+            This class represents field generation strategy for related data dynamic fields for amp 
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Template.Fields.Amp.AmpFormatRelatedDataField.GetTemplatePath(Telerik.Sitefinity.DynamicModules.Builder.Model.IDynamicModuleField)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Template.Fields.Amp.AmpFormatRelatedDocumentField">
+            <summary>
+            This class represents field generation strategy for related document dynamic fields for amp 
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Template.Fields.Amp.AmpFormatRelatedDocumentField.GetTemplatePath(Telerik.Sitefinity.DynamicModules.Builder.Model.IDynamicModuleField)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Template.Fields.Amp.AmpFormatRelatedImageField">
+            <summary>
+            This class represents field generation strategy for related image dynamic fields for amp 
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Template.Fields.Amp.AmpFormatRelatedImageField.GetTemplatePath(Telerik.Sitefinity.DynamicModules.Builder.Model.IDynamicModuleField)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Template.Fields.Amp.AmpFormatRelatedVideoField">
+            <summary>
+            This class represents field generation strategy for related video dynamic fields for amp 
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Template.Fields.Amp.AmpFormatRelatedVideoField.GetTemplatePath(Telerik.Sitefinity.DynamicModules.Builder.Model.IDynamicModuleField)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Template.Fields.Amp.AmpFormatShortTextField">
+            <summary>
+            This class represents field generation strategy for short rich text dynamic fields for amp 
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Template.Fields.Amp.AmpFormatShortTextField.#ctor(Telerik.Sitefinity.DynamicModules.Builder.Model.IDynamicModuleType)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.MobileFormats.Template.Fields.Amp.AmpFormatShortTextField"/> class.
+            </summary>
+            <param name="contentType">Type of the module content type</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Template.Fields.Amp.AmpFormatShortTextField.GetTemplatePath(Telerik.Sitefinity.DynamicModules.Builder.Model.IDynamicModuleField)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Template.Fields.Amp.AmpFormatYesNoField">
+            <summary>
+            This class represents field generation strategy for yes no dynamic fields for amp 
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Template.Fields.Amp.AmpFormatYesNoField.GetTemplatePath(Telerik.Sitefinity.DynamicModules.Builder.Model.IDynamicModuleField)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Template.Fields.Amp.IAmpFormatField">
+            <summary>
+            Markup interface for AMP mobile format field markup generator strategies.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Template.Fields.Amp.IAmpFormatField.GetCondition(Telerik.Sitefinity.DynamicModules.Builder.Model.IDynamicModuleField)">
+            <summary>
+            Gets value determining whether current strategy should handle the markup for the specified field.
+            </summary>
+            <param name="field">The field.</param>
+            <returns>True if condition is true</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Template.Fields.Amp.IAmpFormatField.GetMarkup(Telerik.Sitefinity.DynamicModules.Builder.Model.IDynamicModuleField)">
+            <summary>
+            Gets the field markup.
+            </summary>
+            <returns>Field markup</returns>
+            <param name="field">The field</param>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Template.Fields.MobileFormatAddressField">
+            <summary>
+            This class represents field generation strategy for address dynamic fields.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Template.Fields.MobileFormatAddressField.GetCondition(Telerik.Sitefinity.DynamicModules.Builder.Model.IDynamicModuleField)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Template.Fields.MobileFormatChoicesField">
+            <summary>
+            This class represents field generation strategy for multiple choice dynamic fields.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Template.Fields.MobileFormatChoicesField.GetCondition(Telerik.Sitefinity.DynamicModules.Builder.Model.IDynamicModuleField)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Template.Fields.MobileFormatClassificationField">
+            <summary>
+            This class represents strategy for generating mobile format markup for classification fields.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Template.Fields.MobileFormatClassificationField.GetCondition(Telerik.Sitefinity.DynamicModules.Builder.Model.IDynamicModuleField)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Template.Fields.MobileFormatDateField">
+            <summary>
+            This class represents field generation strategy for date time dynamic fields.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Template.Fields.MobileFormatDateField.GetCondition(Telerik.Sitefinity.DynamicModules.Builder.Model.IDynamicModuleField)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Template.Fields.MobileFormatField">
+            <summary>
+            This class represents strategy for determining the mobile format markup needed depending on different <see cref="!:WrappedDynamicModuleField"/>.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Template.Fields.MobileFormatField.GetCondition(Telerik.Sitefinity.DynamicModules.Builder.Model.IDynamicModuleField)">
+            <summary>
+            Gets value determining whether current strategy should handle the markup for the specified field.
+            </summary>
+            <param name="field">The field.</param>
+            <returns>True if condition is true</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Template.Fields.MobileFormatField.GetMarkup(Telerik.Sitefinity.DynamicModules.Builder.Model.IDynamicModuleField)">
+            <summary>
+            Gets the field markup.
+            </summary>
+            <returns>Field markup</returns>
+            <param name="field">The field</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Template.Fields.MobileFormatField.GetTemplatePath(Telerik.Sitefinity.DynamicModules.Builder.Model.IDynamicModuleField)">
+            <summary>
+            Gets the dynamic field template path.
+            </summary>
+            <param name="field">The field.</param>
+            <returns>Return the template path</returns>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Template.Fields.MobileFormatField.VirtualPathProvider">
+            <summary>
+            Gets the virtual path provider
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Template.Fields.MobileFormatField.RunTemplate(System.String,Telerik.Sitefinity.DynamicModules.Builder.Model.IDynamicModuleField)">
+            <summary>
+            Runs the template for the given Dynamic module field
+            </summary>
+            <param name="template">The template markup</param>
+            <param name="field">The dynamic module field</param>
+            <returns>The final field markup</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Template.Fields.MobileFormatField.GetTemplate(System.String)">
+            <summary>
+            Gets the template from a file at the specified path as string.
+            </summary>
+            <param name="path">The path.</param>
+            <returns>The template as string.</returns>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Template.Fields.MobileFormatLongTextField">
+            <inheritdoc/>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Template.Fields.MobileFormatLongTextField.GetCondition(Telerik.Sitefinity.DynamicModules.Builder.Model.IDynamicModuleField)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Template.Fields.MobileFormatNumberField">
+            <summary>
+            This class represents field generation strategy for number dynamic fields.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Template.Fields.MobileFormatNumberField.GetCondition(Telerik.Sitefinity.DynamicModules.Builder.Model.IDynamicModuleField)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Template.Fields.MobileFormatPriceField">
+            <summary>
+            This class represents field generation strategy for price dynamic fields.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Template.Fields.MobileFormatPriceField.GetCondition(Telerik.Sitefinity.DynamicModules.Builder.Model.IDynamicModuleField)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Template.Fields.MobileFormatRelatedDataField">
+            <summary>
+            This class represents strategy for generating mobile format markup for related data field.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Template.Fields.MobileFormatRelatedDataField.GetCondition(Telerik.Sitefinity.DynamicModules.Builder.Model.IDynamicModuleField)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Template.Fields.MobileFormatRelatedDocumentField">
+            <summary>
+            This class represents strategy for generating mobile format markup for related document field.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Template.Fields.MobileFormatRelatedDocumentField.GetCondition(Telerik.Sitefinity.DynamicModules.Builder.Model.IDynamicModuleField)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Template.Fields.MobileFormatRelatedImageField">
+            <summary>
+            This class represents strategy for generating mobile format markup for related image field.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Template.Fields.MobileFormatRelatedImageField.GetCondition(Telerik.Sitefinity.DynamicModules.Builder.Model.IDynamicModuleField)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Template.Fields.MobileFormatRelatedVideoField">
+            <summary>
+            This class represents strategy for generating mobile format markup for related video field.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Template.Fields.MobileFormatRelatedVideoField.GetCondition(Telerik.Sitefinity.DynamicModules.Builder.Model.IDynamicModuleField)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Template.Fields.MobileFormatShortTextField">
+            <inheritdoc/>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Template.Fields.MobileFormatShortTextField.#ctor(Telerik.Sitefinity.DynamicModules.Builder.Model.IDynamicModuleType)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.MobileFormats.Template.Fields.MobileFormatShortTextField"/> class.
+            </summary>
+            <param name="contentType">Type of the module content type</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Template.Fields.MobileFormatShortTextField.GetCondition(Telerik.Sitefinity.DynamicModules.Builder.Model.IDynamicModuleField)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Template.Fields.MobileFormatYesNoField">
+            <summary>
+            This class represents field generation strategy for yes no dynamic fields.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Template.Fields.MobileFormatYesNoField.GetCondition(Telerik.Sitefinity.DynamicModules.Builder.Model.IDynamicModuleField)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Template.IMobileFormatTemplatesManager">
+            <summary>
+            Interface for mobile format templates manager
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Template.IMobileFormatTemplatesManager.SaveMobileFormatTemplate(System.String,System.String,System.String)">
+            <summary>
+            Generates template
+            </summary>
+            <param name="mobileFormatName">The mobile format name</param>
+            <param name="templateName">The template name</param>
+            <param name="template">The template</param>
+            <returns>The name of the generated template</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Template.IMobileFormatTemplatesManager.GetTemplatesNames(System.String,System.String)">
+            <summary>
+            Gets templates names
+            </summary>
+            <param name="mobileFormatName">The mobile format</param>
+            <param name="contentType">The content type</param>
+            <returns>Templates names</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Template.IMobileFormatTemplatesManager.GetLayoutTemplatesNames(System.String)">
+            <summary>
+            Gets layout templates names
+            </summary>
+            <param name="mobileFormatName">The mobile format</param>
+            <returns>Templates names</returns>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Template.ITemplateGenerator">
+            <summary>
+            Interface for templates generation
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Template.ITemplateGenerator.GenerateContentTypeTemplate(Telerik.Sitefinity.MobileFormats.Model.MobileFormatContentType)">
+            <summary>
+            Generates template
+            </summary>
+            <param name="contentType">The content type.</param>
+            <returns>Content type template</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Template.ITemplateGenerator.GenerateLayoutTemplate">
+            <summary>
+            Generates layout template
+            </summary>
+            <returns>Layout template.</returns>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Template.MobileFormatTemplateModel">
+            <summary>
+            Mobile Format Template
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Template.MobileFormatTemplateModel.#ctor(System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.MobileFormats.Template.MobileFormatTemplateModel"/> class.
+            </summary>
+            <param name="name">Name of the template.</param>
+            <param name="content">Content of the template.</param>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Template.MobileFormatTemplateModel.Name">
+            <summary>
+            Gets or sets the name of the template
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Template.MobileFormatTemplateModel.Content">
+            <summary>
+            Gets or sets the content of the template
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Template.MobileFormatTemplatesManager">
+            <summary>
+            Mobile format templates manager
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Template.MobileFormatTemplatesManager.SaveMobileFormatTemplate(System.String,System.String,System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Template.MobileFormatTemplatesManager.GetLayoutTemplatesNames(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Template.MobileFormatTemplatesManager.GetTemplatesNames(System.String,System.String)">
+            <inheritdoc />
+        </member>
+        <member name="F:Telerik.Sitefinity.MobileFormats.Template.MobileFormatTemplatesManager.TemplateFileExtension">
+            <summary>
+            Template file extensions
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Web.Services.Dto.ActiveContentTypesMobileFormatsDto">
+            <summary>
+            DTO for getting active content types mobile formats for the site
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.Services.Dto.ActiveContentTypesMobileFormatsDto.SiteId">
+            <summary>
+            Gets or sets the site id
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Web.Services.Dto.ActiveMobileFormatDefinitionsDto">
+            <summary>
+            DTO for getting the active mobile format definitions for the requested site
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.Services.Dto.ActiveMobileFormatDefinitionsDto.SiteId">
+            <summary>
+            Gets or sets the site id
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Web.Services.Dto.ChangeTemplateDto">
+            <summary>
+            Represents the DTO for changing mobile format content types templates
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.Services.Dto.ChangeTemplateDto.TemplatesInfo">
+            <summary>
+            Gets or sets the templates info
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.Services.Dto.ChangeTemplateDto.SiteId">
+            <summary>
+            Gets or sets the site id
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.Services.Dto.ChangeTemplateDto.ContentTypeId">
+            <summary>
+            Gets or sets the content type id
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Web.Services.Dto.ChangeTemplateInfoDto">
+            <summary>
+            Represents the DTO for changing mobile format content types templates
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.Services.Dto.ChangeTemplateInfoDto.SelectedTemplate">
+            <summary>
+            Gets or sets the selected template
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.Services.Dto.ChangeTemplateInfoDto.SelectedLayoutTemplate">
+            <summary>
+            Gets or sets the selected layout template
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.Services.Dto.ChangeTemplateInfoDto.UseCustomCanonicalUrl">
+            <summary>
+            Gets or sets a value indicating whether [use custom canonical URL].
+            </summary>
+            <value>
+            <c>true</c> if [use custom canonical URL]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.Services.Dto.ChangeTemplateInfoDto.CustomCanonicalUrlFormat">
+            <summary>
+            Gets or sets the custom canonical URL format.
+            </summary>
+            <value>
+            The custom canonical URL format.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.Services.Dto.ChangeTemplateInfoDto.MobileFormatId">
+            <summary>
+            Gets or sets the mobile format id
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Web.Services.Dto.DeleteMobileFormatContentTypeDto">
+            <summary>
+            DTO for deleting mobile format content type
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.Services.Dto.DeleteMobileFormatContentTypeDto.ContentTypeId">
+            <summary>
+            Gets or sets the id of the mobile format content type 
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Web.Services.Dto.GetContentTypesForSiteDto">
+            <summary>
+            DTO for getting the content types for the site
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.Services.Dto.GetContentTypesForSiteDto.SiteId">
+            <summary>
+            Gets or sets the site id
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Web.Services.Dto.GetMobileFormatsTemplatesDto">
+            <summary>
+            DTO for getting mobile formats templates for the current site
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.Services.Dto.GetMobileFormatsTemplatesDto.SiteId">
+            <summary>
+            Gets or sets the site id
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.Services.Dto.GetMobileFormatsTemplatesDto.ContentTypeId">
+            <summary>
+            Gets or sets the content type id
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Web.Services.Dto.MobileFormatContentTypeDto">
+            <summary>
+            DTO for creating content type
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.Services.Dto.MobileFormatContentTypeDto.ContentTypeDisplayName">
+            <summary>
+            Gets or sets the display name
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.Services.Dto.MobileFormatContentTypeDto.ContentTypeName">
+            <summary>
+            Gets or sets the content type name
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.Services.Dto.MobileFormatContentTypeDto.ContentTypeFullname">
+            <summary>
+            Gets or sets the content type full name
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.Services.Dto.MobileFormatContentTypeDto.Active">
+            <summary>
+            Gets or sets a value indicating whether the content type is enabled for the site
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Web.Services.Dto.MobileFormatDefinitionInfoDto">
+            <summary>
+            Represents the model for a mobile definition
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.Services.Dto.MobileFormatDefinitionInfoDto.SiteId">
+            <summary>
+            Gets or sets the siteId
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.Services.Dto.MobileFormatDefinitionInfoDto.MobileFormatName">
+            <summary>
+            Gets or sets the mobile definition name
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.Services.Dto.MobileFormatDefinitionInfoDto.Active">
+            <summary>
+            Gets or sets a value indicating whether the definition is active
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.Services.Dto.MobileFormatDefinitionInfoDto.MobileDefinitionSettingName">
+            <summary>
+            Gets or sets the mobile format setting name
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.Services.Dto.MobileFormatDefinitionInfoDto.MobileDefinitionTitle">
+            <summary>
+            Gets or sets mobile definition title
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Web.Services.Dto.MobileFormatPreviewDto">
+            <summary>
+            DTO for getting mobile format preview
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.Services.Dto.MobileFormatPreviewDto.MobileFormatSettingName">
+            <summary>
+            Gets or sets the mobile format definition setting name
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.Services.Dto.MobileFormatPreviewDto.ContentTypeFullname">
+            <summary>
+            Gets or sets the mobile format content type full name
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.Services.Dto.MobileFormatPreviewDto.ProviderName">
+            <summary>
+            Gets or sets the name of the provider.
+            </summary>
+            <value>
+            The name of the provider.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.Services.Dto.MobileFormatPreviewDto.ItemUrlName">
+            <summary>
+            Gets or sets the name of the item URL.
+            </summary>
+            <value>
+            The name of the item URL.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.Services.Dto.MobileFormatPreviewDto.Status">
+            <summary>
+            Gets or sets the status.
+            </summary>
+            <value>
+            The status.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.Services.Dto.MobileFormatPreviewDto.SiteId">
+            <summary>
+            Gets or sets the site id
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Web.Services.Dto.MobileFormatPreviewUrlDto">
+            <summary>
+            DTO which contains a mobile format preview url
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.Services.Dto.MobileFormatPreviewUrlDto.ItemTitle">
+            <summary>
+            Gets or sets the item title
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.Services.Dto.MobileFormatPreviewUrlDto.MobileFormatUrl">
+            <summary>
+            Gets or sets the mobile format url
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.Services.Dto.MobileFormatPreviewUrlDto.MobileFormatPreviewUrl">
+            <summary>
+            Gets or sets the mobile format preview url
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.Services.Dto.MobileFormatPreviewUrlDto.ErrorMessage">
+            <summary>
+            Gets or sets the error message
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Web.Services.Dto.MobileFormatTemplateDto">
+            <summary>
+            Represents mobile format content type template info
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.Services.Dto.MobileFormatTemplateDto.Name">
+            <summary>
+            Gets or sets the name of the mobile format template name
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.Services.Dto.MobileFormatTemplateDto.Value">
+            <summary>
+            Gets or sets the mobile format template value
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Web.Services.Dto.SiteInfoDto">
+            <summary>
+             Represents the site info model
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.Services.Dto.SiteInfoDto.SiteId">
+            <summary>
+            Gets or sets the site id
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Web.Services.Dto.ToggleMobileFormatsContentTypesDto">
+            <summary>
+            DTO for activating and deactivating mobile format content types
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.Services.Dto.ToggleMobileFormatsContentTypesDto.SiteId">
+            <summary>
+            Gets or sets the site id 
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.Services.Dto.ToggleMobileFormatsContentTypesDto.MobileFormatContentTypes">
+            <summary>
+            Gets or sets the mobile format content types
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Web.Services.MobileFormatsService">
+            <summary>
+             Represents the web service for the mobile formats functionality.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Web.Services.MobileFormatsService.#ctor(Telerik.Sitefinity.MobileFormats.IMobileFormatsManager,Telerik.Sitefinity.MobileFormats.Template.IMobileFormatTemplatesManager)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.MobileFormats.Web.Services.MobileFormatsService"/> class
+            </summary>
+            <param name="mobileFormatsManager">Manager that provides functionality for managing mobile formats</param>
+            <param name="mobileFormatTemplatesManager">Mobile format templates manager</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Web.Services.MobileFormatsService.Get(Telerik.Sitefinity.MobileFormats.Web.Services.Dto.SiteInfoDto)">
+            <summary>
+            Gets the status for the mobile definition of the site
+            </summary>
+            <param name="request">The info from the request</param>
+            <returns>The mobile definition info for the site passed as argument</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Web.Services.MobileFormatsService.Put(Telerik.Sitefinity.MobileFormats.Web.Services.Dto.MobileFormatDefinitionInfoDto)">
+            <summary>
+            Toggles activation of the mobile definition
+            </summary>
+            <param name="mobileFormatDefinitionDto">The mobile definition info from the opened window</param>
+            <returns>The updated grid info</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Web.Services.MobileFormatsService.Get(Telerik.Sitefinity.MobileFormats.Web.Services.Dto.GetContentTypesForSiteDto)">
+            <summary>
+            Gets all of the content types for the site
+            </summary>
+            <param name="request">The information from the request</param>
+            <returns>Content types enabled for the site with their current status</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Web.Services.MobileFormatsService.Get(Telerik.Sitefinity.MobileFormats.Web.Services.Dto.ActiveMobileFormatDefinitionsDto)">
+            <summary>
+            Gets the active mobile format definitions for the requestedSite
+            </summary>
+            <param name="request">The requested site</param>
+            <returns>The Active mobile formats for the requested site</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Web.Services.MobileFormatsService.Get(Telerik.Sitefinity.MobileFormats.Web.Services.Dto.MobileFormatPreviewDto)">
+            <summary>
+            Gets a preview for specified content type from specified mobile format definition
+            </summary>
+            <param name="request">Contains the request info</param>
+            <returns>The mobile format preview url</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Web.Services.MobileFormatsService.Put(Telerik.Sitefinity.MobileFormats.Web.Services.Dto.ToggleMobileFormatsContentTypesDto)">
+            <summary>
+            Enables or disables the mobile format content types
+            </summary>
+            <param name="request">The information from the request</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Web.Services.MobileFormatsService.Get(Telerik.Sitefinity.MobileFormats.Web.Services.Dto.ActiveContentTypesMobileFormatsDto)">
+            <summary>
+            Gets the active mobile format content types for the site
+            </summary>
+            <param name="request">The information from the request</param>
+            <returns>Returns a collection of active mobile format content types for the site</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Web.Services.MobileFormatsService.Delete(Telerik.Sitefinity.MobileFormats.Web.Services.Dto.DeleteMobileFormatContentTypeDto)">
+            <summary>
+            Delete the mobile format content type
+            </summary>
+            <param name="request">The information from the request</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Web.Services.MobileFormatsService.Get(Telerik.Sitefinity.MobileFormats.Web.Services.Dto.GetMobileFormatsTemplatesDto)">
+            <summary>
+            Get the data for the template selector dialog
+            </summary>
+            <param name="request">The information from the request</param>
+            <returns>The info for the templates</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Web.Services.MobileFormatsService.Put(Telerik.Sitefinity.MobileFormats.Web.Services.Dto.ChangeTemplateDto)">
+            <summary>
+            Sets the different mobile format definition layout templates for the specified content type
+            </summary>
+            <param name="request">The info from the request</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Web.Services.MobileFormatsService.IsModuleAccessible(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Web.Services.MobileFormatsServiceStackPlugin">
+            <summary>
+            Represents a ServiceStack plugin for the mobile formats module
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Web.Services.MobileFormatsServiceStackPlugin.Register(ServiceStack.IAppHost)">
+            <summary>
+            Adds the MobileFormatsServiceStackPlugin service routes
+            </summary>
+            <param name="appHost">The service stack appHost</param>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Web.UI.AddContentTypesDialog">
+            <summary>
+            Represents the dialog for adding content types
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.UI.AddContentTypesDialog.LayoutTemplateName">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.UI.AddContentTypesDialog.LayoutTemplatePath">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.UI.AddContentTypesDialog.OuterDiv">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.UI.AddContentTypesDialog.CancelLink">
+            <summary>
+            Gets a reference to the cancel link.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.UI.AddContentTypesDialog.DoneBtn">
+            <summary>
+            Gets a reference to the done button.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.UI.AddContentTypesDialog.ButtonsPanel">
+            <summary>
+            Gets the buttons panel control.
+            </summary>
+            <value>The control.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.UI.AddContentTypesDialog.LoadingSection">
+            <summary>
+            Gets the loading section control.
+            </summary>
+            <value>The control.</value>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Web.UI.AddContentTypesDialog.InitializeControls(Telerik.Sitefinity.Web.UI.GenericContainer)">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.UI.AddContentTypesDialog.MobileFormatContentTypesDialogGrid">
+            <summary>
+            Gets a reference to the div element that will be transformed into grid.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.UI.AddContentTypesDialog.ClientLabelManager">
+            <summary>
+            Gets a reference to the client label manager.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Web.UI.AddContentTypesDialog.GetScriptReferences">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Web.UI.AddContentTypesDialog.GetScriptDescriptors">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Web.UI.MobileFormatsBasicSettingsView">
+            <summary>
+            Mobile format settings view
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.UI.MobileFormatsBasicSettingsView.LayoutTemplateName">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.UI.MobileFormatsBasicSettingsView.LayoutTemplatePath">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.UI.MobileFormatsBasicSettingsView.TagKey">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Web.UI.MobileFormatsBasicSettingsView.GetScriptReferences">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.UI.MobileFormatsBasicSettingsView.SitesDropDown">
+            <summary>
+            Gets the sites drop down title.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.UI.MobileFormatsBasicSettingsView.MobileDefinitionsGrid">
+            <summary>
+            Gets a reference to the div element that will be transformed into grid.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.UI.MobileFormatsBasicSettingsView.MobileFormatContentTypesGrid">
+            <summary>
+            Gets a reference to the div element that will be transformed into grid.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.UI.MobileFormatsBasicSettingsView.ClientLabelManager">
+            <summary>
+            Gets a reference to the client label manager.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.UI.MobileFormatsBasicSettingsView.MobileFormatsConfigurationsdialog">
+            <summary>
+            Gets the navigation transformation dialog.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.UI.MobileFormatsBasicSettingsView.AddContentTypesDialog">
+            <summary>
+            Gets the window for adding content types
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.UI.MobileFormatsBasicSettingsView.TemplateSelectorDialog">
+            <summary>
+            Gets the window for selecting mobile formats templates
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.UI.MobileFormatsBasicSettingsView.AddContentTypeBtn">
+            <summary>
+            Gets the add content type button
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.UI.MobileFormatsBasicSettingsView.DeleteContentTypeConfirmationDialog">
+            <summary>
+            Gets the delete content type confirmation dialog.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.UI.MobileFormatsBasicSettingsView.MobileFormatDescription">
+            <summary>
+            Gets the description label for mobile format.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.UI.MobileFormatsBasicSettingsView.PreviewPageUrl">
+            <summary>
+            Gets the preview page url hidden field
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Web.UI.MobileFormatsBasicSettingsView.GetScriptDescriptors">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Web.UI.MobileFormatsBasicSettingsView.InitializeControls(Telerik.Sitefinity.Web.UI.GenericContainer)">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Web.UI.MobileFormatsConfigurationsDialog">
+            <summary>
+            View selected mobile format configuration dialog
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.UI.MobileFormatsConfigurationsDialog.LayoutTemplateName">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.UI.MobileFormatsConfigurationsDialog.LayoutTemplatePath">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.UI.MobileFormatsConfigurationsDialog.OuterDiv">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.UI.MobileFormatsConfigurationsDialog.ClientLabelManager">
+            <summary>
+            Gets a reference to the client label manager.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Web.UI.MobileFormatsConfigurationsDialog.InitializeControls(Telerik.Sitefinity.Web.UI.GenericContainer)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Web.UI.MobileFormatsConfigurationsDialog.GetScriptReferences">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.UI.MobileFormatsConfigurationsDialog.CancelLink">
+            <summary>
+            Gets a reference to the cancel link.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.UI.MobileFormatsConfigurationsDialog.DoneBtn">
+            <summary>
+            Gets a reference to the done button.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Web.UI.MobileFormatsConfigurationsDialog.GetScriptDescriptors">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Web.UI.MobileFormatsControlDefinitionExtender">
+            <summary>
+            A component used for plugging-in a field in control definitions of existing modules.
+            </summary>
+            <seealso cref="T:Telerik.Sitefinity.Web.UI.ContentUI.IControlDefinitionExtender" />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Web.UI.MobileFormatsControlDefinitionExtender.#ctor(Telerik.Sitefinity.MobileFormats.IMobileFormatsManager)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.MobileFormats.Web.UI.MobileFormatsControlDefinitionExtender"/> class.
+            </summary>
+            <param name="mobileFormatsManager">The mobile formats manager.</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Web.UI.MobileFormatsControlDefinitionExtender.ExtendDefinition(Telerik.Sitefinity.Web.UI.ContentUI.Contracts.IContentViewControlDefinition)">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Web.UI.MobileFormatsPreviewField">
+            <summary>
+            Mobile formats preview field
+            </summary>
+            <seealso cref="T:Telerik.Sitefinity.Web.UI.Fields.FieldControl" />
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.UI.MobileFormatsPreviewField.LayoutTemplatePath">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.UI.MobileFormatsPreviewField.PreviewLink">
+            <summary>
+            Gets the reference to the preview link.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.UI.MobileFormatsPreviewField.PreviewLinkText">
+            <summary>
+            Gets the reference to the preview link literal.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Web.UI.MobileFormatsPreviewField.InitializeControls(Telerik.Sitefinity.Web.UI.GenericContainer)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Web.UI.MobileFormatsPreviewField.GetScriptDescriptors">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Web.UI.TemplateSelectorDialog">
+            <summary>
+            Dialog window for selecting mobile format template
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.UI.TemplateSelectorDialog.LayoutTemplateName">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.UI.TemplateSelectorDialog.LayoutTemplatePath">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.UI.TemplateSelectorDialog.OuterDiv">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.UI.TemplateSelectorDialog.TemplateSelectorListView">
+            <summary>
+            Gets a reference for the div that will be transformed to list view
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Web.UI.TemplateSelectorDialog.InitializeControls(Telerik.Sitefinity.Web.UI.GenericContainer)">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.UI.TemplateSelectorDialog.CancelLink">
+            <summary>
+            Gets a reference to the cancel link.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.UI.TemplateSelectorDialog.DoneBtn">
+            <summary>
+            Gets a reference to the done button.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.UI.TemplateSelectorDialog.ClientLabelManager">
+            <summary>
+            Gets a reference to the client label manager.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Web.UI.TemplateSelectorDialog.GetScriptReferences">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.MobileFormats.Web.UI.TemplateSelectorDialog.GetScriptDescriptors">
+            <inheritdoc />
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Web.ViewModels.AddConentTypeDialogViewModel">
+            <summary>
+            Represents a content type view model
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.ViewModels.AddConentTypeDialogViewModel.ContentTypeDisplayName">
+            <summary>
+            Gets or sets the display name of the contentType
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.ViewModels.AddConentTypeDialogViewModel.ContentTypeName">
+            <summary>
+            Gets or sets the name of the content type
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.ViewModels.AddConentTypeDialogViewModel.ContentTypeFullname">
+            <summary>
+            Gets or sets the full name of the content type
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.ViewModels.AddConentTypeDialogViewModel.Active">
+            <summary>
+            Gets or sets a value indicating whether the content type module is active
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Web.ViewModels.MobileDefinitionsGridViewModel">
+            <summary>
+            View model for MobileDefinitions grid
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.ViewModels.MobileDefinitionsGridViewModel.MobileDefinitionName">
+            <summary>
+            Gets or sets MobileDefinitionName 
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.ViewModels.MobileDefinitionsGridViewModel.MobileDefinitionTitle">
+            <summary>
+            Gets or sets MobileDefinitionTitle 
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.ViewModels.MobileDefinitionsGridViewModel.Active">
+            <summary>
+            Gets or sets a value indicating whether the MobileDefinition is active or not
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.ViewModels.MobileDefinitionsGridViewModel.MobileDefinitionSettingName">
+            <summary>
+            Gets or sets Mobile Format Setting name
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.ViewModels.MobileDefinitionsGridViewModel.SiteId">
+            <summary>
+            Gets or sets the siteId
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Web.ViewModels.MobileDefinitionViewModel">
+            <summary>
+            Mobile format definition view model
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.ViewModels.MobileDefinitionViewModel.MobileFormatDefinitionTitle">
+            <summary>
+            Gets or sets the display name of the mobileFormat
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.ViewModels.MobileDefinitionViewModel.MobileDefinitionSettingName">
+            <summary>
+            Gets or sets the mobile format definition setting name
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Web.ViewModels.MobileFormatContentTypesGridViewModel">
+            <summary>
+            The view model for the grid that contains the active mobile format content types
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.ViewModels.MobileFormatContentTypesGridViewModel.ContentTypeDisplayName">
+            <summary>
+            Gets or sets the display name of the contentType
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.ViewModels.MobileFormatContentTypesGridViewModel.ContentTypeName">
+            <summary>
+            Gets or sets the mobile format content type name
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.ViewModels.MobileFormatContentTypesGridViewModel.ContentTypeFullName">
+            <summary>
+            Gets or sets the mobile format content type full name
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.ViewModels.MobileFormatContentTypesGridViewModel.ContentTypeId">
+            <summary>
+            Gets or sets the mobile format content type id
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.ViewModels.MobileFormatContentTypesGridViewModel.SiteId">
+            <summary>
+            Gets or sets the Site id
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Web.ViewModels.StaticContentType">
+            <summary>
+            Represents a static content type model
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.ViewModels.StaticContentType.ModuleName">
+            <summary>
+            Gets or sets the name of the module.
+            </summary>
+            <value>
+            The name of the module.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.ViewModels.StaticContentType.ContentTypeDisplayName">
+            <summary>
+            Gets or sets the static content type display name
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.ViewModels.StaticContentType.ContentTypeName">
+            <summary>
+            Gets or sets the static content type name
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.ViewModels.StaticContentType.ContentTypeFullName">
+            <summary>
+            Gets or sets the static content type full name
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.MobileFormats.Web.ViewModels.TemplateSelectorDialogViewModel">
+            <summary>
+            View model for the dialog which selects the mobile format templates
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.ViewModels.TemplateSelectorDialogViewModel.MobileFormatId">
+            <summary>
+            Gets or sets the mobile format id
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.ViewModels.TemplateSelectorDialogViewModel.MobileFormatName">
+            <summary>
+            Gets or sets the mobile format name
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.ViewModels.TemplateSelectorDialogViewModel.MobileFormatTitle">
+            <summary>
+            Gets or sets the mobile format title
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.ViewModels.TemplateSelectorDialogViewModel.Templates">
+            <summary>
+            Gets or sets the templates for the mobile format
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.ViewModels.TemplateSelectorDialogViewModel.LayoutTemplates">
+            <summary>
+            Gets or sets the layout templates for the mobile format
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.ViewModels.TemplateSelectorDialogViewModel.SelectedTemplate">
+            <summary>
+            Gets or sets the selected template
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.ViewModels.TemplateSelectorDialogViewModel.SelectedLayoutTemplate">
+            <summary>
+            Gets or sets the selected layout template
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.ViewModels.TemplateSelectorDialogViewModel.UseCustomCanonicalUrl">
+            <summary>
+            Gets or sets a value indicating whether [use custom canonical URL].
+            </summary>
+            <value>
+            <c>true</c> if [use custom canonical URL]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.MobileFormats.Web.ViewModels.TemplateSelectorDialogViewModel.CustomCanonicalUrlFormat">
+            <summary>
+            Gets or sets the custom canonical URL format.
+            </summary>
+            <value>
+            The custom canonical URL format.
+            </value>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,341 @@
+----------------------------------------
+ActivityId: d583bc5e-2be9-43cb-aaaa-32ce47e33fff
+
+Timestamp: 11/3/2024 6:37:10 PM
+
+Message: ‹‹‹Operation: 'ApplicationRestart'. Parameters: 'flags:Default;sendRestartApplicationSystemMessage:True'. Reason: 'LicenseUpdate'. User: 'Anonymous'. StackTrace: '
+Telerik.Sitefinity.Services.SystemManager: Boolean RestartApplication(Telerik.Sitefinity.Services.OperationReason, Telerik.Sitefinity.Services.SystemRestartFlags, Boolean)
+Telerik.Sitefinity.Licensing.LicenseState: Void InvalidateLicense(Boolean)
+Telerik.Sitefinity.Licensing.Web.UI.LicenseRegistration: Void SaveLicense()
+System.Web.UI.WebControls.LinkButton: Void OnClick(System.EventArgs)
+System.Web.UI.WebControls.LinkButton: Void RaisePostBackEvent(System.String)
+System.Web.UI.Page: Void ProcessRequestMain(Boolean, Boolean)
+System.Web.UI.Page: Void ProcessRequest(Boolean, Boolean)
+System.Web.UI.Page: Void ProcessRequest()
+System.Web.UI.Page: Void ProcessRequest(System.Web.HttpContext)
+System.Web.HttpApplication+CallHandlerExecutionStep: Void System.Web.HttpApplication.IExecutionStep.Execute()
+System.Web.HttpApplication: Void ExecuteStepImpl(IExecutionStep)
+System.Web.HttpApplication: System.Exception ExecuteStep(IExecutionStep, Boolean ByRef)
+System.Web.HttpApplication+PipelineStepManager: Void ResumeSteps(System.Exception)
+System.Web.HttpApplication: System.IAsyncResult BeginProcessRequestNotification(System.Web.HttpContext, System.AsyncCallback)
+System.Web.HttpRuntime: System.Web.RequestNotificationStatus ProcessRequestNotificationPrivate(System.Web.Hosting.IIS7WorkerRequest, System.Web.HttpContext)
+System.Web.Hosting.PipelineRuntime: Int32 ProcessRequestNotificationHelper(IntPtr, IntPtr, IntPtr, Int32)
+System.Web.Hosting.PipelineRuntime: Int32 ProcessRequestNotification(IntPtr, IntPtr, IntPtr, Int32)
+System.Web.Hosting.UnsafeIISMethods: Void MgdIndicateCompletion(IntPtr, System.Web.RequestNotificationStatus ByRef)
+System.Web.Hosting.UnsafeIISMethods: Void MgdIndicateCompletion(IntPtr, System.Web.RequestNotificationStatus ByRef)
+System.Web.Hosting.PipelineRuntime: Int32 ProcessRequestNotificationHelper(IntPtr, IntPtr, IntPtr, Int32)
+System.Web.Hosting.PipelineRuntime: Int32 ProcessRequestNotification(IntPtr, IntPtr, IntPtr, Int32)'.›››
+
+
+----------------------------------------
+----------------------------------------
+ActivityId: d583bc5e-2be9-43cb-aaaa-32ce47e33fff
+
+Timestamp: 11/3/2024 6:37:12 PM
+
+Message: ‹‹‹Operation: 'ApplicationRestart'. Parameters: 'flags:Default;sendRestartApplicationSystemMessage:True'. Reason: 'LicenseUpdate'. User: 'Anonymous'. StackTrace: '
+Telerik.Sitefinity.Services.SystemManager: Boolean RestartApplication(Telerik.Sitefinity.Services.OperationReason, Telerik.Sitefinity.Services.SystemRestartFlags, Boolean)
+Telerik.Sitefinity.Licensing.LicenseState: Void InvalidateLicense(Boolean)
+Telerik.Sitefinity.Licensing.Web.UI.LicenseRegistration: Void SaveLicense()
+System.Web.UI.WebControls.LinkButton: Void OnClick(System.EventArgs)
+System.Web.UI.WebControls.LinkButton: Void RaisePostBackEvent(System.String)
+System.Web.UI.Page: Void ProcessRequestMain(Boolean, Boolean)
+System.Web.UI.Page: Void ProcessRequest(Boolean, Boolean)
+System.Web.UI.Page: Void ProcessRequest()
+System.Web.UI.Page: Void ProcessRequest(System.Web.HttpContext)
+System.Web.HttpApplication+CallHandlerExecutionStep: Void System.Web.HttpApplication.IExecutionStep.Execute()
+System.Web.HttpApplication: Void ExecuteStepImpl(IExecutionStep)
+System.Web.HttpApplication: System.Exception ExecuteStep(IExecutionStep, Boolean ByRef)
+System.Web.HttpApplication+PipelineStepManager: Void ResumeSteps(System.Exception)
+System.Web.HttpApplication: System.IAsyncResult BeginProcessRequestNotification(System.Web.HttpContext, System.AsyncCallback)
+System.Web.HttpRuntime: System.Web.RequestNotificationStatus ProcessRequestNotificationPrivate(System.Web.Hosting.IIS7WorkerRequest, System.Web.HttpContext)
+System.Web.Hosting.PipelineRuntime: Int32 ProcessRequestNotificationHelper(IntPtr, IntPtr, IntPtr, Int32)
+System.Web.Hosting.PipelineRuntime: Int32 ProcessRequestNotification(IntPtr, IntPtr, IntPtr, Int32)
+System.Web.Hosting.UnsafeIISMethods: Void MgdIndicateCompletion(IntPtr, System.Web.RequestNotificationStatus ByRef)
+System.Web.Hosting.UnsafeIISMethods: Void MgdIndicateCompletion(IntPtr, System.Web.RequestNotificationStatus ByRef)
+System.Web.Hosting.PipelineRuntime: Int32 ProcessRequestNotificationHelper(IntPtr, IntPtr, IntPtr, Int32)
+System.Web.Hosting.PipelineRuntime: Int32 ProcessRequestNotification(IntPtr, IntPtr, IntPtr, Int32)'.›››
+
+
+----------------------------------------
+----------------------------------------
+ActivityId: 580e0a8c-b941-4a62-abe4-bf272076263b
+
+Timestamp: 11/3/2024 6:38:14 PM
+
+Message: ‹‹‹Operation: 'ModelReset'. Parameters: 'notify:True'. Reason: 'MetaDataChange|InvalidatedModules:Telerik.Sitefinity.Security.Data.OpenAccessProfileProvider'. User: 'Anonymous'. StackTrace: '
+Telerik.Sitefinity.Data.OA.OpenAccessConnection: Void ResetModel(Telerik.Sitefinity.Services.OperationReason, Boolean)
+Telerik.Sitefinity.Data.TransactionManager: Void CommitTransaction(System.String)
+Telerik.Sitefinity.Abstractions.SiteInitializer: Void SaveChanges(Boolean)
+Telerik.Sitefinity.Abstractions.SiteInitializer: Void InstallDefaults()
+Telerik.Sitefinity.Services.SystemManager: Boolean Initialize()
+Telerik.Sitefinity.Abstractions.Bootstrapper: Boolean RegisterRoutes()
+Telerik.Sitefinity.Abstractions.Bootstrapper: Boolean Bootstrap()
+Telerik.Sitefinity.Web.SitefinityHttpModule+<>c: Void <BootstrapAsync>b__4_0(System.Object)
+System.Threading.Tasks.Task: Void Execute()
+System.Threading.ExecutionContext: Void RunInternal(System.Threading.ExecutionContext, System.Threading.ContextCallback, System.Object, Boolean)
+System.Threading.ExecutionContext: Void Run(System.Threading.ExecutionContext, System.Threading.ContextCallback, System.Object, Boolean)
+System.Threading.Tasks.Task: Void ExecuteWithThreadLocal(System.Threading.Tasks.Task ByRef)
+System.Threading.Tasks.Task: Boolean ExecuteEntry(Boolean)
+System.Threading.ThreadPoolWorkQueue: Boolean Dispatch()'.›››
+
+
+----------------------------------------
+----------------------------------------
+ActivityId: 580e0a8c-b941-4a62-abe4-bf272076263b
+
+Timestamp: 11/3/2024 6:38:39 PM
+
+Message: ‹‹‹Operation: 'ModelReset'. Parameters: 'notify:True'. Reason: 'MetaDataChange|InvalidatedModules:Telerik.Sitefinity.Modules.Libraries.Data.OpenAccessLibrariesProvider'. User: 'Anonymous'. StackTrace: '
+Telerik.Sitefinity.Data.OA.OpenAccessConnection: Void ResetModel(Telerik.Sitefinity.Services.OperationReason, Boolean)
+Telerik.Sitefinity.Data.TransactionManager: Void CommitTransaction(System.String)
+Telerik.Sitefinity.Abstractions.SiteInitializer: Void SaveChanges(Boolean)
+Telerik.Sitefinity.Services.SystemManager: Telerik.Sitefinity.Services.IModule InitializeModule(Telerik.Sitefinity.Services.ModuleSettings, Telerik.Sitefinity.Services.InstallContext, ModuleVersionInfo, System.Nullable`1[System.Boolean], Boolean)
+Telerik.Sitefinity.Services.SystemManager: Boolean Initialize()
+Telerik.Sitefinity.Abstractions.Bootstrapper: Boolean RegisterRoutes()
+Telerik.Sitefinity.Abstractions.Bootstrapper: Boolean Bootstrap()
+Telerik.Sitefinity.Web.SitefinityHttpModule+<>c: Void <BootstrapAsync>b__4_0(System.Object)
+System.Threading.Tasks.Task: Void Execute()
+System.Threading.ExecutionContext: Void RunInternal(System.Threading.ExecutionContext, System.Threading.ContextCallback, System.Object, Boolean)
+System.Threading.ExecutionContext: Void Run(System.Threading.ExecutionContext, System.Threading.ContextCallback, System.Object, Boolean)
+System.Threading.Tasks.Task: Void ExecuteWithThreadLocal(System.Threading.Tasks.Task ByRef)
+System.Threading.Tasks.Task: Boolean ExecuteEntry(Boolean)
+System.Threading.ThreadPoolWorkQueue: Boolean Dispatch()'.›››
+
+
+----------------------------------------
+----------------------------------------
+ActivityId: 580e0a8c-b941-4a62-abe4-bf272076263b
+
+Timestamp: 11/3/2024 6:39:25 PM
+
+Message: ‹‹‹Operation: 'ModelReset'. Parameters: 'notify:True'. Reason: 'MetaDataChange|InvalidatedModules:Telerik.Sitefinity.Publishing.Data.OpenAccessPublishingPointDynamicTypeProvider'. User: 'Anonymous'. StackTrace: '
+Telerik.Sitefinity.Data.OA.OpenAccessConnection: Void ResetModel(Telerik.Sitefinity.Services.OperationReason, Boolean)
+Telerik.Sitefinity.Data.TransactionManager: Void CommitTransaction(System.String)
+Telerik.Sitefinity.Services.Search.SearchModule: Void CreateAdvancedSettingsIndex()
+Telerik.Sitefinity.Services.Search.SearchModule: Void Bootstrapper_Initialized(System.Object, Telerik.Sitefinity.Data.ExecutedEventArgs)
+System.EventHandler`1: Void Invoke(System.Object, TEventArgs)
+Telerik.Sitefinity.Abstractions.Bootstrapper: Void OnInitialized(System.Object, Telerik.Sitefinity.Data.ExecutedEventArgs)
+Telerik.Sitefinity.Abstractions.Bootstrapper: Boolean Bootstrap()
+Telerik.Sitefinity.Abstractions.Bootstrapper: Boolean Bootstrap()
+Telerik.Sitefinity.Web.SitefinityHttpModule+<>c: Void <BootstrapAsync>b__4_0(System.Object)
+System.Threading.Tasks.Task: Void Execute()
+System.Threading.ExecutionContext: Void RunInternal(System.Threading.ExecutionContext, System.Threading.ContextCallback, System.Object, Boolean)
+System.Threading.ExecutionContext: Void Run(System.Threading.ExecutionContext, System.Threading.ContextCallback, System.Object, Boolean)
+System.Threading.Tasks.Task: Void ExecuteWithThreadLocal(System.Threading.Tasks.Task ByRef)
+System.Threading.Tasks.Task: Boolean ExecuteEntry(Boolean)
+System.Threading.ThreadPoolWorkQueue: Boolean Dispatch()'.›››
+
+
+----------------------------------------
+----------------------------------------
+ActivityId: 580e0a8c-b941-4a62-abe4-bf272076263b
+
+Timestamp: 11/3/2024 6:39:26 PM
+
+Message: ‹‹‹Operation: 'ModelReset'. Parameters: 'notify:True'. Reason: 'MetaDataChange|InvalidatedModules:Telerik.Sitefinity.Publishing.Data.OpenAccessPublishingPointDynamicTypeProvider'. User: 'Anonymous'. StackTrace: '
+Telerik.Sitefinity.Data.OA.OpenAccessConnection: Void ResetModel(Telerik.Sitefinity.Services.OperationReason, Boolean)
+Telerik.Sitefinity.Data.TransactionManager: Void CommitTransaction(System.String)
+Telerik.Sitefinity.Services.Search.SearchModule: Void CreateContentBackendIndex()
+Telerik.Sitefinity.Services.Search.SearchModule: Void Bootstrapper_Initialized(System.Object, Telerik.Sitefinity.Data.ExecutedEventArgs)
+System.EventHandler`1: Void Invoke(System.Object, TEventArgs)
+Telerik.Sitefinity.Abstractions.Bootstrapper: Void OnInitialized(System.Object, Telerik.Sitefinity.Data.ExecutedEventArgs)
+Telerik.Sitefinity.Abstractions.Bootstrapper: Boolean Bootstrap()
+Telerik.Sitefinity.Abstractions.Bootstrapper: Boolean Bootstrap()
+Telerik.Sitefinity.Web.SitefinityHttpModule+<>c: Void <BootstrapAsync>b__4_0(System.Object)
+System.Threading.Tasks.Task: Void Execute()
+System.Threading.ExecutionContext: Void RunInternal(System.Threading.ExecutionContext, System.Threading.ContextCallback, System.Object, Boolean)
+System.Threading.ExecutionContext: Void Run(System.Threading.ExecutionContext, System.Threading.ContextCallback, System.Object, Boolean)
+System.Threading.Tasks.Task: Void ExecuteWithThreadLocal(System.Threading.Tasks.Task ByRef)
+System.Threading.Tasks.Task: Boolean ExecuteEntry(Boolean)
+System.Threading.ThreadPoolWorkQueue: Boolean Dispatch()'.›››
+
+
+----------------------------------------
+----------------------------------------
+ActivityId: 580e0a8c-b941-4a62-abe4-bf272076263b
+
+Timestamp: 11/3/2024 6:39:26 PM
+
+Message: ‹‹‹Operation: 'ModelReset'. Parameters: 'notify:True'. Reason: 'MetaDataChange|InvalidatedModules:Telerik.Sitefinity.Publishing.Data.OpenAccessPublishingPointDynamicTypeProvider'. User: 'Anonymous'. StackTrace: '
+Telerik.Sitefinity.Data.OA.OpenAccessConnection: Void ResetModel(Telerik.Sitefinity.Services.OperationReason, Boolean)
+Telerik.Sitefinity.Data.TransactionManager: Void CommitTransaction(System.String)
+Telerik.Sitefinity.DataIntelligenceConnector.DataIntelligenceConnectorModule: Void CreateContentRecommendationsPublishingPoint()
+Telerik.Sitefinity.DataIntelligenceConnector.DataIntelligenceConnectorModule: Void Bootstrapper_Initialized(System.Object, Telerik.Sitefinity.Data.ExecutedEventArgs)
+System.EventHandler`1: Void Invoke(System.Object, TEventArgs)
+Telerik.Sitefinity.Abstractions.Bootstrapper: Void OnInitialized(System.Object, Telerik.Sitefinity.Data.ExecutedEventArgs)
+Telerik.Sitefinity.Abstractions.Bootstrapper: Boolean Bootstrap()
+Telerik.Sitefinity.Abstractions.Bootstrapper: Boolean Bootstrap()
+Telerik.Sitefinity.Web.SitefinityHttpModule+<>c: Void <BootstrapAsync>b__4_0(System.Object)
+System.Threading.Tasks.Task: Void Execute()
+System.Threading.ExecutionContext: Void RunInternal(System.Threading.ExecutionContext, System.Threading.ContextCallback, System.Object, Boolean)
+System.Threading.ExecutionContext: Void Run(System.Threading.ExecutionContext, System.Threading.ContextCallback, System.Object, Boolean)
+System.Threading.Tasks.Task: Void ExecuteWithThreadLocal(System.Threading.Tasks.Task ByRef)
+System.Threading.Tasks.Task: Boolean ExecuteEntry(Boolean)
+System.Threading.ThreadPoolWorkQueue: Boolean Dispatch()'.›››
+
+
+----------------------------------------
+----------------------------------------
+ActivityId: 581f83e3-ace5-47c8-b471-78ae553cac39
+
+Timestamp: 03.11.2024 18:43:12
+
+Message: ‹‹‹Attempting application domain unload. Reason: 'Update failed: Telerik.OpenAccess.RT.sql.SQLException: Connection has been closed. ---> System.Threading.ThreadAbortException: Thread was being aborted.
+   at SNIReadSyncOverAsync(SNI_ConnWrapper* , SNI_Packet** , Int32 )
+   at SNINativeMethodWrapper.SNIReadSyncOverAsync(SafeHandle pConn, IntPtr& packet, Int32 timeout)
+   at System.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   at System.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   at System.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   at System.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at OpenAccessRuntime.CommandWrapper.ExecuteReader(CommandBehavior behavior)
+   --- End of inner exception stack trace ---
+   at Telerik.OpenAccess.RT.Adonet2Generic.Impl.PreparedStatementImp.executeUpdate(Nullable`1 commandTimeout)
+   at OpenAccessRuntime.Relational.conn.PooledPreparedStatement.executeUpdate(Nullable`1 commandTimeout)
+   at OpenAccessRuntime.Relational.RelationalStorageManager.generateUpdates(OID oid, Int32 index, ClassMetaData cmd, PersistGraph graph, Int32[] fieldNos, Boolean haveNewObjects, CharBuf s, BatchControlInfo batchControl, Boolean previousInserts)
+Row: GenericOID@8f7b961d XmlConfigItem id=0a3a1dd0-74ce-4d50-8bd5-062e60d91756
+UPDATE [sf_xml_config_items] SET [dta] = ?, [last_modified] = ? WHERE [id] = ?
+(set event logging to all to see parameter values) Telerik.OpenAccess.RT.sql.SQLException: Connection has been closed. ---> System.Threading.ThreadAbortException: Thread was being aborted.
+   at SNIReadSyncOverAsync(SNI_ConnWrapper* , SNI_Packet** , Int32 )
+   at SNINativeMethodWrapper.SNIReadSyncOverAsync(SafeHandle pConn, IntPtr& packet, Int32 timeout)
+   at System.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   at System.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   at System.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   at System.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at OpenAccessRuntime.CommandWrapper.ExecuteReader(CommandBehavior behavior)
+   --- End of inner exception stack trace ---
+   at Telerik.OpenAccess.RT.Adonet2Generic.Impl.PreparedStatementImp.executeUpdate(Nullable`1 commandTimeout)
+   at OpenAccessRuntime.Relational.conn.PooledPreparedStatement.executeUpdate(Nullable`1 commandTimeout)
+   at OpenAccessRuntime.Relational.RelationalStorageManager.generateUpdates(OID oid, Int32 index, ClassMetaData cmd, PersistGraph graph, Int32[] fieldNos, Boolean haveNewObjects, CharBuf s, BatchControlInfo batchControl, Boolean previousInserts) ---> Connection has been closed. ---> Thread was being aborted.'. StackTrace: '   at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   at System.Environment.get_StackTrace()
+   at Telerik.Sitefinity.Services.SystemManager.TryRestartApplication(String restartReason)
+   at Telerik.Sitefinity.Web.SitefinityHttpModule.HandleBootstrapException(Exception exception)
+   at Telerik.Sitefinity.Web.SitefinityHttpModule.<>c.<BootstrapAsync>b__4_0(Object ctx)
+   at System.Threading.Tasks.Task.Execute()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+   at System.Threading.Tasks.Task.ExecuteEntry(Boolean bPreventDoubleExecution)
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()'›››
+
+
+----------------------------------------
+----------------------------------------
+ActivityId: 581f83e3-ace5-47c8-b471-78ae553cac39
+
+Timestamp: 03.11.2024 18:43:12
+
+Message: ‹‹‹Application domain unload succeeded. StackTrace: '   at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   at System.Environment.get_StackTrace()
+   at Telerik.Sitefinity.Services.SystemManager.TryRestartApplication(String restartReason)
+   at Telerik.Sitefinity.Web.SitefinityHttpModule.HandleBootstrapException(Exception exception)
+   at Telerik.Sitefinity.Web.SitefinityHttpModule.<>c.<BootstrapAsync>b__4_0(Object ctx)
+   at System.Threading.Tasks.Task.Execute()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+   at System.Threading.Tasks.Task.ExecuteEntry(Boolean bPreventDoubleExecution)
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()'›››
+
+
+----------------------------------------
+----------------------------------------
+ActivityId: 9dbda301-e987-4cc2-8c87-645fed5a52a4
+
+Timestamp: 03.11.2024 19:09:58
+
+Message: ‹‹‹Enter upgrade mode›››
+
+
+----------------------------------------
+----------------------------------------
+ActivityId: 9dbda301-e987-4cc2-8c87-645fed5a52a4
+
+Timestamp: 11/3/2024 7:14:03 PM
+
+Message: ‹‹‹Exit upgrade mode›››
+
+
+----------------------------------------
+----------------------------------------
+ActivityId: 9dbda301-e987-4cc2-8c87-645fed5a52a4
+
+Timestamp: 11/3/2024 7:14:22 PM
+
+Message: ‹‹‹Operation: 'ModelReset'. Parameters: 'notify:True'. Reason: 'MetaDataChange|InvalidatedModules:Telerik.Sitefinity.Publishing.Data.OpenAccessPublishingPointDynamicTypeProvider'. User: 'Anonymous'. StackTrace: '
+Telerik.Sitefinity.Data.OA.OpenAccessConnection: Void ResetModel(Telerik.Sitefinity.Services.OperationReason, Boolean)
+Telerik.Sitefinity.Data.TransactionManager: Void CommitTransaction(System.String)
+Telerik.Sitefinity.DataIntelligenceConnector.DataIntelligenceConnectorModule: Void CreateContentRecommendationsPublishingPoint()
+Telerik.Sitefinity.DataIntelligenceConnector.DataIntelligenceConnectorModule: Void Bootstrapper_Initialized(System.Object, Telerik.Sitefinity.Data.ExecutedEventArgs)
+System.EventHandler`1: Void Invoke(System.Object, TEventArgs)
+Telerik.Sitefinity.Abstractions.Bootstrapper: Void OnInitialized(System.Object, Telerik.Sitefinity.Data.ExecutedEventArgs)
+Telerik.Sitefinity.Abstractions.Bootstrapper: Boolean Bootstrap()
+Telerik.Sitefinity.Abstractions.Bootstrapper: Boolean Bootstrap()
+Telerik.Sitefinity.Web.SitefinityHttpModule+<>c: Void <BootstrapAsync>b__4_0(System.Object)
+System.Threading.Tasks.Task: Void Execute()
+System.Threading.ExecutionContext: Void RunInternal(System.Threading.ExecutionContext, System.Threading.ContextCallback, System.Object, Boolean)
+System.Threading.ExecutionContext: Void Run(System.Threading.ExecutionContext, System.Threading.ContextCallback, System.Object, Boolean)
+System.Threading.Tasks.Task: Void ExecuteWithThreadLocal(System.Threading.Tasks.Task ByRef)
+System.Threading.Tasks.Task: Boolean ExecuteEntry(Boolean)
+System.Threading.ThreadPoolWorkQueue: Boolean Dispatch()'.›››
+
+
+----------------------------------------
+----------------------------------------
+ActivityId: d3e02955-cb36-4165-acce-bf7dd38dcdb6
+
+Timestamp: 03.11.2024 19:32:49
+
+Message: ‹‹‹Enter upgrade mode›››
+
+
+----------------------------------------
+----------------------------------------
+ActivityId: d3e02955-cb36-4165-acce-bf7dd38dcdb6
+
+Timestamp: 11/3/2024 7:36:34 PM
+
+Message: ‹‹‹Exit upgrade mode›››
+
+
+----------------------------------------
+----------------------------------------
+ActivityId: d3e02955-cb36-4165-acce-bf7dd38dcdb6
+
+Timestamp: 11/3/2024 7:36:53 PM
+
+Message: ‹‹‹Operation: 'ModelReset'. Parameters: 'notify:True'. Reason: 'MetaDataChange|InvalidatedModules:Telerik.Sitefinity.Publishing.Data.OpenAccessPublishingPointDynamicTypeProvider'. User: 'Anonymous'. StackTrace: '
+Telerik.Sitefinity.Data.OA.OpenAccessConnection: Void ResetModel(Telerik.Sitefinity.Services.OperationReason, Boolean)
+Telerik.Sitefinity.Data.TransactionManager: Void CommitTransaction(System.String)
+Telerik.Sitefinity.DataIntelligenceConnector.DataIntelligenceConnectorModule: Void CreateContentRecommendationsPublishingPoint()
+Telerik.Sitefinity.DataIntelligenceConnector.DataIntelligenceConnectorModule: Void Bootstrapper_Initialized(System.Object, Telerik.Sitefinity.Data.ExecutedEventArgs)
+System.EventHandler`1: Void Invoke(System.Object, TEventArgs)
+Telerik.Sitefinity.Abstractions.Bootstrapper: Void OnInitialized(System.Object, Telerik.Sitefinity.Data.ExecutedEventArgs)
+Telerik.Sitefinity.Abstractions.Bootstrapper: Boolean Bootstrap()
+Telerik.Sitefinity.Abstractions.Bootstrapper: Boolean Bootstrap()
+Telerik.Sitefinity.Web.SitefinityHttpModule+<>c: Void <BootstrapAsync>b__4_0(System.Object)
+System.Threading.Tasks.Task: Void Execute()
+System.Threading.ExecutionContext: Void RunInternal(System.Threading.ExecutionContext, System.Threading.ContextCallback, System.Object, Boolean)
+System.Threading.ExecutionContext: Void Run(System.Threading.ExecutionContext, System.Threading.ContextCallback, System.Object, Boolean)
+System.Threading.Tasks.Task: Void ExecuteWithThreadLocal(System.Threading.Tasks.Task ByRef)
+System.Threading.Tasks.Task: Boolean ExecuteEntry(Boolean)
+System.Threading.ThreadPoolWorkQueue: Boolean Dispatch()'.›››
+
+
+----------------------------------------

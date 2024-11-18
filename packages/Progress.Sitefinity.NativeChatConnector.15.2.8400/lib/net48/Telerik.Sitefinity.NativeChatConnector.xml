@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Telerik.Sitefinity.NativeChatConnector</name>
+    </assembly>
+    <members>
+        <member name="P:Telerik.Sitefinity.NativeChatConnector.Mvc.Controllers.NativeChatController.IsEmpty">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.NativeChatConnector.Mvc.Controllers.NativeChatController.WidgetCssClass">
+            <summary>
+            Gets the widget CSS class.
+            </summary>
+            <value>
+            The widget CSS class.
+            </value>
+        </member>
+        <member name="M:Telerik.Sitefinity.NativeChatConnector.NativeChatModule.GetHeaders(Telerik.Sitefinity.Security.HttpSecurityHeaders.HttpSecurityHeadersFactory)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Telerik.Sitefinity.NativeChatConnector.NativeChatModule.GetVirtualPaths">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.NativeChatConnector.ServiceHooks.ActionSettings.ChatbotActionSettings.Title">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.NativeChatConnector.ServiceHooks.ActionSettings.ChatbotActionSettings.Key">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.NativeChatConnector.ServiceHooks.ActionSettings.ChatbotActionSettings.ParametersType">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.NativeChatConnector.ServiceHooks.ActionSettings.ChatbotActionSettings.ExecuteActionAsync(Telerik.Sitefinity.ServiceHooks.ITriggerData,System.Object,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.NativeChatConnector.Services.DTO.ConfigurationRequest.ApiKey">
+            <summary>
+            Gets or sets the API key
+            </summary>
+        </member>
+    </members>
+</doc>
