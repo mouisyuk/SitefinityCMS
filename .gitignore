@@ -36,5 +36,10 @@ Data/*
 .DS_Store
 .idea/
 .vs/
+.vscode/
 
 packages/
+bin
+obj
+packages
+.vs
