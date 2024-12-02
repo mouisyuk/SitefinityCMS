@@ -1477,6 +1477,7 @@
     <Content Include="ResourcePackages\Bootstrap4\assets\src\sitefinity\sass\base\_list.scss" />
     <Content Include="ResourcePackages\Bootstrap4\assets\src\project\sass\main.scss" />
     <Content Include="ResourcePackages\Bootstrap4\assets\src\project\sass\adminapp\editor.scss" />
+    <None Include="Properties\PublishProfiles\Edgar.pubxml" />
     <None Include="Properties\PublishProfiles\SitefinityCMSApp - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\SitefinityCMSApp - Web Deploy1.pubxml" />
     <None Include="Web.Debug.config">
